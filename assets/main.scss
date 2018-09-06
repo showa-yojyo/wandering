@@ -1,0 +1,12 @@
+---
+---
+@import "minima";
+
+$brand-color:      #ff2493;
+
+a {
+  color: $brand-color;
+  &:visited {
+    color: darken($brand-color, 15%);
+  }
+}
