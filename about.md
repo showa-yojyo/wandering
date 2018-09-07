@@ -1,16 +1,12 @@
 ---
 layout: page
-title: About
+title: ブログ解説
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+TODO: {{ site.title }}について紹介する。次のようなことを説明する：
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+* 著者が何者か。
+* 当ブログの目的、すなわち何を達成すれば終了するか。
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-[jekyll-organization]: https://github.com/jekyll
+追加として Twitter と GitHub の著者関連サイトへの誘導を含む。
