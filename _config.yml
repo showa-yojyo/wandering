@@ -57,3 +57,11 @@ plugins:
 # Minima settings
 minima:
   date_format: "%Y-%m-%d (%a)"
+
+defaults:
+  - scope:
+      path: _posts
+      type: posts
+    values:
+      categories: diary
+      layout: post
