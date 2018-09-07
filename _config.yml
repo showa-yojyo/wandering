@@ -30,6 +30,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   安住の地が見つかるまで東京都内を徘徊する者による日記。
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://showa-yojyo.github.io/"
+
+lang: ja
+
 twitter_username: showa_yojyo
 github_username:  showa-yojyo
 
