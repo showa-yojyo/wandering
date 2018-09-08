@@ -65,3 +65,12 @@ defaults:
     values:
       categories: diary
       layout: post
+  - scope:
+       path: _libraries
+       type: libraries
+    values:
+      layout: default
+
+collections:
+  libraries:
+    output: true
