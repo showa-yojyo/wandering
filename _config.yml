@@ -69,7 +69,7 @@ defaults:
        path: _libraries
        type: libraries
     values:
-      layout: default
+      layout: library
 
 collections:
   libraries:
