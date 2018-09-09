@@ -9,6 +9,10 @@ permalink: /libraries/
 
 <ul class="post-list">
   {%- for lib in site.libraries -%}
-  <li><a href="{{ lib.url | relative_url }}">{{ lib.name | default: lib.title }}</a></li>
+  <li>
+    <h2><a class="post-link" href="{{ lib.url | relative_url }}">{{ lib.title | escape }}</a></h2>
+
+    {{ lib.excerpt }}
+  </li>
   {%- endfor -%}
 </ul>
