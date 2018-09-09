@@ -8,7 +8,7 @@ permalink: /libraries/
 開館スケジュール、営業時間、場所、入場料金などの基礎情報と各図書館の特徴を記述していく。
 
 <ul class="post-list">
-  {%- for i in site.libraries -%}
-  <li><a href="{{ i.url }}">{{ i.name | default: i.title }}</a></li>
+  {%- for lib in site.libraries -%}
+  <li><a href="{{ lib.url | relative_url }}">{{ lib.name | default: lib.title }}</a></li>
   {%- endfor -%}
 </ul>
