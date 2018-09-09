@@ -2,5 +2,6 @@
 title: 北区東十条図書館
 ---
 
-TODO: 図書館について記述する。
+北区東十条図書館はこういう性質がある。
 
+{% include libraries/kita-office-hours.html %}
