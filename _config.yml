@@ -53,6 +53,8 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude:
+  - tools/
 
 # Minima settings
 minima:
@@ -65,3 +67,12 @@ defaults:
     values:
       categories: diary
       layout: post
+  - scope:
+       path: _libraries
+       type: libraries
+    values:
+      layout: library
+
+collections:
+  libraries:
+    output: true
