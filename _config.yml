@@ -65,6 +65,7 @@ defaults:
       path: _posts
       type: posts
     values:
+      author: showa-yojyo
       categories: diary
       layout: diary
   - scope:
