@@ -33,6 +33,11 @@ baseurl: /wandering # the subpath of your site, e.g. /blog
 url: https://showa-yojyo.github.io
 repository: https://github.com/showa-yojyo/wandering
 
+header_pages:
+  - about.md
+  - libraries.md
+  - posts/index.html
+
 twitter_username: showa_yojyo
 github_username:  showa-yojyo
 
@@ -41,6 +46,7 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -79,3 +85,6 @@ defaults:
 collections:
   libraries:
     output: true
+
+paginate: 5
+paginate_path: "posts/page:num"

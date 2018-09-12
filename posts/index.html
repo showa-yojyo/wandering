@@ -1,0 +1,39 @@
+---
+layout: diary
+title: 日記
+---
+
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ post.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ post.date | date: date_format }}
+      </time>
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}</p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ post.content }}
+  </div>
+{% endfor %}
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>
+
