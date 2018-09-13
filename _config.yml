@@ -35,8 +35,8 @@ repository: https://github.com/showa-yojyo/wandering
 
 header_pages:
   - about.md
+  - diary.md
   - libraries.md
-  - posts/index.html
 
 twitter_username: showa_yojyo
 github_username:  showa-yojyo
@@ -87,4 +87,4 @@ collections:
     output: true
 
 paginate: 5
-paginate_path: "posts/page:num"
+paginate_path: "page:num"
