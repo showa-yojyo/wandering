@@ -88,4 +88,4 @@ collections:
     output: true
 
 paginate: 7
-paginate_path: "page:num"
+paginate_path: "/page:num"
