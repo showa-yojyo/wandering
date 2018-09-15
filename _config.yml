@@ -40,6 +40,7 @@ header_pages:
 
 twitter_username: showa_yojyo
 github_username:  showa-yojyo
+rss: RSS
 
 # Build settings
 markdown: kramdown
