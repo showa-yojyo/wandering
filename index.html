@@ -5,6 +5,7 @@ title: 脱出日記
 
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ post.title | escape }}</h1>
     <p class="post-meta">
@@ -20,6 +21,9 @@ title: 脱出日記
   <div class="post-content e-content" itemprop="articleBody">
     {{ post.content }}
   </div>
+
+  <a class="u-url" href="{{ post.url | relative_url }}" hidden></a>
+</article>
 {% endfor %}
 
 {% include pagination.html %}
