@@ -1,21 +1,14 @@
 #!/usr/bin/env python
 
 LIBRARIES = '''\
-北区中央図書館	central
-北区中央図書館分室	central-branch
-北区滝野川図書館	takinogawa
-北区赤羽図書館	akabane
-北区浮間図書館	ukima
-北区赤羽西図書館	akabanenishi
-北区昭和町図書館	showamachi
-北区田端図書館	tabata
-北区上十条図書館	kamijujo
-北区赤羽北図書館	akabanekita
-北区東田端図書館	hitashitabata
-北区神谷図書館	kamiya
-北区滝野川西図書館	takinogawahishi
-北区豊島図書館	toshima
-北区東十条図書館	higashijujo
+中央図書館	central
+駒込図書館	komagome
+上池袋図書館	kamiikebukuro
+千早図書館	chihaya
+巣鴨図書館	sugamo
+池袋図書館	ikebukuro
+目白図書館	mejiro
+雑司が谷図書貸出コーナー	zoushigaya
 '''
 
 TEMPLATE = '''\
@@ -31,7 +24,7 @@ def main():
     for i, line in enumerate(LIBRARIES.splitlines()):
         title, filename = line.split('\t')
 
-        filename = f'kita-{i:02d}-{filename}.md'
+        filename = f'toshima-{i:02d}-{filename}.md'
 
         with open(filename, 'w', encoding='utf8', newline='') as fout:
             fout.write(TEMPLATE.format(title=title))
