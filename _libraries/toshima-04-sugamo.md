@@ -1,5 +1,5 @@
 ---
-title: 巣鴨図書館
+title: 豊島区巣鴨図書館
 ---
 
 TODO: {{ page.title }}について記述する。
