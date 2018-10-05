@@ -33,9 +33,10 @@ baseurl: /wandering # the subpath of your site, e.g. /blog
 url: https://showa-yojyo.github.io
 repository: https://github.com/showa-yojyo/wandering
 
+show_excerpts: true
+
 header_pages:
   - about.md
-  - diary.md
   - libraries.md
 
 twitter_username: showa_yojyo
@@ -94,3 +95,4 @@ collections:
 
 paginate: 7
 paginate_path: "/page:num"
+
