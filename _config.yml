@@ -93,6 +93,6 @@ collections:
   libraries:
     output: true
 
-paginate: 7
+paginate: 14
 paginate_path: "/page:num"
 
