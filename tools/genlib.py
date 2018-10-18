@@ -1,16 +1,15 @@
 #!/usr/bin/env python
 
-KU_PREFIX = 'toshima'
+KU_PREFIX = 'arakawa'
 
 LIBRARIES = '''\
-中央図書館	central
-駒込図書館	komagome
-上池袋図書館	kamiikebukuro
-千早図書館	chihaya
-巣鴨図書館	sugamo
-池袋図書館	ikebukuro
-目白図書館	mejiro
-雑司が谷図書貸出コーナー	zoushigaya
+ゆいの森あらかわ               central
+南千住図書館                   minamisenju
+尾久図書館                     ogu
+町屋図書館                     machiya
+日暮里図書館                   nippori
+汐入図書サービスステーション   shioiri
+冠新道図書サービスステーション kammurishindo
 '''
 
 TEMPLATE = '''\
@@ -18,14 +17,14 @@ TEMPLATE = '''\
 title: {title}
 ---
 
-TODO: {{ page.title }}について記述する。
+TODO: {{{{ page.title }}}}について記述する。
 
-{% include libraries/{ku}-office-hours.html %}
+{{% include libraries/{ku}-office-hours.html %}}
 '''
 
 def main():
     for i, line in enumerate(LIBRARIES.splitlines()):
-        title, filename = line.split('\t')
+        title, filename = line.split()
 
         filename = f'{KU_PREFIX}-{i:02d}-{filename}.md'
 
