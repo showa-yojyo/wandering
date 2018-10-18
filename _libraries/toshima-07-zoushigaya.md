@@ -1,5 +1,6 @@
 ---
 title: 豊島区雑司が谷図書貸出コーナー
+published: false
 ---
 
 TODO: {{ page.title }}について記述する。

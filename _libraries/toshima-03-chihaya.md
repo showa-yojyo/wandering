@@ -1,5 +1,6 @@
 ---
 title: 豊島区千早図書館
+published: false
 ---
 
 TODO: {{ page.title }}を訪問し、特徴を具体的に記述する。
