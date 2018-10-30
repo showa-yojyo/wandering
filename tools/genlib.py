@@ -1,16 +1,16 @@
 #!/usr/bin/env python
 
-KU_PREFIX = 'taito'
+KU_PREFIX = 'sumida'
 
 LIBRARIES = '''\
-台東区中央図書館	central
-台東区中央図書館浅草橋分室	central-branch-asakusabashi
-台東区中央図書館谷中分室	central-branch-yanaka
-台東区根岸図書館	negishi
-台東区石浜図書館	ishihama
-台東区くらまえオレンジ図書館	kuramae
-台東区すこやかとしょしつ	sukoyaka
-台東区東浅草なかよし図書館	higashiasakusa
+墨田区ひきふね図書館	hikihune
+墨田区緑図書館	midori
+墨田区立花図書館	tachibana
+墨田区八広図書館	yahiro
+墨田区東駒形コミュニティ会館図書室	higashikomagata
+墨田区梅若橋コミュニティ会館図書室	umewakabashi
+墨田区横川コミュニティ会館図書室	yokokawa
+墨田区すみだ女性センター情報資料コーナー	sumida-women
 '''
 
 TEMPLATE = '''\
@@ -21,20 +21,7 @@ published: false
 
 TODO: {{{{ page.title }}}}について記述する。
 
-## 休館日
-
-休館日は次のとおり：
-
-* 第 3 木曜日（祝日の場合は翌日振替）
-* 年末年始
-* 特別整理期間
-
-## 営業時間
-
-営業時間は次のとおり：
-
-* 月～土 9:00-20:00
-* 日・祝 9:00-17:00
+{{% include libraries/{ku}-office-hours.html %}}
 '''
 
 def main():
