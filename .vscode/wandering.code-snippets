@@ -1,0 +1,153 @@
+{
+	"Template": {
+		"prefix": "front-matter",
+		"body": [
+			"---",
+			"title: ${0}xxx 日目（天気）（執筆中）",
+			"---",
+			"",
+			"* TODO: 就寝・起床",
+			"* TODO: 朝飯",
+			"* TODO: 昼飯",
+			"* TODO: 晩飯",
+			"* TODO: 風呂（ある場合）",
+			"* TODO: ゲーセン",
+			"",
+			"{% include libraries/reference.html %}",
+			"",
+		],
+		"description": "日記の front matter"
+	},
+	"SectionReading": {
+		"prefix": "reading",
+		"body": [
+			"# 読み物",
+			"",
+			"* ${0}TODO: 朝刊（朝日、産経、東京）",
+			"* TODO: 夕刊（朝日、東京）",
+			"* TODO: 雑誌",
+			"* TODO: 書籍",
+			"",
+		],
+		"description": "日記の読み物の部分"
+	},
+	"PostUrl": {
+		"prefix": "_posturl",
+		"body": [
+			"[$0]({{ site.baseurl }}{% post_url $1 %})"
+		],
+		"description": "post_url directive"
+	},
+	"LibraryKatsushika00": {
+		"prefix": "katsushika-00",
+		"body": [
+			"[葛飾区中央図書館]({{ site.baseurl }}{% link _libraries/katsushika-00-central.md %})"
+		],
+		"description": "葛飾区中央図書館リンク付き文字列"
+	},
+	"LibraryKatsushikan01": {
+		"prefix": "katsushika-01",
+		"body": [
+			"[葛飾区立石図書館]({{ site.baseurl }}{% link _libraries/katsushika-01-tateishi.md %})"
+		],
+		"description": "葛飾区立石図書館リンク付き文字列"
+	},
+	"LibraryKatsushikan02": {
+		"prefix": "katsushika-02",
+		"body": [
+			"[葛飾区お花茶屋図書館]({{ site.baseurl }}{% link _libraries/katsushika-02-ohanajaya.md %})"
+		],
+		"description": "葛飾区お花茶屋図書館リンク付き文字列"
+	},
+	"LibraryKatsushikan03": {
+		"prefix": "katsushika-03",
+		"body": [
+			"[葛飾区上小松図書館]({{ site.baseurl }}{% link _libraries/katsushika-03-kamikomatsu.md %})"
+		],
+		"description": "葛飾区上小松図書館リンク付き文字列"
+	},
+	"LibraryKatsushikan04": {
+		"prefix": "katsushika-04",
+		"body": [
+			"[葛飾区亀有図書館]({{ site.baseurl }}{% link _libraries/katsushika-04-kameari.md %})"
+		],
+		"description": "葛飾区亀有図書館リンク付き文字列"
+	},
+	"LibraryKatsushikan05": {
+		"prefix": "katsushika-05",
+		"body": [
+			"[葛飾区水元図書館]({{ site.baseurl }}{% link _libraries/katsushika-05-mizumoto.md %})"
+		],
+		"description": "葛飾区水元図書館リンク付き文字列"
+	},
+	"LibraryKatsushikan06": {
+		"prefix": "katsushika-06",
+		"body": [
+			"[葛飾区鎌倉図書館]({{ site.baseurl }}{% link _libraries/katsushika-06-kamakura.md %})"
+		],
+		"description": "葛飾区鎌倉図書館リンク付き文字列"
+	},
+	"LibraryKatsushikan07": {
+		"prefix": "katsushika-07",
+		"body": [
+			"[葛飾区四つ木地区図書館]({{ site.baseurl }}{% link _libraries/katsushika-07-yotsugi.md %})"
+		],
+		"description": "葛飾区四つ木地区図書館リンク付き文字列"
+	},
+	"LibraryKatsushikan08": {
+		"prefix": "katsushika-08",
+		"body": [
+			"[葛飾区西水元地区図書館]({{ site.baseurl }}{% link _libraries/katsushika-08-nishimizumoto.md %})"
+		],
+		"description": "葛飾区西水元地区図書館リンク付き文字列"
+	},
+	"LibraryKatsushikan09": {
+		"prefix": "katsushika-09",
+		"body": [
+			"[葛飾区青戸地区図書館]({{ site.baseurl }}{% link _libraries/katsushika-09-aoto.md %})"
+		],
+		"description": "葛飾区青戸地区図書館リンク付き文字列"
+	},
+	"LibraryKatsushikan10": {
+		"prefix": "katsushika-10",
+		"body": [
+			"[葛飾区奥戸地区図書館]({{ site.baseurl }}{% link _libraries/katsushika-10-okudo.md %})"
+		],
+		"description": "葛飾区奥戸地区図書館リンク付き文字列"
+	},
+	"LibraryKatsushikan11": {
+		"prefix": "katsushika-11",
+		"body": [
+			"[葛飾区こすげ地区図書館]({{ site.baseurl }}{% link _libraries/katsushika-11-kosuge.md %})"
+		],
+		"description": "葛飾区こすげ地区図書館リンク付き文字列"
+	},
+	"LibraryKatsushikan12": {
+		"prefix": "katsushika-12",
+		"body": [
+			"[葛飾区新宿図書センター]({{ site.baseurl }}{% link _libraries/katsushika-12-nijuku.md %})"
+		],
+		"description": "葛飾区新宿図書センターリンク付き文字列"
+	},
+	"LibraryKatsushikan13": {
+		"prefix": "katsushika-13",
+		"body": [
+			"[葛飾区男女平等推進センター図書資料室]({{ site.baseurl }}{% link _libraries/katsushika-13-gender-equality.md %})"
+		],
+		"description": "葛飾区男女平等推進センター図書資料室リンク付き文字列"
+	},
+	"LibraryKatsushikan14": {
+		"prefix": "katsushika-14",
+		"body": [
+			"[葛飾区新宿図書サービスコーナー]({{ site.baseurl }}{% link _libraries/katsushika-14-nijuku-service.md %})"
+		],
+		"description": "葛飾区新宿図書サービスコーナーリンク付き文字列"
+	},
+	"LibraryKatsushikan15": {
+		"prefix": "katsushika-15",
+		"body": [
+			"[葛飾区リリオ亀有図書サービスカウンター]({{ site.baseurl }}{% link _libraries/katsushika-15-kameari-service.md %})"
+		],
+		"description": "葛飾区リリオ亀有図書サービスカウンターリンク付き文字列"
+	}
+}
