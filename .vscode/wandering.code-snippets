@@ -38,6 +38,27 @@
 		],
 		"description": "post_url directive"
 	},
+	"LibrarySumida01": {
+		"prefix": "sumida-01",
+		"body": [
+			"[墨田区緑図書館]({{ site.baseurl }}{% link _libraries/sumida-01-midori.md %})"
+		],
+		"description": "墨田区緑図書館リンク付き文字列"
+	},
+	"LibrarySumida02": {
+		"prefix": "sumida-02",
+		"body": [
+			"[墨田区立花図書館]({{ site.baseurl }}{% link _libraries/sumida-02-tachibana.md %})"
+		],
+		"description": "墨田区立花図書館リンク付き文字列"
+	},
+	"LibrarySumida03": {
+		"prefix": "sumida-03",
+		"body": [
+			"[墨田区八広図書館]({{ site.baseurl }}{% link _libraries/sumida-03-yahiro.md %})"
+		],
+		"description": "墨田区八広図書館リンク付き文字列"
+	},
 	"LibraryKatsushika00": {
 		"prefix": "katsushika-00",
 		"body": [
@@ -150,5 +171,64 @@
 		],
 		"description": "葛飾区リリオ亀有図書サービスカウンターリンク付き文字列"
 	},
+	"LibraryEdogawa00": {
+		"prefix": "edogawa-00",
+		"body": "[江戸川区中央図書館]({{ site.baseurl }}{% link _libraries/edogawa-00central.md %})",
+		"description": "江戸川区中央図書館リンク付き文字列"
+	},
+	"LibraryEdogawa01": {
+		"prefix": "edogawa-01",
+		"body": "[江戸川区小岩図書館]({{ site.baseurl }}{% link _libraries/edogawa-01koiwa.md %})",
+		"description": "江戸川区小岩図書館リンク付き文字列"
+	},
+	"LibraryEdogawa02": {
+		"prefix": "edogawa-02",
+		"body": "[江戸川区松江図書館]({{ site.baseurl }}{% link _libraries/edogawa-02matsue.md %})",
+		"description": "江戸川区松江図書館リンク付き文字列"
+	},
+	"LibraryEdogawa03": {
+		"prefix": "edogawa-03",
+		"body": "[江戸川区小松川図書館]({{ site.baseurl }}{% link _libraries/edogawa-03komatsugawa.md %})",
+		"description": "江戸川区小松川図書館リンク付き文字列"
+	},
+	"LibraryEdogawa04": {
+		"prefix": "edogawa-04",
+		"body": "[江戸川区葛西図書館]({{ site.baseurl }}{% link _libraries/edogawa-04kasai.md %})",
+		"description": "江戸川区葛西図書館リンク付き文字列"
+	},
+	"LibraryEdogawa05": {
+		"prefix": "edogawa-05",
+		"body": "[江戸川区西葛西図書館]({{ site.baseurl }}{% link _libraries/edogawa-05nishikawai.md %})",
+		"description": "江戸川区西葛西図書館リンク付き文字列"
+	},
+	"LibraryEdogawa06": {
+		"prefix": "edogawa-06",
+		"body": "[江戸川区東葛西図書館]({{ site.baseurl }}{% link _libraries/edogawa-06higashikasai.md %})",
+		"description": "江戸川区東葛西図書館リンク付き文字列"
+	},
+	"LibraryEdogawa07": {
+		"prefix": "edogawa-07",
+		"body": "[江戸川区篠崎図書館]({{ site.baseurl }}{% link _libraries/edogawa-07shinozaki.md %})",
+		"description": "江戸川区篠崎図書館リンク付き文字列"
+	},
+	"LibraryEdogawa08": {
+		"prefix": "edogawa-08",
+		"body": "[江戸川区東部図書館]({{ site.baseurl }}{% link _libraries/edogawa-08tobu.md %})",
+		"description": "江戸川区東部図書館リンク付き文字列"
+	},
+	"LibraryEdogawa09": {
+		"prefix": "edogawa-09",
+		"body": "[江戸川区篠崎子ども図書館]({{ site.baseurl }}{% link _libraries/edogawa-09sinozaki-children.md %})",
+		"description": "江戸川区篠崎子ども図書館リンク付き文字列"
+	},
+	"LibraryEdogawa10": {
+		"prefix": "edogawa-10",
+		"body": "[江戸川区清新町コミュニティ図書館]({{ site.baseurl }}{% link _libraries/edogawa-10seishincho.md %})",
+		"description": "江戸川区清新町コミュニティ図書館リンク付き文字列"
+	},
+	"LibraryEdogawa11": {
+		"prefix": "edogawa-11",
+		"body": "[江戸川区鹿骨コミュニティ図書館]({{ site.baseurl }}{% link _libraries/edogawa-11shishibone.md %})",
+		"description": "江戸川区鹿骨コミュニティ図書館リンク付き文字列"
 	}
 }
