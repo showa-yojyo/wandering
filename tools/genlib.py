@@ -1,24 +1,20 @@
 #!/usr/bin/env python
 
-KU_PREFIX = 'katsushika'
+KU_PREFIX = 'edogawa'
 
 LIBRARIES = '''\
-葛飾区	中央図書館	central
-葛飾区	立石図書館	tateishi
-葛飾区	お花茶屋図書館	ohanajaya
-葛飾区	上小松図書館	kamikomatsu
-葛飾区	亀有図書館	kameari
-葛飾区	水元図書館	mizumoto
-葛飾区	鎌倉図書館	kamakura
-葛飾区	四つ木地区図書館	yotsugi
-葛飾区	西水元地区図書館	nishimizumoto
-葛飾区	青戸地区図書館	aoto
-葛飾区	奥戸地区図書館	okudo
-葛飾区	こすげ地区図書館	kosuge
-葛飾区	新宿図書センター	nijuku
-葛飾区	男女平等推進センター図書資料室	gender-equality
-葛飾区	新宿図書サービスコーナー	nijuku-service
-葛飾区	リリオ亀有図書サービスカウンター	kameari-service
+江戸川区	中央図書館	central
+江戸川区	小岩図書館	koiwa
+江戸川区	松江図書館	matsue
+江戸川区	小松川図書館	komatsugawa
+江戸川区	葛西図書館	kasai
+江戸川区	西葛西図書館	nishikawai
+江戸川区	東葛西図書館	higashikasai
+江戸川区	篠崎図書館	shinozaki
+江戸川区	東部図書館	tobu
+江戸川区	篠崎子ども図書館	sinozaki-children
+江戸川区	清新町コミュニティ図書館	seishincho
+江戸川区	鹿骨コミュニティ図書館	shishibone
 '''
 
 TEMPLATE = '''\
