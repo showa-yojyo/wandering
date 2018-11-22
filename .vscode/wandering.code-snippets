@@ -149,5 +149,6 @@
 			"[葛飾区リリオ亀有図書サービスカウンター]({{ site.baseurl }}{% link _libraries/katsushika-15-kameari-service.md %})"
 		],
 		"description": "葛飾区リリオ亀有図書サービスカウンターリンク付き文字列"
+	},
 	}
 }
