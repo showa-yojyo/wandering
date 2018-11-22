@@ -198,7 +198,7 @@
 	},
 	"LibraryEdogawa05": {
 		"prefix": "edogawa-05",
-		"body": "[江戸川区西葛西図書館]({{ site.baseurl }}{% link _libraries/edogawa-05-nishikawai.md %})",
+		"body": "[江戸川区西葛西図書館]({{ site.baseurl }}{% link _libraries/edogawa-05-nishikasai.md %})",
 		"description": "江戸川区西葛西図書館リンク付き文字列"
 	},
 	"LibraryEdogawa06": {
