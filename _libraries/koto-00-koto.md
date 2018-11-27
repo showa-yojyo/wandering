@@ -1,8 +1,13 @@
 ---
 title: 江東区江東図書館
-published: false
 ---
 
-TODO: {{ page.title }}について記述する。
+{{ page.title }}は江東区の「中央図書館」的図書館だ。区役所の西、南砂に位置する。
 
-{% include libraries/koto-office-hours.html %}
+## 特徴
+
+* 区内図書館のここだけ、偶数週月曜は開館している。ただし営業時間は祝日に準じる。
+* 館内のいたるところに閲覧席、座席がある。資料閲覧が楽だ。
+* 2 階閲覧席は両端がどちらも PC 対応席だ。ビジネスコーナーのほうが若干使いやすいように思う。
+
+{% include libraries/koto-office-hours.html office_type='A' %}
