@@ -1,20 +1,20 @@
 #!/usr/bin/env python
 
-KU_PREFIX = 'edogawa'
+KU_PREFIX = 'koto'
 
 LIBRARIES = '''\
-江戸川区	中央図書館	central
-江戸川区	小岩図書館	koiwa
-江戸川区	松江図書館	matsue
-江戸川区	小松川図書館	komatsugawa
-江戸川区	葛西図書館	kasai
-江戸川区	西葛西図書館	nishikawai
-江戸川区	東葛西図書館	higashikasai
-江戸川区	篠崎図書館	shinozaki
-江戸川区	東部図書館	tobu
-江戸川区	篠崎子ども図書館	sinozaki-children
-江戸川区	清新町コミュニティ図書館	seishincho
-江戸川区	鹿骨コミュニティ図書館	shishibone
+江東区	江東図書館	koto
+江東区	深川図書館	hukagawa
+江東区	東陽図書館	toyo
+江東区	豊洲図書館	toyosu
+江東区	東雲図書館	shinonome
+江東区	古石場図書館	furuishiba
+江東区	城東図書館	joto
+江東区	亀戸図書館	kameido
+江東区	砂町図書館	sunamachi
+江東区	東大島図書館	higashiojima
+江東区	白河こどもとしょかん	shirakawa-children
+江東区	枝川図書サービスコーナー	edakawa
 '''
 
 TEMPLATE = '''\

@@ -230,5 +230,65 @@
 		"prefix": "edogawa-11",
 		"body": "[江戸川区鹿骨コミュニティ図書館]({{ site.baseurl }}{% link _libraries/edogawa-11-shishibone.md %})",
 		"description": "江戸川区鹿骨コミュニティ図書館リンク付き文字列"
+	},
+	"LibraryKoto00": {
+		"prefix": "koto-00",
+		"body": "[江東区江東図書館]({{ site.baseurl }}{% link _libraries/koto-00-koto.md %})",
+		"description": "江東区江東図書館リンク付き文字列"
+	},
+	"LibraryKoto01": {
+		"prefix": "koto-01",
+		"body": "[江東区深川図書館]({{ site.baseurl }}{% link _libraries/koto-01-fukagawa.md %})",
+		"description": "江東区深川図書館リンク付き文字列"
+	},
+	"LibraryKoto02": {
+		"prefix": "koto-02",
+		"body": "[江東区東陽図書館]({{ site.baseurl }}{% link _libraries/koto-02-toyo.md %})",
+		"description": "江東区東陽図書館リンク付き文字列"
+	},
+	"LibraryKoto03": {
+		"prefix": "koto-03",
+		"body": "[江東区豊洲図書館]({{ site.baseurl }}{% link _libraries/koto-03-toyosu.md %})",
+		"description": "江東区豊洲図書館リンク付き文字列"
+	},
+	"LibraryKoto04": {
+		"prefix": "koto-04",
+		"body": "[江東区東雲図書館]({{ site.baseurl }}{% link _libraries/koto-04-shinonome.md %})",
+		"description": "江東区東雲図書館リンク付き文字列"
+	},
+	"LibraryKoto05": {
+		"prefix": "koto-05",
+		"body": "[江東区古石場図書館]({{ site.baseurl }}{% link _libraries/koto-05-furuishiba.md %})",
+		"description": "江東区古石場図書館リンク付き文字列"
+	},
+	"LibraryKoto06": {
+		"prefix": "koto-06",
+		"body": "[江東区城東図書館]({{ site.baseurl }}{% link _libraries/koto-06-joto.md %})",
+		"description": "江東区城東図書館リンク付き文字列"
+	},
+	"LibraryKoto07": {
+		"prefix": "koto-07",
+		"body": "[江東区亀戸図書館]({{ site.baseurl }}{% link _libraries/koto-07-kameido.md %})",
+		"description": "江東区亀戸図書館リンク付き文字列"
+	},
+	"LibraryKoto08": {
+		"prefix": "koto-08",
+		"body": "[江東区砂町図書館]({{ site.baseurl }}{% link _libraries/koto-08-sunamachi.md %})",
+		"description": "江東区砂町図書館リンク付き文字列"
+	},
+	"LibraryKoto09": {
+		"prefix": "koto-09",
+		"body": "[江東区東大島図書館]({{ site.baseurl }}{% link _libraries/koto-09-higashiojima.md %})",
+		"description": "江東区東大島図書館リンク付き文字列"
+	},
+	"LibraryKoto10": {
+		"prefix": "koto-10",
+		"body": "[江東区白河こどもとしょかん]({{ site.baseurl }}{% link _libraries/koto-10-shirakawa-children.md %})",
+		"description": "江東区白河こどもとしょかんリンク付き文字列"
+	},
+	"LibraryKoto11": {
+		"prefix": "koto-11",
+		"body": "[江東区枝川図書サービスコーナー]({{ site.baseurl }}{% link _libraries/koto-11-edakawa.md %})",
+		"description": "江東区枝川図書サービスコーナーリンク付き文字列"
 	}
 }
