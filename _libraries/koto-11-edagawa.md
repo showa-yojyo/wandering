@@ -1,8 +1,10 @@
 ---
 title: 江東区枝川図書サービスコーナー
-published: false
 ---
 
-TODO: {{ page.title }}について記述する。
+{{ page.title }}は枝川区民館エントランスにある窓口だ。
 
-{% include libraries/koto-office-hours.html %}
+図書等資料のやり取りと検索だけができるところであり、ここで蔵書を読めるわけではない。
+したがって一見の客はここに来る必要はない。
+
+{% include libraries/koto-office-hours.html office_type='B' %}
