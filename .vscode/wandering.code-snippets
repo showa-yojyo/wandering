@@ -288,7 +288,7 @@
 	},
 	"LibraryKoto11": {
 		"prefix": "koto-11",
-		"body": "[江東区枝川図書サービスコーナー]({{ site.baseurl }}{% link _libraries/koto-11-edakawa.md %})",
+		"body": "[江東区枝川図書サービスコーナー]({{ site.baseurl }}{% link _libraries/koto-11-edagawa.md %})",
 		"description": "江東区枝川図書サービスコーナーリンク付き文字列"
 	}
 }
