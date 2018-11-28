@@ -1,8 +1,12 @@
 ---
 title: 江東区東雲図書館
-published: false
 ---
 
-TODO: {{ page.title }}について記述する。
+{{ page.title }}は東雲のあるタワマン 2 階を占める図書館だ。
+
+## 特徴
+
+* 雑誌のラインナップが豊富だ。
+* 電源コンセント付き持ち込み PC 席がわずか 2 席しかない。
 
 {% include libraries/koto-office-hours.html %}

@@ -4,7 +4,7 @@ KU_PREFIX = 'koto'
 
 LIBRARIES = '''\
 江東区	江東図書館	koto
-江東区	深川図書館	hukagawa
+江東区	深川図書館	fukagawa
 江東区	東陽図書館	toyo
 江東区	豊洲図書館	toyosu
 江東区	東雲図書館	shinonome
@@ -14,7 +14,7 @@ LIBRARIES = '''\
 江東区	砂町図書館	sunamachi
 江東区	東大島図書館	higashiojima
 江東区	白河こどもとしょかん	shirakawa-children
-江東区	枝川図書サービスコーナー	edakawa
+江東区	枝川図書サービスコーナー	edagawa
 '''
 
 TEMPLATE = '''\
