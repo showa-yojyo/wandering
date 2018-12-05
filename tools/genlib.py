@@ -1,20 +1,11 @@
 #!/usr/bin/env python
 
-KU_PREFIX = 'koto'
+KU_PREFIX = 'chuo'
 
 LIBRARIES = '''\
-江東区	江東図書館	koto
-江東区	深川図書館	fukagawa
-江東区	東陽図書館	toyo
-江東区	豊洲図書館	toyosu
-江東区	東雲図書館	shinonome
-江東区	古石場図書館	furuishiba
-江東区	城東図書館	joto
-江東区	亀戸図書館	kameido
-江東区	砂町図書館	sunamachi
-江東区	東大島図書館	higashiojima
-江東区	白河こどもとしょかん	shirakawa-children
-江東区	枝川図書サービスコーナー	edagawa
+中央区	京橋図書館	kyobashi
+中央区	日本橋図書館	nihonbashi
+中央区	月島図書館	tsukishima
 '''
 
 TEMPLATE = '''\
