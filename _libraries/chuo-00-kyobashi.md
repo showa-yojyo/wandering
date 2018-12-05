@@ -1,8 +1,13 @@
 ---
 title: 中央区京橋図書館
-published: false
 ---
 
-TODO: {{ page.title }}について記述する。
+{{ page.title }}は中央区役所の地下に位置する図書館だ。正門は区役所の裏手にある。
 
-{% include libraries/chuo-office-hours.html %}
+## 特徴
+
+* 構造は地下 2 階建てで、入口フロアに主要サービスが固められている。
+* 地下に展開されているので窓がなく、ひじょうに殺風景だ。
+* 下層階には会議室のような学習室がある。長机を並べた質素な部屋だ。
+
+{% include libraries/chuo-office-hours.html office_type='A' %}
