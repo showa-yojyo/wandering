@@ -1,11 +1,15 @@
 #!/usr/bin/env python
 
-KU_PREFIX = 'chuo'
+KU_PREFIX = 'minato'
 
 LIBRARIES = '''\
-中央区	京橋図書館	kyobashi
-中央区	日本橋図書館	nihonbashi
-中央区	月島図書館	tsukishima
+港区	みなと図書館	minato
+港区	三田図書館	mita
+港区	麻布図書館	azabu
+港区	赤坂図書館	akasaka
+港区	高輪図書館	takanawa
+港区	高輪図書館分室	takanawa-branch
+港区	港南図書館	konan
 '''
 
 TEMPLATE = '''\
