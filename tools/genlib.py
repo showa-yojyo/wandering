@@ -1,15 +1,14 @@
 #!/usr/bin/env python
 
-KU_PREFIX = 'minato'
+KU_PREFIX = 'chiyoda'
 
 LIBRARIES = '''\
-港区	みなと図書館	minato
-港区	三田図書館	mita
-港区	麻布図書館	azabu
-港区	赤坂図書館	akasaka
-港区	高輪図書館	takanawa
-港区	高輪図書館分室	takanawa-branch
-港区	港南図書館	konan
+千代田区	千代田図書館	chiyoda
+千代田区	四番町図書館	yobancho
+千代田区	日比谷図書文化館	hibiya
+千代田区	昌平まちかど図書館	shohei
+千代田区	神田まちかど図書館	kanda
+千代田区	ちよだパークサイドプラザ区民図書室	park-side-plaza
 '''
 
 TEMPLATE = '''\
