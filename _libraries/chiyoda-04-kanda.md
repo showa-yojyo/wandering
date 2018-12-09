@@ -1,8 +1,10 @@
 ---
 title: 千代田区神田まちかど図書館
-published: false
 ---
 
-TODO: {{ page.title }}について記述する。
+{{ page.title }}は神田さくら館の東側一階にあるミニ図書館だ。
 
-{% include libraries/chiyoda-office-hours.html %}
+## 特徴
+
+* 小学校やプールと同じ建物にある。例えば図書館の出入口のわきに地下プールへの階段があったりする。
+* 新聞や雑誌をチェックするのには使えるが、本格的な読書、学習には不向きだ。
