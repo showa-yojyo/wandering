@@ -1,14 +1,22 @@
 #!/usr/bin/env python
 
-KU_PREFIX = 'chiyoda'
+KU_PREFIX = 'shinagawa'
 
 LIBRARIES = '''\
-千代田区	千代田図書館	chiyoda
-千代田区	四番町図書館	yobancho
-千代田区	日比谷図書文化館	hibiya
-千代田区	昌平まちかど図書館	shohei
-千代田区	神田まちかど図書館	kanda
-千代田区	ちよだパークサイドプラザ区民図書室	park-side-plaza
+品川区	品川図書館	shinagawa
+品川区	二葉図書館	futaba
+品川区	荏原図書館	ebara
+品川区	南大井図書館	minamioi
+品川区	源氏前図書館	genjimae
+品川区	ゆたか図書館	yutaka
+品川区	大井図書館	oi
+品川区	五反田図書館	gotanda
+品川区	大崎図書館	osaki
+品川区	八潮図書館	yashio
+品川区	大井町サービスコーナー	oimachi
+品川区	武蔵小山サービスコーナー	musashikoyama
+品川区	大崎駅西口図書取次施設	osaki-station
+品川区	目黒サービスコーナー	meguro
 '''
 
 TEMPLATE = '''\
