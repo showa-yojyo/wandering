@@ -1,8 +1,12 @@
 ---
 title: 港区港南図書館
-published: false
 ---
 
-TODO: {{ page.title }}について記述する。
+{{ page.title }}は港南三丁目にある四階建ての図書館だ。周辺にはタワマンや団地がたくさんある。
+
+## 特徴
+
+* 2 階に謎の持ち込み PC 席がある。二人座り用長机と椅子だけの狭い部屋だ。
+* 新聞雑誌コーナーを利用するならば、それがある 3 階まで上る必要がある。
 
 {% include libraries/minato-office-hours.html %}
