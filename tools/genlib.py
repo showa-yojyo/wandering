@@ -1,25 +1,16 @@
 #!/usr/bin/env python
 
-KU_PREFIX = 'ota'
+KU_PREFIX = 'meguro'
 
 LIBRARIES = '''\
-大田区	大田図書館	ota
-大田区	大森南図書館	omoriminami
-大田区	大森東図書館	omorihigashi
-大田区	大森西図書館	omorinishi
-大田区	入新井図書館	iriarai
-大田区	馬込図書館	magome
-大田区	池上図書館	ikegami
-大田区	久が原図書館	kugahara
-大田区	洗足池図書館	senzokuike
-大田区	浜竹図書館	hamatake
-大田区	羽田図書館	haneda
-大田区	六郷図書館	rokugo
-大田区	下丸子図書館	shimomaruko
-大田区	多摩川図書館	tamagawa
-大田区	蒲田図書館	kamata
-大田区	蒲田駅前図書館	kamataekimae
-大田区	大田文化の森情報館	omoribunkanomori
+目黒区	八雲中央図書館	yakumochuo
+目黒区	大橋図書館	ohashi
+目黒区	中目黒駅前図書館	nakameguroekimae
+目黒区	目黒区民センター図書館	meguro-center
+目黒区	守屋図書館	moriya
+目黒区	目黒本町図書館	megurohoncho
+目黒区	洗足図書館	senzoku
+目黒区	緑が丘図書館	midorigaoka
 '''
 
 TEMPLATE = '''\
