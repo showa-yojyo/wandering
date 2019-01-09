@@ -4,7 +4,7 @@
 		"prefix": "front-matter",
 		"body": [
 			"---",
-			"title: ${1:xxx} 日目（${2|晴れ,曇り,雨|}）（執筆中）",
+			"title: ${1:xxx} 日目（${2|晴れ,曇り,雨|}）${3:（執筆中）}",
 			"---",
 			"",
 			"* TODO: 就寝・起床",
@@ -68,11 +68,13 @@
 		"description": "図書館営業時間テンプレ"
 	},
 	"Link": {
+		"scope": "html,markdown",
 		"prefix": "link",
 		"body": "[$1]({{ site.baseurl }}{% link ${2:_libraries/.md} %})",
 		"description": "link directive"
 	},
 	"PostUrl": {
+		"scope": "html,markdown",
 		"prefix": "post_url",
 		"body": "[$1]({{ site.baseurl }}{% post_url $2 %})",
 		"description": "post_url directive"
