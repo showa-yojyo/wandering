@@ -12,4 +12,8 @@ title: 目黒区洗足図書館
 * どちらかというと二階がメイン。何かの待合室のような新聞コーナーでゆっくり過ごすのがいい。
 * 多目的室という学習室がある。施設側催事都合により、利用できなくなることがあるようだ。
 
-{% include libraries/meguro-office-hours.html %}
+{% include libraries/meguro-office-hours.html holiday_type='b' hours_type='C' %}
+
+# 参考資料
+
+* [公式ページ](http://www.meguro-library.jp/locations/senzoku-loc/)

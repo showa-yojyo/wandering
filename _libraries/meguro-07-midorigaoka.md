@@ -6,3 +6,7 @@ title: 目黒区緑が丘図書館
 翌月 1 日から再開するとのことなので、機会があったら再訪問して評価を試みたい。
 
 {% include libraries/meguro-office-hours.html holiday_type='b' hours_type='C' %}
+
+# 参考資料
+
+* [公式ページ](http://www.meguro-library.jp/locations/midorigaoka-loc/)

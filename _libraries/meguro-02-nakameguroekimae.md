@@ -10,3 +10,7 @@ title: 目黒区中目黒駅前図書館
 * 他の図書館に比べて開館時間帯が後ろ倒しになっている。
 
 {% include libraries/meguro-office-hours.html holiday_type='b' hours_type='B' %}
+
+# 参考資料
+
+* [公式ページ](http://www.meguro-library.jp/locations/nakameguro-loc/)

@@ -10,3 +10,7 @@ title: 目黒区守屋図書館
 * 地下閲覧席で持ち込み PC を利用することが許可されているが、自前のバッテリーを用いねばならない。
 
 {% include libraries/meguro-office-hours.html holiday_type='b' hours_type='C' %}
+
+# 参考資料
+
+* [公式情報](http://www.meguro-library.jp/locations/moriya-loc/)

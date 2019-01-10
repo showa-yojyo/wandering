@@ -10,3 +10,7 @@ title: 目黒区目黒区民センター図書館
 * 閲覧席は二階に固められている。二階閲覧席で PC を利用してもよいが、電源はないように見受けられる。
 
 {% include libraries/meguro-office-hours.html holiday_type='b' hours_type='C' %}
+
+# 参考資料
+
+* [公式ページ](http://www.meguro-library.jp/locations/megurokumin-loc/)

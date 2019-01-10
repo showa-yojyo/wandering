@@ -12,3 +12,7 @@ title: 目黒区大橋図書館
 * 数学棚のラインナップがどこか独特だ。
 
 {% include libraries/meguro-office-hours.html holiday_type='a' hours_type='C' %}
+
+# 参考資料
+
+* [公式ページ](http://www.meguro-library.jp/locations/ohashi-loc/)
