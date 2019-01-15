@@ -1,9 +1,9 @@
 ---
 title: 世田谷区松沢図書室
-published: false
 ---
 
-TODO: {{ page.title }}について記述する。
+{{ page.title }}は商店街に面する松沢まちづくりセンターに含まれる形で存在するミニ図書館だ。
+教室ひとつぶんくらいの空間でしかないので、旅人がわざわざここへ来ることはないだろう。
 
 {% include libraries/setagaya-office-hours.html
     library_name="松沢図書室"
