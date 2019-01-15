@@ -1,9 +1,14 @@
 ---
 title: 世田谷区桜丘図書館
-published: false
 ---
 
-TODO: {{ page.title }}について記述する。
+{{ page.title }}は桜丘区民センターの地下一階にある図書館だ。
+
+## 特徴
+
+* 森繁久彌コーナーがある。
+* いちおうキャレルがある。
+* 壁際の長机の 2 席で持ち込み PC の利用は認められているが、電源コンセントがない。
 
 {% include libraries/setagaya-office-hours.html
     library_name="桜丘図書館"
