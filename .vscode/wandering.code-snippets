@@ -73,6 +73,12 @@
 		"body": "[$1]({{ site.baseurl }}{% link ${2:_libraries/.md} %})",
 		"description": "link directive"
 	},
+	"LinkFooter": {
+		"scope": "html,markdown",
+		"prefix": "link_footer",
+		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/$3}.md %}",
+		"description": "link directive for footer"
+	},
 	"PostUrl": {
 		"scope": "html,markdown",
 		"prefix": "post_url",
