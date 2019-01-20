@@ -76,7 +76,7 @@
 	"LinkFooter": {
 		"scope": "html,markdown",
 		"prefix": "link_footer",
-		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/$3}.md %}",
+		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/$1}.md %}",
 		"description": "link directive for footer"
 	},
 	"PostUrl": {
