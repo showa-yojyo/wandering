@@ -1,8 +1,14 @@
 ---
 title: 渋谷区臨川みんなの図書館
-published: false
 ---
 
-TODO: {{ page.title }}について記述する。
+{{ page.title }}は広尾一丁目の臨川小学校の側に建つ二階建て図書館だ。
+
+## 特徴
+
+* 一階が書架と閲覧席からなるメインフロアだ。閲覧席はすべてキャレルであり自由席だ。
+* キャレルではどこでも持ち込み PC を使ってよいことになっている。ただし電源コンセントはない。
+* 一階の書架の配置が部屋も廊下も一緒くたになっていて独特の雰囲気がある。
+* 二階は児童室だ。
 
 {% include libraries/shibuya-office-hours.html holidays_type='D' hours_type='B' %}
