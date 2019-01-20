@@ -1,0 +1,8 @@
+---
+title: 渋谷区笹塚図書館
+published: false
+---
+
+TODO: {{ page.title }}について記述する。
+
+{% include libraries/shibuya-office-hours.html holidays_type='C' hours_type='C' %}
