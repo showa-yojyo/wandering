@@ -5,4 +5,4 @@ published: false
 
 TODO: {{ page.title }}について記述する。
 
-{% include libraries/shibuya-office-hours.html %}
+{% include libraries/shibuya-office-hours.html holidays_type='F' hours_type='F' %}
