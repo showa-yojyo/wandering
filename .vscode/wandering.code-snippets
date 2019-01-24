@@ -228,5 +228,17 @@
 		"prefix": "ota-05",
 		"body": "[ota-05]: {{ site.baseurl }}{% link _libraries/ota-05-magome.md %}",
 		"description": "大田区馬込図書館（脚注用）"
+	},
+	"LibraryNakano00a": {
+		"scope": "html,markdown",
+		"prefix": "nakano-00",
+		"body": "[中野区中央図書館][nakano-00]",
+		"description": "中野区中央図書館（本文用）"
+	},
+	"LibraryNakano00b": {
+		"scope": "html,markdown",
+		"prefix": "nakano-00",
+		"body": "[nakano-00]: {{ site.baseurl }}{% link _libraries/nakano-00-central.md %}",
+		"description": "中野区中央図書館（脚注用）"
 	}
 }
