@@ -12,7 +12,7 @@ published: false
 
 TODO: {{{{ page.title }}}}について記述する。
 
-{{% include libraries/{ku}-office-hours.html %}}
+{{% include libraries/{ku}-office-hours.html office_type='{office_type}' %}}
 '''
 
 def parse_args(args):
@@ -46,14 +46,14 @@ def run(args):
             continue
 
         # e.g. central[TAB]渋谷区[TAB]渋谷図書館
-        filename, ward, name = line.split()
+        filename, ward, name, office_type = line.split()
         # e.g. 渋谷区渋谷図書館
         title = ward + name
         # e.g. ${dest_dir}/shibuya-00-central.md
         filename = dest_dir.joinpath(f'{args.ku}-{i:02d}-{filename}.md').resolve()
 
         with open(filename, 'w', encoding='utf8', newline='') as fout:
-            fout.write(TEMPLATE.format(title=title, ku=args.ku))
+            fout.write(TEMPLATE.format(title=title, ku=args.ku, office_type=office_type))
 
 def main(args=sys.argv[1:]):
     sys.exit(run(parse_args(args)))
