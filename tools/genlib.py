@@ -12,8 +12,10 @@ published: false
 
 TODO: {{{{ page.title }}}}について記述する。
 
-{{% include libraries/{ku}-office-hours.html office_type='{office_type}' %}}
+{{% include libraries/{ku}-office-hours.html monday='{monday}' office_type='{office_type}' %}}
 '''
+
+HOSTNAME = 'https://www.city.nerima.tokyo.jp'
 
 def parse_args(args):
     """Parse the command line parameters."
@@ -45,15 +47,20 @@ def run(args):
         if not line:
             continue
 
-        # e.g. central[TAB]渋谷区[TAB]渋谷図書館
-        filename, ward, name, office_type = line.split()
+        # e.g. hikarigaoka[TAB]練馬区[TAB]光が丘図書館[TAB]2[TAB]A[TAB]/shisetsu/bunka/lib/hikarigaoka.html
+        filename, ward, name, monday, office_type, url_path = line.split()
         # e.g. 渋谷区渋谷図書館
         title = ward + name
+
+        kwargs = dict(
+            title=title, ku=args.ku, office_type=office_type,
+            monday=monday, url_path=HOSTNAME + url_path)
+
         # e.g. ${dest_dir}/shibuya-00-central.md
         filename = dest_dir.joinpath(f'{args.ku}-{i:02d}-{filename}.md').resolve()
 
         with open(filename, 'w', encoding='utf8', newline='') as fout:
-            fout.write(TEMPLATE.format(title=title, ku=args.ku, office_type=office_type))
+            fout.write(TEMPLATE.format(**kwargs))
 
 def main(args=sys.argv[1:]):
     sys.exit(run(parse_args(args)))
