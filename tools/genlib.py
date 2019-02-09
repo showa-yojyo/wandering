@@ -7,15 +7,12 @@ import sys
 TEMPLATE = '''\
 ---
 title: {title}
-published: false
 ---
 
 TODO: {{{{ page.title }}}}について記述する。
 
-{{% include libraries/{ku}-office-hours.html monday='{monday}' office_type='{office_type}' %}}
+{{% include libraries/{ku}-office-hours.html name='{name}' url='{url}'%}}
 '''
-
-HOSTNAME = 'https://www.city.nerima.tokyo.jp'
 
 def parse_args(args):
     """Parse the command line parameters."
@@ -47,14 +44,14 @@ def run(args):
         if not line:
             continue
 
-        # e.g. hikarigaoka[TAB]練馬区[TAB]光が丘図書館[TAB]2[TAB]A[TAB]/shisetsu/bunka/lib/hikarigaoka.html
-        filename, ward, name, monday, office_type, url_path = line.split()
-        # e.g. 渋谷区渋谷図書館
-        title = ward + name
+        # e.g. akatsuka[TAB]板橋区[TAB]赤塚図書館[TAB]#lib-akatsuka
+        filename, ward, name, url = line.split()
 
         kwargs = dict(
-            title=title, ku=args.ku, office_type=office_type,
-            monday=monday, url_path=HOSTNAME + url_path)
+            title=ward + name, # e.g. 板橋区赤塚図書館
+            name=name,
+            ku=args.ku,
+            url=f'/guide/{url}.html')
 
         # e.g. ${dest_dir}/shibuya-00-central.md
         filename = dest_dir.joinpath(f'{args.ku}-{i:02d}-{filename}.md').resolve()
