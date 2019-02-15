@@ -11,7 +11,11 @@ title: {title}
 
 TODO: {{{{ page.title }}}}について記述する。
 
-{{% include libraries/{ku}-office-hours.html name='{name}' url='{url}'%}}
+{{% include libraries/{ku}-office-hours.html
+    holiday_day_of_week='{holiday_day_of_week}'
+    holiday_thursday='{holiday_thursday}'
+    holiday_sunday='{holiday_sunday}'
+    hours_type='{hours_type}' %}}
 '''
 
 def parse_args(args):
@@ -44,14 +48,16 @@ def run(args):
         if not line:
             continue
 
-        # e.g. akatsuka[TAB]板橋区[TAB]赤塚図書館[TAB]#lib-akatsuka
-        filename, ward, name, url = line.split()
+        # e.g. central[TAB]新宿区[TAB]中央図書館[TAB]月[TAB]3[TAB]0[TAB]A
+        filename, ward, name, holiday_dow, holiday_thursday, holiday_sunday, hours_type = line.split()
 
         kwargs = dict(
-            title=ward + name, # e.g. 板橋区赤塚図書館
-            name=name,
-            ku=args.ku,
-            url=f'/guide/{url}.html')
+            title=ward + name,
+            holiday_day_of_week=holiday_dow,
+            holiday_thursday=holiday_thursday,
+            holiday_sunday=holiday_sunday,
+            hours_type=hours_type,
+            ku=args.ku,)
 
         # e.g. ${dest_dir}/shibuya-00-central.md
         filename = dest_dir.joinpath(f'{args.ku}-{i:02d}-{filename}.md').resolve()
