@@ -1,9 +1,10 @@
 ---
 title: 豊島区雑司が谷図書貸出コーナー
-published: false
 ---
 
-TODO: {{ page.title }}について記述する。
+{{ page.title }}は雑司が谷地域文化創造館内にある一室で、おそらく区内図書館の資料貸出業務を行っている施設だと思われる。
+
+私が訪問した日は豊島区共通の館内整理日であったため、入口裏にカーテンが敷かれて中をうかがい知ることはできなかった。
 
 {% include libraries/toshima-office-hours.html
     office_hours_weekday="10:00-19:00"
