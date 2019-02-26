@@ -12,9 +12,7 @@ title: {title}
 TODO: {{{{ page.title }}}}について記述する。
 
 {{% include libraries/{ku}-office-hours.html
-    holiday_day_of_week='{holiday_day_of_week}'
-    holiday_thursday='{holiday_thursday}'
-    holiday_sunday='{holiday_sunday}'
+    holiday_monday_ordinal='{holiday_monday_ordinal}'
     hours_type='{hours_type}' %}}
 '''
 
@@ -48,18 +46,16 @@ def run(args):
         if not line:
             continue
 
-        # e.g. central[TAB]新宿区[TAB]中央図書館[TAB]月[TAB]3[TAB]0[TAB]A
-        filename, ward, name, holiday_dow, holiday_thursday, holiday_sunday, hours_type = line.split()
+        # e.g. koishikawa[TAB]文京区[TAB]小石川図書館[TAB]3[TAB]long
+        filename, ward, name, holiday_monday_ordinal, hours_type = line.split()
 
         kwargs = dict(
             title=ward + name,
-            holiday_day_of_week=holiday_dow,
-            holiday_thursday=holiday_thursday,
-            holiday_sunday=holiday_sunday,
+            holiday_monday_ordinal=holiday_monday_ordinal,
             hours_type=hours_type,
             ku=args.ku,)
 
-        # e.g. ${dest_dir}/shibuya-00-central.md
+        # e.g. ${dest_dir}/bunkyo-00-masago.md
         filename = dest_dir.joinpath(f'{args.ku}-{i:02d}-{filename}.md').resolve()
 
         with open(filename, 'w', encoding='utf8', newline='') as fout:
