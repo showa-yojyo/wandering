@@ -4,7 +4,7 @@ title: 目黒区洗足図書館
 
 {{ page.title }}は東急目黒線洗足駅の北に位置する、隠れ家のような二階建て図書館だ。
 
-# 特徴
+## 特徴
 
 * 洗足二丁目 8 番地にあるのだが、この巨大なブロックの北側に出入り口がある。初訪問時は見つけにくいはずだ。
 * 閲覧席はほとんどが椅子席だ。
@@ -14,6 +14,6 @@ title: 目黒区洗足図書館
 
 {% include libraries/meguro-office-hours.html holiday_type='b' hours_type='C' %}
 
-# 参考資料
+## 参考資料
 
 * [公式ページ](http://www.meguro-library.jp/locations/senzoku-loc/)
