@@ -85,101 +85,11 @@
 		"body": "[$1]({{ site.baseurl }}{% post_url $2 %})",
 		"description": "post_url directive"
 	},
-	"LibraryKita00a" :{
+	"LibraryShinagawa03a": {
 		"scope": "html,markdown",
-		"prefix": "kita-00",
-		"body": "[北区中央図書館][kita-00]",
-		"description": "北区中央図書館（本文用）"
-	},
-	"LibraryKita00b" :{
-		"scope": "html,markdown",
-		"prefix": "kita-00",
-		"body": "[kita-00]: {{ site.baseurl }}{% link _libraries/kita-00-central.md %}",
-		"description": "北区中央図書館（脚注用）"
-	},
-	"LibraryKita02a" :{
-		"scope": "html,markdown",
-		"prefix": "kita-02",
-		"body": "[北区滝野川図書館][kita-02]",
-		"description": "北区滝野川図書館（本文用）"
-	},
-	"LibraryKita02b" :{
-		"scope": "html,markdown",
-		"prefix": "kita-02",
-		"body": "[kita-02]: {{ site.baseurl }}{% link _libraries/kita-02-takinogawa.md %}",
-		"description": "北区滝野川図書館（脚注用）"
-	},
-	"LibraryKita03a" :{
-		"scope": "html,markdown",
-		"prefix": "kita-03",
-		"body": "[北区赤羽図書館][kita-03]",
-		"description": "北区赤羽図書館（本文用）"
-	},
-	"LibraryKita03b" :{
-		"scope": "html,markdown",
-		"prefix": "kita-03",
-		"body": "[kita-03]: {{ site.baseurl }}{% link _libraries/kita-03-akabane.md %}",
-		"description": "北区赤羽図書館（脚注用）"
-	},
-	"LibraryArakawa01a": {
-		"scope": "html,markdown",
-		"prefix": "arakawa-00",
-		"body": "[荒川区ゆいの森あらかわ][arakawa-00]",
-		"description": "荒川区ゆいの森あらかわ（本文用）"
-	},
-	"LibraryArakawa01b": {
-		"scope": "html,markdown",
-		"prefix": "arakawa-00",
-		"body": "[arakawa-00]: {{ site.baseurl }}{% link _libraries/arakawa-00-central.md %}",
-		"description": "荒川区ゆいの森あらかわ（脚注用）"
-	},
-	"LibrarySumida01a": {
-		"scope": "html,markdown",
-		"prefix": "sumida-01",
-		"body": "[墨田区緑図書館][sumida-01]",
-		"description": "墨田区緑図書館（本文用）"
-	},
-	"LibrarySumida01b": {
-		"scope": "html,markdown",
-		"prefix": "sumida-01",
-		"body": "[sumida-01]: {{ site.baseurl }}{% link _libraries/sumida-01-midori.md %}",
-		"description": "墨田区緑図書館（脚注用）"
-	},
-	"LibrarySumida02a": {
-		"scope": "html,markdown",
-		"prefix": "sumida-02",
-		"body": "[墨田区立花図書館][sumida-02]",
-		"description": "墨田区立花図書館（本文用）"
-	},
-	"LibrarySumida02b": {
-		"scope": "html,markdown",
-		"prefix": "sumida-02",
-		"body": "[sumida-02]: {{ site.baseurl }}{% link _libraries/sumida-02-tachibana.md %}",
-		"description": "墨田区立花図書館（脚注用）"
-	},
-	"LibrarySumida03a": {
-		"scope": "html,markdown",
-		"prefix": "sumida-03",
-		"body": "[墨田区八広図書館][sumida-03]",
-		"description": "墨田区八広図書館（本文用）"
-	},
-	"LibrarySumida03b": {
-		"scope": "html,markdown",
-		"prefix": "sumida-03",
-		"body": "[sumida-03]: {{ site.baseurl }}{% link _libraries/sumida-03-yahiro.md %}",
-		"description": "墨田区八広図書館（脚注用）"
-	},
-	"LibraryKatsushikan01a": {
-		"scope": "html,markdown",
-		"prefix": "katsushika-01",
-		"body": "[葛飾区立石図書館][katsushika-01]",
-		"description": "葛飾区立石図書館（本文用）"
-	},
-	"LibraryKatsushikan01b": {
-		"scope": "html,markdown",
-		"prefix": "katsushika-01",
-		"body": "[katsushika-01]: {{ site.baseurl }}{% link _libraries/katsushika-01-tateishi.md %}",
-		"description": "葛飾区立石図書館（脚注用）"
+		"prefix": "shinagawa-03",
+		"body": "[品川区南大井図書館][shinagawa-03]",
+		"description": "品川区南大井図書館（本文用）"
 	},
 	"LibraryKoto00a": {
 		"scope": "html,markdown",
@@ -190,19 +100,13 @@
 	"LibraryKoto00b": {
 		"scope": "html,markdown",
 		"prefix": "koto-00",
-		"body": "[koto-00]: {{ site.baseurl }}{% link _libraries/koto-00-koto.md %}",
+		"body": "[koto-00]: {{ site.baseurl }}{% link _libraries/08-koto/00-koto.md %}",
 		"description": "江東区江東図書館（脚注用）"
-	},
-	"LibraryShinagawa03a": {
-		"scope": "html,markdown",
-		"prefix": "shinagawa-03",
-		"body": "[品川区南大井図書館][shinagawa-03]",
-		"description": "品川区南大井図書館（本文用）"
 	},
 	"LibraryShinagawa03b": {
 		"scope": "html,markdown",
 		"prefix": "shinagawa-03",
-		"body": "[shinagawa-03]: {{ site.baseurl }}{% link _libraries/shinagawa-03-minamioi.md %}",
+		"body": "[shinagawa-03]: {{ site.baseurl }}{% link _libraries/09-shinagawa/03-minamioi.md %}",
 		"description": "品川区南大井図書館（脚注用）"
 	},
 	"LibraryOta04a": {
@@ -214,7 +118,7 @@
 	"LibraryOta04b": {
 		"scope": "html,markdown",
 		"prefix": "ota-04",
-		"body": "[ota-04]: {{ site.baseurl }}{% link _libraries/ota-04-iriarai.md %}",
+		"body": "[ota-04]: {{ site.baseurl }}{% link _libraries/11-ota/04-iriarai.md %}",
 		"description": "大田区入新井図書館（脚注用）"
 	},
 	"LibraryOta05a": {
@@ -226,7 +130,7 @@
 	"LibraryOta05b": {
 		"scope": "html,markdown",
 		"prefix": "ota-05",
-		"body": "[ota-05]: {{ site.baseurl }}{% link _libraries/ota-05-magome.md %}",
+		"body": "[ota-05]: {{ site.baseurl }}{% link _libraries/11-ota/05-magome.md %}",
 		"description": "大田区馬込図書館（脚注用）"
 	},
 	"LibraryNakano00a": {
@@ -238,7 +142,103 @@
 	"LibraryNakano00b": {
 		"scope": "html,markdown",
 		"prefix": "nakano-00",
-		"body": "[nakano-00]: {{ site.baseurl }}{% link _libraries/nakano-00-central.md %}",
+		"body": "[nakano-00]: {{ site.baseurl }}{% link _libraries/14-nakano/00-central.md %}",
 		"description": "中野区中央図書館（脚注用）"
-	}
+	},
+	"LibraryKita00a" :{
+		"scope": "html,markdown",
+		"prefix": "kita-00",
+		"body": "[北区中央図書館][kita-00]",
+		"description": "北区中央図書館（本文用）"
+	},
+	"LibraryKita00b" :{
+		"scope": "html,markdown",
+		"prefix": "kita-00",
+		"body": "[kita-00]: {{ site.baseurl }}{% link _libraries/17-kita/00-central.md %}",
+		"description": "北区中央図書館（脚注用）"
+	},
+	"LibraryKita02a" :{
+		"scope": "html,markdown",
+		"prefix": "kita-02",
+		"body": "[北区滝野川図書館][kita-02]",
+		"description": "北区滝野川図書館（本文用）"
+	},
+	"LibraryKita02b" :{
+		"scope": "html,markdown",
+		"prefix": "kita-02",
+		"body": "[kita-02]: {{ site.baseurl }}{% link _libraries/17-kita/02-takinogawa.md %}",
+		"description": "北区滝野川図書館（脚注用）"
+	},
+	"LibraryKita03a" :{
+		"scope": "html,markdown",
+		"prefix": "kita-03",
+		"body": "[北区赤羽図書館][kita-03]",
+		"description": "北区赤羽図書館（本文用）"
+	},
+	"LibraryKita03b" :{
+		"scope": "html,markdown",
+		"prefix": "kita-03",
+		"body": "[kita-03]: {{ site.baseurl }}{% link _libraries/17-kita/03-akabane.md %}",
+		"description": "北区赤羽図書館（脚注用）"
+	},
+	"LibraryArakawa01a": {
+		"scope": "html,markdown",
+		"prefix": "arakawa-00",
+		"body": "[荒川区ゆいの森あらかわ][arakawa-00]",
+		"description": "荒川区ゆいの森あらかわ（本文用）"
+	},
+	"LibraryArakawa01b": {
+		"scope": "html,markdown",
+		"prefix": "arakawa-00",
+		"body": "[arakawa-00]: {{ site.baseurl }}{% link _libraries/18-arakawa/00-central.md %}",
+		"description": "荒川区ゆいの森あらかわ（脚注用）"
+	},
+	"LibrarySumida01a": {
+		"scope": "html,markdown",
+		"prefix": "sumida-01",
+		"body": "[墨田区緑図書館][sumida-01]",
+		"description": "墨田区緑図書館（本文用）"
+	},
+	"LibrarySumida01b": {
+		"scope": "html,markdown",
+		"prefix": "sumida-01",
+		"body": "[sumida-01]: {{ site.baseurl }}{% link _libraries/18-sumida/01-midori.md %}",
+		"description": "墨田区緑図書館（脚注用）"
+	},
+	"LibrarySumida02a": {
+		"scope": "html,markdown",
+		"prefix": "sumida-02",
+		"body": "[墨田区立花図書館][sumida-02]",
+		"description": "墨田区立花図書館（本文用）"
+	},
+	"LibrarySumida02b": {
+		"scope": "html,markdown",
+		"prefix": "sumida-02",
+		"body": "[sumida-02]: {{ site.baseurl }}{% link _libraries/18-sumida/02-tachibana.md %}",
+		"description": "墨田区立花図書館（脚注用）"
+	},
+	"LibrarySumida03a": {
+		"scope": "html,markdown",
+		"prefix": "sumida-03",
+		"body": "[墨田区八広図書館][sumida-03]",
+		"description": "墨田区八広図書館（本文用）"
+	},
+	"LibrarySumida03b": {
+		"scope": "html,markdown",
+		"prefix": "sumida-03",
+		"body": "[sumida-03]: {{ site.baseurl }}{% link _libraries/18-sumida/03-yahiro.md %}",
+		"description": "墨田区八広図書館（脚注用）"
+	},
+	"LibraryKatsushikan01a": {
+		"scope": "html,markdown",
+		"prefix": "katsushika-01",
+		"body": "[葛飾区立石図書館][katsushika-01]",
+		"description": "葛飾区立石図書館（本文用）"
+	},
+	"LibraryKatsushikan01b": {
+		"scope": "html,markdown",
+		"prefix": "katsushika-01",
+		"body": "[katsushika-01]: {{ site.baseurl }}{% link _libraries/22-katsushika/01-tateishi.md %}",
+		"description": "葛飾区立石図書館（脚注用）"
+	},
 }
