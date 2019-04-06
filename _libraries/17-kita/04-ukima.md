@@ -3,7 +3,7 @@ title: 北区浮間図書館
 ---
 
 {{ page.title }}は東京都北区のほとんど端に位置する公営団地の一階を占める図書館だ。
-JR 浮間舟渡駅が最寄り駅だが、[赤羽北図書館]({{ site.baseurl }}{% link _libraries/kita-09-akabanekita.md %})とハシゴするのもいい。
+JR 浮間舟渡駅が最寄り駅だが、[赤羽北図書館]({{ site.baseurl }}{% link _libraries/17-kita/09-akabanekita.md %})とハシゴするのもいい。
 
 施設が団地という特殊な建築物内にあるため、閲覧席の構成が独特だ。
 閲覧席は基本的に机型であり、メインフロアおよびその隣の小部屋、さらにその隣の小部屋と合わせて 20 席はあったか。
@@ -14,6 +14,6 @@ JR 浮間舟渡駅が最寄り駅だが、[赤羽北図書館]({{ site.baseurl }
 
 一度しか訪問していない私には蔵書の評価ができないが、マンガ棚に
 『MASTER キートン』最終巻近辺があるのはうれしい。
-ちなみに[赤羽図書館](({{ site.baseurl }}{% link _libraries/kita-03-akabane.md %}))と組み合わせると全巻読破できる。
+ちなみに[赤羽図書館](({{ site.baseurl }}{% link _libraries/17-kita/03-akabane.md %}))と組み合わせると全巻読破できる。
 
 {% include libraries/kita-office-hours.html %}

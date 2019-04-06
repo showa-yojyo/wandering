@@ -16,4 +16,4 @@ title: 新宿区こども図書館
     holiday_sunday='0'
     hours_type='B' %}
 
-[shinjuku-00]: {{ site.baseurl }}{% link _libraries/shinjuku-00-central.md %}
+[shinjuku-00]: {{ site.baseurl }}{% link _libraries/04-shinjuku/00-central.md %}
