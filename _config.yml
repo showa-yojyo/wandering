@@ -37,6 +37,7 @@ show_excerpts: true
 
 header_pages:
   - about.md
+  - data.md
   - libraries.md
 
 twitter_username: showa_yojyo
