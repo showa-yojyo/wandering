@@ -37,7 +37,7 @@ show_excerpts: true
 
 header_pages:
   - about.md
-  - data.md
+  - locations.md
   - libraries.md
 
 twitter_username: showa_yojyo
@@ -77,21 +77,31 @@ minima:
   date_format: "%Y-%m-%d (%a)"
 
 defaults:
-  - scope:
+  -
+    scope:
       path: _posts
       type: posts
     values:
       author: showa-yojyo
       categories: diary
       layout: diary
-  - scope:
+  -
+    scope:
        path: _libraries
        type: libraries
     values:
       layout: library
+  -
+    scope:
+      path: _locations
+      type: locations
+    values:
+      layput: page
 
 collections:
   libraries:
+    output: true
+  locations:
     output: true
 
 paginate: 14
