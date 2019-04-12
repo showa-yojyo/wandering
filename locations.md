@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 重要地点一覧
+title: 重要地点一覧集
 permalink: /locations/
 ---
 
