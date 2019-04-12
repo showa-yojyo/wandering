@@ -24,7 +24,7 @@ title: 脱出日記
           {%- endif -%}
         </p>
         {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
+          {{ post.excerpt | truncate: 160 }}
         {%- endif -%}
       </li>
       {%- endfor -%}
