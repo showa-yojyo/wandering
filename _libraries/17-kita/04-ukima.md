@@ -16,4 +16,4 @@ JR 浮間舟渡駅が最寄り駅だが、[赤羽北図書館]({{ site.baseurl }
 『MASTER キートン』最終巻近辺があるのはうれしい。
 ちなみに[赤羽図書館](({{ site.baseurl }}{% link _libraries/17-kita/03-akabane.md %}))と組み合わせると全巻読破できる。
 
-{% include libraries/kita-office-hours.html %}
+{% include_cached libraries/kita-office-hours.html %}

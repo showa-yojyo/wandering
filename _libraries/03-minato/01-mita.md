@@ -12,4 +12,4 @@ title: 港区三田図書館
 * 3 階は広大な学習室がある。キャレルを向かい合わせた島からなる。
 * 3 階休憩室は狭く殺風景だ。腰を掛ける椅子さえない。
 
-{% include libraries/minato-office-hours.html %}
+{% include_cached libraries/minato-office-hours.html %}

@@ -10,4 +10,4 @@ title: 中央区月島図書館
 * 雑誌コーナーがいい形をしている。
 * イスが十分あるので、館内で本を読むには困らないだろう。
 
-{% include libraries/chuo-office-hours.html %}
+{% include_cached libraries/chuo-office-hours.html %}

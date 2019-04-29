@@ -12,7 +12,7 @@ title: 新宿区鶴巻図書館
   * 二階は児童室になっている。土足禁止だ。
 * とにかく狭く感じられる。
 
-{% include libraries/shinjuku-office-hours.html
+{% include_cached libraries/shinjuku-office-hours.html
     holiday_day_of_week='月'
     holiday_thursday='3'
     holiday_sunday='0'

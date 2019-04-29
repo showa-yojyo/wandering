@@ -9,4 +9,4 @@ title: 大田区久が原図書館
 * 所在地のわかりづらさは随一だ。
 * 2 階閲覧室前のキャレル群が持ち込み PC 席だ。利用には 1 階受付への申し出が必要だ。
 
-{% include libraries/ota-office-hours.html office_type='D' %}
+{% include_cached libraries/ota-office-hours.html office_type='D' %}

@@ -10,6 +10,6 @@ title: 文京区千石図書館
 * 一階休憩コーナーは飲食禁止だ。他の区の図書館と同じ感覚で使ってはならない。
 * 地下書架室に CD と DVD のコーナーがある。
 
-{% include libraries/bunkyo-office-hours.html
+{% include_cached libraries/bunkyo-office-hours.html
     holiday_monday_ordinal='4'
     hours_type='short' %}

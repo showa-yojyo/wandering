@@ -8,4 +8,4 @@ title: 江戸川区松江図書館
 
 * 実は 1 階部分にしか図書館機能はない。
 
-{% include libraries/edogawa-office-hours.html %}
+{% include_cached libraries/edogawa-office-hours.html %}

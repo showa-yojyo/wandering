@@ -10,6 +10,6 @@ title: 文京区本駒込図書館
 * ワンフロア構成。新聞雑誌コーナー、児童室、書架室、閲覧室、参考資料などからなる。
 * 閲覧室は二人がけの長机が教室のように配列されている構成だ。
 
-{% include libraries/bunkyo-office-hours.html
+{% include_cached libraries/bunkyo-office-hours.html
     holiday_monday_ordinal='3'
     hours_type='long' %}

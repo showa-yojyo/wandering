@@ -8,4 +8,4 @@ title: 練馬区南大泉図書館
 
 * 一階閲覧室中央に持ち込み PC 席が一つある。電源コンセント付き Wi-Fi なし。
 
-{% include libraries/nerima-office-hours.html monday='1' office_type='A' %}
+{% include_cached libraries/nerima-office-hours.html monday='1' office_type='A' %}

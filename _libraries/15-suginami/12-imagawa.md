@@ -4,7 +4,7 @@ title: 杉並区今川図書館
 
 {{ page.title }}は今川四丁目の住宅地にある、老人館と合同の二階建て図書館だ。
 
-{% include libraries/suginami-office-hours.html office_type='A' office_hours_end='21:00' %}
+{% include_cached libraries/suginami-office-hours.html office_type='A' office_hours_end='21:00' %}
 
 ## 特徴
 

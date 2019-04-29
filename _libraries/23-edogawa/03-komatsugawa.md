@@ -10,4 +10,4 @@ title: 江戸川区小松川図書館
 * 新聞雑誌コーナーがあるのは 2 階だ。江戸川区の図書館はこのパターンが多い。
 * 3 階の閲覧室は見晴らしがいい。
 
-{% include libraries/edogawa-office-hours.html %}
+{% include_cached libraries/edogawa-office-hours.html %}

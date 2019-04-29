@@ -9,4 +9,4 @@ title: 墨田区梅若橋コミュニティ会館図書室
 * キャレル閲覧席がある。電源コンセントはない。
 * マンガ単行本が多数ある。『こち亀』の各話扉絵に近所の風景が描かれているかもしれない。
 
-{% include libraries/sumida-office-hours.html %}
+{% include_cached libraries/sumida-office-hours.html %}

@@ -12,7 +12,7 @@ title: 中野区江古田図書館
 * 閲覧席は少ない。イスメイン。
 * PC 席は一階奥の孤立した机が相当する。利用には受付への申し込みが必要だ。
 
-{% include libraries/nakano-office-hours.html holiday_type='B' %}
+{% include_cached libraries/nakano-office-hours.html holiday_type='B' %}
 
 ## 参考資料
 

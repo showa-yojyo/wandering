@@ -12,4 +12,4 @@ title: 北区赤羽北図書館
 マンガ本コーナーに『ギャラリーフェイク』と『イリヤッド』が蔵書されている。
 いつか読破したい（特に一度も通読することが叶わなかった後者）。
 
-{% include libraries/kita-office-hours.html %}
+{% include_cached libraries/kita-office-hours.html %}

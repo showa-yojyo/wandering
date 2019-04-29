@@ -12,7 +12,7 @@ title: 杉並区宮前図書館
 * 三階は学習室型閲覧席の間になっている。大人部屋のほうに持ち込み PC 席がある。
   残念なことにコンセントも Wi-Fi もないようだ。
 
-{% include libraries/suginami-office-hours.html office_type='A' %}
+{% include_cached libraries/suginami-office-hours.html office_type='A' %}
 
 ## 参考資料
 

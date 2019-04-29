@@ -9,4 +9,4 @@ title: 江戸川区東部図書館
 * ヤングアダルトが手厚い。
 * 1 階に休憩所があり、ストレッチ型腰掛けのようなものがある。
 
-{% include libraries/edogawa-office-hours.html %}
+{% include_cached libraries/edogawa-office-hours.html %}

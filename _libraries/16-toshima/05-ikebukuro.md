@@ -12,5 +12,5 @@ title: 豊島区池袋図書館
 * Wi-Fi 利用については受付へ問い合わせる必要がある。図書館利用カードが必要だ。
 * トイレが汚い。
 
-{% include libraries/toshima-office-hours.html
+{% include_cached libraries/toshima-office-hours.html
     office_closed_day="第 1 月曜日" %}

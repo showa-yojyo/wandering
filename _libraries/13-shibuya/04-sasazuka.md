@@ -12,4 +12,4 @@ title: 渋谷区笹塚図書館
 * トイレが館内にない。催した場合、いったん退館してエレベーターの向こうまで移動することになる。
 * 閉館時間が遅めだ。
 
-{% include libraries/shibuya-office-hours.html holidays_type='C' hours_type='C' %}
+{% include_cached libraries/shibuya-office-hours.html holidays_type='C' hours_type='C' %}

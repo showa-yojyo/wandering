@@ -12,4 +12,4 @@ title: 練馬区関町図書館
 * 二階には飲食スペース、YA スペース、視聴覚室兼学習室、給湯室がある。
   * 視聴覚室にピアノが置いてある。
 
-{% include libraries/nerima-office-hours.html monday='1' office_type='A' %}
+{% include_cached libraries/nerima-office-hours.html monday='1' office_type='A' %}

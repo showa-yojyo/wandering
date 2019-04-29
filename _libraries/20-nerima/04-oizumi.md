@@ -11,4 +11,4 @@ title: 練馬区大泉図書館
 * 持ち込み PC 席には電源コンセントがあり、Wi-Fi が利用可能であるようだが、座席の利用には受付係への申請が必要だ。
 * 視聴覚室二室は学習室を兼用する。
 
-{% include libraries/nerima-office-hours.html monday='3' office_type='A' %}
+{% include_cached libraries/nerima-office-hours.html monday='3' office_type='A' %}

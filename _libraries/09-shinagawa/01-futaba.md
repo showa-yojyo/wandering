@@ -8,4 +8,4 @@ title: 品川区二葉図書館
 
 * 電源コンセント席あり。自由席。
 
-{% include libraries/shinagawa-office-hours.html office_type='A' %}
+{% include_cached libraries/shinagawa-office-hours.html office_type='A' %}

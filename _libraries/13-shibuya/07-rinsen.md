@@ -11,4 +11,4 @@ title: 渋谷区臨川みんなの図書館
 * 一階の書架の配置が部屋も廊下も一緒くたになっていて独特の雰囲気がある。
 * 二階は児童室だ。
 
-{% include libraries/shibuya-office-hours.html holidays_type='D' hours_type='B' %}
+{% include_cached libraries/shibuya-office-hours.html holidays_type='D' hours_type='B' %}

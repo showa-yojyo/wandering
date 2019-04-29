@@ -10,6 +10,6 @@ title: 世田谷区野毛図書室
 * ミニ図書館ゆえ閲覧席はない。
 * 限られた書架に陳列されている資料は、文芸、小説がメインだ。
 
-{% include libraries/setagaya-office-hours.html
+{% include_cached libraries/setagaya-office-hours.html
     library_name="野毛図書室"
     library_url="http://www.city.setagaya.lg.jp/shisetsu/1214/1267/d00122480.html" %}

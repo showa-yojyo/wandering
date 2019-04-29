@@ -16,4 +16,4 @@ title: 墨田区ひきふね図書館
 * 4 階も書架主体。
   * これを記している現在は墨田区とあしたのジョーとのコラボ企画が進行しているのだが、その展示スペースでは有力なボクシング漫画の蔵書も触れることができる。
 
-{% include libraries/sumida-office-hours.html office_hours_weekday="9:00-21:00" %}
+{% include_cached libraries/sumida-office-hours.html office_hours_weekday="9:00-21:00" %}

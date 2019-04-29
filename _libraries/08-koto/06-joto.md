@@ -10,4 +10,4 @@ title: 江東区城東図書館
 * 古い建物であるということは蔵書も古いものがあると期待できる。
 * 近所にダイエー大島店があるのが個人的にありがたい。
 
-{% include libraries/koto-office-hours.html %}
+{% include_cached libraries/koto-office-hours.html %}

@@ -11,4 +11,4 @@ title: 江東区亀戸図書館
   * その片隅に 24 席の電源付き PC 利用可能席がある。コンセントは天井からぶらさがっているものを使う。プラグを確かに接続すること。
 * 2 階のテラスがミニ庭園のようになっていて、休憩所を兼ねているように見える。
 
-{% include libraries/koto-office-hours.html %}
+{% include_cached libraries/koto-office-hours.html %}

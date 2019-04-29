@@ -14,7 +14,7 @@ title: 杉並区高円寺図書館
   * 三階オープン席群奥の島が持ち込み PC 席だ。Wi-Fi は使えるが電源はないように見える。
   * 書評書架が充実している気がする。
 
-{% include libraries/suginami-office-hours.html office_type='B' %}
+{% include_cached libraries/suginami-office-hours.html office_type='B' %}
 
 ## 参考資料
 

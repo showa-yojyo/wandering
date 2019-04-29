@@ -10,4 +10,4 @@ title: 大田区大森西図書館
 * 大田区の図書館としては珍しいことに閲覧室、閲覧席専用の壁で仕切られた部屋がない。
 * 二階持ち込み PC 席を利用するには、受付への申し出が必要となる。
 
-{% include libraries/ota-office-hours.html office_type='D' %}
+{% include_cached libraries/ota-office-hours.html office_type='D' %}

@@ -6,4 +6,4 @@ title: 江東区白河こどもとしょかん
 
 私は建物内部に立ち入らなかったため、本稿では詳細は不明とする。
 
-{% include libraries/koto-office-hours.html %}
+{% include_cached libraries/koto-office-hours.html %}

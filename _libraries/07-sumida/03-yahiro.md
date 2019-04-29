@@ -14,4 +14,4 @@ title: 墨田区八広図書館
   しかも他の区内図書館にも別出版社の雑誌があるという情報提供がある。
 * 壁全面に埋め込まれているように本棚が屹立している。書架の高いところまで本が敷き詰められている。物によっては取りにくいだろう。
 
-{% include libraries/sumida-office-hours.html %}
+{% include_cached libraries/sumida-office-hours.html %}

@@ -36,7 +36,7 @@ title: 豊島区中央図書館
 
 ほぼ完璧といえる。その上銭湯さえ近くにあれば、ここを周辺地区攻略のベースキャンプにしたい。
 
-{% include libraries/toshima-office-hours.html
+{% include_cached libraries/toshima-office-hours.html
     office_hours_weekday="10:00-22:00"
     office_hours_holiday="10:00-18:00"
     office_closed_day="第 2 月曜日" %}

@@ -11,4 +11,4 @@ title: 北区豊島図書館
 私は一度しか訪問していないので、蔵書については評価できない。
 『シャーマンキング』完全版がたぶん全巻蔵書にあると思われるのが印象的だった。
 
-{% include libraries/kita-office-hours.html %}
+{% include_cached libraries/kita-office-hours.html %}

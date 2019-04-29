@@ -11,4 +11,4 @@ title: 練馬区練馬図書館
 * 持ち込み PC 席が 5 席ほどあって、電源コンセントは利用可能だが Wi-Fi はとくに提供されていないようだ。
 * トイレが図書館の中にない。いったんゲートから出て生涯学習センターのトイレまで行くことになる。
 
-{% include libraries/nerima-office-hours.html monday='2' office_type='A' %}
+{% include_cached libraries/nerima-office-hours.html monday='2' office_type='A' %}

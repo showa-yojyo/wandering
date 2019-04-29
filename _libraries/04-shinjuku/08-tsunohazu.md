@@ -14,7 +14,7 @@ title: 新宿区角筈図書館
   利用条件は利用者の図書館 ID に加え、パスワード設定が済んでいることも要求する厳しいものになっている。
   この条件は区内他の持ち込み PC 席提供図書館に共通する。
 
-{% include libraries/shinjuku-office-hours.html
+{% include_cached libraries/shinjuku-office-hours.html
     holiday_day_of_week='月'
     holiday_thursday='2'
     holiday_sunday='4'

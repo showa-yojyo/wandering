@@ -10,4 +10,4 @@ title: 江東区豊洲図書館
 * 館内の長机やキャレルの閲覧席でインターネットに接続可能だ。コンセントも提供されている。
 * 閲覧席は 9 階だけではなく、児童メインと思われる 10 階にも普通にあることに注意したい。
 
-{% include libraries/koto-office-hours.html %}
+{% include_cached libraries/koto-office-hours.html %}

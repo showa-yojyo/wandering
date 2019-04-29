@@ -7,6 +7,6 @@ title: 世田谷区図書館カウンター二子玉川
 旅人がわざわざ来るような場所ではない。
 利用カードを所有している利用者は世田谷区図書館の資料の検索、予約、貸し借りを行うことができるはずだ。
 
-{% include libraries/setagaya-office-hours.html
+{% include_cached libraries/setagaya-office-hours.html
     library_name="図書館カウンター二子玉川"
     library_url="http://www.city.setagaya.lg.jp/shisetsu/1214/1268/d00138312.html" %}

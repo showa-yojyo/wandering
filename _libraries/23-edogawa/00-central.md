@@ -10,4 +10,4 @@ title: 江戸川区中央図書館
 * マップル等の地図本を閲覧するには 4 階受付に申し出ることが必要だ。
 * PC 席を利用するには「かしだし券」なるものが必要だ。
 
-{% include libraries/edogawa-office-hours.html %}
+{% include_cached libraries/edogawa-office-hours.html %}

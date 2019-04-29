@@ -9,4 +9,4 @@ title: 品川区源氏前図書館
 * 集会室兼学習室があり、ここは土足厳禁となっている。
 * 閲覧席はない。
 
-{% include libraries/shinagawa-office-hours.html office_type='A' %}
+{% include_cached libraries/shinagawa-office-hours.html office_type='A' %}

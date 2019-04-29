@@ -9,4 +9,4 @@ title: 江戸川区鹿骨コミュニティ図書館
 * ミニ図書館。閲覧席はない。
 * 西陽が厳しい気がする。
 
-{% include libraries/edogawa-office-hours.html office_hours="9:00-17:00" %}
+{% include_cached libraries/edogawa-office-hours.html office_hours="9:00-17:00" %}

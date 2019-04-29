@@ -9,4 +9,4 @@ title: 大田区蒲田図書館
 * 二階までが図書館施設となっている。
 * PC 席があると言っているのだが、どこにあるのかがわからない。
 
-{% include libraries/ota-office-hours.html office_type='C' %}
+{% include_cached libraries/ota-office-hours.html office_type='C' %}

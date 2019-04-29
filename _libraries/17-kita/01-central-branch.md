@@ -7,4 +7,4 @@ title: 北区中央図書館分室
 狭い空間に書架が並べられ、座席数もわずか。図書館名が暗示するように、わざわざ旅行で足を運ぶような図書館ではない。
 書架室の次の部屋にカウンター式？閲覧席が 3, 4 席あるが、ここも狭い。奥の席に座ったら出られるのだろうか。
 
-{% include libraries/kita-office-hours.html %}
+{% include_cached libraries/kita-office-hours.html %}

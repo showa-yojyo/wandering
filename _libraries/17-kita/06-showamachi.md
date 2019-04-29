@@ -18,4 +18,4 @@ title: 北区昭和町図書館
 
 周辺部の特徴は特にない。JR 尾久駅が近いとはいえ、飲み屋が増えたのは意外だった。
 
-{% include libraries/kita-office-hours.html %}
+{% include_cached libraries/kita-office-hours.html %}

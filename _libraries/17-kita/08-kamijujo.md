@@ -11,4 +11,4 @@ title: 北区上十条図書館
 東十条商店街がほど近くにあるので、食い物には困らないはずだ。
 ただし、水場のある公園が近隣にないはずなので、夏場の移動はよく考えたほうがいい。
 
-{% include libraries/kita-office-hours.html %}
+{% include_cached libraries/kita-office-hours.html %}

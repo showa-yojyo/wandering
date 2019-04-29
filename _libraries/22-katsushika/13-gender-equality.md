@@ -13,4 +13,4 @@ title: 葛飾区男女平等推進センター図書資料室
 * 蔵書は女性問題に特化している。
 * 利用客は別に女子しかいないというわけではなく、チビッコやオッサンもいる。
 
-{% include libraries/katsushika-office-hours.html office_type='D' %}
+{% include_cached libraries/katsushika-office-hours.html office_type='D' %}

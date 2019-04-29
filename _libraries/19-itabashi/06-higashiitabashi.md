@@ -12,4 +12,4 @@ title: 板橋区東板橋図書館
 * 二階開架室の広さと閲覧席の数はともに十分だ。
 * 持ち込み PC 席は二階に二席あり、利用には図書館利用者 ID と受付への申請が必要だ。
 
-{% include libraries/itabashi-office-hours.html name='東板橋図書館' url='/guide/lib-higashi.html'%}
+{% include_cached libraries/itabashi-office-hours.html name='東板橋図書館' url='/guide/lib-higashi.html'%}

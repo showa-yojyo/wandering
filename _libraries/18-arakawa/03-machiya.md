@@ -16,4 +16,4 @@ title: 荒川区町屋図書館
 
 マンガ本が蔵書されているのだが、他の図書館と違ってボリューム数の多い作品（クッキングパパや美味しんぼ等）の全体をまんべんなく蒐集する傾向が見受けられる。
 
-{% include libraries/arakawa-office-hours.html %}
+{% include_cached libraries/arakawa-office-hours.html %}

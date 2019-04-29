@@ -16,4 +16,4 @@ title: 渋谷区中央図書館
 * 四階書架の外国語書籍の量がすごい。ここまで揃えている区立図書館はそうそうない。
 * 五階は図書館ではない。
 
-{% include libraries/shibuya-office-hours.html holidays_type='A' hours_type='A' %}
+{% include_cached libraries/shibuya-office-hours.html holidays_type='A' hours_type='A' %}

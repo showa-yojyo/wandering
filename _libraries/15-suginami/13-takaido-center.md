@@ -10,4 +10,4 @@ title: 杉並区高井戸地域区民センター図書室
 * 蔵書は文芸と生活関連の書物に偏っている。
 * 雑誌コーナーはあるが、新聞コーナーはない。
 
-{% include libraries/suginami-office-hours.html office_type='C' %}
+{% include_cached libraries/suginami-office-hours.html office_type='C' %}

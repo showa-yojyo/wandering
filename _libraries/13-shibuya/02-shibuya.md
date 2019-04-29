@@ -10,4 +10,4 @@ title: 渋谷区渋谷図書館
 * 地下一階に閲覧席があり、テーブル主体のオープン席だ。
 * 地下に休憩室がある。
 
-{% include libraries/shibuya-office-hours.html holidays_type='B' hours_type='B' %}
+{% include_cached libraries/shibuya-office-hours.html holidays_type='B' hours_type='B' %}

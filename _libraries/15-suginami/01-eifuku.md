@@ -10,7 +10,7 @@ title: 杉並区永福図書館
 * 実際には四階構成だ。この図書館は天井が高く、空間をうまくやりくりして書架を配置している。
 * 持ち込み PC 席があり、利用には受付への申請が必要だ。Wi-Fi も飛んでいる。
 
-{% include libraries/suginami-office-hours.html office_type='A' %}
+{% include_cached libraries/suginami-office-hours.html office_type='A' %}
 
 ## 参考資料
 

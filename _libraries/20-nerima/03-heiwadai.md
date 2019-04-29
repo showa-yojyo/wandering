@@ -13,4 +13,4 @@ title: 練馬区平和台図書館
 * 一階には休憩室があり、飲食が許可されている。ただし座席数は僅少。
 * 二階持ち込み PC 席には電源コンセントがある。Wi-Fi 状況は不明。
 
-{% include libraries/nerima-office-hours.html monday='1' office_type='A' %}
+{% include_cached libraries/nerima-office-hours.html monday='1' office_type='A' %}

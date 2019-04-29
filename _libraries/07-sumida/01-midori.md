@@ -17,4 +17,4 @@ title: 墨田区緑図書館
 * トイレと水飲み場は 1 階と 3 階にある。
   * 3 階の水飲機は[荒川区日暮里図書館][arakawa-04]で見たタイプの水筒対応機だ。
 
-{% include libraries/sumida-office-hours.html %}
+{% include_cached libraries/sumida-office-hours.html %}

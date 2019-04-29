@@ -13,4 +13,4 @@ title: 葛飾区上小松図書館
 * 持ち込み PC 席が 6 席あり、利用にはサービスカウンターへの申請が必要だ。
 * 男子トイレに入ると、水タンクの音が妙に気になる。
 
-{% include libraries/katsushika-office-hours.html office_type='B' %}
+{% include_cached libraries/katsushika-office-hours.html office_type='B' %}

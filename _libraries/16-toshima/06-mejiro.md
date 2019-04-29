@@ -13,4 +13,4 @@ title: 豊島区目白図書館
 * 一階になぜかペッパーがある。
 * 持ち込み PC 席の場所がわからなかった。
 
-{% include libraries/toshima-office-hours.html office_closed_day="第 1 月曜日" %}
+{% include_cached libraries/toshima-office-hours.html office_closed_day="第 1 月曜日" %}

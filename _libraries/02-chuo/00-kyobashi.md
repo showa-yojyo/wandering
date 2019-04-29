@@ -10,4 +10,4 @@ title: 中央区京橋図書館
 * 地下に展開されているので窓がなく、ひじょうに殺風景だ。
 * 下層階には会議室のような学習室がある。長机を並べた質素な部屋だ。
 
-{% include libraries/chuo-office-hours.html office_type='A' %}
+{% include_cached libraries/chuo-office-hours.html office_type='A' %}

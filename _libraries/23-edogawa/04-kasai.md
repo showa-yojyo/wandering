@@ -10,4 +10,4 @@ title: 江戸川区葛西図書館
   書架同士の隙間がひじょうに狭い。床付近の資料を目視するのが厳しい。
 * 書架側面や階段壁に掲示されている一連の図書クイズが興味深い。
 
-{% include libraries/edogawa-office-hours.html %}
+{% include_cached libraries/edogawa-office-hours.html %}

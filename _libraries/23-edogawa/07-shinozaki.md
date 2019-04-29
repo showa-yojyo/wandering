@@ -11,4 +11,4 @@ title: 江戸川区篠崎図書館
 * Wi-Fi 部屋がある。利用するには「かしだし券」が必要となる。
 * 受付前にペッパーがいる。
 
-{% include libraries/edogawa-office-hours.html %}
+{% include_cached libraries/edogawa-office-hours.html %}

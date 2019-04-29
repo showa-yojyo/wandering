@@ -16,4 +16,4 @@ title: 北区滝野川西図書館
 
 さらに無関係なことを言うと、近所に銭湯が多数ある。こちらも何かの機会に利用したい。
 
-{% include libraries/kita-office-hours.html %}
+{% include_cached libraries/kita-office-hours.html %}

@@ -8,4 +8,4 @@ title: 荒川区冠新道図書サービスステーション
 おそらく図書借り出しの予約が主業務なのではないだろうか。
 近くを散歩して休憩するのに使えるが、遠くからわざわざ訪れるような図書館とは違う。
 
-{% include libraries/arakawa-office-hours.html %}
+{% include_cached libraries/arakawa-office-hours.html %}

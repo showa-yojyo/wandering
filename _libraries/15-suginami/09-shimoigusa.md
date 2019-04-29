@@ -11,7 +11,7 @@ title: 杉並区下井草図書館
 * 一階に地図室がある。閲覧空間としては小さい。
 * 持ち込み PC 席が一階にあり、電源はないが Wi-Fi は使用可能だ。
 
-{% include libraries/suginami-office-hours.html office_type='A' %}
+{% include_cached libraries/suginami-office-hours.html office_type='A' %}
 
 ## 参考資料
 

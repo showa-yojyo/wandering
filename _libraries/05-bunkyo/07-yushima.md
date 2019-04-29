@@ -12,6 +12,6 @@ title: 文京区湯島図書館
 * 意外なことに持ち込み PC 席が二席ある。電源コンセントあり Wi-Fi なし。
 * 新聞雑誌コーナー周辺の集積度が高いので、利用客がごった返しがちだ。
 
-{% include libraries/bunkyo-office-hours.html
+{% include_cached libraries/bunkyo-office-hours.html
     holiday_monday_ordinal='3'
     hours_type='long' %}

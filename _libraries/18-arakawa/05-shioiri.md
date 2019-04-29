@@ -7,4 +7,4 @@ title: 荒川区汐入図書サービスステーション
 
 このステーションは受付のある文芸書・雑誌スペースと子供用スペースに分かれている。どちらも狭小な部屋であり、旅人が訪れて何かするような施設ではない。
 
-{% include libraries/arakawa-office-hours.html %}
+{% include_cached libraries/arakawa-office-hours.html %}

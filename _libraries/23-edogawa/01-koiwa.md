@@ -10,4 +10,4 @@ title: 江戸川区小岩図書館
 * 2 階図書館内から 3 階に至る階段が使える。
 * 3 階に Wi-Fi が利用可能な空間があるが、「かしだし券」または身分証明証が必要だ。
 
-{% include libraries/edogawa-office-hours.html %}
+{% include_cached libraries/edogawa-office-hours.html %}

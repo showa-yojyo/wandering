@@ -13,4 +13,4 @@ title: 江戸川区清新町コミュニティ図書館
 * 書架エリアと中央部に段差があり、手すりはないがスロープが設けられている。
 * 閲覧席は十分確保されている。
 
-{% include libraries/edogawa-office-hours.html %}
+{% include_cached libraries/edogawa-office-hours.html %}

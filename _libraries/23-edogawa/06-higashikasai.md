@@ -9,4 +9,4 @@ title: 江戸川区東葛西図書館
 * 1 階は新聞雑誌コーナーと児童スペースになっている。
 * 2 階が書架と閲覧席だ。
 
-{% include libraries/edogawa-office-hours.html %}
+{% include_cached libraries/edogawa-office-hours.html %}

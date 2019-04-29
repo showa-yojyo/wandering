@@ -8,4 +8,4 @@ title: 練馬区南大泉図書館分室こどもと本のひろば
 どうも館内に一般人が制作した工芸作品等を展示していたり、一般向けのイベントを催すことがあるようなのだ。
 私は館内に立ち入ることができなかったので、これ以上のことは記さない。
 
-{% include libraries/nerima-office-hours.html monday='1' office_type='A' %}
+{% include_cached libraries/nerima-office-hours.html monday='1' office_type='A' %}

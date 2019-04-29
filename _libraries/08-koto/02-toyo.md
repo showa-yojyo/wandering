@@ -9,4 +9,4 @@ title: 江東区東陽図書館
 * ワンフロア型図書館。けっこう広い。
 * 新聞雑誌コーナーが使いやすい。
 
-{% include libraries/koto-office-hours.html %}
+{% include_cached libraries/koto-office-hours.html %}

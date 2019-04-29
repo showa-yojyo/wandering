@@ -19,4 +19,4 @@ PC 席は備品のノート PC を使うか、持ち込みの PC を使うか、
 3 階は自習スペースとなっている。ここを利用するには 1 階受付での利用申請が必要だ。
 学習塾というか大学の演習室というか、無機質に長机が配列されているだけの簡素な部屋だ。
 
-{% include libraries/arakawa-office-hours.html %}
+{% include_cached libraries/arakawa-office-hours.html %}

@@ -14,4 +14,4 @@ title: 港区麻布図書館
   * ゼンリンの港区の巻だけ開架から抜き取られていて、受付に聞かないと手に取れないように仕組まれている。
 * 5 階は視聴覚室しかない。
 
-{% include libraries/minato-office-hours.html %}
+{% include_cached libraries/minato-office-hours.html %}

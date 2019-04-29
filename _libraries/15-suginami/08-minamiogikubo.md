@@ -10,7 +10,7 @@ title: 杉並区南荻窪図書館
 * 一階にある謎の下り階段の先にある小空間に持ち込み PC 席が一席存在する。
 * 二階は児童室だ。
 
-{% include libraries/suginami-office-hours.html office_type='B' %}
+{% include_cached libraries/suginami-office-hours.html office_type='B' %}
 
 ## 参考資料
 

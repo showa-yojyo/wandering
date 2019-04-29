@@ -12,6 +12,6 @@ title: 文京区真砂中央図書館
   * 三階は一般書架、閲覧席（テーブルとキャレル）、参考資料、地域資料などがある。
 * 二階と三階の壁際にあるキャレルは電源コンセントを備えている。持ち込み PC 席として利用可能だ。
 
-{% include libraries/bunkyo-office-hours.html
+{% include_cached libraries/bunkyo-office-hours.html
     holiday_monday_ordinal='4'
     hours_type='long' %}

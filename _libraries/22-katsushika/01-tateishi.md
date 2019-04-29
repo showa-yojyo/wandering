@@ -18,4 +18,4 @@ title: 葛飾区立石図書館
   また、PC 席は金町の中央図書館と同等の利用条件が設けられている。
 * 4 階にはさらにデータベース専用機というのがある。並列利用ができない妙なシステムのようだ。
 
-{% include libraries/katsushika-office-hours.html office_type='A' %}
+{% include_cached libraries/katsushika-office-hours.html office_type='A' %}

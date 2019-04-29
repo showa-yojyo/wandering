@@ -12,4 +12,4 @@ title: 大田区羽田図書館
 * 二階が読書室。おそらく入り口そばの 4 席が電源付き PC 席だ。
 * 二階にはその他喫茶室や救護室などがある。
 
-{% include libraries/ota-office-hours.html office_type='D' %}
+{% include_cached libraries/ota-office-hours.html office_type='D' %}

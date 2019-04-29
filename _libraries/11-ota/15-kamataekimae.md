@@ -12,4 +12,4 @@ title: 大田区蒲田駅前図書館
 * 電源コンセント付き席はカウンター型。
 * 男子トイレの小便器の数が妙に多い。
 
-{% include libraries/ota-office-hours.html office_type='A' %}
+{% include_cached libraries/ota-office-hours.html office_type='A' %}

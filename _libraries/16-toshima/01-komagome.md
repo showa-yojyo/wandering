@@ -37,4 +37,4 @@ JR および地下鉄駒込駅がほぼ隣接している。
 本館東側に商店街がある。ここで飲食あるいは食料の買い出しをするといい。
 さらに南東には銭湯まである田端エリアだ。
 
-{% include libraries/toshima-office-hours.html office_closed_day="第 1 火曜日" %}
+{% include_cached libraries/toshima-office-hours.html office_closed_day="第 1 火曜日" %}

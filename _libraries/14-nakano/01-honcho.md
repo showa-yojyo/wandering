@@ -10,7 +10,7 @@ title: 中野区本町図書館
 * 二階メインの奥に狭い開架室があり、その下には行き止まりのさらなる小開架室がある。
   どちらも居眠り注意の椅子席がある。
 
-{% include libraries/nakano-office-hours.html holiday_type='B' %}
+{% include_cached libraries/nakano-office-hours.html holiday_type='B' %}
 
 ## 参考資料
 

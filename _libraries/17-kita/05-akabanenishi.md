@@ -18,4 +18,4 @@ title: 北区赤羽西図書館
 雑草は伸び放題で夏場は蚊の大群が飛び交うし、日陰がジメジメしているし、夜は意味不明に怖い。
 あまりにも嫌な場所なので、この場を借りて断っておくことにした。
 
-{% include libraries/kita-office-hours.html %}
+{% include_cached libraries/kita-office-hours.html %}

@@ -16,4 +16,4 @@ title: 荒川区ゆいの森あらかわ
 * 4 階が一般開架室と閲覧席からなる。座席に困る事態は考えられない。
 * 5 階に学習室と休憩ラウンジがある。屋上庭園的な空間もある。
 
-{% include libraries/arakawa-office-hours.html %}
+{% include_cached libraries/arakawa-office-hours.html %}

@@ -9,7 +9,7 @@ title: 中野区南台図書館
 * 一階には新聞雑誌コーナーおよび児童コーナーがある。
 * 二階には閲覧席がある。PC 席も一席だが存在する。利用には受付への申し込みが必要だ。
 
-{% include libraries/nakano-office-hours.html holiday_type='C' %}
+{% include_cached libraries/nakano-office-hours.html holiday_type='C' %}
 
 ## 参考資料
 
