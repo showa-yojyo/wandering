@@ -13,4 +13,4 @@ title: 大田区六郷図書館
   言うまでもなく Wi-Fi が利用可能。
 * 三階は学習室だが、ここは PC 持ち込みは認められていない。
 
-{% include libraries/ota-office-hours.html office_type='D' %}
+{% include_cached libraries/ota-office-hours.html office_type='D' %}

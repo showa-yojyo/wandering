@@ -10,7 +10,7 @@ title: 中野区鷺宮図書館
 * 持ち込み PC 席は 6 階最奥部の長机オープン席だ。席数に比べて電源コンセントが足りているかどうか怪しい。
 * 富士山が望める図書館を標榜しており、6 階の窓際にそこから望める富士山を含む山々の一覧が掲示されている。
 
-{% include libraries/nakano-office-hours.html holiday_type='C' %}
+{% include_cached libraries/nakano-office-hours.html holiday_type='C' %}
 
 ## 参考資料
 

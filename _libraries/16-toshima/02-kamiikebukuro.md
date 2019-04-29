@@ -14,4 +14,4 @@ title: 豊島区上池袋図書館
 * 持ち込み PC 席が 4 席あり、すべてが自由席だ。電源コンセントもある。
   Wi-Fi (SSID: kamiikebukurotoshokan) も使用可能ではあるが、受付へ問い合わせることになるだろう。
 
-{% include libraries/toshima-office-hours.html office_closed_day="第 1 火曜日" %}
+{% include_cached libraries/toshima-office-hours.html office_closed_day="第 1 火曜日" %}

@@ -11,4 +11,4 @@ title: 板橋区高島平図書館
 * 二階の書架室はテーブル型閲覧席が多数ある。
   * 「電卓席」なる長机で構成される特殊な席が二席存在する。
 
-{% include libraries/itabashi-office-hours.html name='高島平図書館' url='/guide/lib-takashima.html'%}
+{% include_cached libraries/itabashi-office-hours.html name='高島平図書館' url='/guide/lib-takashima.html'%}

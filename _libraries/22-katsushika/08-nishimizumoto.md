@@ -13,4 +13,4 @@ title: 葛飾区西水元地区図書館
 * 窓際のカウンター席が閲覧席だ。読書も筆記もしやすい。持ち込み PC は認められていない。
 * 蔵書は児童向けのものが目立つ。
 
-{% include libraries/katsushika-office-hours.html office_type='C' %}
+{% include_cached libraries/katsushika-office-hours.html office_type='C' %}

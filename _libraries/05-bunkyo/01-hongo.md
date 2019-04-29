@@ -11,6 +11,6 @@ title: 文京区本郷図書館
   * 地下一階には閲覧席、一般書架、カウンター、参考資料、森鴎外コーナーなどがある。
 * 持ち込み PC 席は三つ。電源コンセントが付いている。
 
-{% include libraries/bunkyo-office-hours.html
+{% include_cached libraries/bunkyo-office-hours.html
     holiday_monday_ordinal='4'
     hours_type='long' %}

@@ -10,4 +10,4 @@ title: 品川区八潮図書館
 * 建物の 3 階が図書館だが、エレベーターでしか行けないようだ。
 * 電源コンセント席あり。テーブル型。
 
-{% include libraries/shinagawa-office-hours.html office_type='A' %}
+{% include_cached libraries/shinagawa-office-hours.html office_type='A' %}

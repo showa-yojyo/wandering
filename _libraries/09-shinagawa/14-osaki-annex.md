@@ -15,4 +15,4 @@ title: 品川区大崎図書館分館
 * 持ち込み PC 席があり、電源コンセントが利用できる。
 * この館では無線 LAN は提供されていない。
 
-{% include libraries/shinagawa-office-hours.html office_type='A' %}
+{% include_cached libraries/shinagawa-office-hours.html office_type='A' %}

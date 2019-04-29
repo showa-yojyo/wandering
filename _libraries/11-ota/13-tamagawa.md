@@ -11,4 +11,4 @@ title: 大田区多摩川図書館
   第二図書室の角 8 席が電源付き PC 席だ。延長コードが壁コンセントから接続されていて床に置いてある。
   利用者は机上の PC のアダプターからケーブルを伸ばして床のコンセントにプラグを挿し込むことになる。
 
-{% include libraries/ota-office-hours.html office_type='C' %}
+{% include_cached libraries/ota-office-hours.html office_type='C' %}

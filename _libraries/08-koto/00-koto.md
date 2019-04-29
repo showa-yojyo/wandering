@@ -18,4 +18,4 @@ title: 江東区江東図書館
   * フロア両端がどちらも PC 対応席だ。ビジネススペースのほうがテーブル間の余白が広いぶん使いやすいように思う。
 * 3 階は疎開学童資料展示室がある。通路で[江東区深川図書館]({{ site.baseurl }}{% link _libraries/08-koto/01-fukagawa.md %})所蔵の浮世絵コピーの展示をやっている。
 
-{% include libraries/koto-office-hours.html office_type='A' %}
+{% include_cached libraries/koto-office-hours.html office_type='A' %}

@@ -24,7 +24,7 @@ title: 杉並区中央図書館
     ゲート前にコインロッカーがあり、そこに荷物を預けないと入室を認められないようだ。
     なお、コインロッカーは百円硬貨返却タイプのものだ。
 
-{% include libraries/suginami-office-hours.html office_type='A' %}
+{% include_cached libraries/suginami-office-hours.html office_type='A' %}
 
 ## 参考資料
 

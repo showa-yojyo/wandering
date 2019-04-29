@@ -9,4 +9,4 @@ title: 大田区浜竹図書館
 * 二階は休憩コーナーと閲覧室が隣り合っている構造になっている。
   まるで時間が止まっているかのようなゆるやかな雰囲気だ。
 
-{% include libraries/ota-office-hours.html office_type='C' %}
+{% include_cached libraries/ota-office-hours.html office_type='C' %}

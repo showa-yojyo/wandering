@@ -10,4 +10,4 @@ title: 大田区洗足池図書館
   したがって PC 席も 2 階にある。
 * 1 階新聞雑誌コーナーに休憩コーナーが隣接している。
 
-{% include libraries/ota-office-hours.html office_type='C' %}
+{% include_cached libraries/ota-office-hours.html office_type='C' %}

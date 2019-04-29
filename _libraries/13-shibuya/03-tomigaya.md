@@ -8,4 +8,4 @@ title: 渋谷区富ヶ谷図書館
 
 学校の近くにありがちな図書館だ。
 
-{% include libraries/shibuya-office-hours.html holidays_type='B' hours_type='B' %}
+{% include_cached libraries/shibuya-office-hours.html holidays_type='B' hours_type='B' %}

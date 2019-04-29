@@ -10,4 +10,4 @@ title: 大田区大森南図書館
 * 二階に閲覧席が多数あるが、持ち込み PC 席が今はないように見える。
   貼り紙に 3 月オープンとあるので、期待して待っていよう。
 
-{% include libraries/ota-office-hours.html office_type='D' %}
+{% include_cached libraries/ota-office-hours.html office_type='D' %}

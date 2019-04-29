@@ -12,4 +12,4 @@ title: 練馬区春日町図書館
 * タワマンのワンフロアということでか、構造が少々直感的でない。フロアをぐるりと一周することができる。
 * 座席は主に椅子席であって、ふんだんにある。持ち込み PC 席の事情はよくわからない。
 
-{% include libraries/nerima-office-hours.html monday='3' office_type='B' %}
+{% include_cached libraries/nerima-office-hours.html monday='3' office_type='B' %}

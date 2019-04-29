@@ -10,6 +10,6 @@ title: 世田谷区尾山台図書館
 * 二階が書架メインのフロアであり、新聞雑誌コーナーもこの階だ。ここには閲覧席はない。
 * 三階が閲覧席兼資料庫になっている。ドコモとソフトバンクの Wi-Fi が飛んでいるので、それぞれの契約者ならば利用可能だ。
 
-{% include libraries/setagaya-office-hours.html
+{% include_cached libraries/setagaya-office-hours.html
     library_name="尾山台図書館"
     library_url="http://www.city.setagaya.lg.jp/shisetsu/1214/1266/d00067054.html" %}

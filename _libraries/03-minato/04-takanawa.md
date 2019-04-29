@@ -10,4 +10,4 @@ title: 港区高輪図書館
 * 3 階の豊富な DVD ライブラリーと視聴覚のためのスペースが印象的だ。
 * 3 階視聴覚室はその名とは裏腹に、長机が少々並べられている簡素な学習空間になっている。
 
-{% include libraries/minato-office-hours.html %}
+{% include_cached libraries/minato-office-hours.html %}

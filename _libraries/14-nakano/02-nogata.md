@@ -13,7 +13,7 @@ title: 中野区野方図書館
 * Wi-Fi が飛んでいるのは実は一階だ。このフロアの隅にあるオープン席が PC 専用席（実態は隔離席）になっていて、
   ここでしか持ち込んだ PC を起動することは認められていない。
 
-{% include libraries/nakano-office-hours.html holiday_type='B' %}
+{% include_cached libraries/nakano-office-hours.html holiday_type='B' %}
 
 ## 参考資料
 

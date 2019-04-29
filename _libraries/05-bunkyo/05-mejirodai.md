@@ -15,6 +15,6 @@ title: 文京区目白台図書館
   * ドコモ
   * エーユー
 
-{% include libraries/bunkyo-office-hours.html
+{% include_cached libraries/bunkyo-office-hours.html
     holiday_monday_ordinal='4'
     hours_type='long' %}

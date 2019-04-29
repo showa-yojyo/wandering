@@ -9,7 +9,7 @@ title: 中野区東中野図書館
 * 建物の二階と三階が図書館だ。
 * 持ち込み PC 席は三階のオープン席 4 席となっている。イスがない。利用には受付への申し込みが必要だ。
 
-{% include libraries/nakano-office-hours.html holiday_type='C' %}
+{% include_cached libraries/nakano-office-hours.html holiday_type='C' %}
 
 ## 参考資料
 

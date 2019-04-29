@@ -11,4 +11,4 @@ title: 北区田端図書館
 周辺に非コンビニ食料品店、飲食店、公園が一切ない。長時間利用するならば食料の準備をしてから訪問したい。
 もっとも、西方面に足を伸ばすと田端と駒込の両商店街があり、散策しているとなかなか楽しめる。
 
-{% include libraries/kita-office-hours.html %}
+{% include_cached libraries/kita-office-hours.html %}

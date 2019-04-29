@@ -14,6 +14,6 @@ title: 世田谷区梅丘図書館
   * 持ち込み PC 利用席が存在する。ただし電源はない。利用者が自前のバッテリーを使う前提だ。
   * 室内に Wi-Fi が飛んでいる。ドコモ、ソフトバンク、NTT フレッツポータルの三本立てだ。
 
-{% include libraries/setagaya-office-hours.html
+{% include_cached libraries/setagaya-office-hours.html
     library_name="梅丘図書館"
     library_url="http://www.city.setagaya.lg.jp/shisetsu/1214/1266/d00135291.html" %}

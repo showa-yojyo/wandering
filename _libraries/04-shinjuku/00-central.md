@@ -18,7 +18,7 @@ title: 新宿区中央図書館
   それ以外の PC 席がオープン席となっている。電源コンセントも基本提供されている。
 * Wi-Fi の利用には一度受付へ申し出る必要がある。そうしないとパスワードを得られない。
 
-{% include libraries/shinjuku-office-hours.html
+{% include_cached libraries/shinjuku-office-hours.html
     holiday_day_of_week='月'
     holiday_thursday='3'
     holiday_sunday='0'

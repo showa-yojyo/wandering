@@ -10,4 +10,4 @@ title: 渋谷区代々木図書館
 * 限られた空間を有効に活用するべく、廊下まで書架が配列されている。
 * いちばん奥の部屋が閲覧室に相当する。すべてオープン席だ。
 
-{% include libraries/shibuya-office-hours.html holidays_type='E' hours_type='E' %}
+{% include_cached libraries/shibuya-office-hours.html holidays_type='E' hours_type='E' %}

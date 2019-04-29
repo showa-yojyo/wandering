@@ -14,7 +14,7 @@ title: 新宿区西落合図書館
 * 二階に持ち込み PC 優先席が若干数ある。利用は申請制。Wi-Fi も飛んでいる。
 * 図書館入口に林芙美子顔くり抜きパネルがある。
 
-{% include libraries/shinjuku-office-hours.html
+{% include_cached libraries/shinjuku-office-hours.html
     holiday_day_of_week='月'
     holiday_thursday='3'
     holiday_sunday='0'

@@ -17,4 +17,4 @@ title: 大田区馬込図書館
   奥の 3 テーブルが電源付き PC 優先席だ。
 * 三階は会議室だそうだが、立ち入ることがないので本稿では詳細不明としておく。
 
-{% include libraries/ota-office-hours.html office_type='D' %}
+{% include_cached libraries/ota-office-hours.html office_type='D' %}

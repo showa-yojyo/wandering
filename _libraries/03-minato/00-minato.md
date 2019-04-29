@@ -13,4 +13,4 @@ title: 港区みなと図書館
 * 二階に申請式持ち込み PC 席がある。利用許可が降りることで初めて使い物になるキャレル席だ。
 * CD, DVD, ビデオテープの品揃えが際立っている。
 
-{% include libraries/minato-office-hours.html %}
+{% include_cached libraries/minato-office-hours.html %}

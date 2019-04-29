@@ -13,7 +13,7 @@ title: 新宿区下落合図書館
 * 座席予約システムがあり、専用端末で予約処理を済ませて座席を確保する。図書館利用カードが要る。
 * かつてはここが中央図書館として機能していた節がある。
 
-{% include libraries/shinjuku-office-hours.html
+{% include_cached libraries/shinjuku-office-hours.html
     holiday_day_of_week='月'
     holiday_thursday='2'
     holiday_sunday='0'

@@ -10,7 +10,7 @@ title: 杉並区西荻図書館
 * 二階は児童室と詳細不明の書庫になっている。
 * 持ち込み PC 席は一階階段裏に二席ある。要申し込み。コンセントあり。
 
-{% include libraries/suginami-office-hours.html office_type='A' %}
+{% include_cached libraries/suginami-office-hours.html office_type='A' %}
 
 ## 参考資料
 

@@ -11,4 +11,4 @@ title: 江東区古石場図書館
 * 閲覧席は基本的にはない。新聞雑誌コーナーまたは書架そばのイス席で資料を閲覧することになる。
 * 持ち込み PC 席がわずかに 2 席ある。電源、ネット利用可能。ただしカウンターで利用する旨を申請する必要がある。
 
-{% include libraries/koto-office-hours.html %}
+{% include_cached libraries/koto-office-hours.html %}

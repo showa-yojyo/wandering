@@ -10,4 +10,4 @@ title: 江東区砂町図書館
 * 広大なワンフロアで構成される。新聞雑誌コーナーの座椅子の量にも余裕が感じられる。
 * インターネットはビジネスコーナーで利用可能。電源コンセントが豊富にある。
 
-{% include libraries/koto-office-hours.html %}
+{% include_cached libraries/koto-office-hours.html %}

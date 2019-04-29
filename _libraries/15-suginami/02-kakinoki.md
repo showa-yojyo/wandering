@@ -11,7 +11,7 @@ title: 杉並区柿木図書館
 * 持ち込み PC 席は二階に 2 席ある。電源コンセントあり。
 * 閲覧台が斜めになっているオープン席が多数ある。
 
-{% include libraries/suginami-office-hours.html office_type='B' %}
+{% include_cached libraries/suginami-office-hours.html office_type='B' %}
 
 ## 参考資料
 

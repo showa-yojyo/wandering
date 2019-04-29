@@ -23,4 +23,4 @@ PC 席は備品借用も持ち込みもありで、座席数は意外に多そ�
 学習部屋なるスペースがあり、そこには喫煙室のようなガラス張りの部屋に席が配列されている。
 これもまた要利用カードだ。
 
-{% include libraries/arakawa-office-hours.html %}
+{% include_cached libraries/arakawa-office-hours.html %}

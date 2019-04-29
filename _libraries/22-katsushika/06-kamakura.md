@@ -8,4 +8,4 @@ title: 葛飾区鎌倉図書館
 
 2 階が閲覧室らしいのだが、私が訪問したときには当該フロアが工事中で立ち入り禁止となっていて確認することができなかった。
 
-{% include libraries/katsushika-office-hours.html office_type='B' %}
+{% include_cached libraries/katsushika-office-hours.html office_type='B' %}

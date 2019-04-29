@@ -11,4 +11,4 @@ title: 北区東十条図書館
 
 最近気づいたが PC 席が水回りの真横に 1 席存在する。何かのときに使わせてもらうかもしれない。
 
-{% include libraries/kita-office-hours.html %}
+{% include_cached libraries/kita-office-hours.html %}

@@ -5,4 +5,4 @@ title: 墨田区すみだ女性センター情報資料コーナー
 {{ page.title }}は墨田区役所からひきふね図書館のだいたい間にあるミニ図書館だ。新聞各紙と女性（とその子供）向け書籍が各分野にわたって揃っている。
 出入口が建物の 2 階にある。ここまでの階段がけっこう段差がきつい。
 
-{% include libraries/sumida-office-hours.html %}
+{% include_cached libraries/sumida-office-hours.html %}

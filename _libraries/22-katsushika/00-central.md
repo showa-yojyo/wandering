@@ -12,4 +12,4 @@ title: 葛飾区中央図書館
 * 驚異の年中無休図書館。営業時間もかなり長い。
 * 1 階がマルエツなので食い物に困らない。その他の食料品店や飲食店も周囲には豊富にある。
 
-{% include libraries/katsushika-office-hours.html office_type='A' %}
+{% include_cached libraries/katsushika-office-hours.html office_type='A' %}

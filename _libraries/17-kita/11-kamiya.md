@@ -24,4 +24,4 @@ title: 北区神谷図書館
 
 とか珍しい作品がある。
 
-{% include libraries/kita-office-hours.html %}
+{% include_cached libraries/kita-office-hours.html %}

@@ -12,4 +12,4 @@ title: 江戸川区篠崎子ども図書館
 * 建物の隣にポニー園がある。
 * 近所の案内図によると、元々はここが篠崎図書館であった節がある。現在は篠崎駅北のサミットの上に移転したということだろう。
 
-{% include libraries/edogawa-office-hours.html %}
+{% include_cached libraries/edogawa-office-hours.html %}

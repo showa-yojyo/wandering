@@ -11,7 +11,7 @@ title: 新宿区中町図書館
 * 持ち込み PC の利用は禁止されているが、タブレットなどは許可されている。
 * Wi-Fi アクセス可能。
 
-{% include libraries/shinjuku-office-hours.html
+{% include_cached libraries/shinjuku-office-hours.html
     holiday_day_of_week='月'
     holiday_thursday='3'
     holiday_sunday='0'

@@ -10,7 +10,7 @@ title: 杉並区成田図書館
 * 二階に集会室がある。
 * 新聞雑誌コーナーの座席にお荷物かごが置いてあるのは気が利いている。
 
-{% include libraries/suginami-office-hours.html office_type='A' %}
+{% include_cached libraries/suginami-office-hours.html office_type='A' %}
 
 ## 参考資料
 

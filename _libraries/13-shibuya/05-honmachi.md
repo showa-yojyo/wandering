@@ -10,4 +10,4 @@ title: 渋谷区本町図書館
 * 二階は書架と閲覧席がある。オープン席しかないのでたいへんよい。
 * 最上階である三階が新聞雑誌スペースを含む。棚と椅子がはっきり分けて配置されていて明快だ。
 
-{% include libraries/shibuya-office-hours.html holidays_type='D' hours_type='B' %}
+{% include_cached libraries/shibuya-office-hours.html holidays_type='D' hours_type='B' %}

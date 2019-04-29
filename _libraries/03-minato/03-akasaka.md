@@ -15,4 +15,4 @@ title: 港区赤坂図書館
   CD 試聴機械もスピーカーが無効化されているのならば論理的に一貫性があるので納得してもいいが。
 * 新聞、特に夕刊を棚に戻すのが難しい。ゴム紐が水平に張ってあるところに差し込むと、そのまま新聞が床に落ちる。
 
-{% include libraries/minato-office-hours.html %}
+{% include_cached libraries/minato-office-hours.html %}

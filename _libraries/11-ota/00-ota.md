@@ -11,4 +11,4 @@ title: 大田区大田図書館
   閲覧室は一般用と学生用とがあり、後者のほうが広い。
 * 持ち込み PC 席として、狭い部屋に長机がコの字に並べられた 6 席が提供されている。
 
-{% include libraries/ota-office-hours.html office_type='C' %}
+{% include_cached libraries/ota-office-hours.html office_type='C' %}

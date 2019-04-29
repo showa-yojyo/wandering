@@ -8,4 +8,4 @@ title: 葛飾区奥戸地区図書館
 
 * 新聞雑誌コーナーがえらく狭い。四畳半くらいか。朝一番の混雑ぶりはひどい。
 
-{% include libraries/katsushika-office-hours.html office_type='C' %}
+{% include_cached libraries/katsushika-office-hours.html office_type='C' %}

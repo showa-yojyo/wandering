@@ -10,7 +10,7 @@ title: 杉並区方南図書館
 * 持ち込み PC 席が二つある。申し込み制。Wi-Fi 使用可能。
 * 冷水機の横にドリンクコーナーがあるというが、フロア上にぽつんと置かれている何もない丸いテーブルのことを指しているのか。
 
-{% include libraries/suginami-office-hours.html office_type='B' %}
+{% include_cached libraries/suginami-office-hours.html office_type='B' %}
 
 ## 参考資料
 

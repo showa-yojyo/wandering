@@ -9,4 +9,4 @@ title: 江東区東大島図書館
 * 男子トイレ入口付近が窮屈だ。
 * ビジネスコーナーに Wi-Fi が飛んでいるが、館内掲示物によるとこのスペースはインターネット禁止とある。どちらが正しいのか。
 
-{% include libraries/koto-office-hours.html %}
+{% include_cached libraries/koto-office-hours.html %}

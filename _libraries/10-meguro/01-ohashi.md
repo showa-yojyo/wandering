@@ -11,7 +11,7 @@ title: 目黒区大橋図書館
 * 電源付き PC 席は相当数を提供しているが、Wi-Fi は利用者が自前で契約していることが前提だ。
 * 数学棚のラインナップがどこか独特だ。
 
-{% include libraries/meguro-office-hours.html holiday_type='a' hours_type='C' %}
+{% include_cached libraries/meguro-office-hours.html holiday_type='a' hours_type='C' %}
 
 ## 参考資料
 

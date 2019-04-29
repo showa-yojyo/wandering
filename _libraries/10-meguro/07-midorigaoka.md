@@ -12,7 +12,7 @@ title: 目黒区緑が丘図書館
 * 大きな柱が何箇所かにあり、書架室の形状が何となく奇妙だ。
 * 全キャレルに電源コンセントが提供されている。
 
-{% include libraries/meguro-office-hours.html holiday_type='b' hours_type='C' %}
+{% include_cached libraries/meguro-office-hours.html holiday_type='b' hours_type='C' %}
 
 ## 参考資料
 

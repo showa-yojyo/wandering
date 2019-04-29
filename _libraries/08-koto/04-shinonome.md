@@ -9,4 +9,4 @@ title: 江東区東雲図書館
 * 雑誌のラインナップが豊富だ。
 * 電源コンセント付き持ち込み PC 席がわずか 2 席しかない。
 
-{% include libraries/koto-office-hours.html %}
+{% include_cached libraries/koto-office-hours.html %}

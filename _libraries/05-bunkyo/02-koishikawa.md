@@ -22,6 +22,6 @@ title: 文京区小石川図書館
 * 中二階、中三階がメインの書架室のはずなのだが、空間が狭小で荷物持ちの客には堪える。身軽にして来館するべきだろう。
 * トイレも本当に狭い。
 
-{% include libraries/bunkyo-office-hours.html
+{% include_cached libraries/bunkyo-office-hours.html
     holiday_monday_ordinal='3'
     hours_type='long' %}

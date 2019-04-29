@@ -13,4 +13,4 @@ title: 大田区下丸子図書館
   使用するには一階受付に申し出る必要がある。
   * 三階閲覧室は陽当たり具合が程良いので、油断していると眠りそうだ。
 
-{% include libraries/ota-office-hours.html office_type='D' %}
+{% include_cached libraries/ota-office-hours.html office_type='D' %}

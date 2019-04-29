@@ -11,4 +11,4 @@ title: 練馬区光が丘図書館
 * 持ち込み PC 席は一階閲覧室入口から向かって右奥の角のオープン席が相当する。
   電源コンセントはあるが、Wi-Fi は不明（調査不足）。
 
-{% include libraries/nerima-office-hours.html monday='2' office_type='A' %}
+{% include_cached libraries/nerima-office-hours.html monday='2' office_type='A' %}

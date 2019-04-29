@@ -15,6 +15,6 @@ title: 豊島区千早図書館
 * Wi-Fi の利用条件については調査できなかったが、おそらく利用カードが必要だろう。
 * 全体的にレイアウトに癖がある。
 
-{% include libraries/toshima-office-hours.html
+{% include_cached libraries/toshima-office-hours.html
     office_hours_weekday="9:00-19:00"
     office_closed_day="第 1 火曜日" %}

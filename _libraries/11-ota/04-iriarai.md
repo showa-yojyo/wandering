@@ -12,4 +12,4 @@ title: 大田区入新井図書館
 * 当日分の朝刊は受付に置いてある。読みたい場合は申し出る。
 * トイレが遠いので要注意。図書館を出て長い廊下を歩かねばならない。
 
-{% include libraries/ota-office-hours.html office_type='B' %}
+{% include_cached libraries/ota-office-hours.html office_type='B' %}

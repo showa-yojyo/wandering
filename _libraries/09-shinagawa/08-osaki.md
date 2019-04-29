@@ -12,4 +12,4 @@ title: 品川区大崎図書館
 * 持ち込み PC 席が存在する。ただし動画の閲覧を禁止している。
 * その割には CD, DVD, ビデオその他のアーカイブがほんとうに充実している。
 
-{% include libraries/shinagawa-office-hours.html office_type='A' %}
+{% include_cached libraries/shinagawa-office-hours.html office_type='A' %}

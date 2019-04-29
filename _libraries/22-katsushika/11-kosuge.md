@@ -7,4 +7,4 @@ title: 葛飾区こすげ地区図書館
 
 まともな閲覧席はないので、ちょっと新聞や本を読みたいときに利用するという用途向けと思われる。
 
-{% include libraries/katsushika-office-hours.html office_type='C' %}
+{% include_cached libraries/katsushika-office-hours.html office_type='C' %}

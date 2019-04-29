@@ -6,4 +6,4 @@ title: 品川区大崎駅西口図書取次施設
 おおさきこども図書室を併設している。
 行政サービスのひとつとして、蔵書の貸借を扱っているとのことだ。
 
-{% include libraries/shinagawa-office-hours.html office_type='D' %}
+{% include_cached libraries/shinagawa-office-hours.html office_type='D' %}

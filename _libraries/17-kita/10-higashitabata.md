@@ -8,4 +8,4 @@ title: 北区東田端図書館
 周辺施設にもめぼしいものがないので、旅行者がここへ訪問する意義は皆無と思われる。
 この記事もご覧にならなくて結構だ。
 
-{% include libraries/kita-office-hours.html %}
+{% include_cached libraries/kita-office-hours.html %}

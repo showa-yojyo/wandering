@@ -11,4 +11,4 @@ title: 墨田区横川コミュニティ会館図書室
 * キャレルのような席は基本的にはないが、奥に広いテーブル席がある。
 * 蔵書の傾向としては文芸作品が手厚く取り揃えられている。
 
-{% include libraries/sumida-office-hours.html %}
+{% include_cached libraries/sumida-office-hours.html %}

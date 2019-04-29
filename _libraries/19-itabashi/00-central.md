@@ -14,4 +14,4 @@ title: 板橋区中央図書館
   * PC 席は二種類あり、電源コンセントが提供されている階段付近の二席か、資料書架に囲まれた長机の席だ。
     前者は利用するのに二階受付への申請が必要である一方、後者は勝手に使えるものの、電源はない。
 
-{% include libraries/itabashi-office-hours.html name='中央図書館' url='/guide/lib-chuo.html'%}
+{% include_cached libraries/itabashi-office-hours.html name='中央図書館' url='/guide/lib-chuo.html'%}

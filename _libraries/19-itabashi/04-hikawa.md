@@ -14,4 +14,4 @@ title: 板橋区氷川図書館
 * 一階閲覧室にうっすらと BGM が流れている気がする。
 * 持ち込み PC 席が二階に二席ある。電源コンセント付き。利用時申請制。
 
-{% include libraries/itabashi-office-hours.html name='氷川図書館' url='/guide/lib-hikawa.html'%}
+{% include_cached libraries/itabashi-office-hours.html name='氷川図書館' url='/guide/lib-hikawa.html'%}

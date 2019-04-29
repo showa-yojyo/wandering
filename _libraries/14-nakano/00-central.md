@@ -19,7 +19,7 @@ title: 中野区中央図書館
 * 一階に喫茶店がある。
 * 中野区内ではこの館だけ閉館時刻が 21:00 と一時間遅い。有効に使いたい。
 
-{% include libraries/nakano-office-hours.html holiday_type='A' hours_type='A' %}
+{% include_cached libraries/nakano-office-hours.html holiday_type='A' hours_type='A' %}
 
 ## 参考資料
 

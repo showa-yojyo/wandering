@@ -15,4 +15,4 @@ title: 墨田区立花図書館
   どちらの部屋にも閲覧席が設置されていて、先述のように電源コンセントが提供されている。
 * 一般の部屋の壁面付近で天井に雨漏りがあるようで、その下の開架にビニールシートがかけられている。
 
-{% include libraries/sumida-office-hours.html %}
+{% include_cached libraries/sumida-office-hours.html %}

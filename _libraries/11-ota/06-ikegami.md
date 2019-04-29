@@ -9,4 +9,4 @@ title: 大田区池上図書館
 * 大田区によくある築年数がかなり経過している建物の図書館だ。
 * 閲覧室は 1 と 2 に分かれている。前者が持ち込み PC 席専用室だ。自由席。
 
-{% include libraries/ota-office-hours.html office_type='C' %}
+{% include_cached libraries/ota-office-hours.html office_type='C' %}

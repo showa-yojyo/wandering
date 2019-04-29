@@ -9,4 +9,4 @@ title: 港区港南図書館
 * 2 階に謎の持ち込み PC 席がある。二人座り用長机と椅子だけの狭い部屋だ。
 * 新聞雑誌コーナーを利用するならば、それがある 3 階まで上る必要がある。
 
-{% include libraries/minato-office-hours.html %}
+{% include_cached libraries/minato-office-hours.html %}

@@ -12,4 +12,4 @@ title: 練馬区稲荷山図書館
   壁一面に昆虫標本が飾ってあったり、淡水魚を水槽で展示していたり、謎の昆虫生体を網の中に飼育していたりする。
 * 二階の会議室は条件次第で学習室として兼用される。
 
-{% include libraries/nerima-office-hours.html monday='1' office_type='A' %}
+{% include_cached libraries/nerima-office-hours.html monday='1' office_type='A' %}

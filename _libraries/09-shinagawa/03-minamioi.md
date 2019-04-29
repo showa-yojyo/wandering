@@ -9,4 +9,4 @@ title: 品川区南大井図書館
 * 図書館の横半分が一般向け、もう横半分が児童向けという造りをしている。
 * 閲覧席はすべてテーブルタイプ。5 台それぞれにイスが 6 脚ある。
 
-{% include libraries/shinagawa-office-hours.html office_type='A' %}
+{% include_cached libraries/shinagawa-office-hours.html office_type='A' %}

@@ -10,4 +10,4 @@ title: 葛飾区水元図書館
 この閲覧室は年齢制限があり、中学生まではダメだとか、高校生以上でないとダメだとか、
 館内の掲示物によって条件が割れている。
 
-{% include libraries/katsushika-office-hours.html office_type='B' %}
+{% include_cached libraries/katsushika-office-hours.html office_type='B' %}

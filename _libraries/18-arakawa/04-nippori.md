@@ -20,4 +20,4 @@ PC 席は 1 階に数卓あり、備品でも持ち込みでもよさそうだ�
 2 階ほぼ全域は学習室だ。受付で利用許可を申請するのが面倒と思われる。
 というか、本館でまともな卓付き座席はここにしかない。一見さんが本格的に読書をするには不向きな図書館だろう。
 
-{% include libraries/arakawa-office-hours.html %}
+{% include_cached libraries/arakawa-office-hours.html %}

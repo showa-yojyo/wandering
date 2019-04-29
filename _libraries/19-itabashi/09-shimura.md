@@ -11,4 +11,4 @@ title: 板橋区志村図書館
 * 地下一階の一部は吹き抜けになっていて気分がいい。
 * 持ち込み PC 席は二席あり、要申込。
 
-{% include libraries/itabashi-office-hours.html name='志村図書館' url='/guide/lib-shimura.html'%}
+{% include_cached libraries/itabashi-office-hours.html name='志村図書館' url='/guide/lib-shimura.html'%}

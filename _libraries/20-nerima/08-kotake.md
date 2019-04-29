@@ -12,4 +12,4 @@ title: 練馬区小竹図書館
   * 二階は書架室で、テーブルによるオープン閲覧席と書架隣り椅子席を含む。
 * ミニ飲食コーナーは二階の、階段を上がったところの窓際にある。
 
-{% include libraries/nerima-office-hours.html monday='2' office_type='A' %}
+{% include_cached libraries/nerima-office-hours.html monday='2' office_type='A' %}
