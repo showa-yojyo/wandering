@@ -6,9 +6,9 @@
 
 休館日は次のとおり：
 {% case include.office_type %}
-{% when 'A' %}
+{% when 'A' -%}
 * 第 1, 3 月曜
-{% else %}
+{% else -%}
 * 月曜
 {% endcase -%}
 * 第 1 金曜（祝日の場合は振り替える）kd
@@ -23,7 +23,7 @@
 ------
 
 {% case include.office_type %}
-{% when 'B' %}
+{% when 'B' -%}
 * 9:00-17:00
 {% else %}
 | 曜日 | 時間 |

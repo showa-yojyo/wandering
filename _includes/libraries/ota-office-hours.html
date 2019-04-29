@@ -2,9 +2,9 @@
 
 休館日は次のとおり（祝日の場合は翌日に振り替える）：
 {% case include.office_type %}
-{% when 'B' or 'C' %}
+{% when 'B' or 'C' -%}
 * 第 2 木曜
-{% when 'A' or 'D' %}
+{% when 'A' or 'D' -%}
 * 第 3 木曜
 {% endcase -%}
 * 年末年始：12 月 29 日から 1 月 4 日まで
@@ -13,9 +13,9 @@
 ## 営業時間
 
 {% case include.office_type %}
-{% when 'A' or 'B' %}
+{% when 'A' or 'B' -%}
 * 9:00-20:00
-{% when 'C' or 'D' %}
+{% when 'C' or 'D' -%}
 * 9:00-19:00
 {% endcase %}
 ただし 1 月 4 日は 10:00 開館となる。

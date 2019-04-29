@@ -2,12 +2,12 @@
 
 休館日は次のとおり：
 {% case include.holiday_type %}
-{% when 'A' %}
+{% when 'A' -%}
 * 第 2 月曜
 　* ただし 2, 6, 11 月は第 4 月曜
-{% when 'B' %}
+{% when 'B' -%}
 * 第 2 月曜
-{% when 'C' %}
+{% when 'C' -%}
 * 第 2 木曜
 {% endcase -%}
 * 毎月最終金曜日
@@ -21,8 +21,8 @@
 | 曜日 | 時間 |
 |------|------|
 {% case include.hours_type %}
-{% when 'A' %}
+{% when 'A' -%}
 | 日-土 | 9:00 - 21:00 |
-{% else %}
+{% else -%}
 | 日-土 | 9:00 - 20:00 |
 {% endcase %}

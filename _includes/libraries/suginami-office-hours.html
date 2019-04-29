@@ -2,15 +2,15 @@
 
 休館日は次のとおり：
 {% case include.office_type %}
-{% when 'A' %}
+{% when 'A' -%}
 * 第 1, 3 木曜
-{% when 'B' %}
+{% when 'B' -%}
 * 第 1 月曜
 * 第 3 木曜
-{% when 'C' %}
+{% when 'C' -%}
 * 第 3 月曜
 * 第 3 木曜
-{% when 'D' %}
+{% when 'D' -%}
 * 第 1, 3 月曜
 * 第 3 木曜
 {% endcase -%}
