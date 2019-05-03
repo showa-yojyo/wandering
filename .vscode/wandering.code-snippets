@@ -70,145 +70,145 @@
 	"Link": {
 		"scope": "html,markdown",
 		"prefix": "link",
-		"body": "[$1]({{ site.baseurl }}{% link ${2:_libraries/.md} %})",
+		"body": "[$1]({{ site.baseurl }}{% link _libraries/.md} %})",
 		"description": "link directive"
 	},
 	"LinkFooterLibs01Chiyoda": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_01_chiyoda",
-		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/01-chiyoda/$1}.md %}",
+		"body": "[chiyoda-$1]: {{ site.baseurl }}{% link _libraries/01-chiyoda/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs02Chuo": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_02_chuo",
-		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/02-chuo/$1}.md %}",
+		"body": "[chuo-$1]: {{ site.baseurl }}{% link _libraries/02-chuo/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs03Minato": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_03_minato",
-		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/03-minato/$1}.md %}",
+		"body": "[minato-$1]: {{ site.baseurl }}{% link _libraries/03-minato/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs04Shinjuku": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_04_shinjuku",
-		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/04-shinjuku/$1}.md %}",
+		"body": "[shinjuku-$1]: {{ site.baseurl }}{% link _libraries/04-shinjuku/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs05Bunkyo": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_05_bunkyo",
-		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/05-bunkyo/$1}.md %}",
+		"body": "[bunkyo-$1]: {{ site.baseurl }}{% link _libraries/05-bunkyo/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs06Taito": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_06_taito",
-		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/06-taito/$1}.md %}",
+		"body": "[taito-$1]: {{ site.baseurl }}{% link _libraries/06-taito/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs07Sumida": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_07_sumida",
-		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/07-sumida/$1}.md %}",
+		"body": "[sumida-$1]: {{ site.baseurl }}{% link _libraries/07-sumida/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs08Koto": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_08_koto",
-		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/08-koto/$1}.md %}",
+		"body": "[koto-$1]: {{ site.baseurl }}{% link _libraries/08-koto/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs09Shinagawa": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_09_shinagawa",
-		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/09-shinagawa/$1}.md %}",
+		"body": "[shinagawa-$1]: {{ site.baseurl }}{% link _libraries/09-shinagawa/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs10Meguro": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_10_meguro",
-		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/10-meguro/$1}.md %}",
+		"body": "[meguro-$1]: {{ site.baseurl }}{% link _libraries/10-meguro/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs11Ota": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_11_ota",
-		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/11-ota/$1}.md %}",
+		"body": "[ota-$1]: {{ site.baseurl }}{% link _libraries/11-ota/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs12Setagaya": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_12_setagaya",
-		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/12-setagaya/$1}.md %}",
+		"body": "[setagaya-$1]: {{ site.baseurl }}{% link _libraries/12-setagaya/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs13Shibuya": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_13_shibuya",
-		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/13-shibuya/$1}.md %}",
+		"body": "[shibuya-$1]: {{ site.baseurl }}{% link _libraries/13-shibuya/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs14Nakano": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_14_nakano",
-		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/14-nakano/$1}.md %}",
+		"body": "[nakano-$1]: {{ site.baseurl }}{% link _libraries/14-nakano/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs15Suginami": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_15_suginami",
-		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/15-suginami/$1}.md %}",
+		"body": "[suginami-$1]: {{ site.baseurl }}{% link _libraries/15-suginami/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs16Toshima": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_16_toshima",
-		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/16-toshima/$1}.md %}",
+		"body": "[toshima-$1]: {{ site.baseurl }}{% link _libraries/16-toshima/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs17Kita": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_17_kita",
-		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/17-kita/$1}.md %}",
+		"body": "[kita-$1]: {{ site.baseurl }}{% link _libraries/17-kita/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs18Arakawa": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_18_arakawa",
-		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/18-arakawa/$1}.md %}",
+		"body": "[arakawa-$1]: {{ site.baseurl }}{% link _libraries/18-arakawa/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs19Itabashi": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_19_itabashi",
-		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/19-itabashi/$1}.md %}",
+		"body": "[itabashi-$1]: {{ site.baseurl }}{% link _libraries/19-itabashi/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs20Nerima": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_20_nerima",
-		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/20-nerima/$1}.md %}",
+		"body": "[nerima-$1]: {{ site.baseurl }}{% link _libraries/20-nerima/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs21Adachi": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_21_adachi",
-		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/21-adachi/$1}.md %}",
+		"body": "[adachi-$1]: {{ site.baseurl }}{% link _libraries/21-adachi/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs22Katsushika": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_22_katsushika",
-		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/22-katsushika/$1}.md %}",
+		"body": "[katsushika-$1]: {{ site.baseurl }}{% link _libraries/22-katsushika/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs23Edogawa": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_23_edogawa",
-		"body": "[$1]: {{ site.baseurl }}{% link ${2:_libraries/23-edogawa/$1}.md %}",
+		"body": "[edogawa-$1]: {{ site.baseurl }}{% link _libraries/23-edogawa/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"PostUrl": {
