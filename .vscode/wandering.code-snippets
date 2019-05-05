@@ -241,6 +241,18 @@
 		"body": "[shinagawa-03]: {{ site.baseurl }}{% link _libraries/09-shinagawa/03-minamioi.md %}",
 		"description": "品川区南大井図書館（脚注用）"
 	},
+	"LibraryOta02a": {
+		"scope": "html,markdown",
+		"prefix": "ota-02",
+		"body": "[大田区大森東図書館][ota-02]",
+		"description": "大田区大森東図書館（本文用）"
+	},
+	"LibraryOta02b": {
+		"scope": "html,markdown",
+		"prefix": "ota-02",
+		"body": "[ota-02]: {{ site.baseurl }}{% link _libraries/11-ota/02-omorihigashi.md %}",
+		"description": "大田区大森東図書館（脚注用）"
+	},
 	"LibraryOta04a": {
 		"scope": "html,markdown",
 		"prefix": "ota-04",
@@ -373,4 +385,10 @@
 		"body": "[katsushika-01]: {{ site.baseurl }}{% link _libraries/22-katsushika/01-tateishi.md %}",
 		"description": "葛飾区立石図書館（脚注用）"
 	},
+	"Seiyu": {
+		"scope": "html,markdown",
+		"prefix": "seiyu",
+		"body": "西友${1|赤羽店,阿佐ヶ谷店,浅草 ROX 食品館,江戸川中央店,大森店,荻窪店,錦糸町店,三軒茶屋店,サンシャイン西友,新小岩店,巣鴨店,関町店,高田馬場店,東陽町店,豊玉南店,中野店,成増店|}",
+		"description": "西友各店"
+	}
 }
