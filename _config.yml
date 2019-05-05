@@ -37,6 +37,7 @@ show_excerpts: true
 
 header_pages:
   - about.md
+  - archive.html
   - locations.md
   - libraries.md
 
