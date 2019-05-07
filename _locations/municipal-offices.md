@@ -7,33 +7,26 @@ title: 東京 23 区役所一覧
 
 ## 区役所一覧
 
-現時点での区役所の所在地などの一覧を以下に示す。データとして使うため、ソート用の列を削ったり、リンクを付けたりはしないままにしておく。
+現時点での区役所の所在地などの一覧を以下に示す。
 
-| 区       | sort key      | 区役所所在地                     | 区役所ウェブページトップ             |
-| -------- | ------------- | -------------------------------- | ------------------------------------ |
-| 千代田区 | 01-chiyoda    | 東京都千代田区九段南一丁目 6-11  | https://www.city.chiyoda.lg.jp/      |
-| 中央区   | 02-chuo       | 東京都中央区築地一丁目 1-1       | https://www.city.chuo.lg.jp/         |
-| 港区     | 03-minato     | 東京都港区芝公園一丁目 5-25      | https://www.city.minato.tokyo.jp/    |
-| 新宿区   | 04-shinjuku   | 東京都新宿区歌舞伎町一丁目 4-1   | https://www.city.shinjuku.lg.jp/     |
-| 文京区   | 05-bunkyo     | 東京都文京区春日一丁目 16-21     | https://www.city.bunkyo.lg.jp/       |
-| 台東区   | 06-taito      | 東京都台東区東上野四丁目 5-6     | https://www.city.taito.lg.jp/        |
-| 墨田区   | 07-sumida     | 東京都墨田区吾妻橋一丁目 23-20   | https://www.city.sumida.lg.jp/       |
-| 江東区   | 08-koto       | 東京都江東区東陽四丁目 11-28     | https://www.city.koto.lg.jp/         |
-| 品川区   | 09-shinagawa  | 東京都品川区広町二丁目 1-36      | https://www.city.shinagawa.tokyo.jp/ |
-| 目黒区   | 10-meguro     | 東京都目黒区上目黒二丁目 19-15   | https://www.city.meguro.tokyo.jp/    |
-| 大田区   | 11-ota        | 東京都大田区蒲田五丁目 13-14     | https://www.city.ota.tokyo.jp/       |
-| 世田谷区 | 12-setagaya   | 東京都世田谷区世田谷四丁目 21-27 | https://www.city.setagaya.lg.jp/     |
-| 渋谷区   | 13-shibuya    | 東京都渋谷区宇田川町 1-1         | https://www.city.shibuya.tokyo.jp/   |
-| 中野区   | 14-nakano     | 東京都中野区中野四丁目 8-1       | https://www.city.tokyo-nakano.lg.jp/ |
-| 杉並区   | 15-suginami   | 東京都杉並区阿佐谷南一丁目 15-1  | https://www.city.suginami.tokyo.jp/  |
-| 豊島区   | 16-toshima    | 東京都豊島区東池袋一丁目 18-1    | https://www.city.toshima.lg.jp/      |
-| 北区     | 17-kita       | 東京都北区王子本町一丁目 15-22   | https://www.city.kita.tokyo.jp/      |
-| 荒川区   | 18-arakawa    | 東京都荒川区荒川二丁目 2-3       | https://www.city.arakawa.tokyo.jp/   |
-| 板橋区   | 19-itabashi   | 東京都板橋区二丁目 66-1          | https://www.city.itabashi.tokyo.jp/  |
-| 練馬区   | 20-nerima     | 東京都練馬区豊玉北六丁目 12-1    | https://www.city.nerima.tokyo.jp/    |
-| 足立区   | 21-adachi     | 東京都足立区中央本町一丁目 17-1  | https://www.city.adachi.tokyo.jp/    |
-| 葛飾区   | 22-katsushika | 東京都葛飾区立石五丁目 13-1      | https://www.city.katsushika.lg.jp/   |
-| 江戸川区 | 23-edogawa    | 東京都江戸川区中央一丁目 4-1     | https://www.city.edogawa.tokyo.jp/   |
+<table>
+  <thead>
+    <tr>
+      <th>区</th>
+      <th>所在地</th>
+      <th>電話番号</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for i in site.data.municipal-offices %}
+    <tr>
+      <td><a href="{{ i.web }}">{{ i.name }}</a></td>
+      <td>{{ i.address }}</td>
+      <td>{{ i.phone }}</td>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>
 
 ## 区役所を利用する
 
