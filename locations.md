@@ -11,7 +11,7 @@ permalink: /locations/
   <li>
     <h2><a class="post-link" href="{{ i.url | relative_url }}">{{ i.title | escape }}</a></h2>
 
-    {{ i.excerpt | truncate: 160 }}
+    {{ i.excerpt | truncate: 80 }}
   </li>
   {%- endfor -%}
 </ul>
