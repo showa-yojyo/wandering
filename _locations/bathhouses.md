@@ -12,9 +12,13 @@ title: 東京 23 区内銭湯一覧
 
 {% comment %}休業中の銭湯は除外しておく{% endcomment %}
 {%- assign bathhouses = site.data.bathhouses | where: "open", 1 -%}
+{%- assign num_visited = bathhouses | where: "visited", 1 | size -%}
+現在、{{ num_visited }} 軒の銭湯を訪問済みだ（コインランドリーのみの利用は勘定に入れない）。
+
 <table>
   <thead>
     <tr>
+      <th>訪問済</th>
       <th>店舗名</th>
       <th>所在地</th>
       <th>休業日</th>
@@ -25,11 +29,12 @@ title: 東京 23 区内銭湯一覧
   <tbody>
 {% for i in bathhouses %}
     <tr>
+      <td style="text-align: center">{{ i.visited }}</td>
       <td>{{ i.name }}</td>
       <td>{{ i.address }}</td>
       <td>{{ i.closed-days | split: "/" | first }}</td>
       <td>{{ i.office-hours | split: "/" | first }}</td>
-      <td>{{ i.laundry }}</td>
+      <td style="text-align: center">{{ i.laundry }}</td>
     </tr>
 {% endfor %}
   </tbody>
