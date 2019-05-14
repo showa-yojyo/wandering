@@ -8,21 +8,26 @@ title: 東京 23 区役所一覧
 ## 区役所一覧
 
 現時点での区役所の所在地などの一覧を以下に示す。
+{%- assign records = site.data.municipal-offices -%}
+{%- assign num_visited = records | where: "visited", 1 | size -%}
+現在 {{ num_visited }} 区訪問済み。
 
 <table>
   <thead>
     <tr>
       <th>区</th>
       <th>所在地</th>
-      <th>電話番号</th>
+      <th style="text-align: center">電話番号</th>
+      <th style="text-align: center">訪問済</th>
     </tr>
   </thead>
   <tbody>
-{% for i in site.data.municipal-offices %}
+{% for i in records %}
     <tr>
       <td><a href="{{ i.web }}">{{ i.name }}</a></td>
       <td>{{ i.address }}</td>
-      <td>{{ i.phone }}</td>
+      <td style="text-align: center">{{ i.phone }}</td>
+      <td style="text-align: center">{{ i.visited }}</td>
     </tr>
 {% endfor %}
   </tbody>

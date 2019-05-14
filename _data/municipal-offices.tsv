@@ -1,24 +1,24 @@
-name	prefix	sortkey	address	phone	web
-千代田区	chiyoda	01-chiyoda	東京都千代田区九段南一丁目 6-11	03-3264-2111	https://www.city.chiyoda.lg.jp/
-中央区	chuo	02-chuo	東京都中央区築地一丁目 1-1	03-3543-0211	https://www.city.chuo.lg.jp/
-港区	minato	03-minato	東京都港区芝公園一丁目 5-25	03-3578-2111	https://www.city.minato.tokyo.jp/
-新宿区	shinjuku	04-shinjuku	東京都新宿区歌舞伎町一丁目 4-1	03-3209-1111	https://www.city.shinjuku.lg.jp/
-文京区	bunkyo	05-bunkyo	東京都文京区春日一丁目 16-21	03-3812-7111	https://www.city.bunkyo.lg.jp/
-台東区	taito	06-taito	東京都台東区東上野四丁目 5-6	03-5246-1111	https://www.city.taito.lg.jp/
-墨田区	sumida	07-sumida	東京都墨田区吾妻橋一丁目 23-20	03-5608-1111	https://www.city.sumida.lg.jp/
-江東区	koto	08-koto	東京都江東区東陽四丁目 11-28	03-3647-9111	https://www.city.koto.lg.jp/
-品川区	shinagawa	09-shinagawa	東京都品川区広町二丁目 1-36	03-3777-1111	https://www.city.shinagawa.tokyo.jp/
-目黒区	meguro	10-meguro	東京都目黒区上目黒二丁目 19-15	03-3715-1111	https://www.city.meguro.tokyo.jp/
-大田区	ota	11-ota	東京都大田区蒲田五丁目 13-14	03-5744-1111	https://www.city.ota.tokyo.jp/
-世田谷区	setagaya	12-setagaya	東京都世田谷区世田谷四丁目 21-27	03-5432-1111	https://www.city.setagaya.lg.jp/index.html
-渋谷区	shibuya	13-shibuya	東京都渋谷区宇田川町 1-1	03-3463-1211	https://www.city.shibuya.tokyo.jp/
-中野区	nakano	14-nakano	東京都中野区中野四丁目 8-1	03-3389-1111	https://www.city.tokyo-nakano.lg.jp/
-杉並区	suginami	15-suginami	東京都杉並区阿佐谷南一丁目 15-1	03-3312-2111	https://www.city.suginami.tokyo.jp/
-豊島区	toshima	16-toshima	東京都豊島区東池袋一丁目 18-1	03-3981-1111	https://www.city.toshima.lg.jp/
-北区	kita	17-kita	東京都北区王子本町一丁目 15-22	03-3908-1111	https://www.city.kita.tokyo.jp/
-荒川区	arakawa	18-arakawa	東京都荒川区荒川二丁目 2-3	03-3802-3111	https://www.city.arakawa.tokyo.jp/
-板橋区	itabashi	19-itabashi	東京都板橋区二丁目 66-1	03-3964-1111	https://www.city.itabashi.tokyo.jp/
-練馬区	nerima	20-nerima	東京都練馬区豊玉北六丁目 12-1	03-3993-1111	https://www.city.nerima.tokyo.jp/
-足立区	adachi	21-adachi	東京都足立区中央本町一丁目 17-1	03-3880-5111	https://www.city.adachi.tokyo.jp/
-葛飾区	katsushika	22-katsushika	東京都葛飾区立石五丁目 13-1	03-3695-1111	https://www.city.katsushika.lg.jp/
-江戸川区	edogawa	23-edogawa	東京都江戸川区中央一丁目 4-1	03-3652-1151	https://www.city.edogawa.tokyo.jp/
+name	prefix	sortkey	address	phone	web	visited
+千代田区	chiyoda	01-chiyoda	東京都千代田区九段南一丁目 6-11	03-3264-2111	https://www.city.chiyoda.lg.jp/	1
+中央区	chuo	02-chuo	東京都中央区築地一丁目 1-1	03-3543-0211	https://www.city.chuo.lg.jp/	1
+港区	minato	03-minato	東京都港区芝公園一丁目 5-25	03-3578-2111	https://www.city.minato.tokyo.jp/	1
+新宿区	shinjuku	04-shinjuku	東京都新宿区歌舞伎町一丁目 4-1	03-3209-1111	https://www.city.shinjuku.lg.jp/	1
+文京区	bunkyo	05-bunkyo	東京都文京区春日一丁目 16-21	03-3812-7111	https://www.city.bunkyo.lg.jp/	1
+台東区	taito	06-taito	東京都台東区東上野四丁目 5-6	03-5246-1111	https://www.city.taito.lg.jp/	1
+墨田区	sumida	07-sumida	東京都墨田区吾妻橋一丁目 23-20	03-5608-1111	https://www.city.sumida.lg.jp/	1
+江東区	koto	08-koto	東京都江東区東陽四丁目 11-28	03-3647-9111	https://www.city.koto.lg.jp/	1
+品川区	shinagawa	09-shinagawa	東京都品川区広町二丁目 1-36	03-3777-1111	https://www.city.shinagawa.tokyo.jp/	1
+目黒区	meguro	10-meguro	東京都目黒区上目黒二丁目 19-15	03-3715-1111	https://www.city.meguro.tokyo.jp/	1
+大田区	ota	11-ota	東京都大田区蒲田五丁目 13-14	03-5744-1111	https://www.city.ota.tokyo.jp/	1
+世田谷区	setagaya	12-setagaya	東京都世田谷区世田谷四丁目 21-27	03-5432-1111	https://www.city.setagaya.lg.jp/index.html	1
+渋谷区	shibuya	13-shibuya	東京都渋谷区宇田川町 1-1	03-3463-1211	https://www.city.shibuya.tokyo.jp/	1
+中野区	nakano	14-nakano	東京都中野区中野四丁目 8-1	03-3389-1111	https://www.city.tokyo-nakano.lg.jp/	1
+杉並区	suginami	15-suginami	東京都杉並区阿佐谷南一丁目 15-1	03-3312-2111	https://www.city.suginami.tokyo.jp/	1
+豊島区	toshima	16-toshima	東京都豊島区東池袋一丁目 18-1	03-3981-1111	https://www.city.toshima.lg.jp/	1
+北区	kita	17-kita	東京都北区王子本町一丁目 15-22	03-3908-1111	https://www.city.kita.tokyo.jp/	1
+荒川区	arakawa	18-arakawa	東京都荒川区荒川二丁目 2-3	03-3802-3111	https://www.city.arakawa.tokyo.jp/	1
+板橋区	itabashi	19-itabashi	東京都板橋区二丁目 66-1	03-3964-1111	https://www.city.itabashi.tokyo.jp/	1
+練馬区	nerima	20-nerima	東京都練馬区豊玉北六丁目 12-1	03-3993-1111	https://www.city.nerima.tokyo.jp/	1
+足立区	adachi	21-adachi	東京都足立区中央本町一丁目 17-1	03-3880-5111	https://www.city.adachi.tokyo.jp/	0
+葛飾区	katsushika	22-katsushika	東京都葛飾区立石五丁目 13-1	03-3695-1111	https://www.city.katsushika.lg.jp/	1
+江戸川区	edogawa	23-edogawa	東京都江戸川区中央一丁目 4-1	03-3652-1151	https://www.city.edogawa.tokyo.jp/	1
