@@ -10,8 +10,8 @@
 			"* TODO: 就寝・起床",
 			"* TODO: 朝飯",
 			"* TODO: 昼飯",
-			"* TODO: 晩飯",
 			"* TODO: 風呂（ある場合）",
+			"* TODO: 晩飯",
 			"* TODO: ゲーセン"
 		],
 		"description": "日記の front matter"
