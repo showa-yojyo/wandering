@@ -10,7 +10,6 @@ permalink: /locations/
   {%- for i in site.locations -%}
   <li>
     <h2><a class="post-link" href="{{ i.url | relative_url }}">{{ i.title | escape }}</a></h2>
-
     {{ i.excerpt | strip_html | truncate: 80 }}
   </li>
   {%- endfor -%}
