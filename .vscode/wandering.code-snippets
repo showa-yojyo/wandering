@@ -277,6 +277,12 @@
 		"body": "${1|[大田区浜竹図書館][ota-09],[ota-09]: {{ site.baseurl }}{% link _libraries/11-ota/09-hamatake.md %}|}",
 		"description": "大田区浜竹図書館"
 	},
+	"LibraryOta15": {
+		"scope": "html,markdown",
+		"prefix": "ota-15",
+		"body": "${1|[大田区蒲田駅前図書館][ota-15],[ota15]: {{ site.baseurl }}{% link _libraries/11-ota/15-kamataekimae.md %}|}",
+		"description": "大田区蒲田駅前図書館"
+	},
 	"LibraryNakano00a": {
 		"scope": "html,markdown",
 		"prefix": "nakano-00",
