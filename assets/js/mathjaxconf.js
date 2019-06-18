@@ -2,18 +2,24 @@
 
 window.MathJax = {
     tex2jax: {
-        inlineMath: [["$", "$"], ["\\(", "\\)"]],
-        displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+        inlineMath: [["$", "$"]],
+        displayMath: [["$$", "$$"]],
         processEscapes: true
     },
     TeX:
     {
+        extensions: ["cancel.js"],
         Macros: {
+            N: "{\\mathbb N}",
             NN: "{\\mathbb N}",
+            Z: "{\\mathbb Z}",
             ZZ: "{\\mathbb Z}",
             QQ: "{\\mathbb Q}",
+            R: "{\\mathbb R}",
             RR: "{\\mathbb R}",
+            Reals: "{\\mathbb R}",
             CC: "{\\mathbb C}",
+            Complex: "{\\mathbb C}",
             HH: "{\\mathbb H}",
 
             bm: ["\\boldsymbol #1",1],
