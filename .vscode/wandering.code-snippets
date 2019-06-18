@@ -280,7 +280,7 @@
 	"LibraryOta15": {
 		"scope": "html,markdown",
 		"prefix": "ota-15",
-		"body": "${1|[大田区蒲田駅前図書館][ota-15],[ota15]: {{ site.baseurl }}{% link _libraries/11-ota/15-kamataekimae.md %}|}",
+		"body": "${1|[大田区蒲田駅前図書館][ota-15],[ota-15]: {{ site.baseurl }}{% link _libraries/11-ota/15-kamataekimae.md %}|}",
 		"description": "大田区蒲田駅前図書館"
 	},
 	"LibraryNakano00a": {
@@ -396,5 +396,26 @@
 		"prefix": "seiyu",
 		"body": "西友${1|赤羽店,阿佐ヶ谷店,浅草 ROX 食品館,江戸川中央店,大森店,荻窪店,錦糸町店,三軒茶屋店,サンシャイン西友,新小岩店,巣鴨店,関町店,高田馬場店,東陽町店,豊玉南店,中野店,成増店|}",
 		"description": "西友各店"
+	},
+	"銭湯リスト": {
+		"scope": "html,markdown",
+		"prefix": "sento-list",
+		"body": "${1|ピース湯（品川区西大井六丁目）,新呑川湯（大田区大森南一丁目）,天狗湯（大田区大森西二丁目）,あたり湯（大田区大森西三丁目）|}",
+		"description": "よく行く銭湯の入力支援"
+	},
+	"銭湯ノート": {
+		"scope": "html,markdown",
+		"prefix": "sento-desc",
+		"body": [
+			"# ${1}",
+			"",
+			"* ${2|フロント形式,番台形式|}",
+			"* コインランドリー${3|あり,なし|}",
+			"* 備え付けシャンプー等${4|あり,なし|}",
+			"* 脱衣所",
+			"* 浴室",
+			"* 泉質"
+		],
+		"description": "日記に書く銭湯のノート"
 	}
 }
