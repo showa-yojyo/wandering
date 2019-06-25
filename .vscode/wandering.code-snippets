@@ -417,5 +417,23 @@
 			"* 泉質"
 		],
 		"description": "日記に書く銭湯のノート"
+	},
+	"latex-set-inline":{
+		"scope": "html,markdown",
+		"prefix": "lri",
+		"body": "\\lbrace ${1}\\,\\mid\\,${2}\\rbrace",
+		"description": "{ #1 | #2 }"
+	},
+	"latex-set-display":{
+		"scope": "html,markdown",
+		"prefix": "lrd",
+		"body": "\\{${1}\\,\\|\\,${2}\\}",
+		"description": "{ #1 | #2 }"
+	},
+	"latex-parens":{
+		"scope": "html,markdown",
+		"prefix": "lrp",
+		"body": "\\left(${1}\\right)",
+		"description": "(#1)"
 	}
 }
