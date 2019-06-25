@@ -51,7 +51,6 @@ kramdown:
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-paginate
   - jekyll-include-cache
   - jekyll-sitemap
 
@@ -104,7 +103,3 @@ collections:
     output: true
   locations:
     output: true
-
-paginate: 14
-paginate_path: "/page:num"
-
