@@ -427,7 +427,7 @@
 	"latex-set-display":{
 		"scope": "html,markdown",
 		"prefix": "lrd",
-		"body": "\\{${1}\\,\\|\\,${2}\\}",
+		"body": "\\{${1}\\,|\\,${2}\\}",
 		"description": "{ #1 | #2 }"
 	},
 	"latex-parens":{
