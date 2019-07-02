@@ -1,14 +1,68 @@
 ---
-title: 『集合と位相 I』ノート：基数など
+title: 『集合と位相 I』ノート：基数
 ---
 
-TODO: [2019-06-30][diary395]の学習ノートをここに記す。
-
 * §6.3 基数
-  * **可算集合**
+  * コメント：順序数 $\alpha$ に対等な順序数は、これ自身以外に多く存在することを見てきた。
+    e.g. $\omega \oplus n \simeq \omega.$
+    そこで、そのようなものの最小のものにはどのような性質があるかを調べていく。
+  * (Th 6.2), (Th 6.3) などにより、順序数 $\alpha$ に対して最小元
+    $\min \lbrace \xi \in \beta\,\mid\, \alpha \simeq \xi\rbrace, \quad\alpha \subsetneq \beta$ が存在する（ここで $\beta$ は好きにできるのだった）。
+    これを $\alpha$ の位数・濃度・基数といって、記号 $\lvert \alpha \rvert$ や $\operatorname{card}(\alpha)$ で表す。
+    * e.g. $n \in \omega \implies \lvert n \rvert = n.$
+    * e.g. $n \in \omega \implies \lvert \omega \otimes n \rvert = \omega.$
+  * 一般に順序数 $\alpha, \beta$ に対して $\alpha \simeq \beta \iff \lvert\alpha\rvert = \lvert\beta\rvert.$
+  * 集合 $a$ に対して順序関係 $\prec$ を適当に定めれば、$(a, \prec)$ を整列集合とできる（整列可能定理）ので、
+    集合にも基数を定義できることになる：
+    $\lvert\operatorname{ord}(a, \prec)\rvert$ を集合 $a$ の位数・濃度・基数といって、やはり同じ記号で表す。
+    * e.g. $a$ が有限集合のときには、$\lvert a\rvert$ は元の個数に等しい。
+      特に $\lvert\varnothing\rvert = 0.$
+    * 集合に対しても　$a \simeq b \iff \lvert a\rvert = \lvert b\rvert.$
+  * **可算集合**とは集合であって、その基数が自然数であるか、$\aleph_0 := \lvert \omega\rvert$ と等しいものをいう。
+  * 記号を定義する：$a \triangleleft b \iff \exists c \subset b (a \simeq c).$
+    * 全射 $f\colon b \longrightarrow a$ が存在すれば $a \triangleleft b.$
   * (L 6.1)
-  * (Th 6.6)
-  * (Cl 6.6.1)
-  * (Cl 6.6.2) (Bernstein)
-  * (Cl 6.6.3)
-  * (Cl 6.6.4)
+    * 仮定 1: 順序数 $\alpha.$
+    * 仮定 2: 集合 $s \subset \alpha.$
+    * 仮定 3: $s$ を整列集合とみなして順序数 $\beta = \operatorname{ord}(s).$
+    * 結論 $\beta \subset \alpha.$
+    * 証明
+      1. 排中律により $s = \varnothing$ または $s \ne \varnothing$ の一方しか成り立たない。
+         前者が成り立つならば、明らかに結論が成り立つ
+      2. 後者が成り立つとする。全単射順序同型写像 $f \colon s \longrightarrow \beta$ が存在する。
+      3. このとき仮定 3 より $x \in s$ および $f(x) \in \beta$ は順序数である。したがって $x \subset f(x) \lor f(x) \subset x.$
+         後者が成り立つならば $\beta = f(s) \subset s$ ゆえに仮定 2 より $\beta \subset \alpha.$ 結論が成り立つ。
+      4. $c = \lbrace x \in s\,\mid\,x \subsetneq f(x)\rbrace$ とおく。
+         排中律により $c = \varnothing$ または $c \ne \varnothing$ の一方しか成り立たない。
+
+         後者ならば
+
+         $$
+         \exists x_0 = \min c.\\
+         \forall x \in s (x \subsetneq x_0 \implies f(x) \subset x \subsetneq x_0).\\
+         \forall x \in s (x_0 \subset x \implies f(x) \supset f(x_0) \supsetneq x_0.)\\
+         \therefore x_0 \notin f(s).
+         $$
+
+         一方 $x_0 \in f(x_0).$ $f(x_0) \in \beta$ だから $x_0 \in \beta$ となり矛盾する。
+        したがって前者が成り立つ。
+  * (Th 6.6) $a \triangleleft b \implies \lvert a\rvert \subset \lvert b\rvert.$
+    * 証明：全単射写像 $f \colon a \longrightarrow \lvert a \rvert$,
+      $g \colon b \longrightarrow \lvert b\rvert$ をとる。
+      * ($\impliedby$): 包含写像 $i \colon \lvert a\rvert \longrightarrow \lvert b \rvert$ について合成写像
+        $g^{-1}\circ i\circ f\colon a \longrightarrow b$ は単射となる。ゆえに $a \triangleleft b.$
+      * ($\implies$): 単射 $h \colon a \longrightarrow b$ が存在すれば合成写像
+        $g \circ h \circ f^{-1} \colon \lvert a\rvert \longrightarrow \lvert b\rvert$ は単射である。
+        ここで $g \circ h \circ f^{-1}(\lvert a\rvert) \subset \lvert b\rvert$ とみて、
+        (L 6.1) によりこの合成写像は順序数 $\beta \subset \lvert b\rvert$ と順序同型を与える。
+        $\lvert a\rvert \simeq \beta$ となるので $\lvert a\rvert \subset \lvert b\rvert.$
+        * コメント：(L 6.1) がどう変形すればこういえるのか考えること。
+  * (Cl 6.6.1) 集合 $a, b$ について次は同値である：
+    1. 単射 $a \longrightarrow b$ が存在する。
+    2. 全射 $b \longrightarrow a$ が存在する。
+    3. $\lvert a \rvert \subset \lvert b \rvert.$
+
+    コメント：さきほどから鳩の巣原理に関係する命題を見ているのではないだろうか。
+  * (Cl 6.6.2) (Bernstein) $a \triangleleft b \land b \triangleleft a \implies a \simeq b.$
+  * (Cl 6.6.3) $a \subset \omega$ かつ $a$ が無限集合 $\implies \lvert a\rvert = \aleph_0.$
+  * (Cl 6.6.4) $a \simeq \omega$ かつ $b$ が無限集合かつ全射 $a \longrightarrow b$ が存在する $\implies b \simeq \omega.$
