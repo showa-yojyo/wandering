@@ -418,9 +418,15 @@
 		],
 		"description": "日記に書く銭湯のノート"
 	},
-	"latex-set-inline":{
+	"latex-set-inline-simple":{
 		"scope": "html,markdown",
 		"prefix": "lri",
+		"body": "\\lbrace ${1}\\rbrace",
+		"description": "{ #1 }"
+	},
+	"latex-set-inline-comprehensive":{
+		"scope": "html,markdown",
+		"prefix": "lrim",
 		"body": "\\lbrace ${1}\\,\\mid\\,${2}\\rbrace",
 		"description": "{ #1 | #2 }"
 	},
@@ -430,10 +436,28 @@
 		"body": "\\{${1}\\,|\\,${2}\\}",
 		"description": "{ #1 | #2 }"
 	},
+	"latex-set-display-tall":{
+		"scope": "html,markdown",
+		"prefix": "lrdt",
+		"body": "\\!\\left\\{\\left. ${1} \\right| \\left. ${2} \\right.\\right\\}\\!",
+		"description": "\\left\\{\\left. #1 \\right| \\left. #2 \\right.\\right\\}"
+	},
 	"latex-parens":{
 		"scope": "html,markdown",
 		"prefix": "lrp",
 		"body": "\\left(${1}\\right)",
 		"description": "(#1)"
+	},
+	"latex-abs":{
+		"scope": "html,markdown",
+		"prefix": "abs",
+		"body": "\\lvert ${1}\\rvert",
+		"description": "\\lvert #1\\rvert"
+	},
+	"latex-fn":{
+		"scope": "html,markdown",
+		"prefix": "fn",
+		"body": "${1} \\colon ${2} \\longrightarrow ${3}",
+		"description": "#1 \\colon #2 \\longto #3"
 	}
 }
