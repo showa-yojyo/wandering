@@ -420,25 +420,25 @@
 	},
 	"latex-set-inline-simple":{
 		"scope": "html,markdown",
-		"prefix": "lri",
+		"prefix": "seti",
 		"body": "\\lbrace ${1}\\rbrace",
 		"description": "{ #1 }"
 	},
 	"latex-set-inline-comprehensive":{
 		"scope": "html,markdown",
-		"prefix": "lrim",
+		"prefix": "setm",
 		"body": "\\lbrace ${1}\\,\\mid\\,${2}\\rbrace",
 		"description": "{ #1 | #2 }"
 	},
 	"latex-set-display":{
 		"scope": "html,markdown",
-		"prefix": "lrd",
+		"prefix": "setd",
 		"body": "\\{${1}\\,|\\,${2}\\}",
 		"description": "{ #1 | #2 }"
 	},
 	"latex-set-display-tall":{
 		"scope": "html,markdown",
-		"prefix": "lrdt",
+		"prefix": "Setd",
 		"body": "\\!\\left\\{\\left. ${1} \\right| \\left. ${2} \\right.\\right\\}\\!",
 		"description": "\\left\\{\\left. #1 \\right| \\left. #2 \\right.\\right\\}"
 	},
