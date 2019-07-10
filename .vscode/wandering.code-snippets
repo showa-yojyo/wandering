@@ -217,6 +217,12 @@
 		"body": "[$1]({{ site.baseurl }}{% post_url $2 %})",
 		"description": "post_url directive"
 	},
+	"LibraryChiyoda03": {
+		"scope": "html,markdown",
+		"prefix": "chiyoda-03",
+		"body": "${1|[千代田区昌平まちかど図書館][chiyoda-03],[chiyoda-03]: {{ site.baseurl }}{% link _libraries/01-chiyoda/03-shohei.md %}|}",
+		"description": "千代田区昌平まちかど図書館"
+	},
 	"LibraryShinagawa03a": {
 		"scope": "html,markdown",
 		"prefix": "shinagawa-03",
@@ -253,17 +259,11 @@
 		"body": "${1|[大田区大森西図書館][ota-03],[ota-03]: {{ site.baseurl }}{% link _libraries/11-ota/03-omorinishi.md %}|}",
 		"description": "大田区大森西図書館"
 	},
-	"LibraryOta04a": {
+	"LibraryOta04": {
 		"scope": "html,markdown",
 		"prefix": "ota-04",
-		"body": "[大田区入新井図書館][ota-04]",
-		"description": "大田区入新井図書館（本文用）"
-	},
-	"LibraryOta04b": {
-		"scope": "html,markdown",
-		"prefix": "ota-04",
-		"body": "[ota-04]: {{ site.baseurl }}{% link _libraries/11-ota/04-iriarai.md %}",
-		"description": "大田区入新井図書館（脚注用）"
+		"body": "${1|[大田区入新井図書館][ota-04],[ota-04]: {{ site.baseurl }}{% link _libraries/11-ota/04-iriarai.md %}|}",
+		"description": "大田区入新井図書館"
 	},
 	"LibraryOta05": {
 		"scope": "html,markdown",
@@ -343,17 +343,11 @@
 		"body": "[arakawa-00]: {{ site.baseurl }}{% link _libraries/18-arakawa/00-central.md %}",
 		"description": "荒川区ゆいの森あらかわ（脚注用）"
 	},
-	"LibrarySumida01a": {
+	"LibrarySumida01": {
 		"scope": "html,markdown",
 		"prefix": "sumida-01",
-		"body": "[墨田区緑図書館][sumida-01]",
-		"description": "墨田区緑図書館（本文用）"
-	},
-	"LibrarySumida01b": {
-		"scope": "html,markdown",
-		"prefix": "sumida-01",
-		"body": "[sumida-01]: {{ site.baseurl }}{% link _libraries/18-sumida/01-midori.md %}",
-		"description": "墨田区緑図書館（脚注用）"
+		"body": "${1|[墨田区緑図書館][sumida-01],[sumida-01]: {{ site.baseurl }}{% link _libraries/07-sumida/01-midori.md %}|}",
+		"description": "墨田区緑図書館"
 	},
 	"LibrarySumida02a": {
 		"scope": "html,markdown",
@@ -364,7 +358,7 @@
 	"LibrarySumida02b": {
 		"scope": "html,markdown",
 		"prefix": "sumida-02",
-		"body": "[sumida-02]: {{ site.baseurl }}{% link _libraries/18-sumida/02-tachibana.md %}",
+		"body": "[sumida-02]: {{ site.baseurl }}{% link _libraries/07-sumida/02-tachibana.md %}",
 		"description": "墨田区立花図書館（脚注用）"
 	},
 	"LibrarySumida03a": {
@@ -376,7 +370,7 @@
 	"LibrarySumida03b": {
 		"scope": "html,markdown",
 		"prefix": "sumida-03",
-		"body": "[sumida-03]: {{ site.baseurl }}{% link _libraries/18-sumida/03-yahiro.md %}",
+		"body": "[sumida-03]: {{ site.baseurl }}{% link _libraries/07-sumida/03-yahiro.md %}",
 		"description": "墨田区八広図書館（脚注用）"
 	},
 	"LibraryKatsushikan01a": {
