@@ -38,6 +38,7 @@ show_excerpts: true
 header_pages:
   - about.md
   - archive.html
+  - inventory.md
   - locations.md
 
 twitter_username: showa_yojyo
