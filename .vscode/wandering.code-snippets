@@ -457,14 +457,20 @@
 	"latex-dd":{
 		"scope": "html,markdown",
 		"prefix": "dd",
-		"body": "\\mathrm d^{$1}",
-		"description": "\\mathrm d^{#1}"
+		"body": "\\mathrm d$1",
+		"description": "\\mathrm d#1"
 	},
 	"latex-diff":{
 		"scope": "html,markdown",
 		"prefix": "diff",
 		"body": "\\frac{\\mathrm{d}$1}{\\mathrm{d}$2}",
 		"description": "\\frac{\\mathrm{d} {#1}{\\mathrm{d} {#2}}"
+	},
+	"latex-pdiff":{
+		"scope": "html,markdown",
+		"prefix": "pdiff",
+		"body": "\\frac{\\partial $1}{\\partial $2}",
+		"description": "\\frac{\\partial {#1}{\\partial {#2}}"
 	},
 	"latex-eu":{
 		"scope": "html,markdown",
