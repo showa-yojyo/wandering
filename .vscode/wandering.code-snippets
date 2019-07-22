@@ -460,6 +460,12 @@
 		"body": "\\mathrm d$1",
 		"description": "\\mathrm d#1"
 	},
+	"latex-diag":{
+		"scope": "html,markdown",
+		"prefix": "diag",
+		"body": "\\operatorname{diag}",
+		"description": "\\operatorname{diag}"
+	},
 	"latex-diff":{
 		"scope": "html,markdown",
 		"prefix": "diff",
@@ -477,5 +483,11 @@
 		"prefix": "eu",
 		"body": "\\mathrm{e}",
 		"description": "\\mathrm e"
+	},
+	"latex-inv":{
+		"scope": "html,markdown",
+		"prefix": "inv",
+		"body": "^{-1}",
+		"description": "^{-1}"
 	}
 }
