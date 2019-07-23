@@ -448,6 +448,12 @@
 		"body": "\\lvert ${1}\\rvert",
 		"description": "\\lvert #1\\rvert"
 	},
+	"latex-Abs":{
+		"scope": "html,markdown",
+		"prefix": "Abs",
+		"body": "\\left\\lvert ${1}\\right\\rvert",
+		"description": "\\left\\lvert #1\\right\\rvert"
+	},
 	"latex-fn":{
 		"scope": "html,markdown",
 		"prefix": "fn",
