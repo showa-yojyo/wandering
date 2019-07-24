@@ -229,17 +229,11 @@
 		"body": "[品川区南大井図書館][shinagawa-03]",
 		"description": "品川区南大井図書館（本文用）"
 	},
-	"LibraryKoto00a": {
+	"LibraryKoto00": {
 		"scope": "html,markdown",
 		"prefix": "koto-00",
-		"body": "[江東区江東図書館][koto-00]",
-		"description": "江東区江東図書館（本文用）"
-	},
-	"LibraryKoto00b": {
-		"scope": "html,markdown",
-		"prefix": "koto-00",
-		"body": "[koto-00]: {{ site.baseurl }}{% link _libraries/08-koto/00-koto.md %}",
-		"description": "江東区江東図書館（脚注用）"
+		"body": "${1|[江東区江東図書館][koto-00],[koto-00]: {{ site.baseurl }}{% link _libraries/08-koto/00-koto.md %}|}",
+		"description": "江東区江東図書館"
 	},
 	"LibraryShinagawa03b": {
 		"scope": "html,markdown",
