@@ -235,6 +235,12 @@
 		"body": "${1|[江東区江東図書館][koto-00],[koto-00]: {{ site.baseurl }}{% link _libraries/08-koto/00-koto.md %}|}",
 		"description": "江東区江東図書館"
 	},
+	"LibraryKoto07": {
+		"scope": "html,markdown",
+		"prefix": "koto-07",
+		"body": "${1|[江東区亀戸図書館][koto-07],[koto-07]: {{ site.baseurl }}{% link _libraries/08-koto/07-kameido.md %}|}",
+		"description": "江東区亀戸図書館"
+	},
 	"LibraryShinagawa03b": {
 		"scope": "html,markdown",
 		"prefix": "shinagawa-03",
