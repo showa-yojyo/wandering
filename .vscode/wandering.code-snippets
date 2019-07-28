@@ -412,85 +412,103 @@
 		],
 		"description": "日記に書く銭湯のノート"
 	},
-	"latex-set-inline-simple":{
+	"latex-set-inline-simple": {
 		"scope": "html,markdown",
 		"prefix": "seti",
 		"body": "\\lbrace ${1}\\rbrace",
 		"description": "{ #1 }"
 	},
-	"latex-set-inline-comprehensive":{
+	"latex-set-inline-comprehensive": {
 		"scope": "html,markdown",
 		"prefix": "setm",
 		"body": "\\lbrace ${1}\\,\\mid\\,${2}\\rbrace",
 		"description": "{ #1 | #2 }"
 	},
-	"latex-set-display":{
+	"latex-set-display": {
 		"scope": "html,markdown",
 		"prefix": "setd",
 		"body": "\\{${1}\\,|\\,${2}\\}",
 		"description": "{ #1 | #2 }"
 	},
-	"latex-set-display-tall":{
+	"latex-set-display-tall": {
 		"scope": "html,markdown",
 		"prefix": "Setd",
 		"body": "\\!\\left\\{\\left. ${1} \\right| \\left. ${2} \\right.\\right\\}\\!",
 		"description": "\\left\\{\\left. #1 \\right| \\left. #2 \\right.\\right\\}"
 	},
-	"latex-parens":{
+	"latex-parens": {
 		"scope": "html,markdown",
 		"prefix": "lrp",
 		"body": "\\left(${1}\\right)",
 		"description": "(#1)"
 	},
-	"latex-abs":{
+	"latex-abs": {
 		"scope": "html,markdown",
 		"prefix": "abs",
 		"body": "\\lvert ${1}\\rvert",
 		"description": "\\lvert #1\\rvert"
 	},
-	"latex-Abs":{
+	"latex-Abs": {
 		"scope": "html,markdown",
 		"prefix": "Abs",
 		"body": "\\left\\lvert ${1}\\right\\rvert",
 		"description": "\\left\\lvert #1\\right\\rvert"
 	},
-	"latex-fn":{
+	"latex-acosh": {
+		"scope": "html,markdown",
+		"prefix": "acosh",
+		"body": "\\operatorname{arccosh}",
+		"description": "\\operatorname{arccosh}"
+	},
+	"latex-asinh": {
+		"scope": "html,markdown",
+		"prefix": "asinh",
+		"body": "\\operatorname{arcsinh}",
+		"description": "\\operatorname{arcsinh}"
+	},
+	"latex-atanh": {
+		"scope": "html,markdown",
+		"prefix": "atanh",
+		"body": "\\operatorname{arctanh}",
+		"description": "\\operatorname{arctanh}"
+	},
+	"latex-fn": {
 		"scope": "html,markdown",
 		"prefix": "fn",
 		"body": "${1} \\colon ${2} \\longrightarrow ${3}",
 		"description": "#1 \\colon #2 \\longto #3"
 	},
-	"latex-dd":{
+	"latex-dd": {
 		"scope": "html,markdown",
 		"prefix": "dd",
 		"body": "\\mathrm d$1",
 		"description": "\\mathrm d#1"
 	},
-	"latex-diag":{
+	"latex-diag": {
 		"scope": "html,markdown",
 		"prefix": "diag",
 		"body": "\\operatorname{diag}",
 		"description": "\\operatorname{diag}"
 	},
-	"latex-diff":{
+	"latex-diff": {
 		"scope": "html,markdown",
 		"prefix": "diff",
 		"body": "\\frac{\\mathrm{d}$1}{\\mathrm{d}$2}",
 		"description": "\\frac{\\mathrm{d} {#1}{\\mathrm{d} {#2}}"
 	},
-	"latex-pdiff":{
+	"latex-pdiff": {
 		"scope": "html,markdown",
 		"prefix": "pdiff",
 		"body": "\\frac{\\partial $1}{\\partial $2}",
 		"description": "\\frac{\\partial {#1}{\\partial {#2}}"
 	},
-	"latex-eu":{
+	"latex-eu": {
 		"scope": "html,markdown",
 		"prefix": "eu",
 		"body": "\\mathrm{e}",
 		"description": "\\mathrm e"
 	},
-	"latex-inv":{
+	"latex-inv": {
 		"scope": "html,markdown",
 		"prefix": "inv",
 		"body": "^{-1}",
