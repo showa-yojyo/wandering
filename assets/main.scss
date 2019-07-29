@@ -28,3 +28,23 @@ a {
 .PageNavigation .next {
   text-align: right;
 }
+
+div.notice {
+  width: 100%;
+  border: 1px solid $brand-color;
+  margin-bottom: 24pt;
+}
+div.notice #left, div.notice #right {
+  display: inline-block;
+  vertical-align: top;
+  padding: 6pt;
+}
+div.notice #left {
+  background: $brand-color;
+  color: white;
+  font-weight: bold;
+}
+div.notice #right {
+  background: white;
+  color: black;
+}
