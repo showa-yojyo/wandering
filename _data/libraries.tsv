@@ -86,7 +86,7 @@ path	area	name	address	visited
 10-meguro/04-moriya	目黒区	守屋図書館	目黒区五本木二丁目 20-15	1
 10-meguro/05-megurohoncho	目黒区	目黒本町図書館	目黒区目黒本町二丁目 1-20	1
 10-meguro/06-senzoku	目黒区	洗足図書館	目黒区洗足二丁目 8-26	1
-10-meguro/07-midorigaoka	目黒区	緑が丘図書館	目黒区緑が丘二丁目 14-23	-1
+10-meguro/07-midorigaoka	目黒区	緑が丘図書館	目黒区緑が丘二丁目 14-23	1
 11-ota/00-ota	大田区	大田図書館	大田区田園調布南 25-1	1
 11-ota/01-omoriminami	大田区	大森南図書館	大田区大森南一丁目 17-7	1
 11-ota/02-omorihigashi	大田区	大森東図書館	大田区大森東一丁目 31-3 104	1
@@ -185,12 +185,12 @@ path	area	name	address	visited
 17-kita/12-takinogawanishi	北区	滝野川西図書館	北区滝野川六丁目 21-25 滝野川西区民センター 5 階	1
 17-kita/13-toshima	北区	豊島図書館	北区豊島三丁目 27-22 豊島区民センター 1 階	1
 17-kita/14-higashijujo	北区	東十条図書館	北区東十条三丁目 2-14 東十条区民センター 1 階	1
-18-arakawa/00-central	荒川区	ゆいの森あらかわ              	荒川区荒川二丁目 50-1	1
-18-arakawa/01-minamisenju	荒川区	南千住図書館                  	荒川区南千住六丁目 63-1	1
-18-arakawa/02-ogu	荒川区	尾久図書館                    	荒川区西尾久三丁目 12-12	1
-18-arakawa/03-machiya	荒川区	町屋図書館                    	荒川区町家五丁目 11-18	1
-18-arakawa/04-nippori	荒川区	日暮里図書館                  	荒川区東日暮里六丁目 38-4	1
-18-arakawa/05-shioiri	荒川区	汐入図書サービスステーション  	荒川区南千住八丁目 2-5 114 べるぽーと汐入東館 1 階	1
+18-arakawa/00-central	荒川区	ゆいの森あらかわ	荒川区荒川二丁目 50-1	1
+18-arakawa/01-minamisenju	荒川区	南千住図書館	荒川区南千住六丁目 63-1	1
+18-arakawa/02-ogu	荒川区	尾久図書館	荒川区西尾久三丁目 12-12	1
+18-arakawa/03-machiya	荒川区	町屋図書館	荒川区町家五丁目 11-18	1
+18-arakawa/04-nippori	荒川区	日暮里図書館	荒川区東日暮里六丁目 38-4	1
+18-arakawa/05-shioiri	荒川区	汐入図書サービスステーション	荒川区南千住八丁目 2-5 114 べるぽーと汐入東館 1 階	1
 18-arakawa/06-kammurishindo	荒川区	冠新道図書サービスステーション	荒川区西日暮里六丁目 25-14	1
 19-itabashi/00-central	板橋区	中央図書館	板橋区常盤台一丁目 13-1	1
 19-itabashi/01-akatsuka	板橋区	赤塚図書館	板橋区赤塚六丁目 38-1 赤塚庁舎 2 階	1
