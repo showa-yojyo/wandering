@@ -1,0 +1,334 @@
+---
+:title: 『新訂解析学』学習ノート第三回
+---
+
+熊原啓作著『新訂解析学』の学習ノート第三回。今回の目標は Cauchy の積分公式を理解することだ。
+それの間接的な応用に、代数学の基本定理の証明がある。
+
+TODO: 記号を整理する。
+
+# Cauchy の積分定理
+
+正則関数の諸性質を学んだところで、表題の定理を習っていく。
+
+## Cauchy の積分定理
+
+* (Th 6.1) (Cauchy)
+  * $D$: 複素平面上の領域とし、その境界 $\partial D$ は区分的に滑らかな単純曲線有限個からなるものとする。
+    * コメント：有限個でなかったら滑らかであるか怪しいから、本ノートでは省略する。
+  * $f(z)$: $D \cup \partial D$ を含む領域で定義された正則関数とする。
+
+  このとき次の等式が成り立つ：
+
+  $$
+  \int_{\partial D}\!f(z)\,\mathrm dz = 0.
+  $$
+
+  証明：
+
+  $$
+  \begin{aligned}
+      \int_{\partial D}\!f(z)\,\mathrm dz
+      &= \int_{\partial D}\!f(z)\,\mathrm dx + if(z)\,\mathrm dy\\
+      &= \iint_D\!\left(\frac{\partial if(z)}{\partial x} - i\frac{\partial f(z)}{\partial y}\right)\!\mathrm dx \mathrm dy\\
+      &= \iint_D\!\left(\frac{\partial if(x + iy)}{\partial x} - \frac{\partial f(x + iy)}{\partial y}\right)\!\mathrm dx \mathrm dy\\
+      &= \iint_D\!(if_x(x + iy) - if_y(x + iy))\,\mathrm dx \mathrm dy\\
+      &= 0.
+  \end{aligned}
+  $$
+
+  * 最初の等号は $\mathrm dz = \mathrm dx + i\mathrm dy$ による。
+  * 二番目の等号は Green の公式から $f_x = -if_y$ が成り立つことによる。
+  * 三番目の等号は $z = x + iy$ による。
+  * 四番目の等号は偏微分の chain rule である。
+  * 最後の等号に Cauchy-Green の方程式を利用した。
+* (L 6.1) $D$ が三角形の場合には $f(z)$ の微分可能性に触れずに Cauchy の積分定理が成り立つことを示せる。
+  * $D$ が三角形有限個に分割可能な多角形の場合にも適用できる。
+* (L 6.2)
+  * 集合 $D \in \Complex$ を領域とする。
+  * 関数 $f(z)$ を $D$ 上で連続であるとする。
+  * 曲線 $C \in D$ を区分的に滑らかであるとする。
+
+  このとき次が成り立つ：
+
+  $$
+  \forall \varepsilon \forall \delta(
+    \varepsilon > 0 \land \delta > 0 \implies \exists \Gamma\left(
+        \begin{gathered}
+        &\left\lvert \int_C\!f(z)\,\mathrm dz - \int_\Gamma\!f(z)\,\mathrm dz\right\rvert < \varepsilon
+        \\
+        &\land\\
+        &C.start = \Gamma.start\\
+        &\land
+        \\
+        & C.end = \Gamma.end
+        \\
+        &\land
+        \\
+        &\Gamma \subset U_\delta(C).
+        \end{gathered}
+    \right)
+  )
+  $$
+
+  証明：微分積分の練習。
+* **単連結**とは、領域 $D$ の性質であり、$D$ に含まれる任意の単一閉曲線 $C$ について、
+  $C$ の囲む内側が $D$ に含まれることをいう。
+  * 点 $\infty$ を含む領域は単連結でないものとする。
+* (Th 6.2) $f(z)$ が単連結領域 $D$ で正則であるならば、$D$ 内にある任意の閉曲線 $C$ に対して Cauchy の積分定理の等式が成り立つ。
+
+  証明：(L 6.1), (L 6.2) からの帰結である。
+* (Th 6.3) **積分路の変形定理**
+  * 集合 $D \subset \Complex$ を領域とする。
+  * 関数 $f(z)$ を $D$ 内で正則であるとする。
+  * 集合 $C \subset D,\;C_1 \subset D$ を単一閉曲線であるとする。
+  * $C$ から見て内側に $C_1$ があり、両曲線の間の領域を $\varOmega \subset D$ とする。
+
+  このとき次が成り立つ：
+
+  $$
+  \int_C\!f(z)\,\mathrm dz = \int_{C_1}\!f(z)\,\mathrm dz.
+  $$
+
+  証明：だいたい想像のとおりだが、$C$ と $C_1$ を結ぶ線分二本が共有部分をもたぬように設定することが必要だ。
+
+  * 本定理は $C$ に対する $C_1$ のような曲線が複数存在しても成立する。
+
+    $$
+    \int_C\!f(z)\,\mathrm dz = \sum_{k = 1}^n\int_{C_k}\!f(z)\,\mathrm dz.
+    $$
+
+  * そして、これは (Th 6.1) が $f^\prime(z)$ の連続性がなくても成立することを意味する。
+
+## Cauchy の積分公式
+
+* (Th 6.4) (Cauchy)
+  * 集合 $D \subset \Complex$ を領域とする。
+  * $z_0 \in D$ とする。
+  * $R > 0$ とする。
+  * $f(z)$ は $U_R(z_0) \cup \partial U_R(z_0)$ を含む領域で正則であるとする。
+
+  このとき次が成り立つ：
+
+  $$
+  f(z) = \frac{1}{2\pi i} \int_{\partial U_R(z)}\!\frac{f(\zeta)}{\zeta - z}\,\mathrm d \zeta.
+  $$
+
+  証明：関数 $F(\zeta) := \dfrac{f(\zeta)}{\zeta - z}$ が領域 $\overline{U_R(z_0)}\setminus \lbrace z_0 \rbrace$ で正則であることに注意する。
+
+  (Th 6.3) により、任意の $\varepsilon > 0$ について：
+
+  $$
+  \begin{aligned}
+  \int_{\partial U_R(z_0)}\!\dfrac{f(\zeta)}{\zeta - z}\,\mathrm d\zeta
+  &= \int_{\partial U_\varepsilon(z_0)}\!\dfrac{f(\zeta)}{\zeta - z}\,\mathrm d\zeta\\
+  &= i \int_0^{2\pi}\!f(z_0 + \varepsilon \mathrm{e}^{i\theta})\,\mathrm d\theta.
+  \end{aligned}
+  $$
+
+  TODO: ゴチャゴチャしている？
+
+* (Th 6.5) (Cauchy)
+  * $D$ を複素平面上の領域であるとする。
+  * $\partial D$ は区分的に滑らかな単一曲線であるとする。
+  * $f(z)$ は $\overline D$ を含む領域で正則であるとする。
+
+  このとき：
+
+  $$
+  f(z) = \frac{1}{2\pi i}\int_{\partial D}\!\frac{f(\zeta)}{\zeta - z}\,\mathrm d\zeta.
+  $$
+
+  証明：
+  $\forall z_0(z_0 \in D \implies \exists R(R > 0 \land \overline{U_R(z_0)} \subset D).$
+
+  関数 $\dfrac{f(\zeta)}{\zeta - z}$ は $D\setminus\overline{U_R(z_0)}$ においても正則である。
+  したがって (Th 6.3) が適用できて：
+
+  $$
+  \def\integrand{ \frac{f(\zeta)}{\zeta - z} }
+  \int_{\partial U_R(z_0)}\!\integrand\,\mathrm d\zeta
+  = \int_{\partial D}\!\integrand\,\mathrm d\zeta.
+  $$
+
+  (Th 6.4) より左辺は結論の左辺を $2\pi i$ で割ったものに等しいから、結論が示された。
+* (Th 6.6) (Cauchy)
+
+  (Th 6.5) と同じ仮定の下、$f(z)$ は $D$ 内で $C^\infty$ 級関数であり、導関数は次で与えられる：
+
+  $$
+  f^{(n)}(z) = \frac{n!}{2\pi i}\int_{\partial D}\!
+    \frac{f(\zeta)}{(\zeta - z)^{n + 1}}\,\mathrm d\zeta.
+  $$
+
+  証明：まず一階導関数を計算と評価で決定する。高階導関数は帰納的に決定される。
+
+  $\forall z(z \in D \implies \exists h(h \in \Complex (z + h \in D))).$
+
+  $$
+  \begin{aligned}
+      \frac{f(z + h) - f(z)}{h}
+      &= \frac{1}{2\pi i h}\int_{\partial D}\!\left(\frac{1}
+          {\zeta - (z + h)} - \frac{1}{\zeta - z}\right)f(\zeta)\,\mathrm d\zeta\\
+      &= \frac{1}{2\pi i}\int_{\partial D}\!\frac{f(\zeta)}{(\zeta - z - h)(\zeta - z)}\,\mathrm d\zeta.
+  \end{aligned}
+  $$
+
+  $\exists \varepsilon(\varepsilon > 0 \land U_\varepsilon(z) \subset D \land z + h \in U_\varepsilon(z)).$
+
+  $\displaystyle M := \max_{\zeta \in \partial D}{f(\zeta)},\; L := l(\partial D).$
+
+  $$
+  \begin{aligned}
+      &\phantom{\le}\left\lvert \int_{\partial D}\! \frac{f(\zeta)}{(\zeta - z - h)(\zeta - z)} \,\mathrm d\zeta
+          - \int_{\partial D}\! \frac{f(\zeta)}{(\zeta - z)^2}\,\mathrm d\zeta\right\rvert\\
+      &\le \left\lvert h \int_{\partial D}\! \frac{f(\zeta)}{(\zeta - z - h)(\zeta - z)^2} \,\mathrm d\zeta\right\rvert\\
+      &\le \frac{\lvert h \rvert ML}{(\varepsilon - \lvert h \rvert)\varepsilon^2}.
+  \end{aligned}
+  $$
+
+  $h \to 0$ のとき右辺は 0 に収束する。よって：
+
+  $$
+  f^\prime(z) = \frac{1}{2\pi i}\int_{\partial D}\! \frac{f(\zeta)}{(\zeta - z - h)(\zeta - z)} \,\mathrm d\zeta
+    = \frac{1}{2\pi i}\int_{\partial D}\! \frac{f(\zeta)}{(\zeta - z)^2}\,\mathrm d\zeta.
+  $$
+
+  以上の議論を $f(z)$ の代わりに $f^\prime(z)$ に対して繰り返すと、
+  $f^\prime(z)$ は微分可能であり、かつ次が成り立つ：
+
+  $$
+  f^{\prime\prime}(z)
+    = \frac{2}{2\pi i}\int_{\partial D}\! \frac{f(\zeta)}{(\zeta - z)^3}\,\mathrm d\zeta.
+  $$
+
+  以下、これを繰り返して結論の $n$ 階導関数の公式を得る。
+* (C 6.1) $f(z)$ が領域 $D$ で正則であるならば、$f(z)$ は $D$ で $C^\infty$ 級である。
+  * コメント：正則関数は $C^\infty$ 級関数である。
+* (Th 6.7) (Morera)
+  * $D$ を単連結領域とし、
+  * $f(z)$ を $D$ で連続な関数とし、
+  * $C \subset D$ を任意の閉曲線であるとする。
+
+  このとき $\displaystyle \int_C\!f(z)\,\mathrm dz = 0$ ならば $f(z)$ は $D$ で正則である。
+
+  証明：$f(z)$ に不定積分が存在することを示す。
+* (Th 6.8) (Cauchy)
+  * $R > 0$ とする。
+  * $f(z)$ は $\overline{U_R(z)}$ で正則であるとする。
+  * $M \ge 0$ が存在して $z \in \partial U_R(z)$ において $\lvert f(z) \rvert \le M$ とする。
+
+  このとき：
+
+  $$
+  \lvert f^{(n)}(z) \rvert \le \frac{n!M}{R^n}.
+  $$
+
+  証明：(Th 6.6) より $C := \partial U_R(z)$ とおくと：
+
+  $$
+  \begin{aligned}
+      \lvert f^{(n)}(z) \rvert
+      &\le \frac{n!}{2\pi}\int_C\!\frac{\lvert f(\zeta)\rvert}{\lvert \zeta - z\rvert^{n + 1}}\,\lvert \mathrm d\zeta\rvert\\
+      &\le \frac{n!}{2\pi}\int_C\!\frac{M}{R^{n + 1}}\,\lvert \mathrm d\zeta\rvert\\
+      &=   \frac{n!}{2\pi} \cdot \frac{M}{R^{n + 1}} \cdot 2\pi R\\
+      &=   \frac{n!M}{R^n}.
+  \end{aligned}
+  $$
+
+  * コメント：$\displaystyle \int_C \lvert \mathrm d\zeta\rvert$ に注意。
+* (Th 6.9) (Liouville) 有界な整関数は定数である。
+
+  証明：
+  $\forall z \in \Complex \exists M \ge 0 (\lvert f(z)\rvert \le M).$
+
+  (Th 6.8) より $\forall R > 0 \lvert f^\prime(z)\rvert \le \dfrac{M}{R}.$
+
+  $R \to \infty$ とすると $f^\prime(z) = 0$ が導かれる。
+  導関数が恒等的にゼロである整関数は定数しかない。
+* (Th 6.10) **代数学の基本定理**：
+  $\Complex$ 係数の $n$ 次方程式は $\Complex$ 内に重根を考慮して、ちょうど $n$ 個の根を持つ。
+
+  証明：$P(z)$ を次のようにおく。$P(z) = 0$ となる $z \in \Complex$ が存在しないと仮定して矛盾を導く：
+
+  $$
+  P(z) = a_0 z^n + \dotsc + a_n,\quad n \ge 1,\;a_0 \ne 0,\;a_j \in \Complex\,(j = 0, \cdots, n).
+  $$
+
+  * $\dfrac{1}{P(z)}$ は分母がゼロでないゆえ整関数である。
+  * $\dfrac{1}{P(z)}$ は有界であることがわかる：十分大きな $R > 0$ が存在して、
+    * $\lvert z \rvert > R \implies \left\lvert \dfrac{1}{P(z)} \right\rvert < 1.$
+
+      $$
+      \begin{aligned}
+          \because\lim_{z \to \infty}\frac{1}{P(z)}
+          &= \lim_{z \to \infty}\frac{1}{\lvert z \rvert^n}\cdot
+          \left\lvert a_0 + \frac{a_1}{z} + \dotsc + \frac{a_n}{z^n}\right\rvert^{-1}\\
+          &= 0.
+      \end{aligned}
+      $$
+
+    * $\lvert z \rvert \le R \implies \exists M > 0 \left\lvert\dfrac{1}{P(z)} \right\rvert < M.$
+      * コメント：これは閉集合で定義された連続関数の性質。
+  * (Th 6.9) によれば、この関数の逆数は定数でなければならない。これは $P(z)$ の（ゼロでない整級数の形で書かれるという）定義に矛盾する。
+  * よって方程式 $P(z) = 0$ には根が存在する。
+    * コメント：教科書はここからの記述を省略しているが、因数分解できることを言って再帰的に $n$ 個の因数があることを示せばいいのだろう。
+
+## 回転数
+
+位相幾何学的フレーバーのするトピックだ。
+
+* (Th 6.11) 回転数は整数である
+  * $\alpha \in \Complex$
+  * $C \in \Complex$ を閉曲線であり $\alpha \notin C$ であるものとする。
+
+  このとき：
+
+  $$
+  \operatorname{Ind}(C, \alpha) :=
+  \frac{1}{2\pi i}\int_C\!\frac{\mathrm dz}{z - \alpha} \in \Z.
+  $$
+
+  証明：
+
+  * まず曲線 $C$ にパラメーター表示を与えておく。ここで $z(t)$ は区分的に滑らかな曲線であるものとする：
+
+    $$
+    C = \{z(t) \in \Complex\,|\,t \in {[a, b]}\}.
+    $$
+
+  * 次に関数 $h(t)$ を次で定める。
+    証明の目標は $\operatorname{Ind}(C, \alpha) = h(b) \in \Z$ である：
+
+    $$
+    h(t) := \frac{1}{2\pi i}\int_a^t \frac{z^\prime(\tau)}{z(\tau) - \alpha}\,\mathrm d\tau.
+    $$
+
+    定義から有限個の点を除けば $h(t)$ は微分可能である。
+
+  * さらに合成関数 $g(t)$ を次で定義して、曲線 $C$ の定義域上定数であることを示す：
+
+    $$
+    g(t) = \mathrm{e}^{-2\pi i h(t)}(z(t) - \alpha).
+    $$
+
+  * $g^\prime(z) = 0$ を示す（計算で）。
+  * $g(a) = g(b), z(a) = z(b), h(a) = 0$ より $\mathrm{e}^{-2\pi i h(b)} = 1$ を示し、
+    $h(b) \in \Z$ を結論する。
+* (Th 6.12)
+
+  $\operatorname{Ind}(C, \alpha) = 0$ なる
+  閉曲線 $C \subset D$, 点 $\alpha \notin D$ に対して
+  $D$ で定義された正則関数 $f(z)$ には Cauchy の積分定理が成り立つ。
+
+  $$
+  \begin{aligned}
+  \int_C\!f(z)\,\mathrm dz &= 0,\\
+  \operatorname{Ind}(C, z_0)f(z_0) &= \frac{1}{2\pi i}\int_C\!\frac{f(z)}{z - z_0}\,\mathrm dz,\quad\forall z_0 \in D\!\setminus\!C.
+  \end{aligned}
+  $$
+
+----
+
+第三回は以上。
+
