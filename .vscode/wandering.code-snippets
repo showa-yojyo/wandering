@@ -73,6 +73,12 @@
 		"body": "[$1]({{ site.baseurl }}{% link _libraries/.md} %})",
 		"description": "link directive"
 	},
+	"画像挿し込み": {
+		"scope": "html,markdown",
+		"prefix": "image",
+		"body": "![$1]({{ \"/assets/images/$2\" | relative_url }})",
+		"description": "![$1]({{ \"/assets/images/$2\" | relative_url }})"
+	},
 	"LinkFooterLibs01Chiyoda": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_01_chiyoda",
