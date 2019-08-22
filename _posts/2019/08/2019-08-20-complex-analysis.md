@@ -184,31 +184,44 @@ title: 『新訂解析学』学習ノート第四回
 
   証明：
 
-  * $R > 0$ を $U_R(z_0) \subset D$ を満たすようにとる。
-  * 点 $z_1 \in U_R(z_0)$ を $z_1 \ne z_0$ のようにとる。
-    * $\lvert f(z_1) \rvert < \lvert f(z_0) \rvert$ を仮定する。
-  * $r := d(z_0, z_1) < R$ とする。
-  * $\exists \theta_1(\theta_1 \in \R \land z_1 - z_0 = r\mathrm{e}^{i\theta_1})$ ゆえ：
+  $D$ が領域であることから $\exists R(R > 0 \land U_R(z_0) \subset D.$
+
+  ここで次を仮定して背理法で証明する：
+
+  $$
+  \exists z_1(z_1 \in U_R(z_0) \land \lvert f(z_1) \rvert < \lvert f(z_0) \rvert).
+  $$
+
+  ここで $r, \theta_1$ を $z_1 - z_0 = r \mathrm{e}^{i\theta_1}$ をみたすものとする（コメント：$\theta_1$ は一意的に決まらないが気にしない）。
+
+  $\theta_1$ の十分近くの $\theta$ について次が成り立つ：
+
+  $$
+  \lvert f(z_0 + r\mathrm{e}^{i\theta}) \rvert < \lvert f(z_0) \rvert
+  $$
+
+  ここで Cauchy の積分公式を応用すると：
 
   $$
   \begin{aligned}
-      \lvert f(z_1) \rvert &= \lvert f(z_0 + r \mathrm{e}^{i\theta_1})\rvert\\
+      \lvert f(z_0 + r \mathrm{e}^{i\theta})\rvert
       &< \lvert f(z_0) \rvert\\
-      &= \left\lvert \frac{1}{2\pi i}\int_{\lvert z - z_0 \rvert = r}\!\frac{f(z)}{z - z_0}\,\mathrm dz \right\rvert\\
+      &= \left\lvert \frac{1}{2\pi i}\int_{\partial U_r(z_0)}\!\frac{f(z)}{z - z_0}\,\mathrm dz \right\rvert\\
       &\le \frac{1}{2\pi}\int_0^{2\pi}\! \lvert f(z_0 + r \mathrm{e}^{i\theta})\rvert\,\mathrm d\theta\\
+      &< \frac{1}{2\pi}\int_0^{2\pi}\! \lvert f(z_0)\rvert\,\mathrm d\theta\\
       &< \lvert f(z_0) \rvert.
   \end{aligned}
   $$
 
-  TODO: 上の評価で矛盾を導かれていなければならないが、いまいち。
-
-  ゆえに
+  つまり $\lvert f(z_0) \rvert < \lvert f(z_0) \rvert.$ 明らか非合理である。
+  ゆえに背理法により：
 
   $$
-  \forall z(z \in U_R(z_0) \implies \lvert f(z) \rvert = \lvert f(z_0) \rvert).
+  \forall z_1(z_1 \in U_R(z_0) \implies \lvert f(z_1) \rvert \ge \lvert f(z_0) \rvert).
   $$
 
-  絶対値が定数であるような正則関数は定数関数であるので、
+  右辺は最大値であるので、結局 $\lvert f(z) \rvert$ は $D$ で定数である。
+  絶対値が定数である正則関数は定数関数であるので、
 
   $$
   \forall z(z \in U_R(z_0) \implies f(z) = f(z_0)).
@@ -236,6 +249,12 @@ title: 『新訂解析学』学習ノート第四回
     \land \lvert f^\prime(0) \rvert \le \frac{M}{R}\right).
   $$
 
+  $\lvert f(z) \rvert$ の不等式について、等号成立は次が成り立つときと同値である：
+
+  $$
+  \exists\theta\left(\theta \in \R \land f(z) = \mathrm{e}^{i\theta}\frac{M}{R}\right).
+  $$
+
   証明：
 
   因数定理より $f(z) = z\varphi(z)$ を満たす $D$ 上の正則関数 $\varphi(z)$ が存在する。
@@ -260,14 +279,8 @@ title: 『新訂解析学』学習ノート第四回
   \lvert f^\prime(0) \rvert = \lvert \varphi(0) \rvert \le \frac{M}{R}.
   $$
 
-  等号成立条件を見よう。もし $z = z_0 \in U_R(0)$ で等号ならば：
-
-  $$
-  \begin{aligned}
-  f(z_0) &= \frac{M}{R}\lvert z \rvert.\\
-  \therefore \lvert \varphi(z_0) \rvert &= \frac{M}{R}.
-  \end{aligned}
-  $$
+  もし $z = z_0 \in U_R(0)$ で $\lvert f(z_0)\rvert = \dfrac{M}{R}\lvert z_0\rvert$ ならば
+  $\lvert \varphi(z_0) \rvert = \dfrac{M}{R}.$
 
   再び最大値の原理により $\varphi(z)$ は定数である。このとき
 
