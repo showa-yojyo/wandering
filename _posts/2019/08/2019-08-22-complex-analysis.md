@@ -57,7 +57,7 @@ title: 『新訂解析学』学習ノート第五回
   $$
 
   証明：
-  $\displaystyle g_n(z) := \sum_{i = 1}^n f_i(z)$ とおくと、関数列 $\lbrace g_n(z) \rbrace$ は
+  $\displaystyle g_n(z) := \sum_{j = 1}^n f_j(z)$ とおくと、関数列 $\lbrace g_n(z) \rbrace$ は
   **Th 7.6** の仮定を満たす。
 * **Th 7.8** 極限と微分の順序交換
   * $D$ を領域とする。
