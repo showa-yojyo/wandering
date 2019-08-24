@@ -1,0 +1,344 @@
+---
+title: 『新訂解析学』学習ノート第七回
+---
+
+熊原啓作著『新訂解析学』の学習ノート第七回。
+
+# 留数定理
+
+* 有理型関数の留数を定義する。
+* 留数を応用して定積分を計算する。
+
+## 留数定理
+
+* **留数**
+  * 定義：$f(z)$ をある点で Laurent 展開するときの係数 $c_{-1}$ である。
+  * 記号：$f(z)$ を点 $\alpha$ で Laurent 展開されたものの留数を $\operatorname{Res}(f:\alpha_j)$ で表す。
+* **Th 9.1** 留数定理
+  * $D$ を領域とする。
+  * $C \subset D$ を単一閉曲線で、その内側はすべて $D$ に含まれるものとする。
+  * 点 $\alpha_1, \dotsc, \alpha_m \in D$ は $C$ の内側にあるとする。
+  * $f(z)$ は $D\setminus\lbrace \alpha_1, \dotsc, \alpha_m \rbrace$ 上正則であるとする。
+
+  このとき次が成り立つ：
+
+  $$
+  \int_C\!f(z)\,\mathrm dz = \sum_{j = 1}^m \operatorname{Res}(f\colon \alpha_j).
+  $$
+
+  証明：
+  $C$ の内側に関する仮定から、各点 $\alpha_j$ を取り囲む十分小さい円 $C_j$ が $C$ 内部に存在する。
+  ここで $f(z)$ の点 $\alpha_j$ まわりの Laurent 展開を書き出すと：
+
+  $$
+  f(z) = \sum_{n = -\infty}^\infty c_n(z - \alpha_j)^n,\quad
+  c_n = \frac{1}{2\pi i}\int_{C_j}\frac{f(\zeta)}{(\zeta - \alpha_j)^{n+1}}\,\mathrm d\zeta.
+  $$
+
+  特に
+
+  $$
+  c_{-1} = \operatorname{Res}(f\colon\alpha_j) =
+  \frac{1}{2\pi i}\int_{C_j}f(\zeta)\,\mathrm d\zeta.
+  $$
+
+  これらの円に対して Cauchy の積分定理により：
+
+  $$
+  \begin{aligned}
+      \int_C\!f(z)\,\mathrm dz
+      &= \sum_{j = 1}^m \int_{C_j}\!f(z)\,\mathrm dz\\
+      &= 2\pi i \sum_{j = 1}^m \frac{1}{2\pi i} \int_{C_j}\!f(z)\,\mathrm dz\\
+      &= 2\pi i \sum_{j = 1}^m \operatorname{Res}(f\colon \alpha_j).
+  \end{aligned}
+  $$
+
+* **Th 9.2** $f(z)$ が $z = \alpha$ を $k$ 位の極としてもてば
+
+  $$
+  \operatorname{Res}(f\colon \alpha)
+  = \frac{1}{(k - 1)!}\lim_{z \to \alpha} \frac{\mathrm{d}^{k-1}}{\mathrm{d}z^{k-1}}((z - \alpha)^kf(z)).
+  $$
+
+  証明：Laurent 展開を変形して等式を導く。
+
+  $$
+  \begin{aligned}
+      f(z) &= \sum_{n = -k}^{-1}\frac{c_n}{(z - \alpha)^{-n}} + c_0 + \sum_{n = 1}^\infty c_n(z - z_0)^n.\\
+      \therefore (z - \alpha)^kf(z) &= \sum_{n = -k}^{-1}c_n(z - \alpha)^{k + n} + \sum_{n = 1}^\infty c_n(z - \alpha)^{k + n}\\
+      \therefore \frac{\mathrm{d}^{k-1}}{\mathrm{d}z^{k-1}}((z - \alpha)^kf(z))
+        &= (k - 1)! c_{-1} + \sum_{n = 0}^\infty c_n(z - \alpha)^X Y,\quad X \ne 0,\;Y \ne 0.
+  \end{aligned}
+  $$
+
+  ここで極限 $z \to \alpha$ をとれば結論の式になる。
+* **Th 9.3** **偏角の原理**
+  * 領域境界 $\partial D$ が有限個の単一閉曲線からなるとする。
+  * $f(z)$ を $D$ で有理型かつ $\partial D$ 上非ゼロな正則関数とする。
+  * $P$ を $D$ に存在する極すべての位数の和とする。
+  * $N$ を $D$ に存在する零点すべての位数の和とする。
+
+  このとき次が成り立つ：
+
+  $$
+  \frac{1}{2\pi i}\int_{\partial D}\!\frac{f^\prime(z)}{f(z)}\,\mathrm dz = P - N.
+  $$
+
+  証明：
+  $z = \alpha$ を $f(z)$ の $m$ 位の零点とする。このとき十分小さい $R > 0$ が存在して、
+  $U_R(\alpha)$ 上 $f$ は正則かつ（もしあれば）他の極を含まないようにできる。
+
+  因数定理により $f(z) = (z - \alpha)^m\varphi(z) \land \varphi(\alpha) \ne 0$ をみたす正則関数 $\varphi(z)$ が存在する。
+  これを用いて被積分関数を書き直すと：
+
+  $$
+  \begin{aligned}
+      \frac{f^\prime(z)}{f(z)}
+      &= \frac{m(z - \alpha)^{m - 1}\varphi(z) + (z - \alpha)\varphi^\prime(z)}{(z - \alpha)^m\varphi(z)}\\
+      &= \frac{m}{z - \alpha} + \frac{\varphi^\prime(z)}{\varphi(z)}.
+  \end{aligned}
+  $$
+
+  これは $\dfrac{f^\prime(z)}{f(z)}$ が $\alpha$ を 1 位の極であることを示している。すなわち
+
+  $$
+  \operatorname{Res}\left(\frac{f^\prime}{f}\colon\alpha\right) = m.
+  $$
+
+  今度は点 $\beta$ を$f(z)$ の $l$ 位の極であるとする。
+  このとき $\psi(z) := (z - \beta)^lf(z)$ とおくと、これは正則であり $\psi(\beta) \ne 0.$
+  先ほどと同様に：
+
+  $$
+  \begin{aligned}
+  \frac{f^\prime(z)}{f(z)} &= \frac{-l}{z - \beta} + \frac{\psi^\prime(z)}{\psi(z)}.\\
+  \therefore \operatorname{Res}\left(\frac{f^\prime}{f}\colon\beta\right) &= -l.
+  \end{aligned}
+  $$
+
+  留数定理により
+
+  $$
+  \begin{aligned}
+  \frac{1}{2\pi i}\int_{\partial D}\!\frac{f^\prime(z)}{f(z)}\,\mathrm dz
+  &= \sum_j \operatorname{Res}\left(\frac{f^\prime}{f}\colon\beta_j\right)
+  + \sum_j \operatorname{Res}\left(\frac{f^\prime}{f}\colon\alpha_j\right)\\
+  &= P - N.
+  \end{aligned}
+  $$
+
+## 定積分の計算
+
+* **E 9.1** 三角関数の有理式の定積分
+
+  $$
+  I = \int_0^{2\pi}\!R(\cos\theta, \sin\theta)\,\mathrm d\theta.
+  $$
+
+  $z = \mathrm{e}^{i\theta}$ とおいて置換積分を考える。
+  * $\mathrm dz = i\mathrm{e}^{i\theta}\,\mathrm d\theta.$
+  * $\cos\theta, \sin\theta$ を $z$ で表すやり方は、$z^2$ を計算してこねくり回すことで得る。
+
+    $$
+    \cos\theta = \frac{z^2 + 1}{2z},\quad
+    \sin\theta = \frac{z^2 - 1}{2iz}.
+    $$
+
+  積分路は $C\colon \lvert z \rvert = 1$ とする：
+
+  $$
+  I = \frac{1}{i}\int_C\!R\left(\frac{z^2 + 1}{2z}, \frac{z^2 - 1}{2iz}\right)\frac{1}{z}\,\mathrm dz.
+  $$
+
+  被積分関数を $f(z)$ とおき、その極すべてを $\alpha_1, \dotsc, \alpha_m$ とすると：
+
+  $$
+  I = 2\pi \sum_{j = 1}^m \operatorname{Res}(f\colon \alpha_j).
+  $$
+
+* **E 9.2** 多項式の有理式の積分
+  * $P(x), Q(x)$ を多項式とする。
+  * $\deg P(x) + 2 \le \deg Q(x).$
+  * $Q(z)$ は実軸上に零点をもたないとする。
+
+  このとき次の形の広義積分は求積できる：
+
+  $$
+  I = \int_{-\infty}^{\infty}\!\frac{P(x)}{Q(x)}\,\mathrm dx.
+  $$
+
+  解：
+  $f(z) := \dfrac{P(z)}{Q(z)},$
+  $P(x) = \sum_{j = 0}^l a_j x^{l - j},$
+  $Q(x) = \sum_{j = 0}^m b_j x^{m - j}$ とおく。
+
+  $\lim_{z \to \infty} \lvert z^{m - l} f(z)\rvert = \left\lvert \dfrac{a_0}{b_0} \right\rvert \ne \infty$ に注意する。
+
+  分母 $Q(z)$ の零点のうち、上半平面にあるものを $\alpha_1, \dotsc, \alpha_n$ とする。
+  * 十分大きい $R > 0$ をとって、原点を中心とする半径 $R$ の半円外部にこれらの零点がまったくないようにできる。
+  * 十分大きい $M > 0$ が存在して $\lvert z \rvert \ge R \implies \lvert z^{m - l}f(z)\rvert \le M$ とできる。
+
+  複素平面上に積分路 $C = C_1 + C_2$ をとる。ここで：
+  * $C_1$: 実軸上の区間 ${[-R, R]}$
+  * $C_2$: 上述の半円
+
+  $$
+  \begin{aligned}
+      \int_{C_2}\!f(z)\,\mathrm dz
+      &= \left\lvert \int_0^\pi\!f(R\mathrm{e}^{i\theta})iR\mathrm{e}^{i\theta}\,\mathrm d\theta\right\rvert\\
+      &\le \frac{M\pi}{R^{m - l -1}} \to 0 \quad (R \to \infty).\\
+  \therefore \lim_{R \to \infty}\int_C\!f(z)\,\mathrm dz
+  &= \lim_{R \to \infty}\int_{-R}^{R}\,f(x)\,\mathrm dx = I.
+  \end{aligned}
+  $$
+
+  一方、留数定理により
+
+  $$
+  \int_C\!f(z)\,\mathrm dz = 2\pi i \sum_{j = 1}^n \operatorname{Res}(f\colon\alpha_j).
+  $$
+
+  この値は $R$ によらないから次の結果を得る：
+
+  $$
+  I = 2\pi i \sum_{j = 1}^n \operatorname{Res}\left(\frac{P}{Q}\colon\alpha_j\right).
+  $$
+
+* **E 9.3** Fourier 変換
+  * 仮定は **E 9.2** と同じとする。
+  * **E 9.2** において、$P(x)$ の代わりに $P(x)\mathrm{e}^{-i\xi x}$ としてよい。
+    なぜなら $\xi < 0$ のとき $\Im z > 0 \implies \lvert \mathrm{e}^{-i\xi x} \rvert < 1$ だから。
+
+    $$
+    \begin{aligned}
+    \mathscr{F}[f](\xi) &= \frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty\!f(x)\mathrm{e}^{-i\xi x}\,\mathrm dx\\
+    &= \frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty\!\frac{P(x)\mathrm{e}^{-i\xi x}}{Q(x)}\,\mathrm dx\\
+    &= \sqrt{2\pi} i \sum_{j = 1}^m \operatorname{Res}(\mathrm{e}^{-i\xi x} f(x)\colon\alpha_j).
+    \end{aligned}
+    $$
+
+    ここで $\alpha_j$ は上半平面の零点とする。
+
+    $\xi > 0$ のときは $Q(z)$ の下半平面の零点周りの留数を採用する。
+* **E 9.4**
+  * $P(x), Q(x)$ は多項式で $\deg P(x) \le \deg Q(x).$
+  * $Q(x)$ は実軸上に零点がない。
+
+  このとき、次の広義積分は求積可能である：
+
+  $$
+  I(\lambda) := \int_{-\infty}^\infty\!\frac{P(x)}{Q(x)}\frac{\sin \lambda x}{x}\,\mathrm dx
+  $$
+
+  解：
+  $\lambda$ の符号によって場合分けが生じるようだが、ひとまず $\lambda > 0$ としておく。
+  * $f(z) = \dfrac{P(z)}{zQ(z)}\mathrm{e}^{i\lambda z}$ とおく。
+  * 積分路を $C = C_1 + C_2 + C_3 + C_4$ とする。ここで
+    * $0 < \varepsilon < R$ は $Q(z)$ のどの零点 $\alpha_j$ も
+      $\varepsilon < \lvert \alpha_j \rvert < R$ をみたすものとし、
+    * $C_1$: 閉区間 ${[-R, -\varepsilon]}.$
+    * $C_2$: 上半平面の円弧 $\varepsilon \mathrm{e}^{i^\theta}.$
+    * $C_3$: 閉区間 ${[\varepsilon, R]}.$
+    * $C_4$: 上半平面の円弧 $R \mathrm{e}^{i^\theta}.$
+
+    とする。
+
+  * まず $\displaystyle \int_{C_4}\,f(z)\,\mathrm dz = 0.$
+  * $C_2$ については $z = 0$ が $f$ の 1 位の極である。
+    よって次の条件を満たす関数 $\varphi(z)$ が存在する。
+    * $z = 0$ の近傍で正則
+    * $\displaystyle f(z) = \frac{P(z)}{Q(z)}\cdot\frac{1}{z} + \varphi(z).$
+    * $\displaystyle \int_{C_2}\!\frac{\mathrm dz}{z} = -i\pi.$
+
+    一方 $\lvert \varphi(z) \rvert \le M$ とすれば
+
+    $$
+    \left\lvert \int_{C_2}\!\varphi(z)\,\mathrm dz\right\rvert
+    \le M\pi\varepsilon \to 0\quad(\varepsilon \to 0).
+    $$
+
+  * $\alpha_j$ を $Q(z)$ の零点のうち上半平面にあるものとすると、
+    $\displaystyle\int_C\!f(z)\,\mathrm dz = 2\pi i \sum_j \operatorname{Res}(f\colon \alpha_j)$ なので
+
+    $$
+    \begin{aligned}
+        \lim_{\varepsilon \to 0}\lim_{R \to \infty}\int_\varepsilon^R \!\frac{P(x)}{xQ(x)}\mathrm{e}^{i\lambda x}\,\mathrm dx
+        &= i\pi \frac{P(0)}{Q(0)} + 2\pi i \sum_j \operatorname{Res}(f:\alpha_j).
+    \end{aligned}
+    $$
+
+    この等式の複素共役を $2i$ で割った値を引いて
+
+    $$
+    \begin{aligned}
+        \lim_{\varepsilon \to 0}\lim_{R \to \infty}\int_\varepsilon^R \!\frac{P(x)}{xQ(x)}\frac{\sin\lambda x}{x}\,\mathrm dx
+        &= \pi \frac{P(0)}{Q(0)} + 2\pi \sum_j \Re\operatorname{Res}(f:\alpha_j).
+    \end{aligned}
+    $$
+
+    $\displaystyle \lim_{x \to 0}\frac{\sin x}{x} = 1$ により
+
+    $$
+    I(\lambda) = \pi \frac{P(0)}{Q(0)} + 2\pi \sum_j \Re\operatorname{Res}(f:\alpha_j).
+    $$
+
+* **E 9.5** (Fresnel)
+
+  $$
+  \int_0^\infty\!\cos x^2\,\mathrm dx =
+  \int_0^\infty\!\sin x^2\,\mathrm dx = \frac{\sqrt{2\pi}}{4}.
+  $$
+
+  証明：
+  $f(z) = \mathrm{e}^{-iz^2}$ とおくと次が成り立つ：
+
+  $$
+  I := \int_0^\infty\!\cos x^2\,\mathrm dx -
+  i \int_0^\infty\!\sin x^2\,\mathrm dx =
+  \int_0^\infty\! f(x)\,\mathrm dx.
+  $$
+
+  積分路 $C$ を第一象限にある $\pi/4$ を見込む角で半径 $R > 0$ の扇形にとる。
+  $C = C_1 + C_2 + C_3$ と分割し、
+  * $C_1$: 閉区間 ${[0, R]}.$
+  * $C_2$: 円弧部分 $R \mathrm{e}^{i\theta}$
+  * $C_3$: 線分 $y = x$ の長さ 1 の部分
+
+  とする。
+
+  Cauchy の定理により
+
+  $$
+  \int_C\!f(z)\,\mathrm dz = 0.
+  $$
+
+  $C_1$ 部分は Gauss より
+
+  $$
+  \begin{aligned}
+  \lim_{R \to \infty}\int_{C_1}\!f(z)\,\mathrm dz
+  &= \int_0^\infty\! \mathrm{e}^{-x^2}\,\mathrm dx\\
+  &= \frac{\sqrt{\pi}}{2}.
+  \end{aligned}
+  $$
+
+  $C_3$ 部分は $z = \mathrm{e}^{i\frac{\pi}{4}t}$ で置換積分する。
+
+  $$
+  \begin{aligned}
+      \int_{C_3}\!f(z)\,\mathrm dz
+      &= -\mathrm{e}^{i\frac{\pi}{4}}\int_0^R\!\mathrm{e}^{-it^2}\,\mathrm dt\\
+      &\to -\mathrm{e}^{i\frac{\pi}{4}} I \quad(R \to \infty).
+  \end{aligned}
+  $$
+
+  $C_2$ 部分は $R \to \infty$ のとき 0 に収束する（これまで何度かやっているように評価する）。
+
+  $$
+  \therefore I = \frac{\sqrt{2\pi}}{2}\mathrm{e}^{-i\frac{\pi}{4}}
+  = \frac{\sqrt{2\pi}}{4}(1 - i).
+  $$
+
+----
+
+以上第 9 章。
