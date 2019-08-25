@@ -38,6 +38,7 @@ show_excerpts: true
 header_pages:
   - about.md
   - archive.html
+  - tags.md
   - inventory.md
   - locations.md
 
