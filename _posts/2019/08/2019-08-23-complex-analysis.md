@@ -55,15 +55,130 @@ tags: math
      極限 $r_2 \to r$ を考えて一様収束であるとわかる。
   3. $\psi(z)$ 側は少し厄介だ。
 
-     $Z = \dfrac{1}{z - z_0},\;W = \dfrac{1}{\zeta - z_0},\;\varPsi(Z) = \psi(z)$ とおく。
-     $n < 0$ と $\lvert z - z_0 \rvert \ge r_1$ を「反転」して考えることになる。
+     $$
+     \varphi(z) = -\frac{1}{2\pi i}\int_{r_1}\!\frac{f(\zeta)}{\zeta - z}\,\mathrm d\zeta.
+     $$
 
-     TODO: 後回し。
+     $n < 0$ と $\lvert z - z_0 \rvert \ge r_1$ を「反転」して考えることになる：
+
+     $$
+     Z = \dfrac{1}{z - z_0},\;W = \dfrac{1}{\zeta - z_0},\;\varPsi(Z) = \psi(z) = \psi\left(\dfrac{1}{Z} + z_0\right)
+     $$
+
+     とおく。すると
+     $\varPhi(Z)$ は $\lvert Z \rvert < \dfrac{1}{r_1}$ で正則であり、
+     円 $\lvert \zeta - z_0\rvert = r_1$ は円 $\lvert W \rvert = \dfrac{1}{r_1}$ に曲線の向きが逆転して写る。
+
+     $$
+     \begin{aligned}
+     \frac{1}{\zeta - z} &= \frac{1}{\dfrac{1}{W} - \dfrac{1}{Z}} = -\frac{ZW}{W - Z},\\
+     \mathrm d\zeta &= -\frac{\mathrm dZ}{W^2}
+     \end{aligned}
+     $$
+
+     だから $F(W) := f\!\left(\dfrac{1}{W} + z_0\right) = f(\zeta)$ とおくと
+     $\lvert Z \rvert < 1/r_1$ のとき：
+
+     $$
+     \def\C{ \lvert W \rvert = 1/r_1 }
+     \begin{aligned}
+       \psi(z) &= \frac{1}{2\pi i}\int_{\C}\! \frac{ZW F(W)}{W - Z}\cdot\frac{\mathrm dZ}{W^2}\\
+       &= \frac{1}{2\pi i}\int_{\C}\! \frac{ZF(W)}{(W - Z)W}\,\mathrm dW.
+     \end{aligned}
+     $$
+
+     $\varPsi(Z)$ の Taylor 展開を次のようにおく：
+
+     $$
+     \def\C{ \lvert W \rvert = 1/r_1 }
+     \varPsi(Z) = \sum_{n=0}^\infty d_n Z^{n + 1},\quad
+     d_n = \frac{1}{2\pi i}\int_{\C} \frac{F(W)}{(W - Z)^{n + 1}}\,\mathrm dW.
+     $$
+
+     コメント：級数の指数が $n + 1$ から始まるのは $Z$ が $z$ の $-1$ 乗のオーダー？だから。
+
+     $\varPsi(Z) = \psi(z)$ ゆえ $d_n = c_{- n - 1}$ が成り立つ。
+     最後に $r_1 \in {(R_1, R_2)}$ は任意だから $r_1 = r$ とすれば $\psi(z)$ について成り立つ。
+
   4. $\lvert c_n \rvert$ の評価をする（絶対収束するので一様収束する）。
 
      $$
      \lvert z - z_0\rvert \le r_2 \implies \sum_{n = 0}^\infty \lvert c_n(z - z_0)^n \rvert < \infty.
      $$
+
+     次が成り立つように十分小さい $\varepsilon > 0$ をとる：
+     * $R_1 < r_1 - \varepsilon < r_1$
+     * $r_2 < r_2 + \varepsilon < R_2$
+
+     コメント：閉集合を定義することで評価ができる。
+
+     * 閉集合 $A = \lbrace z \,\mid\,r_1 - \varepsilon \le \lvert z - z_0 \rvert \le r_2 + \varepsilon\rbrace$ をとる。
+     * $\displaystyle M := \max_{z \in A}\lvert f(z) \rvert$
+
+     $$
+     \def\radius{r_2 + \varepsilon}
+     n \ge 0 \implies\\
+     \begin{aligned}
+       \lvert c_n \rvert &= \left\lvert \frac{1}{2\pi i}\int_{\lvert \zeta - z \rvert = \radius}\!\frac{f(\zeta)}{(\zeta - z)^{n + 1}}\,\mathrm d\zeta\right\rvert\\
+       &\le \frac{1}{2\pi}\int_0^{2\pi}\!\frac{M}{(\radius)^{n+1}}(\radius)\,\mathrm d\theta\\
+       &= \frac{M}{(\radius)^n}.
+     \end{aligned}
+     $$
+
+     ゆえに $\lvert z - z_0 \rvert \ge r_2$ で次の評価が成立して絶対一様収束性が示せる：
+
+     $$
+     \sum_{n = 0}^\infty \lvert c_n(z - z_0)^n \rvert
+     \le M \sum_{n = 0}^\infty \left(\frac{r_2}{r_2 + \varepsilon}\right)^n
+     < \infty.
+     $$
+
+     反対側は：
+
+     $$
+     \def\radius{r_1 - \varepsilon}
+     n < 0 \implies\\
+     \begin{aligned}
+       \lvert c_n \rvert &= \left\lvert \frac{1}{2\pi i}\int_{\lvert \zeta - z \rvert = \radius}\!\frac{f(\zeta)}{(\zeta - z)^{n + 1}}\,\mathrm d\zeta\right\rvert\\
+       &\le \frac{1}{2\pi}\int_0^{2\pi}\!\frac{M}{(\radius)^{n+1}}(\radius)\,\mathrm d\theta\\
+       &= \frac{M}{(\radius)^n}.
+     \end{aligned}
+     $$
+
+     ゆえに $\lvert z - z_0 \rvert \le r_1$ でも絶対一様収束：
+
+     $$
+     \sum_{n = -\infty}^{-1} \left\lvert \frac{c_n}{(z - z_0)^n} \right\rvert
+     \le M \sum_{n = -\infty}^{-1} \left(\frac{r_1}{r_1 - \varepsilon}\right)^n
+     < \infty.
+     $$
+
+     コメント：べき乗の部分はマイナス乗なので、中身が 1 より大きいからゼロに収束する。
+  5. 一意性の証明
+
+     まず次の事実に注目する：
+
+     $$
+     \forall m \forall n(m \in \Z \land n \in \Z \implies\\
+     \begin{aligned}
+     \int_{r}\!(z - z_0)^n \overline{(z - z_0)^m}\,\mathrm dz
+     &= r^{m + n + 1}\int_0^{2\pi}\!\mathrm{e}^{i(n - m)\theta}\,\mathrm d\theta\\
+     &=
+     \begin{cases}
+     0, & n \ne m,\\
+     2\pi r^{2m + 1}, & n = m).
+     \end{cases}
+     \end{aligned}\\
+     $$
+
+     Laurent 展開の定義式の両辺に $\overline{(z - z_0)^m}$ をかけて積分する。
+     このとき一様収束性から項別積分に展開できて次を得る：
+
+     $$
+     c_m = \frac{1}{2\pi r^{2m + 1}}\int_{r}\! f(z)\overline{(z - z_0)^m}\,\mathrm dz.
+     $$
+
+     この値は $f(z)$ と $m$ によって一意的に定まるものだ。
 
 ## 孤立特異点
 * 関数 $f(z)$ の**特異点**とは、そこで $f$ が正則でない点のことである。
