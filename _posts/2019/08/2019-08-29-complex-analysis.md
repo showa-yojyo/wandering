@@ -7,34 +7,540 @@ tags: math
 
 # 演算子法による解法
 
+本章の目的は微分方程式を Laplace 変換を利用して解くことだろう。
+というか、Laplace 変換はそのために研究されたものなのだろう。
+
 ## Laplace 変換の性質 2
 
 * **Th 14.1** Laplace 変換の高階導関数
-* **E 14.1**
+  * $f(x)$ を Laplace 変換可能であり、収束座標が $\sigma_0$ であるとする。
+
+  このとき $\mathscr{L}[f](s)$ は $\Re(s) > \sigma_0$ で正則であり、次が成り立つ：
+
+  $$
+  \def\L{ \mathscr{L} }
+  \frac{\mathrm{d}^n}{\mathrm{d}s^n}\L[f](s)
+  = (-1)^n \L[x^nf(x)](s).
+  $$
+
+  証明：
+
+  まず $x^n f(x)$ が収束域 $\Re(s) = \sigma > \sigma_0$ において
+  $s$ に関して広義一様収束することを示す。
+  手始めに $n = 1$ のときにそうなることを示す。
+
+  **Th 13.1** のように議論する。まず $g(t)$ と $M$ を次のようにとる：
+
+  $$
+  \begin{aligned}
+      g(t) := \int_0^t\!f(x)\mathrm{e}^{-\sigma_0 x}\,\mathrm dx,\\
+      \lvert g(t) \rvert \le M,\quad t > 0,\\
+  \end{aligned}
+  $$
+
+  $\forall \varepsilon > 0$ に $\sigma \ge \sigma_0 + \varepsilon$ とする。このとき：
+
+  $$
+  \begin{aligned}
+  I &:= \int_0^T\!xf(x) \mathrm{e}^{-sx}\,\mathrm dx\\
+  &= \int_0^T\!xf(x) \mathrm{e}^{-(s - \sigma_0)x} g^\prime(x)\,\mathrm dx\\
+  &= T \mathrm{e}^{-(s - \sigma_0)T}g(T)
+     - \int_0^T\! \mathrm{e}^{-(s - \sigma_0)x}g(x)\,\mathrm dx
+     + (s - \sigma_0)\int_0^T\!x\mathrm{e}^{-(s - \sigma_0)x}g(x)\,\mathrm dx\\
+  &=: I_1 + I_2 + I_3\\
+  &\le \lvert I_1 \rvert + \lvert I_2 \rvert + \lvert s - \sigma_0 \rvert\lvert I_3 \rvert.
+  \end{aligned}
+  $$
+
+  ここで $T \to \infty$ のとき $\lvert I_1 \rvert \to 0.$
+
+  $$
+  \begin{aligned}
+      \lvert I_3 \rvert
+      &\le \int_0^T\!x\mathrm{e}^{(\sigma - \sigma_0)x}\lvert g(x)\rvert\,\mathrm dx\\
+      &\le M \int_0^T\! x\mathrm{e}^{-\varepsilon x}\,\mathrm dx\\
+      &= \frac{M}{\varepsilon^2}(-\varepsilon T \mathrm{e}^{-\varepsilon T} + 1 - \mathrm{e}^{-\varepsilon T})\\
+      &\to \frac{M}{\varepsilon^2}\quad(T \to \infty).
+  \end{aligned}
+  $$
+
+  $I_2$ についても似たような評価で $T \to \infty$ のとき有限の値に収束する。
+  以上より、$I$ は絶対収束する。
+
+  この議論で $f(x)$ の代わりに $xf(x)$ を考えれば $x^2f(x)$ が同じ領域で絶対収束することがわかる。
+  以下同様に、$x^nf(x)$ についても絶対収束する。
+
+  上記の $[0, T]$ における積分を Riemann 和の極限として表現することを考える。
+  それから $T \to \infty$ とすると $\mathscr{L}[f](s)$ は $\Re(s) > \sigma_0$ で正則。
+  なおかつ極限の順序交換が許されることから：
+
+  $$
+  \begin{aligned}
+  \frac{\mathrm{d}}{\mathrm{d}s} \mathscr{L}[f](s)
+  &= \int_0^\infty\! \frac{\partial }{\partial s}(f(x)\mathrm{e}^{-sx})\,\mathrm dx\\
+  &= \int_0^\infty\! -xf(x)\mathrm{e}^{-sx}\,\mathrm dx\\
+  &= -\mathscr{L}[xf(x)].
+  \end{aligned}
+  $$
+
+  再帰的に $n$ 階導関数を得られ、冒頭の等式を得る。
+
+* **E 14.1**: 指数関数の変換と逆変換
+
+  $$
+  \mathscr{L}[\mathrm{e}^{\alpha x}](s)
+  = \frac{1}{s - \alpha}.
+  $$
+
+  両辺を $n - 1$ 回 $s$ について微分することで次の関係式が得られる：
+
+  $$
+  \def\ex{ \mathrm{e}^{\alpha x} }
+  \begin{aligned}
+      \mathscr{L}[x^{n-1}\ex](s)
+      &= \frac{(n - 1)!}{(s - \alpha)^n}.\\
+      \therefore \mathscr{L}^{-1}\left[\frac{1}{(s - \alpha)^n}\right](x)
+      &= \frac{x^{n-1} \ex}{(n - 1)!}
+  \end{aligned}
+  $$
+
 * **E 14.2** 関数の平行移動
+
+  $f(x)$ を Laplace 変換可能関数かつその収束座標を $\sigma_0$ とする。
+  このとき次の二点が成り立つ：
+
+  1. $\forall \alpha \in \Complex$ に対して
+
+  $$\forall s(\Re(s) > \Re(\alpha) + \sigma_0 \implies \mathscr{L}[\mathrm{e}^{\alpha x}f](s) = \mathscr{L}[f](s - a)).$$
+
+  2. $\forall a > 0$ に対して
+
+     $$
+     f_a(x) :=
+     \begin{cases}
+     f(x - a), & x \ge a,\\
+     0, & 0 < x < a
+     \end{cases}
+     $$
+
+     とおくと：
+
+     $$
+     \mathscr{L}[f_a](s) = \mathrm{e}^{-as} \mathscr{L}[f](s).
+     $$
+
+  証明： 1. は左辺を展開するだけ。2. は左辺を展開するときに $t = x - a$ のように置換積分をして右辺を導く。
 * **Th 14.3** 周期関数の Laplace 変換
-* **合成積**
-* **Th 14.4**
-* **Th 14.5**
-* **C14.1**
-* **Th 14.6**
-* **Th 14.7**
-* **Th 14.8**
+
+  $f(x)$ は Laplace 変換可能かつ周期関数であるとする：
+
+  $$
+  \exists L(L > 0 \land \forall x(x > L \implies f(x) = f(x - L)).
+  $$
+
+  このとき $f(x)$ の Laplace 変換は次である：
+
+  $$
+  \mathscr{L}[f](s)
+  = \frac{1}{1 - \mathrm{e}^{-Ls}}\int_0^L\!f(x)\mathrm{e}^{-sx}\,\mathrm dx.
+  $$
+
+  証明： $\mathscr{L}[f](s)$ の定義式を展開する。
+  区間を $[0, L] \cup [L, \infty]$ と分割して積分し、有限でないほうの積分の
+  $f(x)$ を $f(x - L)$ で置き換え、適当に置換積分することで次が得られる：
+
+  $$
+  \mathscr{L}[f](s)
+  = \int_0^L\!f(x)\mathrm{e}^{-sx}\,\mathrm dx
+    + \mathrm{e}^{-sL} \mathscr{L}[f](s).
+  $$
+
+  これを $\mathscr{L}[f](s)$ について整理すればよい。
+
+* **合成積**は関数二つから別の関数を生成する手段の一つである。
+
+  $f(x), g(x)$ を区間 ${(0, \infty)}$ で定義された関数とする。
+  このとき、両者を $x \le 0 \implies f(x) = g(x) = 0$ と定義域を拡大して、次の広義積分を考える：
+
+  $$
+  (f * g)(x) := \int_0^\infty\!f(x - t)g(t)\,\mathrm dt
+  = \int_0^x\!f(x - t)g(t)\,\mathrm dt.
+  $$
+
+  これを合成積という。
+
+* **Th 14.4**: 合成積の演算
+
+  $f(x), g(x)$ を区間 ${(0, \infty)}$ で定義された関数とする。
+  演算子 $*$ は次の性質を満たす：
+
+  1. 可換律 $f*g = g*f.$
+  2. 結合律 $(f*g)*h = f*(g*h).$
+  3. 左分配律 $f*(g + h) = f*g + f*h.$
+
+  証明：
+
+  可換律は合成積の定義式において、$x - t = u$ と置換積分することで得られる。
+
+  結合律は式を書き出すしかない。途中の置換積分は $u + t = v:$
+
+  $$
+  \begin{aligned}
+      ((f*g)*h)(x) &= \int_0^x\!(f*g)(x - t)h(t)\,\mathrm dt\\
+      &= \int_0^x\!\left(\int_0^{x - t}\!f(x - t - u)g(u)\,\mathrm du\right)h(t)\,\mathrm dt\\
+      &= \int_0^x\left(\int_t^x\!f(x - v)g(v - t)\,\mathrm dv\right)h(t)\,\mathrm dt\\
+      &= \int_0^x\!f(x - v) \left(\int_0^v\!g(v - t)h(t)\,\mathrm dt\right)\,\mathrm dv\\
+      &= \int_0^x\!f(x - v) (g*v(v))\,\mathrm dv\\
+      &= (f*(g*h))(x).
+  \end{aligned}
+  $$
+
+  左分配律は積分演算の線形性から明らかに成り立つ。
+* **Th 14.5**: 合成積の Laplace 変換
+
+  $$
+  \def\L{ \mathscr{L} }
+  \L[f*g](s) = \L[f](s)\ \L{g}(s).
+  $$
+
+  証明：左辺から右辺を導く。
+
+  $$
+  \def\L{ \mathscr{L} }
+  \begin{aligned}
+      \L[f*g](s)
+      &= \int_0^\infty\!\left(\int_0^x f(x - t)g(t)\,\mathrm dt\right) \mathrm{e}^{-sx}\,\mathrm dx\\
+      &= \int_0^\infty\!\left(\int_t^\infty f(x - t)\mathrm{e}^{-sx}\,\mathrm dx\right)g(t)\,\mathrm dt\\
+      &= \int_0^\infty\!\left(\int_0^\infty f(u)\mathrm{e}^{-s(t + u)}\,\mathrm dx\right)g(t)\,\mathrm dt\\
+      &= \int_0^\infty\!f(u)\mathrm{e}^{-su}\,\mathrm du \int_0^\infty\!g(t)\mathrm{e}^{-st}\,\mathrm dt\\
+      &= \L[f](s)\ \L{g}(s).
+  \end{aligned}
+  $$
+
+  * 二番目の等号は積分順序の交換による。わかるか？
+  * 三番目の等号は置換積分 $x - t = u.$
+* **C14.1**: 合成積の逆変換に関する関係式
+
+  $\mathscr{L}^{-1}[F](x) = f(x),\;\mathscr{L}^{-1}[G](x) = g(x)$ とする。このとき：
+
+  $$
+  \mathscr{L}^{-1}[FG](x) = (f * g)(x).
+  $$
+
+* **Th 14.6**: Laplace 変換が $1/s$ を因子に含むとき
+  * 関数 $f(x)$ の Laplace 変換が関数 $G(s)$ により次のように表されるとする：
+    $\mathscr{L}[f](s) = \dfrac{G(s)}{s}.$
+  * さらに $g(x) := \mathscr{L}^{-1}[G](x)$ が存在するとする。
+    * コメント：$G(x) = \mathscr{L}[g](s).$
+
+  このとき $f(x)$ は次で得られる：
+
+  $$
+  f(x) = \int_0^x\! \mathscr{L}^{-1}[G](t)\,\mathrm dt.
+  $$
+
+  証明：**Th 13.7** の不定積分の Laplace 変換の公式を利用する。
+
+  $$
+  \def\I#1{ \int_0^{#1}\!g(t)\,\mathrm dt }
+  \def\L{ \mathscr{L} }
+  \begin{aligned}
+      \L\left[\I{x}\right](s)
+      &= \frac{1}{s}\L[g](s) - \frac{1}{s}\I{0}.\\
+      \therefore \I{x} &= \L^{-1}\left[\frac{G(s)}{s}\right]\\
+      &= \L^{-1}[\L[f](s)](x)\\
+      &= f(x).\\
+      \therefore f(x) &= \I{x} = \int_0^x\!\mathscr{L}^{-1}[G](t)\,\mathrm dt.
+  \end{aligned}
+  $$
+
+* **Th 14.7**: Laplace 変換における $s \to \infty$ での振る舞い
+  * $f(x)$ を ${(0, \infty)}$ で微分可能であるが、$C^1$ 級ではないとする。
+  * $f(0 + 0)$ を存在するものとする。
+  * $f(x),\;f^\prime(x)$ は指数位数とする。
+
+  このとき $s \in \R$ として次が成り立つ：
+
+  $$
+  \lim_{s \to \infty}s \mathscr{L}[f](s) = f(0 + 0).
+  $$
+
+  証明：まず $f(x)$ の定義域を自然に ${[0, \infty)}$ に拡張したものを $\tilde f$ とする。
+  すると **Th 13.6** を適用できて：
+
+  $$
+  \def\tf{ \tilde f }
+  \mathscr{L}[\tf](s) = s \mathscr{L}[\tf](s) - \tf(0).
+  $$
+
+  さらに **Th 13.3** をそのまま利用して：
+
+  $$
+  \def\tf{ \tilde f }
+  \begin{aligned}
+  &\phantom{\therefore}\lim_{s \to \infty} \mathscr{L}[\tf^\prime](s) = 0.\\
+  &\therefore \lim_{s \to \infty} s\mathscr{L}[\tf^\prime](s)
+  = \tf(0) = f(0 + 0).
+  \end{aligned}
+  $$
+
+* **Th 14.8**: 逆変換について
+  * $f(x)$ を区間 ${[0, \infty)}$ において区分的に $C^0$ 級関数かつ指数位数であるとする。
+  * 関数 $G(s)$ が存在して $\mathscr{L}[f](s) = sG(s)$ であるとする。
+  * さらに $G(s)$ の逆変換 $g(x) := \mathscr{L}^{-1}[G](x)$ が存在して、
+    区間 ${[0, \infty)}$ において区分的に $C^0$ 級関数かつ指数位数であるとする。
+
+  このとき $f(x) = g^\prime(x)$ である。
+
+  証明：**Th 13.6** より：
+
+  $$
+  \mathscr{L}[g^\prime](s) = s\mathscr{L}[g](s) - g(0) = sG(s) - g(0).
+  $$
+
+  **Th 14.7** と **Th 13.6** を利用して $g(0) = 0$ がわかる：
+
+  $$
+  \begin{aligned}
+      g(0) &= \lim_{s \to \infty} s\mathscr{L}[g](s)\\
+      &= \lim_{s \to \infty} s G(s)\\
+      &= \lim_{s \to \infty} \mathscr{L}[f](s)\\
+      &= 0.
+  \end{aligned}
+  $$
+
+  この二つを組み合わせ、**C13.3** により：
+
+  $$
+  \begin{aligned}
+      &\phantom{\therefore}\mathscr{L}[f](s) = sG(s) = \mathscr{L}[g^\prime](s).\\
+      &\therefore f = g^\prime.
+  \end{aligned}
+  $$
 
 ## Heaviside の展開定理
 
+* **Th 14.9** (Heaviside)
+  * $P(x), Q(x)$ を共通因子がない $x$ の多項式とする。
+  * $\deg P < \deg Q$ とする。
+  * $Q(x) = 0$ の根を $\lambda_1, \dotsc, \lambda_n$ とし、すべて単根である（一位の零点）とする。
+
+  このとき：
+
+  $$
+  \mathscr{L}^{-1}\!\left[\frac{P}{Q}\right]\!(x)
+  = \sum_{k = 1}^n \frac{P(\lambda_k)}{Q^\prime(\lambda_k)}\mathrm{e}^{\lambda_k x}.
+  $$
+
+  証明：
+
+  $F(s) := \dfrac{P(s)}{Q(s)} = \dfrac{A}{s - \lambda} + G(s)$ とおける。ここで
+  $\lambda$ は $Q = 0$ の根であるとし、$A$ は定数、$G(s)$ は有理関数である。
+  この両辺に $(s - \lambda)$ を乗じて極限 $s \to \lambda$ をとると $A$ が表せる：
+
+  $$
+  A = \lim_{s \to \lambda}(s - \lambda)\dfrac{P(s)}{Q(s)}
+  = \lim_{s \to \lambda}\dfrac{P(s)}{Q(s)/(s - \lambda)}.
+  $$
+
+  右辺の分母に注目する。不定形の極限なので：
+
+  $$
+  \begin{aligned}
+  \lim_{s \to \lambda} \frac{Q(s)}{s - \lambda}
+  = \lim_{s \to \lambda} \frac{Q^\prime(s)}{(s - \lambda)^\prime}
+  = Q^\prime(\lambda).\\
+  \therefore A = \frac{P(\lambda)}{Q^\prime(\lambda)} = \operatorname{Res}\left(\frac{P(s)}{Q(s)}\colon\lambda\right).
+  \end{aligned}
+  $$
+
+  このことから $F(s)$ の部分分数分解が得られた：
+
+  $$
+  F(s) = \sum_{k = 1}^n \frac{P(\lambda)}{Q^\prime(\lambda)} \frac{1}{s - \lambda_k}.
+  $$
+
+  これを Laplace 逆変換する：
+
+  $$
+  \begin{aligned}
+  \mathscr{L}^{-1}[F](x)
+  &= \sum_{k = 1}^n \frac{P(\lambda)}{Q^\prime(\lambda)}\mathscr{L}^{-1}\!\left[\frac{1}{s - \lambda_k}\right]\!(x)\\
+  &= \sum_{k = 1}^n \frac{P(\lambda)}{Q^\prime(\lambda)}\mathrm{e}^{\lambda_k x}\\
+  &= \sum_{k = 1}^n \operatorname{Res}\left(\frac{P(s)}{Q(s)} \mathrm{e}^{sx}\colon\lambda_k\right).
+  \end{aligned}
+  $$
+
+  二番目の等号は **E13.3** による。
 * **Th 14.10** (Heaviside)
-* **Th 14.10** (Heaviside)
-* **E 14.2**
-* **E 14.3**
+
+  前定理の仮定を上書きして、$Q(x) = 0$ の根は一般的に多重度があるものとする：
+  $\lambda_k$ は $m_k$ 位の零点であるとする。このとき：
+
+  $$
+  \mathscr{L}^{-1}\!\left[\frac{P(s)}{Q(s)}\right]\!(x)
+  = \sum_{k = 1}^r
+      \left(\sum_{j = 1}^{m_k}
+        \frac{F_k^{(j - 1)}(\lambda_k) x^{m_k - j}}{(j - 1)! (m_k - j)!}
+      \right)\mathrm{e}^{\lambda_k x},\\
+
+  \text{ where } F_k(x) := \frac{(s - \lambda_k)^{m_k}F(s)}{Q(s)}.
+  $$
+
+  証明：$\lambda$ を $Q = 0$ の根の一つとすると、$F(s)$ の部分分数分解を次のようにおける：
+
+  $$
+  F(s) = \frac{A_1}{s - \lambda}
+        +\frac{A_2}{(s - \lambda)^2}
+        +\dotsb
+        +\frac{A_m}{(s - \lambda)^m} + G(s).
+  $$
+
+  ここで $G(s)$ は $s - \lambda$ を因数に含まないものとする。
+  先ほどと同様の要領で、両辺に $(s - \lambda)^m$ を乗じて $s$ で $m - j$ 回微分すると次が得られる：
+
+  $$
+  A_j = \left.\frac{1}{(m - j)!} \frac{\mathrm{d}^{m - j}}{\mathrm{d}s^{m - j}}((s - \lambda)^m F(s))\right|_{s = \lambda}.
+  $$
+
+  このあとは **E14.1** を利用することで示せるようだ。
+* **E 14.2**: $\mathscr{L}[f](s) = \dfrac{s^2 + 1}{s(s^2 - 1)}$ の逆変換
+
+  $$
+  \dfrac{s^2 + 1}{s(s^2 - 1)} = \frac{1}{s - 1} - \frac{1}{s} + \frac{1}{s + 1}.
+  $$
+
+  前定理より：
+
+  $$
+  f(x) = \mathrm{e}^x + \mathrm{e}^{-x} - 1.
+  $$
+
+* **E 14.3**: $F(s) = \dfrac{a}{s^2 + a^2}\quad(a \in \R)$ の逆変換
+
+  $F(s)$ は $s = \pm ai$ を一位の極に持つ。前定理より：
+
+  $$
+  \def\r#1{ \frac{P(#1)}{Q^\prime(#1)}\mathrm{e}^{ {#1} x} }
+  \begin{aligned}
+   \mathscr{L}^{-1}[F](x)
+   &= \r{ai}  + \r{-ai}
+   &= \frac{a \mathrm{e}^{aix}}{2 ai} + \frac{a \mathrm{e}^{-aix}}{2 \cdot (-ai)}\\
+   &= \frac{\mathrm{e}^{aix} - \mathrm{e}^{-aix}}{2i}\\
+   &= \sin ax.
+  \end{aligned}
+  $$
 
 ## Laplace 変換と逆変換の公式
 
-TODO
+公式と各種初等関数（指数関数ベース）の変換表。省略。
 
 ## Laplace 変換による微分方程式の解法
 
-* **E14.4**
-* **E14.5**
-* **E14.6**
-* **E14.7**
+* **E 14.4**: 二階同次線形方程式
+
+  $$y^{\prime\prime} + k^2y = 0,\quad y(0) = a,\quad y^\prime(0) = b.$$
+
+  解： $Y(s) := \mathscr{L}[y](s)$ とおく。方程式左辺を Laplace 変換すると：
+
+  $$
+  \begin{aligned}
+  &(s^2 Y(s) - sy(0) - y^\prime(0)) + k^2 Y(s) = 0.\\
+  \therefore Y(s) &= {sy(0) + y^\prime(0)}{s^2 + k^2}\\
+  &= \frac{as + b}{s^2 + k^2}.
+  \end{aligned}
+  $$
+
+  逆変換により一般解を得る：
+
+  $$
+  \begin{aligned}
+      y &= \mathscr{L}^{-1}[Y](x)
+      = a \mathscr{L}^{-1}\left[\frac{s}{s^2 + k^2}\right]
+       + b \mathscr{L}^{-1}\left[\frac{1}{s^2 + k^2}\right]\\
+      &= a \cos kx + \frac{b}{k}\sin kx.
+  \end{aligned}
+  $$
+
+  コメント：テキストはうっかりミスで $\sin kx$ の係数がたんに $b$ になっている。
+* **E 14.5**: 二階非同次線形方程式
+
+  $$
+  y^{\prime\prime} + 3^\prime + 2y = r(x),\quad y(0) = y^\prime(0) = 0.
+  $$
+
+  解：
+  $Y(s) := \mathscr{L}[y](s)$ および $R(s) := \mathscr{L}[r](s)$ とする。
+  途中経緯は省略すると：
+
+  $$
+  \begin{aligned}
+  Y(s) &= \frac{R(s)}{s^2 + 3s + 2}.\\
+  \therefore y(x) &= \mathscr{L}^{-1}[Y](x)\\
+  &= \mathscr{L}^{-1}\left[R(s)\left(\frac{1}{s + 2} - \frac{1}{s - 3}\right)\right](x)\\
+  &= r(x) * (\mathrm{e}^{-2x} - \mathrm{e}^{-3x})\\
+  &= \int_0^x\! r(x - t) (\mathrm{e}^{-2t} - \mathrm{e}^{-3t})\,\mathrm dt.
+  \end{aligned}
+  $$
+
+* **E 14.6**: 非同次項に指示関数をもつ非同次線形方程式
+
+  $$
+  y^{\prime\prime} + y = r(x),\quad y(0) = y^\prime(0) = 0,\\
+  r(x) = \begin{cases}
+  h, & 0 \le x < a,\\
+  0, & a \le x.
+  \end{cases}
+  $$
+
+  解：前例と同様に Laplace 変換を定義する。
+
+  $$
+  \begin{aligned}
+      (s^2 + 1)Y(s) &= R(s).\\
+      \therefore Y(s) &= \frac{R(s)}{s^2 + 1}.\\
+      \therefore y &= \mathscr{L}^{-1}\!\left[\frac{R(s)}{s^2 + 1}\right]\!(x)\\
+      &= \mathscr{L}^{-1}[R(x)] * \mathscr{L}^{-1}\!\left[\frac{1}{s^2 + 1}\right]\!(x)\\
+      &= r(x) \sin x.
+  \end{aligned}
+  $$
+
+* **E 14.7**: 4 階同次線形方程式
+
+  $$
+  y^{(4)} + 2y^{\prime\prime} + y = 0,
+  \quad y(0) = y^\prime(0) = y^{(3)}(0) = 0,\quad y^{\prime\prime}(0) = 1.
+  $$
+
+  別解のほうが面白いので、そちらを見る。
+
+  $$
+  \begin{aligned}
+      &(s^4 + 2s^2 + 1)Y(s) = 0.\\
+      &\therefore Y(s) = \frac{s}{(s^2 + 1)^2}
+      = -\frac{1}{2}\!\left(\frac{1}{s^2 + 1}\right)^\prime.
+  \end{aligned}
+  $$
+
+  $Y(s)$ は $s = \pm i$ を 2 位の極にもつ。**Th 14.10** を使うと：
+  $P(s) = s,\;Q(s) = (s^2 + 1)^2$ として
+
+  $$
+  \begin{aligned}
+  Y_{\pm}(s) &:= \frac{(s \pm i)^2s}{(s + i)^2(s - i)^2}\\
+  &= \frac{s}{(s \pm i)^2}.\\
+  \\
+  \left. Y_{\pm}^\prime(s)\right|_{s = \pm i} &= 0.
+  \end{aligned}
+  \\
+  \begin{aligned}
+      \therefore y &= Y_{+}(i)x\mathrm{e}^{ix} + Y_{-}(-i)x\mathrm{e}^{-ix}\\
+      &= \frac{i}{(i + i)^2} x\mathrm{e}^{ix} + \frac{i}{(-i -i)^2}x \mathrm{e}^{-ix}\\
+      &= \frac{x\sin x}{2}.
+  \end{aligned}
+  $$
+
+----
+
+疲れた。
+
