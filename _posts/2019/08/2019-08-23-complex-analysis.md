@@ -362,7 +362,7 @@ tags: math
   $f(z)$ は $\Complex$ 上広義一様収束する。
 
   両者ともに $z = n \in \Z$ を 2 位の極とする。
-  そして Liuville の定理または一致の定理により、$f = g$ が実は成り立つ。
+  そして Liouville の定理または一致の定理により、$f = g$ が実は成り立つ。
 
   $$
   \frac{\pi^2}{\sin^2 \pi z} - \frac{1}{z^2} = \sum_{n \ne 0}\frac{1}{(z - n)^2}.
