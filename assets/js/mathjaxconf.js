@@ -22,6 +22,9 @@ window.MathJax = {
             Complex: "{\\mathbb C}",
             HH: "{\\mathbb H}",
 
+            Re: "{\\operatorname{Re}}",
+            Im: "{\\operatorname{Im}}",
+
             bm: ["\\boldsymbol #1",1],
             dd: ["\\mathrm d^{#1}", 1, ""],
             diff: ["\\frac{\\dd {#1}}{\\dd {#2}}", 2],
