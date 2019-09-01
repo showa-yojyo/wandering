@@ -18,14 +18,14 @@ tags: math
 
     $$
     \varphi(z) =
-    \begin{dcases}
+    \begin{cases}
     \left(
         \dfrac{2 \Re z}{\lvert z \rvert^2 + 1},
         \dfrac{2 \Im z}{\lvert z \rvert^2 + 1},
         \dfrac{\lvert z \rvert^2 - 1}{\lvert z \rvert^2 + 1}\right),
         & z \in \Complex,\\
     (0, 0, 1), & z = \infty.
-    \end{dcases}
+    \end{cases}
     $$
 
   * ステレオグラフには逆写像が存在する（球面上の点を平面に投影する）：

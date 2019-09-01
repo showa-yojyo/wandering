@@ -269,22 +269,22 @@ TODO: Review once.
 ## Riemann の $\zeta$ 関数
 
 $$
-\zeta(s) := 1 + \frac{1}{2^s} + \frac{1}{3^s} + \dotsb + \frac{1}{n^s} + \dotsb = \sum_{n = 1}^\infty\frac{1}{n^s}.
+\zeta\left(s\right) := 1 + \frac{1}{2^s} + \frac{1}{3^s} + \dotsb + \frac{1}{n^s} + \dotsb = \sum_{n = 1}^\infty\frac{1}{n^s}.
 $$
 
 以下 $s := \sigma + i\tau$ とおく。
 
 * $\Re s = \sigma > 1$ において広義一様収束する。
 * この級数から分母が素数の $s$ 乗になっている項だけピックアップしたものを考える。これも広義一様収束する。
-  **Th 10.4** より $F(s) := \prod 1/(1 - p_n^{-s})$ は $\Re s = \sigma > 1$ 上広義一様収束かつ正則。
-* このとき一致の定理と素因数分解の一意性定理から $\Re s > 1$ 上 $F(s) = \zeta(s).$
+  **Th 10.4** より $F\left(s\right) := \prod 1/(1 - p_n^{-s})$ は $\Re s = \sigma > 1$ 上広義一様収束かつ正則。
+* このとき一致の定理と素因数分解の一意性定理から $\Re s > 1$ 上 $F\left(s\right) = \zeta\left(s\right).$
   * $\Re s > 1$ の場合
 
     $$
-    \zeta(s) = \frac{1}{\varGamma(s)}\int_0^\infty\! \frac{u^{s-1}}{\mathrm{e}^u - 1}\,\mathrm du.
+    \zeta\left(s\right) = \frac{1}{\varGamma\left(s\right)}\int_0^\infty\! \frac{u^{s-1}}{\mathrm{e}^u - 1}\,\mathrm du.
     $$
 
-    $\zeta(s)$ は $\Complex$ 上に有理型関数に解析接続する。
+    $\zeta\left(s\right)$ は $\Complex$ 上に有理型関数に解析接続する。
     * $s = 1$ に 1 位の極を持つ：$\operatorname{Res}(\zeta, 1) = 1.$
     * $s = -2, -4, -6, \dotsc$ に 1 位の零点を持つ。
   * $\Re s = \sigma = 0$ の場合
@@ -297,7 +297,7 @@ $$
 
     $$
     \begin{aligned}
-        \zeta(s)\varGamma\left(\frac{s}{2}\right)\pi^{-s/2}
+        \zeta\left(s\right)\varGamma\left(\frac{s}{2}\right)\pi^{-s/2}
         &= \int_0^\infty\! \left(\sum_{n=1}^\infty \mathrm{e}^{-n^2\pi x}\right)x^{s/2 - 1}\,\mathrm dx.\\
 
         &= \zeta(1 - s)\varGamma\left(\frac{1 - s}{2}\right)\pi^{-(1 - s)/2}.
@@ -305,10 +305,10 @@ $$
     $$
 
     Gauss の相補公式より次のように変形できる。
-    これにより $\Re s < 0$ の零点は $\varGamma(s)\cos\dfrac{\pi s}{2}$ のそれだけである（自明な零点）。
+    これにより $\Re s < 0$ の零点は $\varGamma\left(s\right)\cos\dfrac{\pi s}{2}$ のそれだけである（自明な零点）。
 
     $$
-    \zeta(1 - s) = 2^{1 - s}\pi^{-s}\varGamma(s) \cos\frac{\pi s}{2} \cdot \zeta(s).
+    \zeta(1 - s) = 2^{1 - s}\pi^{-s}\varGamma\left(s\right) \cos\frac{\pi s}{2} \cdot \zeta\left(s\right).
     $$
 
     Riemann によると自明でない零点は直線 $\Re s = 1/2$ 上にあるらしい。
