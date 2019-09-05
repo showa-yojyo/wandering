@@ -123,7 +123,6 @@ $$
   $$
 
   このことは、点 $\dfrac{R^2}{r}\mathrm{e}^{i\phi}$ が積分路である円の外部にあることからいえる。
-
   わからなければ教科書の回転数の説明を参照。
 
   3. ここがわかりにくかった。1. の等式から 2. の等式を引けば次が成り立つ：
@@ -140,28 +139,24 @@ $$
   &= \frac{1}{2\pi}\int_0^{2\pi}\!f(\zzeta)\left(
      \frac{1}{1 - \cfrac{r}{R} \mathrm{e}^{i(\phi - \theta)}}
      - \cfrac{1}{1 - \cfrac{R}{r}\mathrm{e}^{i(\phi - \theta)}}
-     \right)\,\mathrm d\theta\\
-  &= \frac{1}{2\pi}\int_0^{2\pi}\!f(\zzeta)\left(
-     \cfrac{- \cfrac{R}{r}\mathrm{e}^{i(\phi - \theta)} + \cfrac{r}{R} \mathrm{e}^{i(\phi - \theta)}}
-       {1 - \cfrac{R}{r}\mathrm{e}^{i(\phi - \theta)} - \cfrac{r}{R} \mathrm{e}^{i(\phi - \theta)} + \mathrm{e}^{2i(\phi - \theta)}}
-     \right)\,\mathrm d\theta\\
-  &= \frac{1}{2\pi}\int_0^{2\pi}\!f(\zzeta)\left(
-       \cfrac{- R^2\mathrm{e}^{i(\phi - \theta)} + r^2\mathrm{e}^{i(\phi - \theta)}}
-       {rR - R^2\mathrm{e}^{i(\phi - \theta)} - r^2\mathrm{e}^{i(\phi - \theta)} + rR\mathrm{e}^{2i(\phi - \theta)}}
-     \right)\,\mathrm d\theta\\
-  &= \frac{1}{2\pi}\int_0^{2\pi}\!f(\zzeta)\left(
-       \cfrac{- R^2 + r^2}
-       {rR\mathrm{e}^{-i(\phi - \theta)} - R^2 - r^2 + rR\mathrm{e}^{i(\phi - \theta)}}
-     \right)\,\mathrm d\theta\\
-  &= \frac{1}{2\pi}\int_0^{2\pi}\!f(\zzeta)\left(
-       \cfrac{- R^2 + r^2}
-       {- R^2 + rR\mathrm{e}^{-i(\phi - \theta)} + rR\mathrm{e}^{i(\phi - \theta)} - r^2}
-     \right)\,\mathrm d\theta\\
-  &= \frac{1}{2\pi}\int_0^{2\pi}\!f(\zzeta)\left(
-       \cfrac{- R^2 + r^2}
-       {- R^2 + 2rR\cos(\phi - \theta) - r^2}
-     \right)\,\mathrm d\theta\\
-  &= ....
+     \right)\,\mathrm d\theta.
+  \end{aligned}
+  $$
+
+  括弧の中身を見ていくと：
+
+  $$
+  \begin{aligned}
+  &\phantom{=}\cfrac{- \cfrac{R}{r}\mathrm{e}^{i(\phi - \theta)} + \cfrac{r}{R} \mathrm{e}^{i(\phi - \theta)}}
+       {1 - \cfrac{R}{r}\mathrm{e}^{i(\phi - \theta)} - \cfrac{r}{R} \mathrm{e}^{i(\phi - \theta)} + \mathrm{e}^{2i(\phi - \theta)}}\\
+  &= \frac{- R^2\mathrm{e}^{i(\phi - \theta)} + r^2\mathrm{e}^{i(\phi - \theta)}}
+       {rR - R^2\mathrm{e}^{i(\phi - \theta)} - r^2\mathrm{e}^{i(\phi - \theta)} + rR\mathrm{e}^{2i(\phi - \theta)}}\\
+  &= \frac{- R^2 + r^2}
+       {rR\mathrm{e}^{-i(\phi - \theta)} - R^2 - r^2 + rR\mathrm{e}^{i(\phi - \theta)}}\\
+  &= \frac{- R^2 + r^2}
+       {- R^2 + rR\mathrm{e}^{-i(\phi - \theta)} + rR\mathrm{e}^{i(\phi - \theta)} - r^2}\\
+  &= \frac{- R^2 + r^2}
+       {- R^2 + 2rR\cos(\phi - \theta) - r^2}.
   \end{aligned}
   $$
 
