@@ -112,60 +112,61 @@ $$
        \frac{f(\zzeta)}{\zzeta - \zz} iR\mathrm{e}^{i\theta}\,\mathrm d\theta.
    $$
 
- 2. 唐突なようだが、次の等式も成り立つ：
+2. 唐突なようだが、次の等式も成り立つ：
 
-   $$
-   \def\zz{ r \mathrm{e}^{i\phi} }
-   \def\zzeta{ R\mathrm{e}^{i\theta} }
-      0
-      = \frac{1}{2\pi i}\int_0^{2\pi}\!
-      \cfrac{f(\zzeta)}{\zzeta - \cfrac{R^2}{r}\mathrm{e}^{i\phi}} iR\mathrm{e}^{i\theta}\,\mathrm d\theta.
-   $$
+  $$
+  \def\zz{ r \mathrm{e}^{i\phi} }
+  \def\zzeta{ R\mathrm{e}^{i\theta} }
+     0
+     = \frac{1}{2\pi i}\int_0^{2\pi}\!
+     \cfrac{f(\zzeta)}{\zzeta - \cfrac{R^2}{r}\mathrm{e}^{i\phi}} iR\mathrm{e}^{i\theta}\,\mathrm d\theta.
+  $$
 
-   このことは、点 $\dfrac{R^2}{r}\mathrm{e}^{i\phi}$ が積分路である円の外部にあることからいえる。
-   わからなければ教科書の回転数の説明を参照。
+  このことは、点 $\dfrac{R^2}{r}\mathrm{e}^{i\phi}$ が積分路である円の外部にあることからいえる。
 
-   3. ここがわかりにくかった。1. の等式から 2. の等式を引けば次が成り立つ：
+  わからなければ教科書の回転数の説明を参照。
 
-   $$
-   \def\zz{ r \mathrm{e}^{i\phi} }
-   \def\zzeta{ R\mathrm{e}^{i\theta} }
+  3. ここがわかりにくかった。1. の等式から 2. の等式を引けば次が成り立つ：
 
-   \begin{aligned}
+  $$
+  \def\zz{ r \mathrm{e}^{i\phi} }
+  \def\zzeta{ R\mathrm{e}^{i\theta} }
+  \begin{aligned}
+  f(\zz)
+  &= \frac{1}{2\pi i}\int_0^{2\pi}\!f(\zzeta)\left(
+     \frac{1}{\zzeta - \zz}
+     - \cfrac{1}{\zzeta - \cfrac{R^2}{r}\mathrm{e}^{i\phi}}
+     \right)iR\mathrm{e}^{i\theta}\,\mathrm d\theta\\
+  &= \frac{1}{2\pi}\int_0^{2\pi}\!f(\zzeta)\left(
+     \frac{1}{1 - \cfrac{r}{R} \mathrm{e}^{i(\phi - \theta)}}
+     - \cfrac{1}{1 - \cfrac{R}{r}\mathrm{e}^{i(\phi - \theta)}}
+     \right)\,\mathrm d\theta\\
+  &= \frac{1}{2\pi}\int_0^{2\pi}\!f(\zzeta)\left(
+     \cfrac{- \cfrac{R}{r}\mathrm{e}^{i(\phi - \theta)} + \cfrac{r}{R} \mathrm{e}^{i(\phi - \theta)}}
+       {1 - \cfrac{R}{r}\mathrm{e}^{i(\phi - \theta)} - \cfrac{r}{R} \mathrm{e}^{i(\phi - \theta)} + \mathrm{e}^{2i(\phi - \theta)}}
+     \right)\,\mathrm d\theta\\
+  &= \frac{1}{2\pi}\int_0^{2\pi}\!f(\zzeta)\left(
+       \cfrac{- R^2\mathrm{e}^{i(\phi - \theta)} + r^2\mathrm{e}^{i(\phi - \theta)}}
+       {rR - R^2\mathrm{e}^{i(\phi - \theta)} - r^2\mathrm{e}^{i(\phi - \theta)} + rR\mathrm{e}^{2i(\phi - \theta)}}
+     \right)\,\mathrm d\theta\\
+  &= \frac{1}{2\pi}\int_0^{2\pi}\!f(\zzeta)\left(
+       \cfrac{- R^2 + r^2}
+       {rR\mathrm{e}^{-i(\phi - \theta)} - R^2 - r^2 + rR\mathrm{e}^{i(\phi - \theta)}}
+     \right)\,\mathrm d\theta\\
+  &= \frac{1}{2\pi}\int_0^{2\pi}\!f(\zzeta)\left(
+       \cfrac{- R^2 + r^2}
+       {- R^2 + rR\mathrm{e}^{-i(\phi - \theta)} + rR\mathrm{e}^{i(\phi - \theta)} - r^2}
+     \right)\,\mathrm d\theta\\
+  &= \frac{1}{2\pi}\int_0^{2\pi}\!f(\zzeta)\left(
+       \cfrac{- R^2 + r^2}
+       {- R^2 + 2rR\cos(\phi - \theta) - r^2}
+     \right)\,\mathrm d\theta\\
+  &= ....
+  \end{aligned}
+  $$
 
-   f(\zz)
-   &= \frac{1}{2\pi i}\int_0^{2\pi}\!f(\zzeta)\left(
-      \frac{1}{\zzeta - \zz}
-      - \cfrac{1}{\zzeta - \cfrac{R^2}{r}\mathrm{e}^{i\phi}}
-      \right)iR\mathrm{e}^{i\theta}\,\mathrm d\theta\\
-   &= \frac{1}{2\pi}\int_0^{2\pi}\!f(\zzeta)\left(
-      \frac{1}{1 - \cfrac{r}{R} \mathrm{e}^{i(\phi - \theta)}}
-      - \cfrac{1}{1 - \cfrac{R}{r}\mathrm{e}^{i(\phi - \theta)}}
-      \right)\,\mathrm d\theta\\
-   &= \frac{1}{2\pi}\int_0^{2\pi}\!f(\zzeta)\left(
-      \cfrac{- \cfrac{R}{r}\mathrm{e}^{i(\phi - \theta)} + \cfrac{r}{R} \mathrm{e}^{i(\phi - \theta)}}
-        {1 - \cfrac{R}{r}\mathrm{e}^{i(\phi - \theta)} - \cfrac{r}{R} \mathrm{e}^{i(\phi - \theta)} + \mathrm{e}^{2i(\phi - \theta)}}
-      \right)\,\mathrm d\theta\\
-   &= \frac{1}{2\pi}\int_0^{2\pi}\!f(\zzeta)\left(
-      \cfrac{- R^2\mathrm{e}^{i(\phi - \theta)} + r^2\mathrm{e}^{i(\phi - \theta)}}
-        {rR - R^2\mathrm{e}^{i(\phi - \theta)} - r^2\mathrm{e}^{i(\phi - \theta)} + rR\mathrm{e}^{2i(\phi - \theta)}}
-      \right)\,\mathrm d\theta\\
-   &= \frac{1}{2\pi}\int_0^{2\pi}\!f(\zzeta)\left(
-      \cfrac{- R^2 + r^2}
-        {rR\mathrm{e}^{-i(\phi - \theta)} - R^2 - r^2 + rR\mathrm{e}^{i(\phi - \theta)}}
-      \right)\,\mathrm d\theta\\
-    &= \frac{1}{2\pi}\int_0^{2\pi}\!f(\zzeta)\left(
-        \cfrac{- R^2 + r^2}
-        {- R^2 + rR\mathrm{e}^{-i(\phi - \theta)} + rR\mathrm{e}^{i(\phi - \theta)} - r^2}
-      \right)\,\mathrm d\theta\\
-    &= \frac{1}{2\pi}\int_0^{2\pi}\!f(\zzeta)\left(
-        \cfrac{- R^2 + r^2}
-        {- R^2 + 2rR\cos(\phi - \theta) - r^2}
-      \right)\,\mathrm d\theta\\
-    &= ....
-   \end{aligned}
-   $$
+  計算に手間取った理由は $\mathrm{e}^{i(\phi - \theta)}$ の処理だった。
+  手で書いたときに $\mathrm{e}^{-i(\phi - \theta)}$ を $\mathrm{e}^{i(\theta - \phi)}$
+  としてしまい、三角関数への渡りが見えづらくなってしまった。
 
-   計算に手間取った理由は $\mathrm{e}^{i(\phi - \theta)}$ の処理だった。
-   手で書いたときに $\mathrm{e}^{-i(\phi - \theta)}$ を $\mathrm{e}^{i(\theta - \phi)}$
-   としてしまい、三角関数への渡りが見えづらくなってしまった。
+  4. 最後に実部をとれば所望の等式を得る。
