@@ -1,5 +1,5 @@
 {
-	"Template": {
+	"FrontMatterDiary": {
 		"scope": "markdown",
 		"prefix": "front-matter",
 		"body": [
@@ -15,6 +15,18 @@
 			"* TODO: ゲーセン"
 		],
 		"description": "日記の front matter"
+	},
+	"FrontMatterNote": {
+		"scope": "markdown",
+		"prefix": "front-matter",
+		"body": [
+			"---",
+			"title: $1",
+			"tags: ",
+			"---",
+			""
+		],
+		"description": "A simple front matter"
 	},
 	"SectionReading": {
 		"scope": "markdown",

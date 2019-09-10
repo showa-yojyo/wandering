@@ -1,5 +1,5 @@
 ---
-title: 『常微分方程式』ノート Part 3
+title: 『常微分方程式』学習ノート Part 3
 tags: math
 ---
 
