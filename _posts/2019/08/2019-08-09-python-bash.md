@@ -1,6 +1,6 @@
 ---
 title: Python と Bash の小ノート
-tags: shell python bash
+tags: python bash
 ---
 
 Python の非同期プログラミングの続き。きのう書いたような関数は**ブロック関数である**という。
