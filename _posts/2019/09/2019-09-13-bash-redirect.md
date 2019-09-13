@@ -118,7 +118,7 @@ bash$ some_command <<<word
 * 文字列を標準入力化する機能がある。使用例を示したほうがわかりやすいか：
 
   ```shell
-  bash$ sed '/s/:/\n/g' <<<bash$PATH # or `echo -n bash${PATH//:/\\n}`
+  bash$ sed '/s/:/\n/g' <<<$PATH # or `echo -n ${PATH//:/\\n}`
   /bin
   /usr/local/bin
   ...
