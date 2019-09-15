@@ -361,6 +361,12 @@
 		"body": "[arakawa-00]: {{ site.baseurl }}{% link _libraries/18-arakawa/00-central.md %}",
 		"description": "荒川区ゆいの森あらかわ（脚注用）"
 	},
+	"LibrarySumida00": {
+		"scope": "html,markdown",
+		"prefix": "sumida-00",
+		"body": "${1|[墨田区ひきふね図書館][sumida-00],[sumida-00]: {{ site.baseurl }}{% link _libraries/07-sumida/00-hikifune.md %}|}",
+		"description": "墨田区ひきふね図書館"
+	},
 	"LibrarySumida01": {
 		"scope": "html,markdown",
 		"prefix": "sumida-01",
