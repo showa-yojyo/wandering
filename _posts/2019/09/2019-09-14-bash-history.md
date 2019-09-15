@@ -68,13 +68,14 @@ Event を述べたあと、オプショナルにそこから何かの部分を�
 | `t` | パスのファイル名以前を捨てる | 例参照 |
 | `r` | ファイル名の拡張子以降を捨てる | 例参照 |
 | `e` | ファイル名の拡張子以前を捨てる | 例参照 |
-| `p` | 展開プレビュー | echo の代わり |
-| `q` | 引用符で囲む | パスが空白文字を含むときに有用か |
-| `x` | 引用符で囲む（空白文字で単語分割する） | NC |
-| `s/old/new/` | `sed` の置換と似ている | `&` も使える |
-| `&` | 直前の置換を繰り返す | `s/old/new/` の次の実行で意味がある？ |
-| `g` | ``:gs/old/new/`` や ':&'. | NC |
-| `G` | ``:Gs/old/new/`` の形で使うと | NC |
+| `p` | 展開プレビュー | ``echo`` の代わり |
+| `q` | 指定 words を括るように引用符で囲む | パスが空白文字を含むときに有用か |
+| `x` | 指定各 word を引用符で囲む（空白文字で単語分割する） | 例参照 |
+| `s/old/new/` | `sed` の置換と似ている | 例参照 |
+| `&` | 直前の置換を繰り返す | `s/old/new/` の `new` に込められる |
+| `g` | 置換の際に置換を全体にまんべんなく適用する | 例参照 |
+| `a` | A synonym for `g` | NC |
+| `G` | 置換の際に置換を一つの word に対して一度だけ行う | 例参照 |
 
 ### Examples
 
@@ -95,4 +96,36 @@ echo /usr/local/bin and perl
 [4]bash$ echo !3:$:r and !3:$:e
 echo README and .rst
 README and .rst
+```
+
+引用符で囲む modifiers の挙動の違いを示す（例に深い意味はない）：
+
+```shell
+[5]bash$ git mv hikihune.md hikifune.md
+...
+[6]bash$ echo !5:*:q
+echo 'mv 00-hikihune.md 00-hikifune.md'
+mv 00-hikihune.md 00-hikifune.md
+[7]bash$ echo !5:*:x
+echo 'mv' '00-hikihune.md' '00-hikifune.md'
+mv 00-hikihune.md 00-hikifune.md
+```
+
+置換の例。`g` と `G` の違いをドキュメントから理解しにくかった。想像で試したら正しかった：
+
+```shell
+[8]bash$ code A.cpp B.cpp C.cpp
+...
+[9]bash$ !!:gs/.cpp/.h/
+code A.h B.h C.h
+...
+
+[10]bash$ echo cppcppcppcpp
+cppcppcppcpp
+[11]bash$ !10:Gs/cpp/cccp/
+echo cccpcppcppcpp
+cccpcppcppcpp
+[12]bash$ !10:gs/cpp/cccp/
+echo cccpcccpcccpcccp
+cccpcccpcccpcccp
 ```
