@@ -436,6 +436,12 @@
 		],
 		"description": "日記に書く銭湯のノート"
 	},
+	"タイトー F ステーション": {
+		"scope": "html,markdown",
+		"prefix": "taito",
+		"body": "タイトー F ステーションオリナス${1|西葛西店,錦糸町店|}",
+		"description": "タイトー F ステーション"
+	},
 	"latex-set-inline-simple": {
 		"scope": "html,markdown",
 		"prefix": "seti",
