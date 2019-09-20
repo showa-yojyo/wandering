@@ -253,7 +253,7 @@ $$
   \def\dp{ {\prime\prime} }
   \def\gg{ \varGamma(z)\varGamma\left(z + \frac{1}{2}\right) }
   \begin{aligned}
-  \gamma &= -\lim_{z \to z} \left(\frac{\varGamma^\prime(z)}{\varGamma(z)} + \frac{1}{z}\right).\\
+  \gamma &= -\lim_{z \to 0} \left(\frac{\varGamma^{\;\prime}(z)}{\varGamma(z)} + \frac{1}{z}\right).\\
   (\log\varGamma(z))^\dp &= \sum_{n = 1}^\infty\frac{1}{(z + n)^2}.\\
   \gg &= \sqrt{\pi}2^{1 - 2z}\varGamma(2z),\quad\text{(Legendre)}\\
       \because \left(\gg\right)^\dp &= (\log\varGamma(2z))^\dp.\\
