@@ -129,7 +129,37 @@ $$
 \end{aligned}
 $$
 
-**証明** TBW.
+**補題**：$\varGamma(z + 1) = z\varGamma(z).$
+
+**証明**：Gauss の等式を変形する。
+
+$$
+\def\L{ \lim_{n \to \infty} }
+\begin{aligned}
+    \varGamma(z + 1)
+    &= \L \frac{n! n^{z + 1}}{(z + 1)\dotsm(z + n)(z + n + 1)}\\
+    &= \L z \cdot \frac{n! n^z}{z(z + 1)\dotsm(z + n)}\cdot\frac{n}{z + n + 1}\\
+    &= z \varGamma(z) \L \cdot\frac{1}{(z + 1)/n + 1}\\
+    &= z \varGamma(z).
+\end{aligned}
+$$
+
+**$(1)$ の証明**：補題の等式を繰り返し適用する。
+
+$$
+\begin{aligned}
+\varGamma(z + n)
+&= (z + n)\varGamma(z + n - 1)\\
+&= (z + n)(z + n - 1)\varGamma(z + n - 2)\\
+&= \dots\\
+&= (z + n)(z + n - 1)\dotsm(z + 1)z\varGamma(z).\\
+\therefore \frac{\varGamma(z + n)}{\varGamma(z)}
+&= (z + n)(z + n - 1)\dotsm(z + 1)z.
+\end{aligned}
+$$
+
+**$(2)$ の証明**：
+TBW; Weierstrass の公式を利用するのかもしれない。
 
 ----
 
@@ -137,7 +167,15 @@ $$
 \Re p > 0 \land \Re q > 0 \implies B(p, q) = 2\int_0^{\pi/2}\!\sin^{2p - 1}\theta \cos^{2q - 1}\theta\,\mathrm d\theta.
 $$
 
-**証明** TBW.
+**証明**：$t = \sin^2\theta$ と変数変換。$\theta \in {[0, \pi/2]},\;\mathrm dt = 2\sin\theta\cos\theta\,\mathrm d\theta.$
+
+$$
+\begin{aligned}
+B(p, q) &= \int_0^1\!t^{p - 1}(1 - t)^{q - 1}\,\mathrm dt\\
+&= \int_0^{\pi/2}\sin^{2p - 2}\theta (1 - \sin^2\theta)^{q - 1} \cdot 2\sin\theta\cos\theta\,\mathrm d\theta\\
+&= 2\int_0^{\pi/2}\!\sin^{2p - 1}\theta \cos^{2q - 1}\theta\,\mathrm d\theta.
+\end{aligned}
+$$
 
 ----
 
@@ -145,4 +183,33 @@ $$
 \frac{\varGamma(1 - n - z)}{\varGamma(1 - z)} = \frac{(-1)^n}{z(z - 1)(z - 2)\dotsm(z - n + 1)}, \quad n \in \N.
 $$
 
-**証明** TBW.
+**証明** TODO: 符号が合わない？
+
+両方の $\varGamma()$ の引数を揃えることを試みる：
+
+$$
+\begin{aligned}
+\varGamma(1 - n - z)
+&= \varGamma(1 - (z + n))\\
+&= -(z + n)\varGamma(-(z + n)).\\
+\\
+\varGamma(1 - z)
+&= -z\varGamma(-z)\\
+&= -z\varGamma(1 - (z + 1))\\
+&= z(z + 1)\varGamma(-(z + 1))\\
+&= -z(z + 1)(z + 2)\varGamma(-(z + 2))\\
+&= \dots\\
+&= (-1)^{n-1} z(z+1)\dotsm(z + n)\varGamma(-(z + n)).
+\end{aligned}
+$$
+
+これらを割って以下を得る：
+
+$$
+\begin{aligned}
+\frac{\varGamma(1 - n - z)}{\varGamma(1 - z)}
+&= \frac{-(z + n)\varGamma(-(z + n))}{(-1)^{n-1} z(z+1)\dotsm(z + n - 1)(z + n)\varGamma(-(z + n))}\\
+&= \frac{(-1)^n}{z(z+1)\dotsm(z + n - 1)}.
+\end{aligned}
+
+$$
