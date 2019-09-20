@@ -57,18 +57,68 @@ $$
 \prod_{n = 2}^\infty \left(1 - \frac{1}{n^2}\right) = \frac{1}{2}.
 $$
 
-**証明** TBW.
+**証明** 本文 **E 10.2** の公式を利用する。
+
+$$
+\begin{aligned}
+\sin\pi z &= \pi z \prod_{n = 1}^\infty \left(1 - \frac{z^2}{n^2}\right)\\
+&= \pi z (1 - z^2) \prod_{n = 2}^\infty \left(1 - \frac{z^2}{n^2}\right).\\
+\therefore \prod_{n = 2}^\infty\left(1 - \frac{z^2}{n^2}\right) &= \frac{\sin\pi z}{\pi z (1 - z^2)}\\
+&= \frac{\sin\pi z}{\pi z} \cdot \frac{1}{1 - z^2}\\
+&= \frac{\sin\pi z}{\pi z} \cdot \frac{1}{(1 - z)(1 + z)}\\
+&= \frac{\sin\pi(1 - z)}{\pi(1 - z)} \cdot \frac{1}{z(1 + z)} \quad \because \sin\theta = -\sin(\theta + \pi)\\
+&\to \frac{1}{2} \quad(z \to 1).
+\end{aligned}
+$$
+
+コメント：無限乗積の部分積を $p_n$ とおくと、次のように展開できる：
+
+$$
+\begin{aligned}
+p_n &= \prod_{k = 2}^n\left(1 - \frac{1}{n^2}\right)\\
+&= \prod_{k = 2}^n\left(1 - \frac{1}{n}\right)\left(1 + \frac{1}{n}\right)\\
+&= \frac{1}{2}\cdot\frac{3}{2}
+   \cdot \frac{2}{3} \cdot \frac{4}{3}
+   \cdot \frac{3}{4} \cdot \frac{5}{4}
+   \cdot \frac{4}{5} \cdot \frac{6}{5}
+   \dotsm \frac{n - 1}{n}\cdot\frac{n + 1}{n}\\
+&= \frac{1}{2} \cdot\frac{n + 1}{n}.\\
+\end{aligned}
+$$
+
+このことからも $p_n \to \dfrac{1}{2}\;\; (n \to \infty)$ を示せる。
+実は高校数学レベルの設問なのだ。
 
 ----
 
 $$
 \lvert z \rvert < 1 \implies\\
-\prod_{n = 0}^{\infty}(1 + z^{2n})
+\prod_{n = 0}^{\infty}(1 + z^{2^n})
 = (1 + z)(1 + z^2)(1 + z^4)(1 + z^8)\dotsm
 = \frac{1}{1 - z}.
 $$
 
-**証明** TBW.
+**証明** コメント：等式の真ん中は左辺指数の誤植を避けるために記されたものだろう。
+
+これも高校数学レベルの設問だ。無限乗積の部分積を $p_n$ とおく。これの括弧を外すと見慣れた級数の形になる：
+
+$$
+\begin{aligned}
+    p_0 &= (1 + z^1) = 1 + z.\\
+    p_1 &= (1 + z)(1 + z^2) = 1 + z^2 + z + z^3 = \sum_{k = 0}^3z^k.\\
+    p_2 &= p_2(1 + z^4) = \sum_{k = 0}^7 z^k\\
+    p_3 &= p_3(1 + z^8) = \sum_{k = 0}^{15} z^k.\\
+    &\dots\\
+    p_n &= \sum_{k = 0}^{2^{n + 1}} z^k.
+\end{aligned}
+$$
+
+$n$ を発散させるので、級数の最後の添字の詳細は実は気にしないで済んだ。$\lvert z \rvert < 1$ ゆえ：
+
+$$
+\prod_{n = 0}^{\infty}(1 + z^{2^n})
+= \lim_{n \to \infty}p_n = \sum_{k = 0}^{\infty} z^k = \frac{1}{1 - z}.
+$$
 
 ----
 
