@@ -125,7 +125,7 @@ $$
 $$
 \begin{aligned}
 \text{(1)} &\quad \frac{\varGamma(z + n)}{\varGamma(z)} = z(z + 1)(z + 2)\dotsm(z + n - 1), & z \notin \lbrace0\rbrace \cup -\N.\\
-\text{(2)} &\quad \lim_{n \to \infty}\frac{\varGamma(z + n)}{\varGamma(z) n^z} = 1.
+\text{(2)} &\quad \lim_{n \to \infty}\frac{\varGamma(z + n)}{\varGamma(n) n^z} = 1.
 \end{aligned}
 $$
 
@@ -158,8 +158,19 @@ $$
 \end{aligned}
 $$
 
-**$(2)$ の証明**：
-TBW; Weierstrass の公式を利用するのかもしれない。
+**$(2)$ の証明**：$\varGamma(z + n)$ に $(1)$ の結果を、$\varGamma(n)$ に Gauss の公式を適用して展開する：
+
+$$
+\def\L { \lim_{n \to \infty} }
+\begin{aligned}
+    \L \frac{\varGamma(z + n)}{\varGamma(n)n^z}
+
+    &= \varGamma(z) \L \frac{z(z+1)\dotsm(z + n - 1)}{(n - 1)! n^z}\\
+    &= \varGamma(z) \L \frac{z(z+1)\dotsm(z + n - 1)(z + n)}{n(n - 1)! n^z}\cdot\frac{n}{z + n}\\
+    &= \varGamma(z) \cdot \frac{1}{\varGamma(z)}\L \frac{1}{z/n + 1}\\
+    &= 1.
+\end{aligned}
+$$
 
 ----
 
