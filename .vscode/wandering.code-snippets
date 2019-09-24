@@ -543,5 +543,17 @@
 		"prefix": "inv",
 		"body": "^{-1}",
 		"description": "^{-1}"
+	},
+	"latex-prime":{
+		"scope": "html,markdown",
+		"prefix": "prime",
+		"body": "^{\\prime}",
+		"description": "^{\\prime}"
+	},
+	"latex-prime-double":{
+		"scope": "html,markdown",
+		"prefix": "prpr",
+		"body": "^{\\prime\\prime}",
+		"description": "^{\\prime}"
 	}
 }
