@@ -5,7 +5,8 @@ tags: math
 
 熊原啓作著『新訂解析学』第 10 章（無限乗積）章末問題を解く。
 
-----
+# 演習問題 10
+## 10.1 無限乗積の不等式に関する証明問題
 
 $$
 2 \le \prod_{n = 0}^\infty \left(1 + \frac{1}{n(n + 1)}\right) \le \mathrm{e}.
@@ -51,7 +52,7 @@ $$
 
 こちらも高校数学レベルだった。
 
-----
+## 10.2 無限乗積の等式についての証明問題
 
 $$
 \prod_{n = 2}^\infty \left(1 - \frac{1}{n^2}\right) = \frac{1}{2}.
@@ -89,7 +90,7 @@ $$
 このことからも $p_n \to \dfrac{1}{2}\;\; (n \to \infty)$ を示せる。
 実は高校数学レベルの設問なのだ。
 
-----
+## 10.3 無限乗積の等式についての証明問題
 
 $$
 \lvert z \rvert < 1 \implies\\
@@ -120,7 +121,7 @@ $$
 = \lim_{n \to \infty}p_n = \sum_{k = 0}^{\infty} z^k = \frac{1}{1 - z}.
 $$
 
-----
+## 10.4 $\varGamma$ 関数の性質についての証明問題
 
 $$
 \begin{aligned}
@@ -172,7 +173,7 @@ $$
 \end{aligned}
 $$
 
-----
+## 10.5 $B$ 関数の等式についての証明問題
 
 $$
 \Re p > 0 \land \Re q > 0 \implies B(p, q) = 2\int_0^{\pi/2}\!\sin^{2p - 1}\theta \cos^{2q - 1}\theta\,\mathrm d\theta.
@@ -188,7 +189,7 @@ B(p, q) &= \int_0^1\!t^{p - 1}(1 - t)^{q - 1}\,\mathrm dt\\
 \end{aligned}
 $$
 
-----
+## 10.6 $\varGamma$ 関数についての証明問題
 
 $$
 \frac{\varGamma(1 - n - z)}{\varGamma(1 - z)} = \frac{(-1)^n}{z(z - 1)(z - 2)\dotsm(z - n + 1)}, \quad n \in \N.
@@ -222,5 +223,4 @@ $$
 &= \frac{-(z + n)\varGamma(-(z + n))}{(-1)^{n-1} z(z+1)\dotsm(z + n - 1)(z + n)\varGamma(-(z + n))}\\
 &= \frac{(-1)^n}{z(z+1)\dotsm(z + n - 1)}.
 \end{aligned}
-
 $$
