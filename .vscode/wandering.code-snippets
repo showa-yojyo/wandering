@@ -349,17 +349,11 @@
 		"body": "[kita-03]: {{ site.baseurl }}{% link _libraries/17-kita/03-akabane.md %}",
 		"description": "北区赤羽図書館（脚注用）"
 	},
-	"LibraryArakawa01a": {
+	"LibraryArakawa01": {
 		"scope": "html,markdown",
 		"prefix": "arakawa-00",
-		"body": "[荒川区ゆいの森あらかわ][arakawa-00]",
-		"description": "荒川区ゆいの森あらかわ（本文用）"
-	},
-	"LibraryArakawa01b": {
-		"scope": "html,markdown",
-		"prefix": "arakawa-00",
-		"body": "[arakawa-00]: {{ site.baseurl }}{% link _libraries/18-arakawa/00-central.md %}",
-		"description": "荒川区ゆいの森あらかわ（脚注用）"
+		"body": "${1|[荒川区ゆいの森あらかわ][arakawa-00],[arakawa-00]: {{ site.baseurl }}{% link _libraries/18-arakawa/00-central.md %}|}",
+		"description": "荒川区ゆいの森あらかわ"
 	},
 	"LibrarySumida00": {
 		"scope": "html,markdown",
