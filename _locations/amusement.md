@@ -15,8 +15,11 @@ title: 東京 23 区内訪問対象ゲーセン一覧
     <tr>
       <th>店舗名</th>
       <th>所在地</th>
-      <th>MJ</th>
+      <th>MFC</th>
+      <th>MJAC</th>
       <th>BM</th>
+      <th>N</th>
+      <th>CR</th>
       <th>訪問済</th>
     </tr>
   </thead>
@@ -25,8 +28,11 @@ title: 東京 23 区内訪問対象ゲーセン一覧
     <tr>
       <td>{{ i.name }}</td>
       <td>{{ i.address }}</td>
-      <td style="text-align: center">{{ i.MJ }}</td>
-      <td style="text-align: center">{{ i.BM }}</td>
+      <td style="text-align: center">{{ i.mfc }}</td>
+      <td style="text-align: center">{{ i.mjac }}</td>
+      <td style="text-align: center">{{ i.beatmania }}</td>
+      <td style="text-align: center">{{ i.nostalgia }}</td>
+      <td style="text-align: center">{{ i.chronoregalia }}</td>
       <td style="text-align: center">{{ i.visited }}</td>
     </tr>
 {% endfor %}
@@ -45,3 +51,5 @@ title: 東京 23 区内訪問対象ゲーセン一覧
 ## 重要店舗
 
 以下、私が特に重要視する店舗について寸評する。
+
+TODO: いつか書く。
