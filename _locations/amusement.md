@@ -6,6 +6,10 @@ title: 東京 23 区内訪問対象ゲーセン一覧
 私の便宜のために、東京都 23 区内のゲームセンターのうち、遊戯対象となるゲームが稼動している店舗を表に示す。
 併せて、各店舗ごとに実際に訪れて遊戯したかどうかを記しておく。
 
+{%- assign shops = site.data.amusement -%}
+{%- assign num_visited = shops | where: "visited", 1 | size -%}
+現在、{{ num_visited }} 軒訪問済み。
+
 ## 対象ゲーセン一覧
 
 図表中の固有名詞は、実際に用いられている表記、正式な呼称から乖離している場合がある。
@@ -24,7 +28,7 @@ title: 東京 23 区内訪問対象ゲーセン一覧
     </tr>
   </thead>
   <tbody>
-{% for i in site.data.amusement %}
+{% for i in shops %}
     <tr>
       <td>{{ i.name }}</td>
       <td>{{ i.address }}</td>
