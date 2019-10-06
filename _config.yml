@@ -24,11 +24,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: ja
-title: 脱出日記
+title: 徘徊の書
 author: プレハブ小屋
 email: yojyo@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  安住の地が見つかるまで東京都内を徘徊する者による日記。
+  理想郷を求めて都内 23 区を駆け廻る住所不定無収入者の記録
 baseurl: /wandering # the subpath of your site, e.g. /blog
 url: https://showa-yojyo.github.io
 repository: https://github.com/showa-yojyo/wandering
