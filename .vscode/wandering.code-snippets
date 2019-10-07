@@ -235,6 +235,12 @@
 		"body": "[$1]({{ site.baseurl }}{% post_url $2 %})",
 		"description": "post_url directive"
 	},
+	"LibraryChiyoda00": {
+		"scope": "html,markdown",
+		"prefix": "chiyoda-00",
+		"body": "${1|[千代田区千代田図書館][chiyoda-00],[chiyoda-00]: {{ site.baseurl }}{% link _libraries/01-chiyoda/00-chiyoda.md %}|}",
+		"description": "千代田区千代田図書館"
+	},
 	"LibraryChiyoda03": {
 		"scope": "html,markdown",
 		"prefix": "chiyoda-03",
