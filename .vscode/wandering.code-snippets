@@ -247,6 +247,12 @@
 		"body": "${1|[千代田区昌平まちかど図書館][chiyoda-03],[chiyoda-03]: {{ site.baseurl }}{% link _libraries/01-chiyoda/03-shohei.md %}|}",
 		"description": "千代田区昌平まちかど図書館"
 	},
+	"LibraryChiyoda06": {
+		"scope": "html,markdown",
+		"prefix": "chiyoda-06",
+		"body": "${1|[千代田区男女共同参画センター MIW][chiyoda-06],[chiyoda-06]: {{ site.baseurl }}{% link _libraries/01-chiyoda/06-miw.md %}|}",
+		"description": "千代田区男女共同参画センター MIW"
+	},
 	"LibraryShinagawa03a": {
 		"scope": "html,markdown",
 		"prefix": "shinagawa-03",
