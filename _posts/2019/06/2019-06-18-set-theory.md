@@ -16,7 +16,7 @@ tags: math
 
     * つまり $\lbrace x \in a\,\mid\, P(x)\rbrace$ は集合であるといっている。
     * Russel の逆理を回避するための公理だそうだが、どういうことかわかるか。
-  * **共通部分**、**べき等律**、**交換率**、**結合律**等々の定義および性質。
+  * **共通部分**、**べき等律**、**交換律**、**結合律**等々の定義および性質。
   * **分配法則**
   * **集合論的差** $a-b$
     * $a \setminus b$ のこと。
@@ -89,6 +89,7 @@ tags: math
     * $a, b$ を明示する必要のないときは、単に $f$ と書いて、ある対応として扱う。
   * **像**：元に関するものと、集合に関するものがある。
   * **定義域**：集合であり、対応 $f\colon a \longrightarrow b$ に対して確定する集合 $\lbrace x \in a\,\mid\,f(x) \ne \varnothing\rbrace$ である。
+    * 記号 $\operatorname{Dom}f$ で表すことがある。
   * **写像**：対応 $f\colon a \longrightarrow b$ であって、$\operatorname{Dom}{f} = a$ かつ
     $\forall x \in a, f(x) \in b$ が $b$ の元の singleton であるものをいう。
     * コメント：複数の元が対応しているものはダメだと言っている。

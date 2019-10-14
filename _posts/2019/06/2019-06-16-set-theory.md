@@ -81,7 +81,7 @@ tags: math
     \forall a \forall b (a = b \iff \forall x (x \in a \iff x \in b)).
     $$
 
-  * (S2) 空集合の存在定理
+  * (S2) 空集合の存在公理
     * **空集合**と呼ばれる集合が（ただ一つ）存在する。
 
     $$

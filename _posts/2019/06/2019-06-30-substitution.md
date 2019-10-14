@@ -129,7 +129,7 @@ tags: math
            * コメント：$c$ のほうが「上にある」ということか。
         5. $\gamma := \operatorname{ord}(c, \subset)$ とおく。このとき $\beta \simeq \alpha \oplus \gamma$ であることは明らかだ。
            ゆえに $\beta = \alpha \oplus \gamma.$
-  * (Cl) 順序数 $\alpha$ が無限集合 $\iff \exists\beta(\alpha = \omega \oplus \beta).$
+  * (Cor) 順序数 $\alpha$ が無限集合 $\iff \exists\beta(\alpha = \omega \oplus \beta).$
     * ($\impliedby$): 明らかに成り立つ。
     * ($\implies$):
       1. (Th 6.1) により、$\alpha$ と $\omega$ に対して $\alpha = \omega, \alpha \subsetneq \omega, \omega \subsetneq \alpha$ のうち、いずれかのちょうど一つが成り立つ。

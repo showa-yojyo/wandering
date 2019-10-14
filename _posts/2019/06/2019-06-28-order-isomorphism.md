@@ -23,7 +23,7 @@ tags: math
       * 一方 $F$ の性質より $F\circ F(\alpha) \precneqq F(\alpha).$ ゆえに $F(\alpha) \in s.$
         * コメント：一つ前の推論の「不等式」の両辺に $F$ を施している。
       * 矛盾が生じた。これは $s = \varnothing$ が必要であることを示している。
-  * (Cl 5.6.1) 整列集合の順序同型群は位数が 1 である。
+  * (Cor 5.6.1) 整列集合の順序同型群は位数が 1 である。
     * 仮定 $(a, \prec)$ を整列集合とする。
     * 結論 $\operatorname{Aut}(a, \prec) = \lbrace 1_a\rbrace.$
     * 証明
@@ -33,14 +33,14 @@ tags: math
         * 再び前定理より $x \prec F^{-1}(x).$
         * したがって $\forall x \in a(x = F^{-1}(x)).$
       * 以上により $F = F^{-1} = 1_a.$
-  * (Cl 5.6.2) 二つの整列集合間に全単射順序同型写像が存在すれば、それは一意的に定まる。
+  * (Cor 5.6.2) 二つの整列集合間に全単射順序同型写像が存在すれば、それは一意的に定まる。
     * 仮定
       1. $(a, f)$, $(b, g)$ を整列集合とする。
       2. $F\colon a \longrightarrow b$, $G\colon a \longrightarrow b$ を全単射順序同型写像とする。
     * 結論 $F = G.$
-    * 証明 $G \circ F^{-1} \in \operatorname{Aut}(a, f)$ に (Cl. 5.6.1) を適用すると
+    * 証明 $G \circ F^{-1} \in \operatorname{Aut}(a, f)$ に (Cor  5.6.1) を適用すると
       $G \circ F^{-1} = 1_a.\quad\therefore F = G.$
-  * (Cl. 5.6.3) 切片とは順序同型にできない。
+  * (Cor 5.6.3) 切片とは順序同型にできない。
     * 仮定
       1. $(a, \prec)$ を整列集合とする。
       2. $x \in a$
@@ -61,7 +61,7 @@ tags: math
          * コメント： $s(\min a) = \varnothing$ だから $s(\min b) = \varnothing$ と順序同型であるとみなせる。
       3. $x \in a_0 \implies s(x) \subset a_0.$
       4. ゆえに $a\setminus a_0 \ne \varnothing \implies a_0 = s(\min a\setminus a_0).$
-      5. また、$x \in a_0$ のとき $s(x) \simeq s(y)$ なる $y \in b$ は (Cl 5.6.3) により一意的に定まる。
+      5. また、$x \in a_0$ のとき $s(x) \simeq s(y)$ なる $y \in b$ は (Cor 5.6.3) により一意的に定まる。
          これを $F\colon a_0 \ni x \longrightarrow y \in b$ と定めると、順序同型写像である。
       6. 同様の推論により $b\setminus F(a_0) \ne \varnothing \implies F(a_0) = s(\min b\setminus F(a_0)).$
       7. したがって次が成り立つ：
@@ -186,7 +186,7 @@ tags: math
       3. 仮に $(y \in s(x)P(y)) \land f(x) = z$ ならば $s(z) = f(s(x)) = s(x).$
       4. 一方 $s(x) = x \land s(z) = z$ より $f(x) = x.$ $P(x)$ は真である。
       5. 超限帰納法により $f = 1_a.$
-  * (Cl 6.1) $\alpha, \beta$ を順序数とすると、次のうち一つの場合しか起こらない (cf. (Th 5.7))：
+  * (Cor 6.1) $\alpha, \beta$ を順序数とすると、次のうち一つの場合しか起こらない (cf. (Th 5.7))：
     1. $\alpha \subsetneq \beta,$
     2. $\alpha = \beta,$
     3. $\beta \subsetneq \alpha.$
@@ -195,11 +195,11 @@ tags: math
     * 結論 順序数 $\alpha$ が存在して次が成り立つ
 
       $$
-      \forall \xi \in A (\xi \subsetneq A).
+      \forall \xi \in A (\xi \subsetneq \alpha).
       $$
 
     * 証明 $\alpha = \bigcup A \cup \lbrace\bigcup A\rbrace.$
-  * (Cl 6.2) 順序数全体からなる集合は存在しない。
+  * (Cor 6.2) 順序数全体からなる集合は存在しない。
   * (Th 6.3) 順序数からなる集合 $A$ には包含関係による順序を入れることができる。
     * 証明
       1. $S \subset A \quad(S \ne \varnothing)$ をとる。
@@ -213,4 +213,3 @@ tags: math
       4. ゆえに整列集合 $(\alpha, \subset)$ に $s$ の最小元が存在する： $\alpha \ni \gamma = \min s$
       5. $A$ と $S$ が全順序集合であるので $\gamma = \min S.$
 
-[diary393]: {{ site.baseurl }}{% post_url 2019/06/2019-06-28-diary %}
