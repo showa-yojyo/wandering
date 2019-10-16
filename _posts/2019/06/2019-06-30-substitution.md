@@ -175,8 +175,8 @@ tags: math
     * 特に $w$, $I$ を順序数にとると、$(w \times I, \le)$ は整列集合になる。
       これから定まる順序数 $\operatorname{ord}(w \times I, \le)$ を $w \otimes I$ と書く。
     * 性質
-      * $\alpha \times 0 = 0 \times \alpha = 0.$
-      * $\alpha \times 1 = 1 \times \alpha = \alpha.$
+      * $\alpha \otimes 0 = 0 \otimes \alpha = 0.$
+      * $\alpha \otimes 1 = 1 \otimes \alpha = \alpha.$
       * $\alpha \oplus \alpha = \alpha \otimes 2, \alpha \oplus \alpha \oplus \alpha = \alpha \otimes 3, \dotsc.$
       * $n, m \omega$ のとき $n \otimes m = nm.$
       * 結合法則、**左**分配法則が成り立つ： $\alpha \otimes(\beta \oplus \gamma) = \alpha\otimes\beta \oplus \alpha\oplus\gamma.$
