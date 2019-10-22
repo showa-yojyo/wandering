@@ -53,8 +53,8 @@ tags: math
     * 仮定 $(a, f)$, $(b, g)$ を整列集合とする。
     * 結論：次のうち、一つの場合しか起こらない：
       1. $(a, f) \simeq (b, g).$
-      2. $\exists y(y \in b \implies (a, f) \simeq (s(y), g)).$
-      3. $\exists x(x \in a \implies (s(x), f) \simeq (b, g)).$
+      2. $\exists y(y \in b \land (a, f) \simeq (s(y), g)).$
+      3. $\exists x(x \in a \land (s(x), f) \simeq (b, g)).$
     * 証明
       1. $a_0 = \lbrace x \in a \,\mid\, \exists y(y \in b \land (s(x), f) \simeq (s(y), g))\rbrace$ とおく。
       2. $\min a \in a_0.$
