@@ -122,7 +122,7 @@ tags: math
 
   証明：
 
-  $h(z) := f(z) - g(z)$ とおき、これが恒等的にゼロであることを示す。
+  $h(z) \coloneqq f(z) - g(z)$ とおき、これが恒等的にゼロであることを示す。
 
   仮定から
 
@@ -176,7 +176,7 @@ tags: math
   * 単調増加数列 $\lbrace t_n \rbrace$ を次が成り立つようにとる：
     * $t_1 = 0.$
     * $t_n \to t_0\;(n \to \infty)$
-  * $z_n := z(t_n)$ とおくと $z_n \to z(t_0) \land h(z_0) = 0.$
+  * $z_n \coloneqq z(t_n)$ とおくと $z_n \to z(t_0) \land h(z_0) = 0.$
   * 前半の議論により $z_0$ を中心とするある円盤では $h(z) \equiv 0.$
   * $t_0 < 1$ と仮定すると $t_0$ のとり方（上限性がある）に矛盾するので
     $z(t_0) = c \land h(c) = 0.$ ゆえに $\forall z \in D(h(z) = 0).$

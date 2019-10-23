@@ -16,7 +16,7 @@ $$
 * **Wroński 行列式**とは、次で定義された行列式である：
 
   $$
-  W(u_1(x), \dotsc, u_n(x)) :=
+  W(u_1(x), \dotsc, u_n(x)) \coloneqq
   \def\arraystretch{1.5}
   \begin{vmatrix}
       u_1(x) & u_2(x) & \dots & u_n(x)\\
@@ -178,7 +178,7 @@ $$
 * 事実 $A(D)z = x^m \mathrm{e}^{\lambda x}$ の解は
 
   $$
-  z = u_m(x, \lambda) := \frac{\partial ^m}{\partial \lambda^m}\frac{\mathrm{e}^{\lambda x}}{A(\lambda)}
+  z = u_m(x, \lambda) \coloneqq \frac{\partial ^m}{\partial \lambda^m}\frac{\mathrm{e}^{\lambda x}}{A(\lambda)}
   = \frac{x^m \mathrm{e}^{\lambda x}}{A(\lambda)}.
   $$
 

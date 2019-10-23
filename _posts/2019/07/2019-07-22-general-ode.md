@@ -161,7 +161,7 @@ $$
       * コメント：この議論がわからない場合は微分積分の教科書を参照すること。
 
     * 一様収束性により、極限の順序交換が成り立ち、関数列での連続性が保存される。
-      $\displaystyle u(x) := \lim_{k\to\infty} u_k(x)$ とすると次が成り立つ：
+      $\displaystyle u(x) \coloneqq \lim_{k\to\infty} u_k(x)$ とすると次が成り立つ：
 
       $$
       \begin{aligned}

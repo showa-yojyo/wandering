@@ -36,7 +36,7 @@ $$
 $\bigstar$ の $\forall a(\dots)$ 部分の括弧内の文を $Q(a)$ とおく：
 
 $$
-Q(a) := \forall x(x < a \implies P(x)).
+Q(a) \coloneqq \forall x(x < a \implies P(x)).
 $$
 
 主張はこう書き換えられる：
@@ -72,7 +72,7 @@ $$
 そのような元全ての集合を $A_f$ とする：
 
 $$
-A_f := \lbrace y \in A \,\mid\, Q(y) \implies \lnot P(y)\rbrace.
+A_f \coloneqq \lbrace y \in A \,\mid\, Q(y) \implies \lnot P(y)\rbrace.
 $$
 
 $A_f \subset A$ も整列集合の性質から最小元を持つ。これを $a$ とする。当然 $P(a)$ は $a \in A_f$ だから偽である。
@@ -82,7 +82,7 @@ $a_0 \notin A_f$ であり $a \ne a_0.$
 従って、
 
 $$
-A_a := \{x \,\mid\, x < a\}
+A_a \coloneqq \{x \,\mid\, x < a\}
 $$
 
 と置けば、$A_a$ は空ではない (少なくとも $a_0 < a$ だから $a_0 \in A_a$ だ)。

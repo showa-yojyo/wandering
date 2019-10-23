@@ -86,7 +86,7 @@ tags: math
     $x$ は整列集合 $(a, \prec)$ の元であり、集合 $A$ は空集合でないものとする。
 
     $$
-    \varSigma(a, A) := \{f \in 2^{a \times A}\,|\,
+    \varSigma(a, A) \coloneqq \{f \in 2^{a \times A}\,|\,
       \exists x(x \in a \land f \in \operatorname{Map}(s(x), A)\}.
     $$
 
@@ -149,7 +149,7 @@ tags: math
     $$
 
     $2 \in 3$ だの $2 \subset 3$ だのという表現があるのはこのため。
-  * $\omega^+ := \omega \cup \lbrace \omega \rbrace$ と定義する。
+  * $\omega^+ \coloneqq \omega \cup \lbrace \omega \rbrace$ と定義する。
   * 自然数、自然数全体の集合 $\omega$, $\omega^+$ などは包含関係によって整列集合をなす。
     このうちの何かを $x$ とすると、$s(x) = x$ という性質がある。
     * コメント：e.g. $s(3) = \lbrace 0, 1, 2\rbrace = 3.$

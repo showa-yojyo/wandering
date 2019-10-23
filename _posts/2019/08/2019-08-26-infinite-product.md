@@ -39,7 +39,7 @@ tags: math
 
   * コメント：証明は実数のときと同じで、添字が多くて目に疲れるものなので省略。
 * **各点収束**、**一様収束**、**広義一様収束**を複素関数列 $\lbrace f_n(z) \rbrace$ の
-  無限乗積 $\prod f_n(z)$ について、部分積 $\displaystyle p_n(z) := \prod^n(1 + f_k(z))$ を用いて定義する。
+  無限乗積 $\prod f_n(z)$ について、部分積 $\displaystyle p_n(z) \coloneqq \prod^n(1 + f_k(z))$ を用いて定義する。
   * 部分和が集合 $E \subset \Complex$ で関数 $p(z)$ に～収束するとき、それぞれ $E$ で～収束するという。
 * **Th 10.4** 級数と無限乗積の関係？
   * $D$ を領域とする。
@@ -97,7 +97,7 @@ tags: math
   * 関数列 $\lbrace f_n(z) \rbrace$ は $D$ で正則で、
   * 級数 $\sum \lvert f_n(z) \rvert$ は $D$ で一様収束し、その和は有界であるとする。
 
-  このとき $p(z) := \prod(1 + f_n(z))$ が $D$ に零点をもたない $\implies$
+  このとき $p(z) \coloneqq \prod(1 + f_n(z))$ が $D$ に零点をもたない $\implies$
 
   $$
   \frac{p^\prime(z)}{p(z)} = \sum^\infty\frac{f_n^\prime(z)}{1 + f_n(z)}.
@@ -205,7 +205,7 @@ $$
 $$
 
 * $\varGamma(z)$ は $\Re z > 0$ で広義一様収束かつ正則関数。
-* 実数では次が成り立つのだが、これが複素数でも通じるか $p_n(z) := 1/\varGamma(z)$ について考えていく。
+* 実数では次が成り立つのだが、これが複素数でも通じるか $p_n(z) \coloneqq 1/\varGamma(z)$ について考えていく。
 
   $$
   \varGamma(x) = \lim_{n\to\infty}\frac{n^x n!}{x(x + 1)\dotsm(x + n)}.
@@ -227,7 +227,7 @@ $$
     \le R^2 \mathrm{e}^R \frac{1}{n^2} \to 0 \quad(n \to \infty).
     $$
 
-  * **Th 10.4** より広義一様収束。$p(z) := \lim p_n(z)$ とするとこれは $\Complex$ 上正則であり、
+  * **Th 10.4** より広義一様収束。$p(z) \coloneqq \lim p_n(z)$ とするとこれは $\Complex$ 上正則であり、
     $z = 0, 1, 2, \dotsc$ は 1 位の零点。
 
     ゆえに $1/p(z)$ は $z = 0, 1, 2, \dotsc$ を 1 位の極にもつ有理型関数であり、
@@ -269,14 +269,14 @@ TODO: Review once.
 ## Riemann の $\zeta$ 関数
 
 $$
-\zeta\left(s\right) := 1 + \frac{1}{2^s} + \frac{1}{3^s} + \dotsb + \frac{1}{n^s} + \dotsb = \sum_{n = 1}^\infty\frac{1}{n^s}.
+\zeta\left(s\right) \coloneqq 1 + \frac{1}{2^s} + \frac{1}{3^s} + \dotsb + \frac{1}{n^s} + \dotsb = \sum_{n = 1}^\infty\frac{1}{n^s}.
 $$
 
-以下 $s := \sigma + i\tau$ とおく。
+以下 $s \coloneqq \sigma + i\tau$ とおく。
 
 * $\Re s = \sigma > 1$ において広義一様収束する。
 * この級数から分母が素数の $s$ 乗になっている項だけピックアップしたものを考える。これも広義一様収束する。
-  **Th 10.4** より $F\left(s\right) := \prod 1/(1 - p_n^{-s})$ は $\Re s = \sigma > 1$ 上広義一様収束かつ正則。
+  **Th 10.4** より $F\left(s\right) \coloneqq \prod 1/(1 - p_n^{-s})$ は $\Re s = \sigma > 1$ 上広義一様収束かつ正則。
 * このとき一致の定理と素因数分解の一意性定理から $\Re s > 1$ 上 $F\left(s\right) = \zeta\left(s\right).$
   * $\Re s > 1$ の場合
 

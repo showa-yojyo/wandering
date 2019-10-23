@@ -13,7 +13,7 @@ tags: math
   * 代表元、同値類
   * 集合の直和
     * 本ノートでは記号 $\sqcup$ 系を採用する。
-  * 商集合：集合 $a$ に同値関係 $f$ が定まっているときに $a/f := \lbrace X \in 2^a\,\mid\,\exists x (x \in a \implies X = f(x))\rbrace$
+  * 商集合：集合 $a$ に同値関係 $f$ が定まっているときに $a/f \coloneqq \lbrace X \in 2^a\,\mid\,\exists x (x \in a \implies X = f(x))\rbrace$
     なる集合が定まる。
     * $a = \bigsqcup a/f$ と集合を直和に分割できる。
     * 逆に、直和分割 $a = \bigsqcup b$ が存在するときは、これをもとに同値関係を定義できる：
@@ -64,7 +64,7 @@ tags: math
 
       では $(A, \cdot) = (\N_0, +)$ で考える。
       $((\N_0 \times \N_0)/f, +)$ すなわち $\Z$ である。
-      これを $(\Z, +) := \Z^+$ と書いて**整数の加法群**と呼ぶ。
+      これを $(\Z, +) \coloneqq \Z^+$ と書いて**整数の加法群**と呼ぶ。
 
   * $\forall a \forall b \in \N_0\left(\Z \ni \dfrac{a}{b}\right)$ を $a - b$ と書く。
   * $a \in \N_0$ と $\Z \ni a - 0$ とを同一視する： $\N_0 \subset \Z.$
@@ -80,7 +80,7 @@ tags: math
   * 例 3.1 **半群環** a.k.a. **群環**
 
     $$
-    R[S] := \{f \in \operatorname{Map}(S, R)\,|\,
+    R[S] \coloneqq \{f \in \operatorname{Map}(S, R)\,|\,
       \#\{\sigma \in S\,|\, f(\sigma) \ne 0\} < \infty\}.
     $$
 
@@ -98,7 +98,7 @@ tags: math
 
   順番をあえて逆にして、局所環を定義する：
   * **局所環**とは、整域 $R$ と $R^\times$ の単位元を含むような準正則部分半群 $S$ により次のようにして構成される環 $R_S$ のことをいう：
-    1. $(R_S, \cdot) := ((R \times S)/f, \cdot).$ 実は加法を定義できる。
+    1. $(R_S, \cdot) \coloneqq ((R \times S)/f, \cdot).$ 実は加法を定義できる。
     2. $(R_S, +, \cdot)$ は単位的可換環になり、$(R, +, \cdot) \subset R_S$ は部分環とみなせる。
     3. $S$ の元すべてが $R_S^\times$ の正則元となる。
 

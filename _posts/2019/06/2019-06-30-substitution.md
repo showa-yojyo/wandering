@@ -40,15 +40,15 @@ tags: math
          $$
 
       4. (S9) により、集合 $b = \lbrace\xi_y \,\mid\, y \in s(x)\rbrace$ が存在する。
-      5. $\beta := \bigcup b$ とおく。これはその定義により順序数である。
+      5. $\beta \coloneqq \bigcup b$ とおく。これはその定義により順序数である。
       6. したがって $\xi \in b \implies \xi^+ \in \beta.\quad\because\beta \subset \beta.$
       7. ゆえに写像 $f\colon s(x) \longrightarrow \beta^+$ を $y \longmapsto \xi_y$ により定められる。
          $f$ は順序を保つ単射である。
-      8. $\alpha_x := f(s(x))$ とおく。$\alpha_x \subset \beta^+.\quad\therefore\alpha_x \in \beta^+ \lor \alpha_x = \beta.$
+      8. $\alpha_x \coloneqq f(s(x))$ とおく。$\alpha_x \subset \beta^+.\quad\therefore\alpha_x \in \beta^+ \lor \alpha_x = \beta.$
          ゆえに $\alpha_x$ は $s(x)$ と順序同型な順序数である。すなわち $Q(x)$ が真である。
       9. 超限帰納法により $\forall x \in a Q(x).$ すなわち $s(x) \simeq \alpha_x$ となる順序数 $\alpha_x$ が存在し、しかも一意的であることが示された。
       10. (S9) をもう一度用いる：集合 $c = \lbrace\alpha_x \,\mid\, x \in a\rbrace$ が存在する。
-      11. $\gamma := \bigcup c$ とおき、5. から 9. の推論を繰り返せば、次のような順序数 $\alpha$ が存在するといえる：
+      11. $\gamma \coloneqq \bigcup c$ とおき、5. から 9. の推論を繰り返せば、次のような順序数 $\alpha$ が存在するといえる：
 
           $$
           \alpha \subset \gamma^+ \land \alpha \simeq a.
@@ -63,7 +63,7 @@ tags: math
     \def\set#1{ \{#1\} }
 
     \begin{aligned}
-    \set{0} + \set{0, 1} &:= \set{(0, 0), (0, 1), (1, 1)},\\
+    \set{0} + \set{0, 1} &\coloneqq \set{(0, 0), (0, 1), (1, 1)},\\
     (0, 0) &\le (0, 1),\\
     (0, 0) &\le (1, 1),\\
     (0, 1) &\le (1, 1).
@@ -75,7 +75,7 @@ tags: math
 
     $$
     \def\set#1{ \{#1\} }
-    a \oplus b := a \times \set{0} \cup b \times \set{1}.
+    a \oplus b \coloneqq a \times \set{0} \cup b \times \set{1}.
     $$
 
     $(x, m), (y, n) \in a \times b$ に対して二項関係 $\le$ を次で定義する：
@@ -97,7 +97,7 @@ tags: math
     * 順序数 $\alpha, \beta$ の和 $\alpha \oplus \beta$ を次で定義する：
 
       $$
-      \alpha \oplus \beta := \operatorname{ord}(\alpha \oplus \beta, \le)
+      \alpha \oplus \beta \coloneqq \operatorname{ord}(\alpha \oplus \beta, \le)
       $$
 
     * 諸注意
@@ -122,12 +122,12 @@ tags: math
       * ($\impliedby$): 明らかに成り立つ。
       * ($\implies$): 条件を満たす順序数を具体的に構成する。
 
-        1. 集合 $c := \beta\setminus\alpha$ とおく。これは $\beta$ の部分集合とみなせる。包含関係について整列集合である。
+        1. 集合 $c \coloneqq \beta\setminus\alpha$ とおく。これは $\beta$ の部分集合とみなせる。包含関係について整列集合である。
         2. $\beta = \alpha \cup c \land \alpha \cap c = \varnothing.$ 非交和分解になっている。
         3. $\alpha \in \beta$ が整列集合であるので $\alpha = s(\alpha).$
         4. したがって $\xi \in x \implies \forall \eta \in \alpha (\eta \subsetneq \xi).$
            * コメント：$c$ のほうが「上にある」ということか。
-        5. $\gamma := \operatorname{ord}(c, \subset)$ とおく。このとき $\beta \simeq \alpha \oplus \gamma$ であることは明らかだ。
+        5. $\gamma \coloneqq \operatorname{ord}(c, \subset)$ とおく。このとき $\beta \simeq \alpha \oplus \gamma$ であることは明らかだ。
            ゆえに $\beta = \alpha \oplus \gamma.$
   * (Cor) 順序数 $\alpha$ が無限集合 $\iff \exists\beta(\alpha = \omega \oplus \beta).$
     * ($\impliedby$): 明らかに成り立つ。
@@ -142,12 +142,12 @@ tags: math
     1. 定義
        * 集合 $I$ を添数の集合に使う。
        * 集合族 $\lbrace w_i\rbrace_{i \in I}$ を $I$ を添数とする添字付けられた集合とする。
-       * $a_i := w_i \times \lbrace i \rbrace$ とおく。これも $I$ を添数とする添字付けられた集合である。
+       * $a_i \coloneqq w_i \times \lbrace i \rbrace$ とおく。これも $I$ を添数とする添字付けられた集合である。
          * コメント：これを導入する理由は、非交和分解のためだ。$i, j \in I, i \ne j \implies a_i \cap a_j = \varnothing.$
        * **非交和 (disjoint sum)** を定義する：
 
          $$
-         \bigoplus_{i \in I}w_i := \bigsqcup_{i \in I}a_i.
+         \bigoplus_{i \in I}w_i \coloneqq \bigsqcup_{i \in I}a_i.
          $$
 
     2. 特に $(I, \prec)$ と各 $(w_i, f_i)$ が整列集合ならば、$a_i$ に関係 $\tilde f_i$ を
@@ -157,7 +157,7 @@ tags: math
     3. **和**。$\operatorname{ord}(\bigoplus \alpha_i, \le)$ を $\lbrace \alpha_i \rbrace_{i \in I}$ の和といい、次で表す：
 
        $$
-       {\sum_{i \in I}}^{\oplus} \alpha_i := \operatorname{ord}\left(\bigoplus_{i \in I} \alpha_i, \le\right).
+       {\sum_{i \in I}}^{\oplus} \alpha_i \coloneqq \operatorname{ord}\left(\bigoplus_{i \in I} \alpha_i, \le\right).
        $$
 
     4. 性質
@@ -186,13 +186,13 @@ tags: math
 
       $$
       \begin{aligned}
-      \alpha^{\otimes 2} &:= \alpha \otimes \alpha,\\
-      \alpha^{\otimes 3} &:= \alpha^{\otimes 2} \otimes \alpha,\\
+      \alpha^{\otimes 2} &\coloneqq \alpha \otimes \alpha,\\
+      \alpha^{\otimes 3} &\coloneqq \alpha^{\otimes 2} \otimes \alpha,\\
       &\dots,\\
       \end{aligned}
       $$
 
-      * $\alpha^{\otimes 0} := 1$ とする。
+      * $\alpha^{\otimes 0} \coloneqq 1$ とする。
   * **上界**：(Th 6.2) のような順序数からなる集合を $A$ の上界という。
 
     $$
@@ -202,7 +202,7 @@ tags: math
   * **上限**：次の集合を $A$ の上限と呼ぶ：
 
     $$
-    \sup A := \{\beta \in \alpha\,|\,\bigcup A \subset \beta\} \cup \{\alpha\}.
+    \sup A \coloneqq \{\beta \in \alpha\,|\,\bigcup A \subset \beta\} \cup \{\alpha\}.
     $$
 
     この集合は $\alpha$ によらずに $A$ だけから定まる。
@@ -211,8 +211,8 @@ tags: math
 
     $$
     \begin{aligned}
-    \alpha \oplus A  &:= \{\alpha \oplus \xi\,|\,\xi \in A\} \subset \alpha \oplus (\bigcup A)^+,\\
-    \alpha \otimes A &:= \{\alpha \otimes \xi\,|\,\xi \in A\}.
+    \alpha \oplus A  &\coloneqq \{\alpha \oplus \xi\,|\,\xi \in A\} \subset \alpha \oplus (\bigcup A)^+,\\
+    \alpha \otimes A &\coloneqq \{\alpha \otimes \xi\,|\,\xi \in A\}.
     \end{aligned}
     $$
 
@@ -225,7 +225,7 @@ tags: math
     \end{aligned}
     $$
 
-  * $\alpha^{\otimes \omega} := \sup \lbrace\alpha^{\otimes n}\rbrace_{n \in \omega}$ と定義する。(S9) による。
+  * $\alpha^{\otimes \omega} \coloneqq \sup \lbrace\alpha^{\otimes n}\rbrace_{n \in \omega}$ と定義する。(S9) による。
   * 以下 $\omega^{\otimes\omega}$ の議論と**制限直積**の定義。
     * 定義から $\forall n (\omega^{\otimes n} \subset \omega^{\otimes\omega}).$
 
@@ -244,7 +244,7 @@ tags: math
     * そこで $\lambda_n(\omega^n) \subset s \subset a$ なる $s$ をさがすことにする：
 
       $$
-      s := \{(x_i) \in a\,|\,\exists n \in \omega \forall m \in \omega\!\setminus\!n^+ (x_m = 0)\}.
+      s \coloneqq \{(x_i) \in a\,|\,\exists n \in \omega \forall m \in \omega\!\setminus\!n^+ (x_m = 0)\}.
       $$
 
       * コメント：ほとんどの座標成分がゼロである元をかき集めたものが上記の集合だ。
@@ -263,7 +263,7 @@ tags: math
       * コメント：$I$ が有限なときにも成り立つような、下位互換的定義になっている。
     * 逆辞書式順序関係 $\le$ を入れると、$({\prod}'\alpha_i, \le)$ は整列集合になる。
   * 積
-    * $\prod^\otimes \alpha_i := \operatorname{ord}({\prod}'\alpha_i, \le)$ を $\alpha_i$ の積という。
+    * $\prod^\otimes \alpha_i \coloneqq \operatorname{ord}({\prod}'\alpha_i, \le)$ を $\alpha_i$ の積という。
     * 性質
       * $\exists i (\alpha_i = 0) \implies \prod^\otimes \alpha_i = 0.$
       * $I = 0 \implies \prod^\otimes \alpha_i = 1.$
@@ -298,10 +298,10 @@ tags: math
 
     $$
     \begin{aligned}
-    \omega_2 & := \omega^{\otimes\omega},\\
-    \omega_3 & := \omega^{\otimes\omega_2},\\
+    \omega_2 & \coloneqq \omega^{\otimes\omega},\\
+    \omega_3 & \coloneqq \omega^{\otimes\omega_2},\\
     \dots\\
     \omega_{n+1} &= \omega^{\otimes\omega_n},\\
-    \varepsilon_0 & := \sup \{\omega_n\}_{n \in \omega}.
+    \varepsilon_0 & \coloneqq \sup \{\omega_n\}_{n \in \omega}.
     \end{aligned}
     $$

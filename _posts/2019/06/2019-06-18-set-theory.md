@@ -79,7 +79,7 @@ tags: math
   * **順序対** (ordered pair)
     * コメント：面白いことに非順序対で定義できる：
 
-      $$(x, y) := \{\{x\}, \{x, y\}\}.$$
+      $$(x, y) \coloneqq \{\{x\}, \{x, y\}\}.$$
 
       こうすることで $x \ne y \iff (x, y) \ne (y, x)$ が成り立つようにできる。
   * **直積**：略。
@@ -94,7 +94,7 @@ tags: math
     $\forall x \in a, f(x) \in b$ が $b$ の元の singleton であるものをいう。
     * コメント：複数の元が対応しているものはダメだと言っている。
   * その他、雑多な定義と記号：
-    * **対角線集合** $\varDelta_a := \lbrace (x, y) \in a \times a\,\mid\, x = y\rbrace.$
+    * **対角線集合** $\varDelta_a \coloneqq \lbrace (x, y) \in a \times a\,\mid\, x = y\rbrace.$
     * **恒等写像** $1_a$
     * **標準的射影** $\operatorname{proj}_a$
     * おなじみの全射、単射、全単射、逆対応、制限・拡張、合成などの所概念（省略）。

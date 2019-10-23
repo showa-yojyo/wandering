@@ -53,7 +53,7 @@ $$
 * **基本解行列**とは、基本解系を並べた行列である：
 
   $$
-  U(x) := \begin{pmatrix}
+  U(x) \coloneqq \begin{pmatrix}
       \bm u_1(x) & \dots & \bm u_n(x)
   \end{pmatrix}
   $$
@@ -104,10 +104,10 @@ $$
 
 $$
 \begin{aligned}
-y_1 &:= y,\\
-y_2 &:= y^\prime,\\
+y_1 &\coloneqq y,\\
+y_2 &\coloneqq y^\prime,\\
 &\vdots\\
-y_n &:= y^{(n-1)}.
+y_n &\coloneqq y^{(n-1)}.
 \end{aligned}
 $$
 
@@ -158,7 +158,7 @@ $$
   $\bm y^\prime = A\bm y$ の基本解行列は $\mathrm{e}^{Ax}$ である。ただし：
 
   $$
-  \mathrm{e}^{Ax} := \sum_{k = 0}^\infty \frac{x^k}{k!}A^k.
+  \mathrm{e}^{Ax} \coloneqq \sum_{k = 0}^\infty \frac{x^k}{k!}A^k.
   $$
 
   * この行列は成分ごとに絶対収束する。証明方法：行列に対する最大値ノルム $\Vert \cdot \rVert$ を導入して、級数の項の $(i, j)$ 成分が

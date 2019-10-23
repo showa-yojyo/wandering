@@ -22,7 +22,7 @@ $$
 \varphi^\prime(t) \ne 0.
 $$
 
-すると関数 $g(t) := \lvert f(\varphi(t))\rvert$ は閉区間 $I := {[a, b]}$ 上で定義された連続関数である。
+すると関数 $g(t) \coloneqq \lvert f(\varphi(t))\rvert$ は閉区間 $I \coloneqq {[a, b]}$ 上で定義された連続関数である。
 従って最小値を必ずどこかでとる。ここで条件 $z \in D \implies f^\prime(z) \ne 0$ から、
 および $\varphi^\prime(t) \ne 0$ から少なくとも曲線の端点を除いては
 $g^\prime(t) \ne 0$ が成り立つ：

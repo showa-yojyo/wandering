@@ -50,7 +50,7 @@ tags: math
         \implies x \ni (n^+, f(\alpha))\}.
       $$
 
-      $\omega \times A \in S \ne \varnothing$ より集合族 $F := \bigcap S$ が確定する。
+      $\omega \times A \in S \ne \varnothing$ より集合族 $F \coloneqq \bigcap S$ が確定する。
       $F \in 2^{\omega \times A}$ ゆえに $F$ はグラフ $((\omega, A), F)$ である。
       このことから、 $F \ni (0, a) \land F \ni (n, \alpha) \implies F \ni (n^+, f(\alpha)).$
 

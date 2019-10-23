@@ -172,14 +172,14 @@ $$
   * $\cosh z, \sinh z$ を指数関数により定義する：
 
     $$
-    \cosh z := \frac{\mathrm{e}^z + \mathrm{e}^{-z}}{2},\\
-    \sinh z := \frac{\mathrm{e}^z - \mathrm{e}^{-z}}{2},\\
+    \cosh z \coloneqq \frac{\mathrm{e}^z + \mathrm{e}^{-z}}{2},\\
+    \sinh z \coloneqq \frac{\mathrm{e}^z - \mathrm{e}^{-z}}{2},\\
     $$
 
   * $\tanh z$ は両者の商で定義する：
 
     $$
-    \tanh z := \frac{\sinh z}{\cosh z}.
+    \tanh z \coloneqq \frac{\sinh z}{\cosh z}.
     $$
 
   * 注意すべきは級数展開の形だ。三角関数のそれと同じと言ってもいい。
@@ -219,8 +219,8 @@ $$
     * 関数 $\log z$ の Riemann 面とは、次のような集合 $\bm D$ である：
 
       $$
-      \bm D := \bigcup_{n \in \N} D_n,\\
-      D_n := \{z \in \Complex\!\setminus\!\{0\}\,|\,\arg z \in {((2n - 1)\pi, (2n + 1)\pi]}\}.
+      \bm D \coloneqq \bigcup_{n \in \N} D_n,\\
+      D_n \coloneqq \{z \in \Complex\!\setminus\!\{0\}\,|\,\arg z \in {((2n - 1)\pi, (2n + 1)\pi]}\}.
       $$
 
     * まず $\bm z \in \bm D$ と極座標表示 $(r, \theta)$ との間に全単射が得られる。
@@ -236,7 +236,7 @@ $$
 
     $$
     \alpha \in \Complex,\; z \ne 0 \implies
-    z^\alpha := \mathrm{e}^{\alpha \log z}.
+    z^\alpha \coloneqq \mathrm{e}^{\alpha \log z}.
     $$
 
   * $\alpha \in \Z$ ならば関数 $z^\alpha$ は一価である。実数の場合と同じ計算規則が成立する。
@@ -247,9 +247,9 @@ $$
 
       $$
       \begin{aligned}
-      \bm D &:= C_0 \cup \bigcup_{n \in \N}C_n;\\
-      C_0 &:= \{z \in \Complex\,|\, \arg z \in {[0, 2\pi]}\},\\
-      C_n &:= \{z \in \Complex\,|\, \arg z \in {[2nk\pi, 2nk\pi + 2\pi]}\}.
+      \bm D &\coloneqq C_0 \cup \bigcup_{n \in \N}C_n;\\
+      C_0 &\coloneqq \{z \in \Complex\,|\, \arg z \in {[0, 2\pi]}\},\\
+      C_n &\coloneqq \{z \in \Complex\,|\, \arg z \in {[2nk\pi, 2nk\pi + 2\pi]}\}.
       \end{aligned}
       $$
 

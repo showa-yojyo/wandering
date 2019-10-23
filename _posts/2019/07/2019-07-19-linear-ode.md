@@ -30,9 +30,9 @@ $$
 
   $$
   \begin{aligned}
-  D &:= \frac{\mathrm{d}}{\mathrm{d}x},\\
-  D^n &:= \frac{\mathrm{d}^n}{\mathrm{d}x^n},\\
-  A(x, D) &:= D^n + a_1(x)D^{n-1} + \dotsb + a_n(x).
+  D &\coloneqq \frac{\mathrm{d}}{\mathrm{d}x},\\
+  D^n &\coloneqq \frac{\mathrm{d}^n}{\mathrm{d}x^n},\\
+  A(x, D) &\coloneqq D^n + a_1(x)D^{n-1} + \dotsb + a_n(x).
   \end{aligned}
   $$
 
@@ -96,7 +96,7 @@ $$
 
 * **指数関数解**とは、$y = C \mathrm{e}^{\lambda x}$ の形の解をいう。ODE $y^\prime = \lambda y$ の一般解である。
 * 本節のポイントは $\def\elx{ \mathrm{e}^{\lambda x} } D^k\elx  = \lambda^k \elx$ が成り立つことにある。
-* 先程の記号 $A(x, D)$ を流用して $A(\lambda) := \lambda^n + a_1 \lambda^{n-1} + \dotsb + a_n$ で定義する。
+* 先程の記号 $A(x, D)$ を流用して $A(\lambda) \coloneqq \lambda^n + a_1 \lambda^{n-1} + \dotsb + a_n$ で定義する。
 * (Th 5.2) $A(\lambda) = 0$ ならば $y = C\mathrm{e}^{\lambda x}$ は定数係数同次形 $A(D)y = 0$ の解である。
 * (Def 5.2) 定数係数同次形 $A(D)y = 0$ に対応して、
   * **特性多項式**とは、多項式 $A(\lambda)$ のことである。

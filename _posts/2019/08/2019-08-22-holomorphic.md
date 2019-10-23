@@ -25,7 +25,7 @@ tags: math
   証明：
   仮定から関数 $f(z)$ は 領域 $D$ 上連続である。すなわち（有界閉集合である）曲線 $C$ 上積分が存在する。
 
-  $L := l(C)$ とおく。関数列の一様収束性により：
+  $L \coloneqq l(C)$ とおく。関数列の一様収束性により：
 
   $$
   \forall \varepsilon > 0
@@ -58,7 +58,7 @@ tags: math
   $$
 
   証明：
-  $\displaystyle g_n(z) := \sum_{j = 1}^n f_j(z)$ とおくと、関数列 $\lbrace g_n(z) \rbrace$ は
+  $\displaystyle g_n(z) \coloneqq \sum_{j = 1}^n f_j(z)$ とおくと、関数列 $\lbrace g_n(z) \rbrace$ は
   **Th 7.6** の仮定を満たす。
 * **Th 7.8** 極限と微分の順序交換
   * $D$ を領域とする。

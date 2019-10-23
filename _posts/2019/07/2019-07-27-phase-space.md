@@ -102,11 +102,11 @@ A = \begin{pmatrix}
 \end{pmatrix}.
 $$
 
-係数行列 $A$ の固有方程式を判別式 $\Delta := p^2 - 4q$ の符号で分類することを考える。
+係数行列 $A$ の固有方程式を判別式 $\Delta \coloneqq p^2 - 4q$ の符号で分類することを考える。
 
 $$
 \varPhi(A) = \det(\lambda I - A) = \lambda^2 - p\lambda + q = 0,\\
-p := \operatorname{tr}A,\,q := \det A.
+p \coloneqq \operatorname{tr}A,\,q \coloneqq \det A.
 $$
 
 この根を $\alpha_1, \alpha_2$ とおく。
@@ -155,7 +155,7 @@ $$
   $$
   \begin{aligned}
   \bm X &= P\operatorname{diag}(\mathrm{e}^{\alpha_1}t, \mathrm{e}^{\alpha_2}t)P ^{-1} \bm c,
-  \quad P := \begin{pmatrix}\bm p_1 & \bm p_2\end{pmatrix}, \;\bm c \text{ is constant}\\
+  \quad P \coloneqq \begin{pmatrix}\bm p_1 & \bm p_2\end{pmatrix}, \;\bm c \text{ is constant}\\
   &= C_1 \mathrm{e}^{\alpha_1 t} + C_2 \mathrm{e}^{\alpha_2 t}.\\
   \end{aligned}
   $$
@@ -167,8 +167,8 @@ $$
   \begin{aligned}
   \bm X &= C_1 \bm q_1 \mathrm{e}^{\frac{pt}{2}}\cos\omega t
         + C_2 \bm q_2 \mathrm{e}^{\frac{pt}{2}}\sin\omega t,\\
-  \bm q_1 &:= \bm p_1 + \bm p_2,\,\\
-  \bm q_2 &:= i(\bm p_1 - \bm p _2).
+  \bm q_1 &\coloneqq \bm p_1 + \bm p_2,\,\\
+  \bm q_2 &\coloneqq i(\bm p_1 - \bm p _2).
   \end{aligned}
   $$
 
@@ -252,7 +252,7 @@ $$
 この条件で、$C$ の各点で角度
 
 $$
-\tau := \arctan\frac{g(x, y)}{f(x, y)}
+\tau \coloneqq \arctan\frac{g(x, y)}{f(x, y)}
 $$
 
 を考え、その総変量を考える。
@@ -285,7 +285,7 @@ $$
 * ベクトル場 $\bm F$ の孤立零点 $P$ における Poincaré 指数 $I_P$ を次のように定義する：
 
   $$
-  I_P := I_C
+  I_P \coloneqq I_C
   $$
 
   ここで $I_C$ は次の条件を満たす任意の閉曲線 $C$ の Poincaré 指数である：

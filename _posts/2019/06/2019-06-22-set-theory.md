@@ -42,11 +42,11 @@ tags: math
 
     コメント：直観的には正しい。まず $k^n > n$ を証明する。それから (Th 4.1) を用いる。
 
-  ここで少し話が飛ぶ。$\displaystyle f(n) := \sum_{i = 0}^n\dfrac{1}{k^n} \in S$ を考える。
+  ここで少し話が飛ぶ。$\displaystyle f(n) \coloneqq \sum_{i = 0}^n\dfrac{1}{k^n} \in S$ を考える。
   実は $f \in B$ であり、さらに実は後にいう Cauchy 列である。
 
   * **有理 Cauchy 列**とは（略）である。
-  * $C := \lbrace f \in S\,\mid\, f\text{ is Cauchy}\rbrace$ とおく。
+  * $C \coloneqq \lbrace f \in S\,\mid\, f\text{ is Cauchy}\rbrace$ とおく。
   * $C \subset B$ i.e. Cauchy 列は有界である。
     * 実は部分環となっている。
     * コメント：$g \in S$ がある $f \in B$ によって押さえられるとき、$g \in C.$
@@ -108,7 +108,7 @@ tags: math
          $$
 
       3. 2. の $f$ が Cauchy であることを示す（解析入門の要領で）。
-      4. $s := \lim f(n)$ は $S$ の上界であることを示す。背理法による。
+      4. $s \coloneqq \lim f(n)$ は $S$ の上界であることを示す。背理法による。
       5. $s$ の決め方から、これは上界の最小限である。
 
   * 実数値**連続関数**を定義する（略：解析入門参照）。
