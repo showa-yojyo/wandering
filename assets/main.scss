@@ -1,8 +1,11 @@
 ---
 ---
-@import "minima";
 
+$text-color: #000000;
+$background-color: #ffffff;
 $brand-color:      #ff2493;
+
+@import "minima";
 
 a {
   color: $brand-color;
