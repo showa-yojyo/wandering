@@ -253,12 +253,6 @@
 		"body": "${1|[千代田区男女共同参画センター MIW][chiyoda-06],[chiyoda-06]: {{ site.baseurl }}{% link _libraries/01-chiyoda/06-miw.md %}|}",
 		"description": "千代田区男女共同参画センター MIW"
 	},
-	"LibraryShinagawa03a": {
-		"scope": "html,markdown",
-		"prefix": "shinagawa-03",
-		"body": "[品川区南大井図書館][shinagawa-03]",
-		"description": "品川区南大井図書館（本文用）"
-	},
 	"LibraryKoto00": {
 		"scope": "html,markdown",
 		"prefix": "koto-00",
@@ -271,11 +265,17 @@
 		"body": "${1|[江東区亀戸図書館][koto-07],[koto-07]: {{ site.baseurl }}{% link _libraries/08-koto/07-kameido.md %}|}",
 		"description": "江東区亀戸図書館"
 	},
-	"LibraryShinagawa03b": {
+	"LibraryKoto09": {
+		"scope": "html,markdown",
+		"prefix": "koto-09",
+		"body": "${1|[江東区東大島図書館][koto-09],[koto-09]: {{ site.baseurl }}{% link _libraries/08-koto/09-higashiojima.md %}|}",
+		"description": "江東区東大島図書館"
+	},
+	"LibraryShinagawa03": {
 		"scope": "html,markdown",
 		"prefix": "shinagawa-03",
-		"body": "[shinagawa-03]: {{ site.baseurl }}{% link _libraries/09-shinagawa/03-minamioi.md %}",
-		"description": "品川区南大井図書館（脚注用）"
+		"body": "${1|[品川区南大井図書館][shinagawa-03],[shinagawa-03]: {{ site.baseurl }}{% link _libraries/09-shinagawa/03-minamioi.md %}|}",
+		"description": "品川区南大井図書館"
 	},
 	"LibraryOta02": {
 		"scope": "html,markdown",
