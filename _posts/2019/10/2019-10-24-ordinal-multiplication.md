@@ -1,12 +1,12 @@
 ---
-title: 順序数の積復習ノート
+title: 順序数の乗法復習ノート
 tags: math
 ---
 
-順序論の復習。順序数の積を定義し、その各種性質を証明する。
+順序論の復習。順序数の乗法を定義し、その各種性質を証明する。
 
-# 順序数の積
-## 定義
+# 順序数の乗法
+## 整列集合による定義
 
 $\alpha, \beta$ を順序数とする。積 $\alpha \cdot \beta$ の定義を述べる。
 
@@ -23,7 +23,8 @@ $\alpha, \beta$ を順序数とする。積 $\alpha \cdot \beta$ の定義を述
 2. 整列集合の台集合の直積 $A \times B$ に次のように順序を定義する：
 
    $$
-   (x_1, y_1) \prec_{A \otimes B} (x_2, y_2) \coloneqq
+   (x_1, y_1) \prec_{A \otimes B} (x_2, y_2)\\
+   \coloneqq
    (y_1 \prec_B y_2)
    \;\lor\;
    ((y_1 = y_2) \land (x_1 \prec_A x_2)).
@@ -37,11 +38,39 @@ $\alpha, \beta$ を順序数とする。積 $\alpha \cdot \beta$ の定義を述
    \alpha \cdot \beta \coloneqq \operatorname{ord}(A \times B, \prec_{A \otimes B}).
    $$
 
+## 超限帰納法による定義
+
+$\alpha, \beta$ を順序数とする。順序数の乗法 $\alpha \cdot \beta$ は以下のように超限帰納法を用いて定義される。
+
+### Case 1: $y = 0$ についての積
+
+$\beta = 0$ のときは積を 0 と定義する：
+
+$$
+\alpha \cdot \beta \coloneqq 0.
+$$
+
+### Case 2: $y$ の後続順序数についての積
+
+積 $\alpha \cdot \beta^+$ は $\alpha\cdot\beta$ を用いて定義される：
+
+$$
+\alpha \cdot \beta^+ \coloneqq (\alpha \cdot \beta) + \alpha.
+$$
+
+### Case 3: $y$ が極限順序数のときの積
+
+$y$ が極限順序数であるときは次のようにして積 $\alpha\cdot\beta$ を定める：
+
+$$
+\alpha \cdot \beta \coloneqq \bigcup_{\gamma \in \beta}(\alpha \cdot \gamma).
+$$
+
 ## 性質
 
-順序数の積に関する性質をいくつか挙げ、それぞれ証明を与える。
+順序数の乗法に関する性質をいくつか挙げ、それぞれ証明を与える。
 
-### 有限順序数の積は自然数の通常の積に一致する
+### 有限順序数の乗法は自然数の通常の積に一致する
 
 **証明**：積の定義を直積の順序数としていることと、有限順序数は自然数と順序同型であることから明らか。
 
@@ -75,44 +104,216 @@ $$
 
 ### 零元の存在 $\alpha \cdot 0 = 0 \cdot \alpha = 0$
 
+**証明**：$0 = \operatorname{ord}(\varnothing, \prec_0)$ とする。
+
+$$
+\def\ord{ \operatorname{ord} }
+\alpha \cdot 0 = \ord(A \times \varnothing, \prec_{A \otimes 0}) = \ord(\varnothing, \prec_{0}) = 0,\\
+0 \cdot \alpha = \ord(\varnothing \times A, \prec_{0 \otimes A}) = \ord(\varnothing, \prec_{0}) = 0.
+$$
+
+つまり、空集合と任意集合との直積が空集合になる性質から導かれる。
+
+### $\alpha \cdot \beta^+ = (\alpha \cdot \beta) + \alpha$
+
+**証明**：
+
+$$
+\def\ord{ \operatorname{ord} }
+\begin{aligned}
+\alpha \cdot \beta^+ &= \ord(A \times B^+, \prec_{A \otimes B^+})\\
+&= \ord(A \times (B \cup \{B\}), \prec_{A \otimes B^+})\\
+&= \ord((A \times B) \cup (A \times \{B\}), \prec_{A \otimes B^+})\\
+&= \ord(A \times B, \prec_{A \otimes B}) + \ord(A \times \{B\}, \prec_{A \otimes \{B\}})\\
+&= \alpha \cdot \beta + \alpha.
+\end{aligned}
+$$
+
+4 つのめ等号で $\cup$ を $+$ にするところは $A \times B \cap A \times \lbrace B\rbrace = \varnothing$ から成り立つ。
+さらに、例えば $\prec_{A \otimes B^+}\mid_{A \times B} = \prec_{A \otimes B}$ などを用いた。
+
+### 極限順序数 $\gamma$ について $\alpha\cdot\gamma = \sup\lbrace \alpha\cdot\beta \mid \beta \lt \gamma\rbrace$
+
+* コメント：乗法の定義を超限帰納法で与える流儀では、この性質は乗法の定義の一部だ。
+
 **証明**：TODO
 
-### $\alpha \cdot \beta^+ = (\alpha \cdot \beta) \cdot \alpha$
+$\gamma = \sup\lbrace \beta \,\mid\, \beta < \gamma\rbrace$
 
-**証明**：TODO
+### 単位元の存在 $\alpha\cdot1 = 1\cdot\alpha = \alpha$
 
-### 極限順序数 $\gamma$ について $\alpha\cdot\gamma = \sup(\lbrace \alpha\cdot\beta \mid \beta \lt \gamma\rbrace)$
+**証明**：$1 = \operatorname{ord}(\lbrace \varnothing \rbrace, \prec_1)$ とおく。
 
-**証明**：TODO
+$$
+\begin{aligned}
+\def\ord{\operatorname{ord} }
+\def\first{ \lbrace \varnothing \rbrace }
+\alpha\cdot1 &= \ord(A \times \first, \prec_{A \otimes 1})\\
+&= \ord(A, \prec_A) & \because A \simeq A \times \first\\
+&= \alpha.\\
+1\cdot\alpha &= \ord(\first \times A, \prec_{1 \otimes A})\\
+&= \ord(A, \prec_A) & \because A \simeq \first \times A\\
+&= \alpha.
+\end{aligned}
+$$
 
-### 単位元の存在
+ゆえに $\alpha\cdot1 = 1\cdot\alpha = \alpha.$
 
-**証明**：TODO
+### $0 \lt \alpha$ のとき $\beta \lt \gamma \iff \alpha\cdot\beta \lt \alpha\cdot\gamma$
 
-### $0 \le \alpha$ のとき $\beta \le \gamma \iff \alpha\beta \lt \alpha\gamma$
+**証明**：仮定から $\alpha$ は空集合の順序数ではない。したがって：
 
-**証明**：TODO
+$$
+\begin{aligned}
+\beta \lt \gamma
+\iff \beta \in \gamma
+\iff \alpha \times \beta \in \alpha \times \gamma
+\iff \alpha \cdot \beta \lt \alpha \cdot \gamma.
+\end{aligned}
+$$
 
-### $\beta \le \gamma \implies \beta\cdot\alpha \le \gamma\alpha$
+### $\beta \le \gamma \implies \beta\cdot\alpha \le \gamma\cdot\alpha$
 
-**証明**：TODO
+**証明**：$\beta = \gamma$ のときは右辺は等号が成り立つ。
 
-### 一般には可換でない
+$\beta \lt \gamma$ のときは
+
+$$
+\begin{aligned}
+\beta \lt \gamma
+\iff \beta \in \gamma
+\implies \beta \times \alpha \in \gamma \times \alpha
+\iff \beta \cdot \alpha \lt \gamma \cdot \alpha.
+\end{aligned}
+$$
+
+### 交換律は一般には成り立たない
 
 **証明**：反例を一つ挙げる：
 
 $$
-2 \cdot \omega \omega \ne \omega \cdot 2.
+2 \cdot \omega = \omega \ne \omega \cdot 2.
 $$
 
-### 左分配律
+### 左分配律 $\alpha\cdot(\beta+\gamma)=\alpha\cdot\beta+\alpha\cdot\gamma$
 
-**証明**：TODO
+**証明**：超限帰納法によって証明する。
+
+**(I)** $\gamma = 0$ のとき成り立つことを示す。
+
+$$
+\begin{aligned}
+\alpha \cdot (\beta + 0) &= \alpha \cdot \beta.\\
+\alpha \cdot \beta + \alpha \cdot 0 &= \alpha \cdot \beta.
+\end{aligned}
+$$
+
+ゆえに両辺は等しい。
+
+**(II)** $\alpha\cdot(\beta+\gamma)=\alpha\cdot\beta+\alpha\cdot\gamma$ が成り立つと仮定する。
+このとき $\gamma$ を $\gamma^+$ で置き換えても成り立つことが示されれば、超限帰納法によりすべての $\gamma$ について左分配律が成り立つことになる。
+
+$$
+\begin{aligned}
+\alpha\cdot(\beta+\gamma^+)
+&= \alpha\cdot(\beta+\gamma)^+\\
+&= \alpha\cdot(\beta+\gamma) + \alpha\\
+&= \alpha\cdot\beta + \alpha\cdot\gamma + \alpha\\
+&= \alpha\cdot\beta + \alpha\cdot\gamma^+.
+\end{aligned}
+$$
+
+最初の等号は順序数の和の性質による（前のノート参照）。
+二番目の等号は前述の性質による。
+三番目の等号は超限帰納法の仮定による。
+最後の等号は再び前述の性質と和の結合律による。
+
+以上 **(I)**, **(II)** より**後続順序数については**左分配律が成り立つことが示された。
+このあとは極限順序数についても成立することを示すのだが、準備不足なので省略。
 
 ### 右分配律は一般には成り立たない
 
-**証明**：TODO
+**証明**：$(\beta + \gamma) \cdot \alpha \ne \beta\cdot\alpha + \gamma\cdot\alpha$ なる $\alpha, \beta, \gamma$ として
+$\alpha = \omega, \beta = 1, \gamma = 1$ を反例として挙げる。
+
+$$
+\begin{aligned}
+(\beta + \gamma) \cdot \alpha
+&= (1 + 1) \cdot \omega\\
+&= 2 \cdot \omega\\
+&= \omega.\\
+\beta\cdot\alpha + \gamma\cdot\alpha
+&= 1\cdot\omega + 1\cdot\omega\\
+&= \omega + \omega.
+\end{aligned}
+$$
+
 
 ### 任意の順序数 $\alpha$ と順序数 $\delta \ne 0$ に対して $\alpha = \delta\cdot\beta + \gamma$ かつ $\gamma \lt \delta$ をみたす順序数の組 $(\beta, \gamma)$ がただ一組存在する
+<!--
+x=(y×z)+w and w<y.
+x \alpha
+y \delta
+z \beta
+w \gamma
+-->
+**証明**：
+順序数の性質から $\alpha \lt \delta$ または $\delta \le \alpha$ のどちらか一方のみが成り立つ。
 
-**証明**：TODO
+$\alpha \lt \delta$ ならば $(\delta, \gamma) = (\alpha, 0).$
+$\delta \ne 0$ より順序関係 $\gamma = 0 \lt \delta$ も成り立っている。
+
+$\delta \le \alpha$ の場合、$\beta = \bigcup \lbrace v\,\mid\,\delta \cdot v \le \alpha\rbrace$ とおく。
+$\gamma$ を $\delta\cdot\beta + u = \alpha$ を満たす唯一の $u$ で定義する。
+前述の 1 の乗算に関する性質により $1 \le \beta.$
+
+* コメント：上のパラグラフの最後がわからない。
+
+順序数の和集合は最小上界であるので、$\beta$ が $\bigcup \lbrace v\,\mid\,\delta \cdot v \le \alpha\rbrace$ の最小上界である。
+任意の $u \in \beta$ をとる。このときある $\delta \cdot v \le \alpha$ に対して $u \in v$ が存在する。
+ところが、Membership is Left Compatible with Ordinal Multiplication より、
+$\delta \cdot u \le \alpha$ が成り立つ。
+すなわち $\beta$ は順序数のクラスの推移的部分集合であるから、順序数である。
+
+$\beta \ne 0$ より、極限順序数の定義によりある $u$ に対して $\beta = u^+$ か、
+または $\beta$ が極限順序数であるかのどちらかが成り立つ。
+
+* コメント：上の一行はたいしたことを言っていない。
+
+$\beta = u^+$ を仮定する。$u < \beta \land \delta\cdot u \le \alpha.$
+その上さらに、ある $\delta \cdot v \lt \alpha$ について $u \lt v.$
+これは No Ordinal Between Set and Successor 則により $v \not\lt \beta$ を意味する。
+ゆえに $\beta < v.$ ゆえに $\delta \cdot \beta \le \alpha.$
+
+$\beta$ を極限順序数と仮定する。
+$\forall u(u \in \beta \implies \delta\cdot u \le \alpha)$
+に注意すると：
+
+$$
+\begin{aligned}
+\delta \cdot \alpha
+&= \bigcup_{u \in \beta}(\delta \cdot \beta)\\
+&\le \bigcup_{u \in \beta}(\alpha)\\
+&= \alpha.
+\end{aligned}
+$$
+
+以上より、$\beta$ がどちらの順序数のタイプであるにせよ $\delta \cdot \beta \le \alpha.$
+
+その上、$\delta\cdot \beta^+ \le \alpha$ を仮定する。
+すると $\beta$ は集合 $\lbrace v \,\mid\, \delta\cdot v \le \alpha\rbrace$ の上界ではなく、矛盾である。
+
+ゆえに Ordinal Subtraction when Possible is Unique より
+
+$$
+\exists \gamma(\gamma \in \delta \land \alpha = \delta \cdot \beta + \gamma).
+$$
+
+**一意性**：TODO
+
+# 参考資料
+
+参考資料第というかカンニングペーパーだ。
+
+* [順序数](https://ja.wikipedia.org/wiki/%E9%A0%86%E5%BA%8F%E6%95%B0#%E5%AE%9A%E7%BE%A9) - Wikipedia
+* [Ordinal Multiplication is Left Distributive](https://proofwiki.org/wiki/Ordinal_Multiplication_is_Left_Distributive) - ProofWiki

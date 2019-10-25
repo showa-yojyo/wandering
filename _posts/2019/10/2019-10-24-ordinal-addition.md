@@ -1,12 +1,12 @@
 ---
-title: 順序数の和復習ノート
+title: 順序数の加法復習ノート
 tags: math
 ---
 
-順序論の復習。順序数の和を定義し、その各種性質を証明する。
+順序論の復習。順序数の加法を定義し、その各種性質を証明する。
 
-# 順序数の和
-## 定義
+# 順序数の加法
+## 整列集合による定義
 
 $\alpha, \beta$ を順序数とする。和 $\alpha + \beta$ の定義を述べる。
 
@@ -38,11 +38,42 @@ $\alpha, \beta$ を順序数とする。和 $\alpha + \beta$ の定義を述べ�
    \alpha + \beta \coloneqq \operatorname{ord}(A \cup B, \prec_{A \oplus B}).
    $$
 
+## 超限帰納法による定義
+
+超限帰納法で順序数の加法を定義する。
+
+$\alpha, \beta$ を順序数とする。このとき和 $\alpha + \beta$ を
+$\beta$ に関する超限帰納法により次の Case 1-3 のように定義する：
+
+### Case 1: $y = 0$ についての和
+
+$y = 0$ とする。和 $x + y$ を次で定義する：
+
+$$
+\alpha + 0 \coloneqq \alpha.
+$$
+
+### Case 2: $y$ の後続順序数についての和
+
+$\beta$ の後続順序数 $\beta^+$ に対して和 $x + y$ を次で定義する：
+
+$$
+\alpha + \beta^+ \coloneqq (\alpha + \beta)^+.
+$$
+
+### Case 3: $y$ が極限順序数のときの和
+
+$y$ を極限順序数とする。和 $x + y$ を次で定義する：
+
+$$
+\alpha + \beta \coloneqq \bigcup_{\gamma \in \beta} \gamma.
+$$
+
 ## 性質
 
-順序数の和に関する性質をいくつか挙げ、それぞれ証明を与える。
+順序数の加法に関する性質をいくつか挙げ、それぞれ証明を与える。
 
-### 有限順序数の和は自然数の和と一致する
+### 有限順序数の加法は自然数の和と一致する
 
 **証明**：$\operatorname{ord}()$ を用いた順序数の定義および $A \cap B = \varnothing$ から明らか。
 
@@ -108,11 +139,51 @@ $$
 x \prec_\varnothing y \lor x \prec_A y \lor (x, y) \in \varnothing \times A
 $$
 
+**超限帰納法による証明**：
+ここでは $\alpha + 0 = \alpha$ を和の定義から直ちに言えるとして、$0 + \alpha = \alpha$
+がすべての順序数 $\alpha$ に対して成り立つことを超限帰納法によって証明する。
+
+* コメント：後述する性質を前もって証明してある必要がある。
+
+**(Case I)** $\alpha = 0$ に対して成り立つことを示す。$0 + 0 = 0.$ これは $0$ の定義から成り立つことがいえる。
+
+**(Case II)** $0 + \alpha = \alpha$ が成り立つと仮定すると、$0 + \alpha^+ = \alpha^+$ も成り立つことを示す。
+右辺から左辺を導く：
+
+$$
+\begin{aligned}
+\alpha^+ = (0 + \alpha)^+ = 0 + \alpha^+.
+\end{aligned}
+$$
+
+**(Case III)** 最後に $\alpha$ が極限順序数であるときにも成り立つことを示す。
+$\alpha$ を極限順序数であると仮定する。すなわち
+
+$$
+\forall \beta(\beta \in \alpha \implies 0 + \beta = \beta).
+$$
+
+このとき次が成り立つ：
+
+$$
+\begin{aligned}
+\alpha &= \bigcup_{\beta \in \alpha}\beta\\
+&= \bigcup_{\beta \in \alpha}(0 + \beta)\\
+&= 0 + \alpha.
+\end{aligned}
+$$
+
+最後の等号は和の定義による。
+
 ### $\alpha + \beta^+ = (\alpha + \beta)^+$
+
+* コメント：順序数の加法を超限帰納法で定義する流儀では、この性質は定義の一部だ。
 
 **証明**：$\gamma = \alpha + \beta = \operatorname{ord}(A \cup B, \prec_{A \oplus B}).$
 とおくと $\gamma^+ = \gamma + 1.$
 一方結合律により $\alpha + \beta^+ = \alpha + (\beta + 1) = (\alpha + \beta) + 1 = \gamma + 1 = \gamma^+.$
+
+* コメント：加法の定義が順序数ベースの場合、これは定義の一部である。
 
 ### $\beta \lt \gamma \iff \alpha + \beta \lt \alpha + \gamma$
 
@@ -154,6 +225,7 @@ $\exists x(x \in B \land A \cong s(x)).$
 
 Case 2: $\alpha = \beta$ ならば $\gamma = 0.$
 
-----
+# 参考文献
 
-以上。
+* [順序数](https://ja.wikipedia.org/wiki/%E9%A0%86%E5%BA%8F%E6%95%B0#%E5%AE%9A%E7%BE%A9) - Wikipedia
+* [Category:Ordinal Arithmetic](https://proofwiki.org/wiki/Category:Ordinal_Arithmetic) - ProofWiki
