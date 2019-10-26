@@ -6,7 +6,7 @@ tags: math
 順序論の復習。順序数の乗法を定義し、その各種性質を証明する。
 
 # 順序数の乗法
-## 整列集合による定義
+## 整列集合の直積に順序を入れることによる定義
 
 $\alpha, \beta$ を順序数とする。積 $\alpha \cdot \beta$ の定義を述べる。
 
@@ -42,7 +42,7 @@ $\alpha, \beta$ を順序数とする。積 $\alpha \cdot \beta$ の定義を述
 
 $\alpha, \beta$ を順序数とする。順序数の乗法 $\alpha \cdot \beta$ は以下のように超限帰納法を用いて定義される。
 
-### Case 1: $y = 0$ についての積
+### Case 1: 帰納法の基点
 
 $\beta = 0$ のときは積を 0 と定義する：
 
@@ -50,7 +50,7 @@ $$
 \alpha \cdot \beta \coloneqq 0.
 $$
 
-### Case 2: $y$ の後続順序数についての積
+### Case 2: 帰納的段階
 
 積 $\alpha \cdot \beta^+$ は $\alpha\cdot\beta$ を用いて定義される：
 
@@ -58,7 +58,7 @@ $$
 \alpha \cdot \beta^+ \coloneqq (\alpha \cdot \beta) + \alpha.
 $$
 
-### Case 3: $y$ が極限順序数のときの積
+### Case 3: 極限順序数の場合
 
 $y$ が極限順序数であるときは次のようにして積 $\alpha\cdot\beta$ を定める：
 
@@ -76,7 +76,7 @@ $$
 
 ### 結合律 $(\alpha \cdot \beta) \cdot \gamma = \alpha \cdot (\beta \cdot \gamma)$
 
-**証明**：$\gamma = \operatorname{ord}(C, \prec_C)$ をみたす整列集合 (C, \prec_C) を一つとる。
+**直積順序の定義での証明**：$\gamma = \operatorname{ord}(C, \prec_C)$ をみたす整列集合 $(C, \prec_C)$ を一つとる。
 左辺は整列集合 $((A \times B) \times C, \prec_{(A \otimes B) \otimes C})$ の順序数である。
 順序関係を詳しく調べる：
 
@@ -102,9 +102,59 @@ $$
 
 面倒だから書かないが、論理記号 $\land, \lor$ に分配律を適用すれば両者は一致するだろう。
 
+**超限帰納法による証明**：
+* コメント：あらかじめ零元に関する性質と左分配律の証明が終わっている必要がある。
+
+#### Case 1 帰納法の基点
+
+まず $\gamma = 0$ のときに成り立つことを示す。
+
+$$
+\begin{aligned}
+(\alpha\cdot\beta)\cdot0
+&= 0\\
+&= \alpha\cdot0\\
+&= \alpha\cdot(\beta\cdot0).
+\end{aligned}
+$$
+
+これで基点ケースが証明された。
+
+#### Case 2 帰納的段階
+
+与えられた等式が $\gamma$ について成り立てば、後続順序数 $\gamma^+$ についても成り立つことを示す：
+
+$$
+\begin{aligned}
+\alpha\cdot(\beta\cdot\gamma^+)
+&= \alpha \cdot (\beta \cdot \gamma + \beta)\\
+&= \alpha \cdot (\beta \cdot \gamma) + \alpha\cdot\beta\\
+&= (\alpha \cdot \beta)\cdot \gamma + \alpha\cdot\beta\\
+&= (\alpha \cdot \beta)\cdot \gamma^+.
+\end{aligned}
+$$
+
+* コメント：最初の等号と最後の等号は後続順序数に関する積の性質による。
+  これが成り立つのは超限帰納法によって順序数の積を定義したことを前提とする証明だからだ。
+
+#### Case 3 極限順序数の場合
+
+$\gamma$ が極限順序数のとき成り立つことを、つまり次の命題を示す：
+
+$$
+\forall c(z \in \gamma \implies
+(\alpha \cdot \beta) \cdot c = \alpha \cdot (\beta \cdot c)).
+$$
+
+そのためにさらに場合分けをする。$\beta = 0$ の場合と $\beta \ne 0$ の場合になる。
+前者の証明は上述の Case 1 と同様なものになる（省略）。
+後者の証明を以下で述べる。
+
+TODO: いろいろと準備が要るので後回し。
+
 ### 零元の存在 $\alpha \cdot 0 = 0 \cdot \alpha = 0$
 
-**証明**：$0 = \operatorname{ord}(\varnothing, \prec_0)$ とする。
+**直積順序の定義での証明**：$0 = \operatorname{ord}(\varnothing, \prec_0)$ とする。
 
 $$
 \def\ord{ \operatorname{ord} }
@@ -114,10 +164,9 @@ $$
 
 つまり、空集合と任意集合との直積が空集合になる性質から導かれる。
 
-### $\alpha \cdot \beta^+ = (\alpha \cdot \beta) + \alpha$
+### 後続順序数との積 $\alpha \cdot \beta^+ = (\alpha \cdot \beta) + \alpha$
 
 **証明**：
-
 $$
 \def\ord{ \operatorname{ord} }
 \begin{aligned}
@@ -134,15 +183,15 @@ $$
 
 ### 極限順序数 $\gamma$ について $\alpha\cdot\gamma = \sup\lbrace \alpha\cdot\beta \mid \beta \lt \gamma\rbrace$
 
-* コメント：乗法の定義を超限帰納法で与える流儀では、この性質は乗法の定義の一部だ。
-
-**証明**：TODO
+**直積順序による証明**：$\gamma = \bigcup_{c \in \gamma} c$ であるから、
 
 $\gamma = \sup\lbrace \beta \,\mid\, \beta < \gamma\rbrace$
 
+**超限帰納法による証明**：乗法の定義を超限帰納法で与える流儀では、この性質は乗法の定義の一部だ。
+
 ### 単位元の存在 $\alpha\cdot1 = 1\cdot\alpha = \alpha$
 
-**証明**：$1 = \operatorname{ord}(\lbrace \varnothing \rbrace, \prec_1)$ とおく。
+**直積順序による証明**：$1 = \operatorname{ord}(\lbrace \varnothing \rbrace, \prec_1)$ とおく。
 
 $$
 \begin{aligned}
@@ -197,9 +246,11 @@ $$
 
 ### 左分配律 $\alpha\cdot(\beta+\gamma)=\alpha\cdot\beta+\alpha\cdot\gamma$
 
-**証明**：超限帰納法によって証明する。
+**超限帰納法による証明**
 
-**(I)** $\gamma = 0$ のとき成り立つことを示す。
+#### Case 1 帰納法の基点
+
+$\gamma = 0$ のとき成り立つことを示す。
 
 $$
 \begin{aligned}
@@ -210,7 +261,9 @@ $$
 
 ゆえに両辺は等しい。
 
-**(II)** $\alpha\cdot(\beta+\gamma)=\alpha\cdot\beta+\alpha\cdot\gamma$ が成り立つと仮定する。
+#### Case 2 帰納的段階
+
+$\alpha\cdot(\beta+\gamma)=\alpha\cdot\beta+\alpha\cdot\gamma$ が成り立つと仮定する。
 このとき $\gamma$ を $\gamma^+$ で置き換えても成り立つことが示されれば、超限帰納法によりすべての $\gamma$ について左分配律が成り立つことになる。
 
 $$
@@ -228,8 +281,9 @@ $$
 三番目の等号は超限帰納法の仮定による。
 最後の等号は再び前述の性質と和の結合律による。
 
-以上 **(I)**, **(II)** より**後続順序数については**左分配律が成り立つことが示された。
-このあとは極限順序数についても成立することを示すのだが、準備不足なので省略。
+#### Case 3 極限順序数の場合
+
+TODO: 準備不足のため後回し
 
 ### 右分配律は一般には成り立たない
 
@@ -248,15 +302,8 @@ $$
 \end{aligned}
 $$
 
-
 ### 任意の順序数 $\alpha$ と順序数 $\delta \ne 0$ に対して $\alpha = \delta\cdot\beta + \gamma$ かつ $\gamma \lt \delta$ をみたす順序数の組 $(\beta, \gamma)$ がただ一組存在する
-<!--
-x=(y×z)+w and w<y.
-x \alpha
-y \delta
-z \beta
-w \gamma
--->
+
 **証明**：
 順序数の性質から $\alpha \lt \delta$ または $\delta \le \alpha$ のどちらか一方のみが成り立つ。
 
@@ -303,13 +350,36 @@ $$
 その上、$\delta\cdot \beta^+ \le \alpha$ を仮定する。
 すると $\beta$ は集合 $\lbrace v \,\mid\, \delta\cdot v \le \alpha\rbrace$ の上界ではなく、矛盾である。
 
-ゆえに Ordinal Subtraction when Possible is Unique より
+ゆえに（順序数の加法の性質の最後の項目に相当する） Ordinal Subtraction when Possible is Unique より
 
 $$
 \exists \gamma(\gamma \in \delta \land \alpha = \delta \cdot \beta + \gamma).
 $$
 
-**一意性**：TODO
+**一意性**：
+$\alpha = \delta\cdot\beta_1 + \gamma_1$ かつ $\gamma_1 \lt \delta_1$ および
+$\alpha = \delta\cdot\beta_2 + \gamma_2$ かつ $\gamma_2 \lt \delta_2$ を仮定する。
+
+このとき、$\beta = \beta_1, \beta = \beta_2$ の両者に対して次の不等式成り立つ：
+
+$$
+\begin{aligned}
+\delta\cdot\beta
+&\le \alpha\\
+&\lt \delta \cdot \beta + \delta \quad \because \gamma \lt \delta\\
+&= \delta \cdot \beta^+.
+\end{aligned}
+$$
+
+つまり $\delta\cdot\beta_1 \lt \delta\cdot\beta_2^+$ と
+$\delta\cdot\beta_2 \lt \delta\cdot\beta_1^+$ であるといえる。
+再び Membership is Left Compatible with Ordinal Multiplication により
+$\beta_1 \lt \beta_2^+ \land \beta_2 \lt \beta_1^+.$
+前者と後者はそれぞれ $\beta1 \le \beta_2$, $\beta_2 \le \beta_1$ を意味する。
+したがって $\beta_1 = \beta_2.$ ゆえに $\beta$ は一意的に定まる。
+
+$\beta$ が一意的であるので（順序数の加法の性質の最後の項目に相当する）Ordinal Subtraction when Possible is Unique により
+$\delta$ は一意的である。
 
 # 参考資料
 

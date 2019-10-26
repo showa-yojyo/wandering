@@ -193,10 +193,10 @@ tags: math
       $$
 
       * $\alpha^{\otimes 0} \coloneqq 1$ とする。
-  * **上界**：(Th 6.2) のような順序数からなる集合を $A$ の上界という。
+  * **上界**：(Th 6.2) のような（順序数からなる集合 $A$ があり、その任意の $\xi$ を真に含むような）順序数からなる集合を $A$ の上界という。
 
     $$
-    \{\alpha \,|\,\forall \xi \in A (\xi \subsetneq \alpha)\}
+    \{\alpha \,|\,\forall \xi \in A (\xi \subsetneq \alpha)\}.
     $$
 
   * **上限**：次の集合を $A$ の上限と呼ぶ：
