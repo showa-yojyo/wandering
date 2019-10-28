@@ -111,9 +111,28 @@ $$
 
 ゆえに $\gamma$ に対して成り立つ等式が $\gamma^+$ に対しても成り立つことが示された。
 
-**極限順序数の場合**：$\beta$ を極限順序数とする。
+**極限順序数の場合**：$\beta$ を極限順序数とする。帰納法の仮定から：
 
-TODO
+$$
+\forall b(b \in \beta \implies \alpha^{b^+} = \alpha^b\cdot\alpha).
+$$
+
+したがって
+
+$$
+\begin{aligned}
+    \bigcup_{b \in \beta}\alpha^{b^+} &= \bigcup_{b \in \beta}(\alpha^b\cdot\alpha).\\
+\end{aligned}
+$$
+
+この左辺と右辺はそれぞれ指数が極限順序数のときのべき乗の定義と帰納法の仮定から次のように書けるので、極限順序数の場合についても成り立つ。
+
+$$
+\begin{aligned}
+\bigcup_{b \in \beta}\alpha^{b^+} &= \bigcup_{b \in \beta^+}\alpha^b = \alpha^{\beta^+}.\\
+\bigcup_{b \in \beta}(\alpha^b\cdot\alpha) &= \bigcup_{b \in \beta}\alpha^{b^+}.
+\end{aligned}
+$$
 
 ## 指数が極限順序数のべきは $\sup$ で与えられる
 
@@ -223,6 +242,9 @@ $$
 $$
 
 これで極限順序数の場合も成り立つことが示された。
+
+* コメント：この性質の注意点は $\beta \lt \gamma \implies \beta^\alpha \le \gamma^\alpha$ にある。
+  例えば $2 \lt 3$ に対して $\omega^2 = \omega^3 = \omega$ が成り立つ。
 
 ## $\alpha^{\beta + \gamma} = \alpha^\beta\cdot\alpha^\gamma$
 
@@ -404,11 +426,15 @@ $\bigstar1$ と $\bigstar2$ より、極限順序数についても成り立つ�
 
 ## $(\beta\cdot\gamma)^\alpha = \beta^\alpha\cdot\gamma^\alpha$ は一般には成り立たない
 
-TBW
+例えば $\alpha = \gamma = 2, \beta = \gamma$ を考える。
+$(\omega \cdot 2)^2 = \omega \cdot 2 \cdot \omega \cdot 2 = \omega^2\cdot2 \ne \omega^2\cdot2^2.$
 
 # 参考資料
 
 * [順序数](https://ja.wikipedia.org/wiki/%E9%A0%86%E5%BA%8F%E6%95%B0#%E5%AE%9A%E7%BE%A9) - Wikipedia
+* [Ordinal arithmetic](https://en.wikipedia.org/wiki/Ordinal_arithmetic#Multiplication) - Wikipedia
+  * 簡単な概念に対しても例示を与えているので、わかりやすい印象がある。
 * [Definition:Ordinal Exponentiation](https://proofwiki.org/wiki/Definition:Ordinal_Exponentiation) - ProofWiki
 * [Category:Ordinal Arithmetic](https://proofwiki.org/wiki/Category:Ordinal_Arithmetic) - ProofWiki
+  * 証明中に参照した定理をリンク付きで明示してあるのが特徴。こちらでかってに依存グラフを描きたい。
 

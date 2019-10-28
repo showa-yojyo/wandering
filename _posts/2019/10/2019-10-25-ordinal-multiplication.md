@@ -150,7 +150,54 @@ $$
 前者の証明は上述の Case 1 と同様なものになる（省略）。
 後者の証明を以下で述べる。
 
-TODO: いろいろと準備が要るので後回し。
+$\beta \ne 0$ ならば $\beta \cdot \gamma$ は極限順序数だ。
+
+次の二つの等式が成り立つ：
+
+$$
+\begin{aligned}
+\alpha\cdot(\beta\cdot\gamma) &= \bigcup_{u \lt \beta\cdot\gamma} (\alpha\cdot u).\\
+(\alpha\cdot\beta)\cdot\gamma &= \bigcup_{w \lt \gamma} (\alpha\cdot\beta)\cdot w.
+\end{aligned}
+$$
+
+$u \lt \beta\cdot\gamma$ のとき $\exists w(w \in \gamma \land u \lt \beta \cdot w).$
+これを用いて：
+
+$$
+\begin{aligned}
+\alpha \cdot u
+&\le \alpha \cdot (\beta \cdot w)\\
+&= (\alpha \cdot \beta) \cdot w\\
+&\le (\alpha \cdot \beta) \cdot \gamma.
+\end{aligned}
+$$
+
+ここで等号は帰納法の仮定による。この結果をすべての $u \in \beta \cdot \gamma$ に一般化する。
+順序数に対する上限不等式により：
+
+$$
+\tag*{$\spadesuit1$}
+\alpha \cdot (\beta \cdot \gamma) \le (\alpha \cdot \beta) \cdot \gamma.
+$$
+
+次に逆向きの不等式を証明する。任意の $w \in \gamma$ をとる。いきなり帰納法の仮定が使えて：
+
+$$
+\begin{aligned}
+  (\alpha\cdot\beta)\cdot w = \alpha\cdot(\beta\cdot w) \le \alpha\cdot(\beta\cdot\gamma).
+\end{aligned}
+$$
+
+再び順序数に対する上限不等式の性質により：
+
+$$
+\tag*{$\spadesuit2$}
+(\alpha\cdot\beta)\cdot\gamma \le \alpha\cdot(\beta\cdot\gamma).
+$$
+
+$\spadesuit1, \spadesuit2$ より $(\alpha\cdot\beta)\cdot\gamma = \alpha\cdot(\beta\cdot\gamma).$
+以上で極限順序数の場合が証明された。
 
 ### 零元の存在 $\alpha \cdot 0 = 0 \cdot \alpha = 0$
 
@@ -283,7 +330,73 @@ $$
 
 #### Case 3 極限順序数の場合
 
-TODO: 準備不足のため後回し
+$\alpha = 0$ の場合とそうでない場合とで分けて証明する。
+$\alpha = 0$ ならば：
+
+$$
+\alpha\cdot(\beta + \gamma) = 0 = 0 + 0 = 0\cdot\beta + 0\cdot\gamma.
+$$
+
+と書けるので成り立つ。
+
+以下 $\alpha \ne 0$ の場合を示す。$\gamma$ が極限順序数であるので
+和 $\beta + \gamma$ も積 $\beta \cdot \gamma$ もどちらも極限順序数となる。
+示すべき等式の左辺と右辺をそれぞれ定義に従って書き換えると：
+
+$$
+\begin{aligned}
+  \alpha\cdot(\beta + \gamma) &= \bigcup_{w \in \beta + \gamma}(\alpha \cdot w).\\
+  \alpha\cdot\beta + \alpha\cdot\gamma &= \bigcup_{v \in \alpha\cdot\gamma} \alpha\cdot\beta + v.
+\end{aligned}
+$$
+
+$w \in \beta + \gamma$ を一つとる。順序数の性質から次が成り立つ：
+
+$$
+w \in \beta \;\lor\; (w \subset y \;\land\; w \in \beta + \gamma)
+$$
+
+このとき $\exists u(u \in \gamma \ \land\ w \in \beta \ \lor\ w = \beta + u).$
+
+$w \in \beta$ の場合は $\alpha\cdot w \in \alpha\cdot\beta \subset \alpha\cdot\beta + v.$
+
+$w = \beta + \gamma$ の場合は帰納法の仮定を使って $\alpha\cdot w = \alpha\cdot(\beta + u) = \alpha\cdot\beta + \alpha\cdot u.$
+この第二項は： $\alpha \cdot u \in \alpha \cdot \gamma = \alpha\cdot\beta + v.$
+
+したがって順序数に対する上限不等式により：
+
+$$
+\tag*{$\clubsuit1$}
+\alpha\cdot(\beta+\gamma) \subset \alpha\cdot\beta + \alpha\cdot\gamma.
+$$
+
+以下、逆向きの包含関係を示す。
+
+$$
+\forall v \exists w(v \in \alpha\cdot\gamma \implies (w \in \gamma \;\land\; v \in \alpha\cdot w)).\\
+\begin{aligned}
+  \therefore \alpha \cdot \beta + v
+  &\le \alpha \cdot \beta + \alpha \cdot w\\
+  &= \alpha \cdot(\beta + w).
+\end{aligned}
+$$
+
+* コメント：最初の不等号は両辺それぞれ左から $\alpha + \beta$ を加えたことから。次の等号は帰納法の仮定から。
+
+再び順序数に対する上限不等式により：
+
+$$
+\tag*{$\clubsuit2$}
+\begin{aligned}
+\bigcup_{v \in \alpha\cdot\gamma} (\alpha \cdot \beta + v)
+&\subset \bigcup_{w \in \gamma}\alpha \cdot(\beta + w).\\
+\therefore \alpha\cdot\beta + \alpha\cdot\gamma &\subset \alpha \cdot (\beta + \gamma).
+\end{aligned}
+$$
+
+$\clubsuit1, \clubsuit2$ より $\alpha\cdot\beta + \alpha\cdot\gamma = \alpha \cdot (\beta + \gamma).$
+以上により極限順序数の場合が成り立つことが示された。
+
 
 ### 右分配律は一般には成り立たない
 
