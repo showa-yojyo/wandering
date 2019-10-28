@@ -291,7 +291,7 @@ tags: math
       * $\beta^{\otimes 1} = \beta.$
       * $\alpha$ が孤立順序数で $\alpha = \gamma^+ \implies \beta^{\otimes\gamma} = \beta^{\otimes\gamma}\otimes\beta.$
       * $\alpha$ が極限数 $\implies \beta^{\otimes\alpha} = \sup \lbrace \beta^{\otimes\gamma}\rbrace_{\gamma \in \alpha}.$
-      * $\forall n \forall m \in \omega (n^{\otimes m} = nm).$
+      * $\forall n \forall m \in \omega (n^{\otimes m} = n^m).$
   * (Q 6.4) 指数法則
   * 一般に $(\alpha \otimes \beta)^{\otimes\gamma} \ne \alpha^{\otimes\gamma}\otimes \beta^{\otimes\gamma}.$
   * 次のように順序数を名付けておく：
