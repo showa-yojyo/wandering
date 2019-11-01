@@ -73,50 +73,69 @@ tags: math
   * 大昔に習った（英語の）否定文の作り方は論理の問題だった。
 * §1.2 外延性公理、集合、§1.3 非順序対、合併、無限公理
   * **集合**には 10 個からなる公理がある。今まで全然承知していなかった。
-    (S1) から (S10) までを記すが、最後の方の公理はもっと後になって出てくるようだ。
-  * (S1) 外延性公理
-    * 集合同士が一致する条件？
+    $(S1)$ から $(S10)$ までを記すが、最後の方の公理はもっと後になって出てくるようだ。
 
-    $$
-    \forall a \forall b (a = b \iff \forall x (x \in a \iff x \in b)).
-    $$
+  * $(S1)$ 外延性公理
+    * もし二つの集合が同じ要素（複数形）を含むならば、その二つの集合は等しい。
 
-  * (S2) 空集合の存在公理
-    * **空集合**と呼ばれる集合が（ただ一つ）存在する。
+      $$
+      \tag*{$(S1)$}
+      \forall a \forall b (a = b \iff \forall x (x \in a \iff x \in b)).
+      $$
 
-    $$
-    \exists a \forall x (\lnot (x \in a)).
-    $$
+  * $(S2)$ 空集合の存在公理
+    * 要素を何も含まない集合、**空集合**と呼ばれる集合が（ただ一つ）存在する。
 
-    * 一意性は証明で得られる。
+      $$
+      \tag*{$(S2)$}
+      \exists a \forall x (\lnot (x \in a)).
+      $$
+
+    * 一意性は $(S1)$ による。
     * この述語部分はふだんは $x \notin a$ と記される。
-  * (S3) 非順序対の存在公理
 
-    $$
-    \forall a \forall b \exists c \forall x (x \in c \iff x = a \lor x = b).
-    $$
+  * $(S3)$ 非順序対の存在公理
+    * もし $a$ と $b$ が集合であるならば、それらを要素とする集合 $c$ が存在する：
+
+      $$
+      \tag*{$(S3)$}
+      \forall a \forall b \exists c \forall x (x \in c \iff x = a \lor x = b).
+      $$
 
     * 非順序対とは、プログラミング用語でいうところの unordered pair そのものだ。
     * これを $c = \lbrace a, b\rbrace$ と記す。
     * $b = a$ のときは $c = \lbrace a\rbrace$ と記す。
-    * $\varnothing \ne \lbrace\varnothing\rbrace$ とする。
-  * (S4) 合併集合の公理
+    * $\varnothing \ne \lbrace\varnothing\rbrace$ とする。一般の集合についても同様。
+    * テキストによってはもっと緩い定義になっていることがある。
+      それは、これら二つしか含まないとは言わない形で述べられている。
+      その場合でも、他の公理からここで言う順序対の一意的存在性は示せる。
 
-    $$
-    \forall a \exists b \forall x (x \in b \iff \exists c (c \in a \land x \in c)).
-    $$
+  * $(S4)$ 合併集合の公理
+    * $a$ を集合とすると、$x \in c \in a$ を満たすような $x \in c$ が存在するときには必ず
+      $x \in b$ となる集合 $b$ が存在する：
+
+      $$
+      \tag*{$(S4)$}
+      \forall a \exists b \forall x (x \in b \iff \exists c (c \in a \land x \in c)).
+      $$
 
     * この $b$ を $\displaystyle \bigcup_{c \in a}c$ とか $\displaystyle \bigcup a$ とかで表す。
     * この公理により $a \cup b$ の概念が定まった。
+    * 他の公理から、和集合は一意的に定まる。
     * 先述の unordered pair の概念が unordered tuple の概念に拡張されている。
       プログラミングの考え方が論理の理解に役立つのは面白い（本当は逆だろうが）。
-  * (S5) 無限公理
 
-    $$
-    \exists a (\varnothing \in a \land \forall x (x \in a \implies x^+ \in a)).
-    $$
+  * $(S5)$ 無限公理
+
+    無限公理に関してはバリエーションが多く、テキストによって言い回しが異なりがちだ。
+    この本では後で言う $\omega$ の存在を主張しているようだ：
+
+      $$
+      \tag*{$(S5)$}
+      \exists a (\varnothing \in a \land \forall x (x \in a \implies x^+ \in a)).
+      $$
 
     * ただし $x^+ = x \cup \lbrace x\rbrace$ とする。**後継ぎ**と呼ぶ。
     * 後継ぎは集合 $x$ に対して得られる新しい集合と考えられる。
     * この公理をみたす集合を**無限系譜**とよぶ（これは一意的に定まるか考えてみる）。
-
+      * $(S1)$ により真。
