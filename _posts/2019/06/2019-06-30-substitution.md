@@ -8,11 +8,12 @@ tags: math
 ----
 
 * §6.1 続き
-  * (S9) **置換公理**
+  * $(S9)$ **置換公理**
 
     $a$ を集合、$P(x, y)$ を命題とする：
 
     $$
+    \tag*{$(S9)$}
     \forall x(x \in a \implies \forall y \forall z(P(x, y) \land P(x, z) \implies y = z))
     \\
     \implies
@@ -39,7 +40,7 @@ tags: math
          \forall y \in s(x)Q(y) \implies s(y) \simeq \xi_y.
          $$
 
-      4. (S9) により、集合 $b = \lbrace\xi_y \,\mid\, y \in s(x)\rbrace$ が存在する。
+      4. $(S9)$ により、集合 $b = \lbrace\xi_y \,\mid\, y \in s(x)\rbrace$ が存在する。
       5. $\beta \coloneqq \bigcup b$ とおく。これはその定義により順序数である。
       6. したがって $\xi \in b \implies \xi^+ \in \beta.\quad\because\beta \subset \beta.$
       7. ゆえに写像 $f\colon s(x) \longrightarrow \beta^+$ を $y \longmapsto \xi_y$ により定められる。
@@ -47,7 +48,7 @@ tags: math
       8. $\alpha_x \coloneqq f(s(x))$ とおく。$\alpha_x \subset \beta^+.\quad\therefore\alpha_x \in \beta^+ \lor \alpha_x = \beta.$
          ゆえに $\alpha_x$ は $s(x)$ と順序同型な順序数である。すなわち $Q(x)$ が真である。
       9. 超限帰納法により $\forall x \in a Q(x).$ すなわち $s(x) \simeq \alpha_x$ となる順序数 $\alpha_x$ が存在し、しかも一意的であることが示された。
-      10. (S9) をもう一度用いる：集合 $c = \lbrace\alpha_x \,\mid\, x \in a\rbrace$ が存在する。
+      10. $(S9)$ をもう一度用いる：集合 $c = \lbrace\alpha_x \,\mid\, x \in a\rbrace$ が存在する。
       11. $\gamma \coloneqq \bigcup c$ とおき、5. から 9. の推論を繰り返せば、次のような順序数 $\alpha$ が存在するといえる：
 
           $$
@@ -225,7 +226,7 @@ tags: math
     \end{aligned}
     $$
 
-  * $\alpha^{\otimes \omega} \coloneqq \sup \lbrace\alpha^{\otimes n}\rbrace_{n \in \omega}$ と定義する。(S9) による。
+  * $\alpha^{\otimes \omega} \coloneqq \sup \lbrace\alpha^{\otimes n}\rbrace_{n \in \omega}$ と定義する。$(S9)$ による。
   * 以下 $\omega^{\otimes\omega}$ の議論と**制限直積**の定義。
     * 定義から $\forall n (\omega^{\otimes n} \subset \omega^{\otimes\omega}).$
 
