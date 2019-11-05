@@ -301,6 +301,18 @@
 		"body": "${1|[大田区馬込図書館][ota-05],[ota-05]: {{ site.baseurl }}{% link _libraries/11-ota/05-magome.md %}|}",
 		"description": "大田区馬込図書館"
 	},
+	"LibraryOta06": {
+		"scope": "html,markdown",
+		"prefix": "ota-06",
+		"body": "${1|[大田区池上図書館][ota-06],[ota-06]: {{ site.baseurl }}{% link _libraries/11-ota/06-ikegami.md %}|}",
+		"description": "大田区池上図書館"
+	},
+	"LibraryOta07": {
+		"scope": "html,markdown",
+		"prefix": "ota-07",
+		"body": "${1|[大田区久が原図書館][ota-07],[ota-07]: {{ site.baseurl }}{% link _libraries/11-ota/07-kugahara.md %}|}",
+		"description": "大田区久が原図書館"
+	},
 	"LibraryOta09": {
 		"scope": "html,markdown",
 		"prefix": "ota-09",
@@ -447,6 +459,12 @@
 		"prefix": "taito",
 		"body": "タイトー F ステーションオリナス${1|西葛西店,錦糸町店|}",
 		"description": "タイトー F ステーション"
+	},
+	"ハイテクランドセガ": {
+		"scope": "html,markdown",
+		"prefix": "hls",
+		"body": "ハイテクランドセが${1|池上,渋谷,立石|}",
+		"description": "ハイテクランドセガ"
 	},
 	"latex-set-inline-simple": {
 		"scope": "html,markdown",
