@@ -463,7 +463,7 @@
 	"ハイテクランドセガ": {
 		"scope": "html,markdown",
 		"prefix": "hls",
-		"body": "ハイテクランドセが${1|池上,渋谷,立石|}",
+		"body": "ハイテクランドセガ${1|池上,渋谷,立石|}",
 		"description": "ハイテクランドセガ"
 	},
 	"latex-set-inline-simple": {
