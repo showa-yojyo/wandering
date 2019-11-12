@@ -103,7 +103,7 @@ $$
 $$
 \forall\delta(\delta \gt 0(\exists x
     (x \in X \forall\lambda(\lambda \in \Lambda(
-        B(x, \delta) \not\subset U_\lambda))))).
+        B(x, \delta) \nsubseteq U_\lambda))))).
 $$
 
 「各 $n \in \N$ に対して次のような点 $x_n \in X$ が存在する：
@@ -130,7 +130,7 @@ $$
 B\left(x_{n_k}, \frac{1}{n_k}\right) \subset B(x_\infty, \varepsilon) \subset U_{\lambda_\infty}.
 $$
 
-しかしこのことは「どの $\lambda \in \Lambda$ も $B\left(x_{n_k}, \dfrac{1}{n_k}\right) \not\subset U_\lambda$」という仮定に矛盾する。
+しかしこのことは「どの $\lambda \in \Lambda$ も $B\left(x_{n_k}, \dfrac{1}{n_k}\right) \nsubseteq U_\lambda$」という仮定に矛盾する。
 背理法により、主張の結論は真である。
 $\blacksquare$
 
@@ -149,7 +149,7 @@ $$
 $$
 \forall \delta(\delta > 0 \exists A(
     A \subset X (d(A) \lt \delta \implies \forall \lambda(
-        \lambda \in \Lambda(A \not\subset U_\lambda))))).
+        \lambda \in \Lambda(A \nsubseteq U_\lambda))))).
 $$
 
 真似っこして $\delta$ としてすべての自然数 $n \in \N$ を考える。
@@ -157,7 +157,7 @@ $$
 
 $$
 A_n \subset X,\ d(A_n) \lt n \implies \forall \lambda(
-        \lambda \in \Lambda(A_n \not\subset U_\lambda)).
+        \lambda \in \Lambda(A_n \nsubseteq U_\lambda)).
 $$
 
 各集合から一点ずつとってくる：$x_n \in A_n.$
