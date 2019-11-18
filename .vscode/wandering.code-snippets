@@ -22,8 +22,10 @@
 		"body": [
 			"---",
 			"title: $1",
-			"tags: ",
+			"tags: ${2|bash,math,python|}",
 			"---",
+			"",
+			"${3}",
 			""
 		],
 		"description": "A simple front matter"
@@ -460,6 +462,28 @@
 		],
 		"description": "日記に書く銭湯のノート"
 	},
+	"Proof":{
+		"scope": "markdown",
+		"prefix": "proof",
+		"body":[
+			"**定理**：",
+			"",
+			"",
+			"",
+			"**検討**：",
+			"",
+			"| Givens | Goal |",
+			"| ------ | ---- |",
+			"| $P$ | $Q$ |",
+			"",
+			"**証明**：",
+			"",
+			"",
+			"",
+			"$\\blacksquare$",
+			""
+		]
+	}
 	"タイトー F ステーション": {
 		"scope": "html,markdown",
 		"prefix": "taito",
