@@ -12,7 +12,11 @@
 			"* TODO: 昼飯",
 			"* TODO: 風呂（ある場合）",
 			"* TODO: 晩飯",
-			"* TODO: ゲーセン"
+			"* TODO: ゲーセン",
+			"",
+			"```text",
+			"TODO: MJ",
+			"```"
 		],
 		"description": "日記の front matter"
 	},
