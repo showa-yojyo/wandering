@@ -67,7 +67,66 @@ $$
 **定理**：$p$ を 3 以上の素数とする。このとき位数 $2p$ の群は
 二面体群 $D_{2p}$ か巡回群 $Z_{2p}$ と同型である。
 
-**証明**：TBW
+**証明**：$G$ を位数 $2p$ の群であるとする。
+[Cauchy の定理（群論）][Cauchy]により、$G$ には位数 p の元と位数 2 の元が存在する。
+前者からは $\exists x \in G(\langle x \rangle \subset G \land \lvert\langle x \rangle\rvert = p)$ が、
+後者からは $\exists y \in G(y^2 = 1_G)$ がそれぞれ言える。
+
+これら $x, y$ により $G$ の要素を全て表現すると：
+
+$$
+G = \{x^0 = 1_G, x^1, x^2, \dotsc, x^{p - 1}, y, yx, yx^2, \dotsc, yx^{p - 1}\}.
+$$
+
+巡回群 $P$ は正規部分群でもあるから：
+
+$$
+\tag*{$\spadesuit$}
+\begin{aligned}
+    &yxy^{-1} \in P\\
+    &\implies \exists i(i > 0 \land yxy^{-1} = x^i) && \because \text{P is normal in G}\\
+    &\implies yxy^{-1}x = x^ix = x^{i + 1}\\
+    &\implies yxyx = (yx)^2 = x^{i+1} && \because y^2 = 1_G \iff y = y^{-1}.
+\end{aligned}
+$$
+
+つまり
+
+* $yx$ の偶数べきは $x^j$ の形であり、
+* $yx$ の基数べきは $yx^k$ の形
+
+である。
+
+$yx \in G$ の位数は $G$ のそれを割り切るので、$yx \ne 1_G$ より
+$yx \in \lbrace 2, p, 2p\rbrace$ である必要がある。
+
+$\spadesuit$ において $x^{i+1} = 1_G$ であるときを調べる。
+
+$$
+\begin{aligned}
+    yxy^{-1}x &= 1_G\\
+    yxy^{-1} &= x^{-1}\\
+    yx &= x^{-1}y.\\
+\end{aligned}
+$$
+
+$G$ の表現を改めて表記すると：
+
+$$
+G = \langle x, y \,|\, 1_G = x^p = y^2,\ yx = x^{-1}y\rangle.
+$$
+
+これは二面体群 $D_{2p}$ の表現と一致している。よって $G$ は二面体群
+$D_{2p}$ と同型である。
+
+$\spadesuit$ において $x^{i+1} \ne 1_G$ であるときを調べる。
+すると $(yx)^2 \ne 1_G.$ 特に $\lvert yx \rvert \ne 2.$
+$yx$ の基数べきは $yx^k$ の形であるから $(yx)^p \ne 1_G.$ 特に $\lvert yx \rvert \ne p.$
+消去法により $\lvert yx \rvert = 2p.$
+要素の位数に等しい位数の群は巡回群であることから、$G$ は巡回群 $Z_{2p}$ に同型である。
+
+以上より、位数が $2p$ の群 $G$ は $D_{2p}$ か $Z_{2p}$ のどちらかに同型である。
+$\blacksquare$
 
 # 位数が 10 以下の有限群
 
@@ -198,3 +257,6 @@ $$
 
 * 川口周著『代数学入門』
 * [List of small groups](https://en.wikipedia.org/wiki/List_of_small_groups) - Wikipedia
+* [Groups of Order 2p](https://proofwiki.org/wiki/Groups_of_Order_2p) - ProofWiki: Sylow の定理を採用している。
+
+[Cauchy]: {{ site.baseurl }}{% post_url 2019/12/2019-12-01-cauchy %}
