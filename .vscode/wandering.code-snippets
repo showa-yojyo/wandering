@@ -331,6 +331,12 @@
 		"body": "${1|[大田区六郷図書館][ota-11],[ota-11]: {{ site.baseurl }}{% link _libraries/11-ota/11-rokugo.md %}|}",
 		"description": "大田区六郷図書館"
 	},
+	"LibraryOta13": {
+		"scope": "html,markdown",
+		"prefix": "ota-13",
+		"body": "${1|[大田区多摩川図書館][ota-11],[ota-13]: {{ site.baseurl }}{% link _libraries/11-ota/13-tamagawa.md %}|}",
+		"description": "大田区多摩川図書館"
+	},
 	"LibraryOta15": {
 		"scope": "html,markdown",
 		"prefix": "ota-15",
