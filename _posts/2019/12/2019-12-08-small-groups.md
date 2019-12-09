@@ -213,7 +213,10 @@ Abel 群である同型から調べる。$8 = 2 \cdot 2 \cdot 2 = 4 \cdot 2.$
 次に 非 Abel 群である同型を調べる。結論から言うと二つある。
 一つはおなじみの四面体群に同型のものだ。
 もう一つは四元数群 $Q_8$ というものに同型となる。
-TODO: ここをしっかり述べる。
+
+$$
+Q_8 \coloneqq \langle -1, i, j, k \,|\, i^2 = j^2 = k^2 = ijk = -1\rangle
+$$
 
 以上により、次の 5 個の同型が存在する：
 
@@ -256,7 +259,9 @@ $$
 # 参考資料
 
 * 川口周著『代数学入門』
-* [List of small groups](https://en.wikipedia.org/wiki/List_of_small_groups) - Wikipedia
+* Wikipedia
+  * [List of small groups](https://en.wikipedia.org/wiki/List_of_small_groups)
+  * [Quaternion group](https://en.wikipedia.org/wiki/Quaternion_group)
 * [Groups of Order 2p](https://proofwiki.org/wiki/Groups_of_Order_2p) - ProofWiki: Sylow の定理を採用している。
 
 [Cauchy]: {{ site.baseurl }}{% post_url 2019/12/2019-12-01-cauchy %}
