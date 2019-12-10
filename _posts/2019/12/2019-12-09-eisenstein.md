@@ -3,7 +3,7 @@ title: Eisenstein の既約判定法証明 学習ノート
 tags: math
 ---
 
-Eisenstein の既約判定法の証明ノート。書き終わったあとに思ったが、Gauss の補題も併せてノートにとらないと弱い。
+Eisenstein の既約判定法の証明ノート。書き終わったあとに思ったが、[Gauss の補題][Gauss]も併せてノートにとらないと弱い。
 
 # Eisenstein
 
@@ -16,7 +16,7 @@ Eisenstein の既約判定法の証明ノート。書き終わったあとに思
 このとき、$f$ は $\mathbb{Q}[X]$ 上既約である。
 
 **検討**：
-* Gauss の補題は使えるとすると、$\Z[X]$ 上既約であることを示せば十分だ。
+* [Gauss の補題][Gauss]は使えるとすると、$\Z[X]$ 上既約であることを示せば十分だ。
 * 背理法で示す。
 
 **証明**：$f(X) = g(X)h(X),\ g(X), h(X)\in\Z[X],$ かつ
@@ -67,10 +67,12 @@ $b_ic_0$ は $p$ で割り切れない。したがって $p \nmid a_i.$
 したがって背理法により、$f(X) = g(X)h(X)$ の形には表せない。すなわち
 $f$ は $\Z[X]$ 上既約である。
 
-Gauss の補題により $f$ は $\mathbb{Q}[X]$ 上でも既約である。
+[Gauss の補題][Gauss]により $f$ は $\mathbb{Q}[X]$ 上でも既約である。
 $\blacksquare$
 
 # 参考資料
 
 * ProofWiki
   * [Schönemann-Eisenstein Theorem](https://proofwiki.org/wiki/Sch%C3%B6nemann-Eisenstein_Theorem)
+
+[Gauss]: {{ site.baseurl }}{% post_url 2019/12/2019-12-10-gauss %}
