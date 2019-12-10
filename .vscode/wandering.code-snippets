@@ -283,6 +283,12 @@
 		"body": "${1|[品川区南大井図書館][shinagawa-03],[shinagawa-03]: {{ site.baseurl }}{% link _libraries/09-shinagawa/03-minamioi.md %}|}",
 		"description": "品川区南大井図書館"
 	},
+	"LibraryShinagawa07": {
+		"scope": "html,markdown",
+		"prefix": "shinagawa-07",
+		"body": "${1|[品川区五反田図書館][shinagawa-07],[shinagawa-07]: {{ site.baseurl }}{% link _libraries/09-shinagawa/07-gotanda.md %}|}",
+		"description": "品川区五反田図書館"
+	},
 	"LibraryOta02": {
 		"scope": "html,markdown",
 		"prefix": "ota-02",
