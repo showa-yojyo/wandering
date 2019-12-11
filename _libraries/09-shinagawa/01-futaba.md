@@ -7,5 +7,6 @@ title: 品川区二葉図書館
 ## 特徴
 
 * 電源コンセント席あり。自由席。
+* 2019 年 12 月から品川区の Free Wi-Fi によるインターネットサービスが開始した。
 
 {% include_cached libraries/shinagawa-office-hours.html office_type='A' %}
