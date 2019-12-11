@@ -12,7 +12,7 @@ tags: math
 $$
 \tag*{$\spadesuit1$}
 \def\S#1{ \Z/{#1}\Z }
-\S{mn} \simeq \S{m} \times \S{n}.
+\S{mn} \cong \S{m} \times \S{n}.
 $$
 
 ここで各剰余群は加法群とする。
@@ -29,7 +29,7 @@ $$
 f(x) = (x + m\Z, x + n\Z).
 $$
 
-この核が $mn\Z$ であるので（ここに $m, n$ が互いに素という条件を用いた）、準同型定理により $\Z/mn\Z \simeq \operatorname{im}f.$
+この核が $mn\Z$ であるので（ここに $m, n$ が互いに素という条件を用いた）、準同型定理により $\Z/mn\Z \cong \operatorname{im}f.$
 以下、元の個数を確認することにより $\operatorname{im}f = m\Z \times n\Z$ を示す。
 
 * 準同型定理の同型関係より $\lvert \operatorname{im}f \rvert = mn.$
@@ -48,7 +48,7 @@ $\blacksquare$
 $$
 \tag*{$\spadesuit2$}
 \def\S#1{ \Z/{#1}\Z }
-\S{m} \simeq \S{m_1} \times \S{m_2} \times \dotsb \times \S{m_r}.
+\S{m} \cong \S{m_1} \times \S{m_2} \times \dotsb \times \S{m_r}.
 $$
 
 ここで各剰余群は加法群とする。
@@ -63,14 +63,14 @@ $r = 2$ のときは前節の定理である。
 
 $$
 \def\S#1{ \Z/{#1}\Z }
-\S{m} \simeq \S{m_1} \times \S{(m_2\dotsm m_r)}.
+\S{m} \cong \S{m_1} \times \S{(m_2\dotsm m_r)}.
 $$
 
 数学的帰納法を右辺第二項に適用して：
 
 $$
 \def\S#1{ \Z/{#1}\Z }
-\S{(m_2\dotsm m_r)} \simeq \S{m_2} \times \dotsb \times \S{m_r}.
+\S{(m_2\dotsm m_r)} \cong \S{m_2} \times \dotsb \times \S{m_r}.
 $$
 
 群の直積の同型は結合律が成り立つので、これらから $\spadesuit2$ が成り立つ。
@@ -90,7 +90,7 @@ $$
 
 $$
 \tag*{$\spadesuit3$}
-A \simeq A/I \times A/J
+A \cong A/I \times A/J
 $$
 
 **検討**：
@@ -150,7 +150,7 @@ $$
 以上を環の準同型定理に適用して：
 
 $$
-A/\ker\varphi = A/(IJ) \simeq \operatorname{im}f = A/I \times A/J.
+A/\ker\varphi = A/(IJ) \cong \operatorname{im}f = A/I \times A/J.
 $$
 
 したがって $\spadesuit3$ が成り立つ。
@@ -166,7 +166,7 @@ $I_1, I_2, \dotsc, I_n$ は $A$ のイデアルであって、
 
 $$
 \tag*{$\spadesuit4$}
-A/(I_1I_2\dotsm I_n) \simeq A/I_1 \times A/I_2 \times \dotsb \times A/I_n.
+A/(I_1I_2\dotsm I_n) \cong A/I_1 \times A/I_2 \times \dotsb \times A/I_n.
 $$
 
 **検討**：

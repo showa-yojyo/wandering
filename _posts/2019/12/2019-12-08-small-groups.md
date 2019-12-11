@@ -5,7 +5,7 @@ tags: math
 
 位数が 10 以下の有限群を分類する。
 
-以下、位数 $n$ の巡回群を $Z_n$ で表し、同型 $\Z/n\Z \simeq Z_n$ を断りなく利用する。
+以下、位数 $n$ の巡回群を $Z_n$ で表し、同型 $\Z/n\Z \cong Z_n$ を断りなく利用する。
 
 # 分類するために利用する定理
 
@@ -18,7 +18,7 @@ TODO: この定理だけは別のページで取り扱う。
 特に、素数 $p_1, \dotsc, p_r$ と正の整数 $e_1, \dotsc, e_r$ とが存在して次の同型が成り立つ：
 
 $$
-G \simeq (\Z/p_1{}^{e_1}\Z) \times \dotsb \times (\Z/p_r{}^{e_r}\Z).
+G \cong (\Z/p_1{}^{e_1}\Z) \times \dotsb \times (\Z/p_r{}^{e_r}\Z).
 $$
 
 **証明**：別のページで取り扱う。
@@ -58,7 +58,7 @@ $G$ が Abel ならば剰余群も Abel でなければならない。
 次に有限 Abel 群の基本定理により、ただちに次を得る：
 
 $$
-G \simeq Z_{p^2} \ \lor \ G \simeq Z_p \times Z_p.
+G \cong Z_{p^2} \ \lor \ G \cong Z_p \times Z_p.
 \quad \blacksquare
 $$
 
@@ -137,7 +137,7 @@ $\blacksquare$
 単位元しか含まない集合の一つしかない。
 
 $$
-G_1^1 \simeq Z_1 \simeq S_1.
+G_1^1 \cong Z_1 \cong S_1.
 $$
 
 ## 位数が 2 の群
@@ -145,7 +145,7 @@ $$
 位数が素数である群は巡回群しかない。
 
 $$
-G_2^1 \simeq Z_2.
+G_2^1 \cong Z_2.
 $$
 
 ## 位数が 3 の群
@@ -153,7 +153,7 @@ $$
 位数が素数である群は巡回群しかない。
 
 $$
-G_3^1 \simeq Z_3.
+G_3^1 \cong Z_3.
 $$
 
 ## 位数が 4 の群
@@ -165,8 +165,8 @@ $4 = 2^2$ より：
 
 $$
 \begin{aligned}
-    G_4^1 &\simeq Z_4,\\
-    G_4^2 &\simeq Z_2 \times Z_2 \simeq K_4.
+    G_4^1 &\cong Z_4,\\
+    G_4^2 &\cong Z_2 \times Z_2 \cong K_4.
 \end{aligned}
 $$
 
@@ -177,7 +177,7 @@ $$
 位数が素数である群は巡回群しかない。
 
 $$
-G_5^1 \simeq Z_5.
+G_5^1 \cong Z_5.
 $$
 
 ## 位数が 6 の群
@@ -187,8 +187,8 @@ $$
 
 $$
 \begin{aligned}
-G_6^1 &\simeq D_{6} \simeq S_3,\\
-G_6^2 &\simeq Z_{6} \simeq Z_3 \times Z_2.
+G_6^1 &\cong D_{6} \cong S_3,\\
+G_6^2 &\cong Z_{6} \cong Z_3 \times Z_2.
 \end{aligned}
 $$
 
@@ -199,7 +199,7 @@ $$
 位数が素数である群は巡回群しかない。
 
 $$
-G_7^1 \simeq Z_7.
+G_7^1 \cong Z_7.
 $$
 
 ## 位数が 8 の群
@@ -222,11 +222,11 @@ $$
 
 $$
 \begin{aligned}
-G_8^1 &\simeq Z_8,\\
-G_8^2 &\simeq Z_4 \times Z_2,\\
-G_8^3 &\simeq D_8,\\
-G_8^4 &\simeq Q_8,\\
-G_8^5 &\simeq Z_2 \times Z_2 \times Z_2.
+G_8^1 &\cong Z_8,\\
+G_8^2 &\cong Z_4 \times Z_2,\\
+G_8^3 &\cong D_8,\\
+G_8^4 &\cong Q_8,\\
+G_8^5 &\cong Z_2 \times Z_2 \times Z_2.
 \end{aligned}
 $$
 
@@ -239,8 +239,8 @@ $9 = 3^2$ より：
 
 $$
 \begin{aligned}
-    G_9^1 &\simeq Z_9,\\
-    G_9^2 &\simeq Z_3 \times Z_3.
+    G_9^1 &\cong Z_9,\\
+    G_9^2 &\cong Z_3 \times Z_3.
 \end{aligned}
 $$
 
@@ -251,8 +251,8 @@ $$
 
 $$
 \begin{aligned}
-    G_{10}^1 &\simeq D_{10},\\
-    G_{10}^2 &\simeq Z_{10} \simeq Z_5 \times Z_2.
+    G_{10}^1 &\cong D_{10},\\
+    G_{10}^2 &\cong Z_{10} \cong Z_5 \times Z_2.
 \end{aligned}
 $$
 
