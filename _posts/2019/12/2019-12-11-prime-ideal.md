@@ -3,7 +3,7 @@ title: 素イデアル学習ノート
 tags: math
 ---
 
-素イデアルについてまとめておく。以下、環とは 1 を持つ可換環であるとする。
+単位的可換環、1 を持つ可換環（以下、単に環と書く）の素イデアルについてまとめておく。
 
 # 定義
 ## 素イデアル
@@ -169,4 +169,9 @@ $\blacksquare$
 # 参考資料
 
 * ProofWiki
-  * TODO
+  * [Definition:Prime Ideal of Ring](https://proofwiki.org/wiki/Definition:Prime_Ideal_of_Ring)
+  * [Intersection of Chain of Prime Ideals of Commutative Ring is Prime Ideal](https://proofwiki.org/wiki/Intersection_of_Chain_of_Prime_Ideals_of_Commutative_Ring_is_Prime_Ideal)
+  * [Prime Ideal iff Quotient Ring is Integral Domain](https://proofwiki.org/wiki/Prime_Ideal_iff_Quotient_Ring_is_Integral_Domain)
+  * [Integral Domain iff Zero Ideal is Prime](https://proofwiki.org/wiki/Integral_Domain_iff_Zero_Ideal_is_Prime)
+    * [Quotient Ring by Null Ideal](https://proofwiki.org/wiki/Quotient_Ring_by_Null_Ideal)
+  * [Preimage of Prime Ideal under Ring Homomorphism is Prime Ideal](https://proofwiki.org/wiki/Preimage_of_Prime_Ideal_under_Ring_Homomorphism_is_Prime_Ideal)
