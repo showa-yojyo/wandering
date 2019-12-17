@@ -277,6 +277,12 @@
 		"body": "${1|[江東区東大島図書館][koto-09],[koto-09]: {{ site.baseurl }}{% link _libraries/08-koto/09-higashiojima.md %}|}",
 		"description": "江東区東大島図書館"
 	},
+	"LibraryShinagawa02": {
+		"scope": "html,markdown",
+		"prefix": "shinagawa-02",
+		"body": "${1|[品川区荏原図書館][shinagawa-02],[shinagawa-02]: {{ site.baseurl }}{% link _libraries/09-shinagawa/02-ebara.md %}|}",
+		"description": "品川区荏原図書館"
+	},
 	"LibraryShinagawa03": {
 		"scope": "html,markdown",
 		"prefix": "shinagawa-03",
