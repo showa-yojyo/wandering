@@ -13,8 +13,8 @@ tags: math
 
 $$
 \tag*{$(EF)$}
-\forall a \in R \forall b \in R(b \ne 0_D \implies\\
-\exists q \in R \exists r\in R(\\
+\forall a \in D \forall b \in D(b \ne 0_D \implies\\
+\exists q \in D \exists r\in D(\\
     (\nu(r) \lt \nu(b) \lor r = 0_D) \land a = qb + r)).
 $$
 
@@ -24,21 +24,11 @@ $$
 
 $$
 \tag*{$(EF2)$}
-\forall a \in R \forall b \in R(b \ne 0_D \implies \nu(a) \le \nu(ab)).
+\forall a \in D \forall b \in D(b \ne 0_D \implies \nu(a) \le \nu(ab)).
 $$
 
 * 英語では Euclidean domain という。Euclidean integral domain みたいに冗長に書かない。
   ちなみに単数形には不定冠詞 a を用いる。
-
-## 互いに素
-
-**定義**：$D$ を Euclid 整域とする。$a, b \in D$ をどちらも零でない任意の元とする。
-
-$d \coloneqq \gcd\lbrace a, b\rbrace$ が $D$ の零でない単元であるとき、かつそのときに限り、
-$a$ と $b$ は**互いに素である**という。
-
-コメント：英語では coprime だとか relatively prime だとか色々言い回しがあるようだ。
-日本語では「互いに素」しかない。
 
 # Euclid 整域のインスタンス
 
@@ -83,12 +73,12 @@ $\blacksquare$
 体 $F$ を係数とする多項式環 $F[X]$ は Euclid 整域である（整域であることは問題ない）。
 
 **証明**：$\nu(f(X)) \coloneqq \deg f$ が $(EF)$ を満たすことを示す。
-任意に $f \in F[X]$ と $g \in F[X],\;g \ne 0_F$ をとる。
+任意に $f \in F[X]$ と $g \in F[X],\;g \ne 0_{F[X]}$ をとる。
 
 このとき $q \in F[X]$ および $r \in F[X]$ が存在して次が成り立つことを示す：
 
 $$
-f = qg + r \land (r = 0_F \lor (\deg r \lt \deg g)).
+f = qg + r \land (r = 0_{F[X]} \lor (\deg r \lt \deg g)).
 $$
 
 TODO: 色々やり方があるので検討する。
@@ -126,9 +116,6 @@ $$
 
 **検討**：この定理がおそらくもっとも基本的 Euclid 整域の性質を述べるものだと思われる。
 証明の内容は整数論における同補題と同様であり、PID の概念が少し見える。
-
-下記証明の途中で $\gcd$ と書くが、$D$ のそれの存在はまだ証明していない。
-$S$ のそれであることに注意する。
 
 **証明**：$b \ne 0$ を仮定する。部分集合 $S \subset D$ を次で定義する：
 
@@ -201,18 +188,18 @@ $a$ が $bc$ を割り切るとする。かつ $a$ と $b$ は互いに素であ
 
 ここで Bézout の補題を利用する。
 
-**証明**：$a$ と $b$ が互いに素、すなわち $\gcd(a, b) = 1$ であることから、
+**証明**：$a$ と $b$ が互いに素、すなわち $\gcd(a, b) = 1_D$ であることから、
 Bézout の補題により次が成り立つような $x, y \in D$ が存在する：
 
 $$
-ax + by = 1.
+ax + by = 1_D.
 $$
 
 このとき
 
 $$
 \begin{aligned}
-c &= c \cdot 1\\
+c &= c \cdot 1_D\\
 &= c(ax + by)\\
 &= ac x + bc y.
 \end{aligned}
@@ -224,16 +211,16 @@ $\blacksquare$
 
 ## 単項イデアル整域である
 
-**定理**：Euclid 整域は単項イデアル整域である。
+**定理**：Euclid 整域は[単項イデアル整域][pid]である。
 
 **検討**：不等式 $\nu(?) \lt \nu(?)$ に注目した最大最小パターンによる証明になる。
 
 **証明**：$D$ を Euclid 整域とし、写像 $\nu$ を $D$ の Euclid 写像とする。
 以下、$D$ の任意のイデアルが単項生成であることを示す。
 
-$(0) \in D$ は単項イデアルである。
+$(0_D) \in D$ は単項イデアルである。
 
-今 $U \subset D$ を $(0)$ ではないイデアルとする。
+今 $U \subset D$ を $(0_D)$ ではないイデアルとする。
 このとき $\nu(d)$ の値が $U$ の中で最小である $d \in U$ が存在する
 （これは $\N$ またはその部分集合に対する整列原理による）。
 
@@ -253,9 +240,9 @@ $\nu(r) \lt \nu(d)$ が成り立つが、これは $d$ のとり方に反する�
 $a \in U$ は任意であったから、$U$ のすべての要素は $d$ の倍元である。
 つまり $U$ は $d$ によって生成されるイデアルである。
 
-$U$ は任意の $(0)$ でないイデアルであるから、$(0)$ と合わせて、
+$U$ は任意の $(0_D)$ でないイデアルであるから、$(0_D)$ と合わせて、
 $D$ の任意のイデアルが単項生成であることが示された。
-したがって Euclid 整域は単項イデアル整域である。
+したがって Euclid 整域は[単項イデアル整域][pid]である。
 $\blacksquare$
 
 # 参考資料
@@ -263,3 +250,5 @@ $\blacksquare$
 * [ユークリッド環](https://ja.wikipedia.org/wiki/%E3%83%A6%E3%83%BC%E3%82%AF%E3%83%AA%E3%83%83%E3%83%89%E7%92%B0) - Wikipedia
   * EF2 条件についての注意は必読。
 * [Category:Euclidean Domains](https://proofwiki.org/wiki/Category:Euclidean_Domains) - ProofWiki
+
+[pid]: {{ site.baseurl }}{% post_url 2019/12/2019-12-19-pid %}
