@@ -72,17 +72,16 @@ $\blacksquare$
 
 体 $F$ を係数とする多項式環 $F[X]$ は Euclid 整域である（整域であることは問題ない）。
 
-**証明**：$\nu(f(X)) \coloneqq \deg f$ が $(EF)$ を満たすことを示す。
-任意に $f \in F[X]$ と $g \in F[X],\;g \ne 0_{F[X]}$ をとる。
+**証明**：$(EF)$ を満たす写像 $\nu$ が存在することを示す。
 
-このとき $q \in F[X]$ および $r \in F[X]$ が存在して次が成り立つことを示す：
+任意に $f \in F[X]$ と $0_{F[X]} \ne g \in F[X]$ をとる。
+多項式環 $F[X]$ についての除法定理により、$q \in F[X]$ および $r \in F[X]$ が存在して次が成り立つ：
 
 $$
-f = qg + r \land (r = 0_{F[X]} \lor (\deg r \lt \deg g)).
+f(X) = g(X)q(X) + r(X),\;\deg r(X) = 0 \lor \deg r(X) \lt \deg q(X).
 $$
 
-TODO: 色々やり方があるので検討する。
-
+つまり $\nu \coloneqq \deg$ とおくと $(EF)$ 条件を満たす。
 $\blacksquare$
 
 ## Gauss 整数環
@@ -97,7 +96,52 @@ $$
 
 **証明**：写像 $\nu$ が $(EF)$ 条件を満たすことを示す。
 
-TODO: これは少し難しい。
+任意に $x \in \Z[i],\;0\ne y \in \Z[i]$ をとる。
+以下、$x = qy + r$ かつ $\nu(r) \lt \nu(y)$ をみたす $q, r \in \Z[i]$ を決定する。
+
+$\Z[i] \subset \mathbb{C}$ なのでこれらの要素を複素数と見なして、剰余を
+
+$$
+r = x - qy = y\left(\frac{x}{y} - q\right)
+$$
+
+と表す。このとき $p \coloneqq x/y \in \mathbb{C}$ を考える。
+
+写像 $\mu\colon \mathbb{C} \longrightarrow \mathbb{R}_+$ を
+$\mu(z) = \lvert z\rvert^2$ で定義すると、$\mu\mid_{\Z[i]} = \nu.$
+
+ここで $q \in \Z[i]$ を値 $\mu(p - q)$ が最小値をとるように定義する。
+すなわち、$\Re q$ と $\Im q$ はそれぞれ $\Re p$ と $\Im p$ にもっとも近い整数であるように値をとる。
+実数値はある整数値から高々 $1/2$ の距離にあることに従うとそのようにとれる：
+
+$$
+\tag*{$\spadesuit$}
+\def\half{ \frac{1}{2} }
+\def\halfsq{ \left(\half\right)^2 }
+\mu(p - q) \le \halfsq + \halfsq = \half.
+$$
+
+$$
+\begin{aligned}
+\therefore \mu(y(p - q))
+&= \mu(y)\mu(p - q) && \because \mu(z_1 z_2) = \mu(z_1)\mu(z_2)\\
+&\le \frac{\mu(y)}{2} && \because \spadesuit\\
+&\lt \mu(y) && \because 0 \lt \mu(y).
+\end{aligned}
+$$
+
+一方：
+
+$$
+\begin{aligned}
+\mu(y(p - q)) &= \mu\left(y\left(\frac{x}{y} - q\right)\right)\\
+&= \mu(x - yq).
+\end{aligned}
+$$
+
+だから $r \coloneqq x - yq$ とおけば $\mu(r) \lt \mu(q) = \nu(q).$
+そして $r = x - yq \in \Z[i]$ であるから $\nu(r) = \mu(r).$
+したがって $\nu(r) \lt \nu(q).$
 
 写像 $\nu$ が $(EF)$ 条件を満たすことが示された。ゆえに $\Z[i]$ は
 Euclid 整域である。
