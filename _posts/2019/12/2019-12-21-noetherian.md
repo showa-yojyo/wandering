@@ -94,6 +94,31 @@ $\mathscr I$ のどのイデアル昇鎖にもある極大元が存在し、し�
 $\mathscr I$ は任意であるから、$A$ の任意のイデアル昇鎖において昇鎖律が成り立つ。
 $\blacksquare$
 
+# Noether 環の剰余環は Noether 環
+
+**定理**：Noether 環の剰余環は Noether 環である。
+
+**検討**：Noether 環についてはこの種の命題が多いので、系統的に証明する方法も存在する。
+
+**証明**：$A$ を Noether 環とし、その任意のイデアル $I$ による剰余環 $A/I$ を考える。
+イデアル $[J] \in A/I$ が与えられたとき、これが有限生成であることを示す。
+
+$\pi\colon A \longrightarrow A/I$ を $A$ から剰余環への自然な射影とする。
+
+Noether 環の定義から $J \subset A$ が有限生成である。
+よって、ある $a_1, \dotsc, a_n \in A$ が存在して
+
+$$
+\begin{aligned}
+J &= \pi^{-1}([J]) = (a_1, \dotsc, a_n).\\
+\therefore [J] &= (\pi(a_1), \dotsc, \pi(a_n)).
+\end{aligned}
+$$
+
+イデアル $[J] \in A/I$ もまた有限生成である。
+$I$ は任意であったから、Noether 環の剰余環は Noether 環であることが示された。
+$\blacksquare$
+
 # Hilbert の基底定理
 
 **定理**：Noether 環 $A$ 上の一変数多項式環 $A[X]$ もまた Noetherian である。
@@ -147,6 +172,30 @@ $g(X)$ の主係数と次数は $f_{m + 1}(X)$ のそれぞれと等しい。
 
 背理法により、$(a_1, \dotsc, a_m) = I.$
 イデアル $I \subset A[X]$ は任意であるから $A[X]$ は Noether 環であることが示された。
+$\blacksquare$
+
+# 複数不定元版
+
+**定理**：Noether 環 $A$ 上の多項式環 $A[X_1, \dotsc, X_n]\;(n \ge 1)$ もまた Noetherian である。
+
+**証明**：数学的帰納法により示す。
+
+$n = 1$ のときは Hilbert の基底定理ににより $A[X_1]$ は Noetherian である。
+
+$A[X_1, \dotsc, X_{n - 1}]$ が Noether 環であると仮定する。
+このとき $A[X_1, \dotsc, X_{n}]$ が Noetherian であることを示す。
+
+多項式環の性質から次が成り立つ：
+
+$$
+A[X_1, \dotsc, X_n] = A[X_1, \dotsc, X_{n-1}][X_n].
+$$
+
+右辺は環 $A[X_1, \dotsc, X_{n-1}]$ を係数とする $X_n$ 上の多項式環の形式になっている。
+ゆえに右辺は多項式環であり、再び Hilbert の定理を適用して Noether 環である。
+よって $[A_1, \dotsc, X_n]$ もまた Noether 環である。
+
+数学的帰納法により、$n \ge 1$ に対して $A[X_1, \dotsc, X_{n}]$ は Noether 環であることが示された。
 $\blacksquare$
 
 # 参考資料
