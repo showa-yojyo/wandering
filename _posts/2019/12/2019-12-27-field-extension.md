@@ -26,13 +26,51 @@ Galois 論に入る前に体の基本的な性質を理解してゆくノート�
 * $L/K$ は**有限拡大体**である $\iff$ 次数 $[L:K]$ が有限の値である
 * $L/K$ は**無限拡大体**である $\iff$ 次数 $[L:K]$ が有限の値でない
 
+## 代数的 (algebraic) / 超越的 (transcedent)
+
+**定義**：$K/L$ を拡大体とする。$\alpha \in K/L$ とする。
+
+* $\alpha$ が $L$ 上**代数的**であるとは、$L$ 上のゼロでないある多項式 $f(X)$ が存在してその根であることをいう：
+
+  $$
+  \exists f(X) \in L[X]\!\setminus\!\{0\}\:(f(\alpha) = 0).
+  $$
+
+* $K/L$ が**代数的拡大体**であるとは、$K$ のすべての要素が $L$ 上代数的であることをいう。
+* $\alpha$ が $L$ 上**超越的である**とは、$\alpha$ が $L$ 上代数的ではないことをいう。
+* $K/L$ が**超越的拡大体**であるとは、$K/L$ が代数的拡大体でないことをいう。
+
+## 生成された拡大体 (generated field extension)
+
+**定義**：$K/L$ を拡大体とし、$S \subset K$ とする。
+
+$S$ により**生成された拡大体** $L[S]$ は $S$ を含むような $K$ の拡大体のうち最小のものである。
+つまり $L[S]$ は $K$ の $S$ と $L$ を含むような部分体すべての交差である。
+
+$S$ が $L[S]$ の**生成集合**であるとは、$L[S]$ が $S$ を含むような真の部分体を含まないことをいう。
+
+## 単拡大 (simple field extension)
+
+**定義**：$K/L$ を拡大体とする。$K$ が $L$ の**単拡大**であるとは、
+ある $\alpha \in K$ が存在して $L[\alpha] = K$ が成り立つことをいう。
+つまり、単一要素の集合による生成された拡大体であることをいう。
+
 # 例
 
-拡大体の基本的な例を示す。
+## 拡大体
+
+拡大体の基本的な例を挙げる。
 
 * $\Complex$ は $\R$ 上の有限拡大体であり、次数は $2$ である。
 * $\mathbb Q (\sqrt{2}) \coloneqq \{a + b\sqrt{2} \,|\, a, b \in \mathbb Q\}$
   は $\mathbb Q$ 上の次数 $2$ の有限拡大体である。
+
+## 代数的数
+
+代数的数の基本的な例を挙げる。
+
+* $\sqrt{2} \in \R/\mathbb{Q}$ は $X^2 - 2 \in \mathbb{Q}[X]$ の根であるから代数的数である。
+* 虚数単位 $i \in \Complex/\mathbb{Q}$ は $X^2 + 1 \in \mathbb{Q}[X]$ の根であるから代数的数である。
 
 # 性質
 
@@ -111,5 +149,7 @@ $\blacksquare$
 
 * Proof Wiki
   * [Definition:Field Extension - ProofWiki](https://proofwiki.org/wiki/Definition:Field_Extension)
+  * [Definition:Algebraic Field Extension](https://proofwiki.org/wiki/Definition:Algebraic_Field_Extension)
+  * [Definition:Simple Field Extension](https://proofwiki.org/wiki/Definition:Simple_Field_Extension)
   * [Degree of Field Extensions is Multiplicative](https://proofwiki.org/wiki/Degree_of_Field_Extensions_is_Multiplicative)
 
