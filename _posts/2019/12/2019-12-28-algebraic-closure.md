@@ -1,7 +1,9 @@
 ---
-title:
+title: 体論学習ノート 6 代数的閉体＆閉包編
 tags: math
 ---
+
+Galois 論準備ノート。今回は代数的閉体と閉包を習う。
 
 # 定義
 ## 代数的閉体、代数的に閉じている (algebraically closed)
@@ -108,15 +110,13 @@ $\blacksquare$
 
 **定理**：$L/K$ が代数的拡大体ならば $L$ の代数的閉包は $K$ のそれに等しい。
 
-**検討**：
+**検討**：$L \supset K$ であることから $\overline L \supset \overline K$ が成り立つ（いちおう示す）。
 
-$$
-\begin{aligned}
-&\forall \alpha \in K &&\exists f(X) \in K[X] (f(\alpha) = 0).\\
-&\forall \beta \in L\setminus K &&\exists g(X) \in K[X] (g(\beta) = 0).
-\end{aligned}
-$$
-* 目標：$\overline L = \overline K.$
+$\overline L \supsetneq \overline K$ は成り立たない：
+$\overline L \supsetneq \overline K$ が成り立つと仮定すると、
+$\overline K$ が代数的に閉じている、つまり $K$ の代数的拡大のうち最大であるという性質に矛盾する。
+
+ゆえに $\overline L = \overline K.$
 
 **証明**：TBW
 
