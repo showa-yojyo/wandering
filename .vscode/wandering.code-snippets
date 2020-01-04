@@ -445,17 +445,11 @@
 		"body": "[sumida-03]: {{ site.baseurl }}{% link _libraries/07-sumida/03-yahiro.md %}",
 		"description": "墨田区八広図書館（脚注用）"
 	},
-	"LibraryKatsushikan01a": {
+	"LibraryKatsushika01": {
 		"scope": "html,markdown",
 		"prefix": "katsushika-01",
-		"body": "[葛飾区立石図書館][katsushika-01]",
-		"description": "葛飾区立石図書館（本文用）"
-	},
-	"LibraryKatsushikan01b": {
-		"scope": "html,markdown",
-		"prefix": "katsushika-01",
-		"body": "[katsushika-01]: {{ site.baseurl }}{% link _libraries/22-katsushika/01-tateishi.md %}",
-		"description": "葛飾区立石図書館（脚注用）"
+		"body": "${1|[葛飾区立石図書館][katsushika-01],[katsushika-01]: {{ site.baseurl }}{% link _libraries/22-katsushika/01-tateishi.md %}|}",
+		"description": "葛飾区立石図書館"
 	},
 	"Seiyu": {
 		"scope": "html,markdown",
