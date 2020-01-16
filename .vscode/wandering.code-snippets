@@ -477,6 +477,12 @@
 		],
 		"description": "日記に書く銭湯のノート"
 	},
+	"銭湯リンク": {
+		"scope": "html,markdown",
+		"prefix": "sento-footer",
+		"body": "[bath/${1}/${2}]: {{ site.baseurl }}{% link _bathhouses/${1}/${2}.md %}",
+		"description": "フッター用"
+	},
 	"Proof":{
 		"scope": "markdown",
 		"prefix": "proof",

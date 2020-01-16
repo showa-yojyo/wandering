@@ -89,6 +89,12 @@ defaults:
       layout: diary
   -
     scope:
+       path: _bathhouses
+       type: bathhouses
+    values:
+      layout: page
+  -
+    scope:
        path: _libraries
        type: libraries
     values:
@@ -101,6 +107,8 @@ defaults:
       layput: page
 
 collections:
+  bathhouses:
+    output: true
   libraries:
     output: true
   locations:
