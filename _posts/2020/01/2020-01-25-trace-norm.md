@@ -192,9 +192,9 @@ $\blacksquare$
 
 ----
 
-**命題（非退化対称線形形式）**：
+**命題（非退化対称双線形形式）**：
 有限次分離拡大 $L/K$ に対して写像 $T\colon L \times L \longrightarrow K$
-を次で定義すると、これは非退化かつ対称線形形式である：
+を次で定義すると、これは非退化かつ対称双線形形式である：
 
 $$
 T(\alpha, \beta) \coloneqq \operatorname{Tr}_{L/K}(\alpha\beta).
@@ -234,12 +234,12 @@ $\operatorname{Tr}_{L/K}(\alpha\beta) \ne 0.$
 したがって $T$ は退化線形形式ではない。
 $\blacksquare$
 
-**系**：$L/K$ を有限次分離拡大とする。
+**系（分離拡大とトレースが零でないことは同値）**：$L/K$ を有限次分離拡大とする。
 このとき $\operatorname{Tr}_{L/K}\alpha \ne 0$ をみたす $\alpha \in L$ が存在する。
 
 とくに $\operatorname{Tr}_{L/K}\colon L \longrightarrow K$ は $K$ 全射準同型写像である。
 
-**証明**：前半：非退化対称線形形式に関する命題により
+**証明**：前半：非退化対称双線形形式に関する命題により
 $\operatorname{Tr}_{L/K}\alpha = T(\alpha, 1)$ には
 非退化であるから、ある $\alpha \in L$ が存在して $T(\alpha, 1) = \operatorname{Tr}_{L/K}\alpha\ne 0.$
 
