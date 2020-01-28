@@ -204,7 +204,7 @@ $$
 この操作を繰り返せば次を得る：
 
 $$
-\def\gen#1#2{ \sqrt[n_{#1}]{\alpha_{{#1}{#2}} } }
+\def\gen#1#2{ \sqrt[n_{#1}]{\alpha_{ {#1} {#2} } } }
 \begin{aligned}
     K \subset K^{\prime} &\subset L_1^{\prime} \subset
       L_1^{\prime}(\gen 2 1) \subset L_1^{\prime}(\gen 2 1, \gen 2 2) \subset
