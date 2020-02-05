@@ -437,4 +437,3 @@ $(\omega \cdot 2)^2 = \omega \cdot 2 \cdot \omega \cdot 2 = \omega^2\cdot2 \ne \
 * [Definition:Ordinal Exponentiation](https://proofwiki.org/wiki/Definition:Ordinal_Exponentiation) - ProofWiki
 * [Category:Ordinal Arithmetic](https://proofwiki.org/wiki/Category:Ordinal_Arithmetic) - ProofWiki
   * 証明中に参照した定理をリンク付きで明示してあるのが特徴。こちらでかってに依存グラフを描きたい。
-

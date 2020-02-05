@@ -12,6 +12,7 @@ tags: math
 まずもっとも正統な言い回しのものを挙げる：
 
 For any set $E$ of nonempty sets, there exists a choice function $f$ defined on $E$.
+
 * A **choice function** is a function $f$, defined on a collection $E$ of nonempty sets,
   such that for every set $A \in E,\; f(A) \in A$.
 

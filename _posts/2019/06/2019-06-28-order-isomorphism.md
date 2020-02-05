@@ -218,4 +218,3 @@ tags: math
 
       4. ゆえに整列集合 $(\alpha, \subset)$ に $s$ の最小元が存在する： $\alpha \ni \gamma = \min s$
       5. $A$ と $S$ が全順序集合であるので $\gamma = \min S.$
-

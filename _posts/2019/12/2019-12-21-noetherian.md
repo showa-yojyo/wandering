@@ -35,11 +35,11 @@ $$
 
 # 定理
 
-## Noether 環の定義で述べた 3 条件は同値である。
+## Noether 環の定義で述べた 3 条件は同値である
 
 **証明**：
 
-### 有限生成性 $\implies$ 昇鎖律：
+### 有限生成性 $\implies$ 昇鎖律
 
 イデアルの昇鎖 $I_1 \subset I_2 \subset \dotsb$ が存在すると仮定する。
 和集合 $J \coloneqq \bigcup_{i} I_i$ もまた $A$ のイデアルである。

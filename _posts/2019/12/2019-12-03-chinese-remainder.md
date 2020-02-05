@@ -18,6 +18,7 @@ $$
 ここで各剰余群は加法群とする。
 
 **検討**：
+
 * 群の準同型定理を用いて証明する。核と像の性質を利用する。
 * 実は逆も成り立つ。
 
@@ -170,6 +171,7 @@ A/(I_1I_2\dotsm I_n) \cong A/I_1 \times A/I_2 \times \dotsb \times A/I_n.
 $$
 
 **検討**：
+
 * $n = 2$ のときの証明で本質的だった関係式の一般版 $\bigcap_i I_i = I_1I_2 \dotsm I_n$ を示す。
 * 写像 $\varphi\colon A \longrightarrow A/I_1 \times A/I_2 \times \dotsb \times A/I_n$ を、
   核と像を吟味すれば準同型定理が $\spadesuit4$ の形に適用できるように定義する。

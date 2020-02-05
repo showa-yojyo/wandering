@@ -104,6 +104,7 @@ $\blacksquare$
 # Stokes の定理
 
 Green の定理で妙なのは
+
 * 二変数関数が二つ現れること
 * ベクトル解析の教科書が扱う定理にもかかわらず、ベクトルが表に出てこない
 
@@ -221,6 +222,7 @@ $$
     F_x & 0 & 0
   \end{vmatrix}
 = \frac{\partial F_x}{\partial z}\bm e_y
+
 - \frac{\partial F_x}{\partial y}\bm e_z.
 $$
 
@@ -230,6 +232,7 @@ $$
 \tag*{$\heartsuit1$}
 (\nabla \times F_x\bm e_x)\cdot \bm n
 = \frac{\partial F_x}{\partial z}\bm e_y \cdot \bm n
+
 - \frac{\partial F_x}{\partial y}\bm e_z \cdot \bm n
 $$
 
@@ -258,6 +261,7 @@ $$
 \begin{aligned}
 (\nabla \times F_x\bm e_x)\cdot \bm n
 &= -\frac{\partial F_x}{\partial z}\frac{\partial f(x, y)}{\partial y}\bm n \cdot \bm e_z
+
 - \frac{\partial F_x}{\partial y}\bm e_z \cdot \bm n\\
 &= -\left(\frac{\partial F_x}{\partial z}\frac{\partial f(x, y)}{\partial y} + \frac{\partial F_x}{\partial y}\right)\bm e_z \cdot \bm n\\
 &= -\left(\frac{\partial F_x}{\partial z}\frac{\partial z}{\partial y} + \frac{\partial F_x}{\partial y}\right)\bm e_z \cdot \bm n.
@@ -437,9 +441,11 @@ $$
 \begin{aligned}
 \iint_{\partial V}\!F_{x} \bm e_{x} \cdot \bm n\,\mathrm dS
 &= \iint_{\partial V(t)}\!F_{x} \bm e_{x} \cdot \bm n\,\mathrm dS
- + \iint_{\partial V(b)}\!F_{x} \bm e_{x} \cdot \bm n\,\mathrm dS\\
+
++ \iint_{\partial V(b)}\!F_{x} \bm e_{x} \cdot \bm n\,\mathrm dS\\
 &= \iint_B\! F_x(f_2(y, z), y, z)\,\mathrm dA
-  - \iint_B\! F_x(f_1(y, z), y, z)\,\mathrm dA\\
+
+- \iint_B\! F_x(f_1(y, z), y, z)\,\mathrm dA\\
 &= \iiint_V\! \frac{\partial F_x}{\partial x}\,\mathrm dV.
 \end{aligned}
 $$

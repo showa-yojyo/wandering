@@ -39,6 +39,7 @@ $$
 $$
 
 **証明**：集合 $A$ を $\mathfrak{a} = \lvert A \rvert$ であるようにとる。このとき空集合の定義から
+
 * $A \cup \varnothing = A$
 * $A \cap \varnothing = \varnothing$
 であるので、二つの集合 $A, \varnothing$ は disjoint である。したがって

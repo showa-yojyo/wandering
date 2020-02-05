@@ -119,7 +119,6 @@ $$
 $\exists g_1 \in G \exists g_2 \in G(\varphi(g_1\cdot x) = \varphi(g_2 \cdot x) \implies g_1 = g_2)$
 が示された。したがって $\varphi$ は単射である。
 
-
 以上により $\varphi$ は全単射であるから（以下証明 1 と同様に）、
 集合 $O(X)$ と $G/G_x$ の間に全単射が存在することが示されたので
 $\spadesuit$ が成り立つ。

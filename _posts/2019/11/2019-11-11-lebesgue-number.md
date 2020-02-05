@@ -68,6 +68,7 @@ $$
 直径と $\delta$ の大小関係により $\forall a(a \in A \implies A \subset B(a, \delta)).$
 
 このとき
+
 * ある $i \in 1..r$ が存在して $a \in B(x_i, \delta(x_i)/2).$
 * $d_X(a, x_i) \lt \delta(x_i)/2.$
 
@@ -161,6 +162,7 @@ A_n \subset X,\ d(A_n) \lt n \implies \forall \lambda(
 $$
 
 各集合から一点ずつとってくる：$x_n \in A_n.$
+
 * コメント：自信はないが、これは要選択公理ではないのか。
 
 $X$ の点列コンパクト性から点列 $\lbrace x_n \rbrace$ は収束する部分列 $\lbrace x_{n_k}\rbrace$ を含む。

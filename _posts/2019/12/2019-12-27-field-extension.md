@@ -6,12 +6,14 @@ tags: math
 Galois 論に入る前に体の基本的な性質を理解してゆくノート。今回は体の拡大を習う。
 
 # 定義
+
 ## 体の拡大、拡大体 (field extension)
 
 **定義**：$K$ を体とする。体 $F$ 上の**拡大体**とは体 $L$ であって $K \subset L$ をみたすものをいう。
 つまり $K$ は $L$ の部分体である。
 
 **表し方**：
+
 * $L$ は $K$ 上の拡大体である。
 * $L/K$ は体の拡大である。
 
@@ -23,6 +25,7 @@ Galois 論に入る前に体の基本的な性質を理解してゆくノート�
 ## 有限体 (finite field) / 無限体 (infinite field)
 
 **定義**：
+
 * $L/K$ は**有限拡大体**である $\iff$ 次数 $[L:K]$ が有限の値である
 * $L/K$ は**無限拡大体**である $\iff$ 次数 $[L:K]$ が有限の値でない
 
@@ -152,6 +155,7 @@ $\blacksquare$
 このとき $K(\alpha_1, \dotsc, \alpha_n)/K$ は有限拡大体である。
 
 **検討**：
+
 * $n$ に関する数学的帰納法による。
 * 直前の定理を利用するために、拡大をバラす。
 
@@ -186,4 +190,3 @@ $\blacksquare$
   * [Definition:Algebraic Field Extension](https://proofwiki.org/wiki/Definition:Algebraic_Field_Extension)
   * [Definition:Simple Field Extension](https://proofwiki.org/wiki/Definition:Simple_Field_Extension)
   * [Degree of Field Extensions is Multiplicative](https://proofwiki.org/wiki/Degree_of_Field_Extensions_is_Multiplicative)
-

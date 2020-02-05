@@ -22,6 +22,7 @@ tags: math
   * 練習問題 39.2. の計算：
 
     {% raw %}
+
     ```python
     >>> list(islice(ntheory.continued_fraction_iterator(pi**2), 3))
     ... [9, 1, 6]
@@ -43,6 +44,7 @@ tags: math
     >>> (pi**2 - _).evalf()
     ... -7.41243056440853e-7
     ```
+
     {% endraw %}
 
 * 第 40 章
