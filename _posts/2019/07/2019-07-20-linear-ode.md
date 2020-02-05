@@ -79,8 +79,7 @@ $$
 
        &= \sum_{j=1}^n\left(
        (-1)^{n - j}\int\!\frac{W(u_1, \dotsc, \cancel{u_j}, \dotsc, u_n)}{W(u_1, \dotsc, u_n)}b(x)\,\mathrm dx
-       \right)u_j(x)
-       + f^{(n)}g(x).
+       \right)u_j(x) + f^{(n)}g(x).
      \end{aligned}
      $$
 
