@@ -295,7 +295,7 @@ $$
 
 #### 左分配律 $\alpha\cdot(\beta+\gamma)=\alpha\cdot\beta+\alpha\cdot\gamma$
 
-**超限帰納法による証明**
+超限帰納法による証明
 
 ##### Case 1 帰納法の基点
 
