@@ -5,7 +5,7 @@ tags: math
 
 コメント：経験上、検索エンジンで当定理を検索するときは上の用語を使うといい。
 
-# 軌道・固定群定理
+## 軌道・固定群定理
 
 群 $G$ が空でない集合 $X$ に作用しているとき、任意の $x \in X$ に対して次が成り立つ：
 
@@ -14,7 +14,7 @@ $$
 \lvert O(x) \rvert = [G\colon G_x].
 $$
 
-## 証明 1
+### 証明 1
 
 **証明の検討**：
 主張の主要部分を検討する：
@@ -53,7 +53,7 @@ $\bar\varphi(gG_x) = g\cdot x$ により定義可能である。
 $\spadesuit$ が成り立つ。
 $\blacksquare$
 
-## 証明 2
+### 証明 2
 
 **証明の検討**：
 証明 1 の検討を一部変えてみよう：
@@ -124,7 +124,7 @@ $\exists g_1 \in G \exists g_2 \in G(\varphi(g_1\cdot x) = \varphi(g_2 \cdot x) 
 $\spadesuit$ が成り立つ。
 $\blacksquare$
 
-# 参考資料
+## 参考資料
 
 * 川口周著『代数学入門』
 * [Orbit-Stabilizer Theorem](https://proofwiki.org/wiki/Orbit-Stabilizer_Theorem) - ProofWiki

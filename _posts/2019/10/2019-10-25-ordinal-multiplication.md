@@ -5,9 +5,9 @@ tags: math
 
 順序論の復習。順序数の乗法を定義し、その各種性質を証明する。
 
-# 順序数の乗法
+## 順序数の乗法
 
-## 整列集合の直積に順序を入れることによる定義
+### 整列集合の直積に順序を入れることによる定義
 
 $\alpha, \beta$ を順序数とする。積 $\alpha \cdot \beta$ の定義を述べる。
 
@@ -39,11 +39,11 @@ $\alpha, \beta$ を順序数とする。積 $\alpha \cdot \beta$ の定義を述
    \alpha \cdot \beta \coloneqq \operatorname{ord}(A \times B, \prec_{A \otimes B}).
    $$
 
-## 超限帰納法による定義
+### 超限帰納法による定義
 
 $\alpha, \beta$ を順序数とする。順序数の乗法 $\alpha \cdot \beta$ は以下のように超限帰納法を用いて定義される。
 
-### Case 1: 帰納法の基点
+#### Case 1: 帰納法の基点
 
 $\beta = 0$ のときは積を 0 と定義する：
 
@@ -51,7 +51,7 @@ $$
 \alpha \cdot \beta \coloneqq 0.
 $$
 
-### Case 2: 帰納的段階
+#### Case 2: 帰納的段階
 
 積 $\alpha \cdot \beta^+$ は $\alpha\cdot\beta$ を用いて定義される：
 
@@ -59,7 +59,7 @@ $$
 \alpha \cdot \beta^+ \coloneqq (\alpha \cdot \beta) + \alpha.
 $$
 
-### Case 3: 極限順序数の場合
+#### Case 3: 極限順序数の場合
 
 $y$ が極限順序数であるときは次のようにして積 $\alpha\cdot\beta$ を定める：
 
@@ -67,15 +67,15 @@ $$
 \alpha \cdot \beta \coloneqq \bigcup_{\gamma \in \beta}(\alpha \cdot \gamma).
 $$
 
-## 性質
+### 性質
 
 順序数の乗法に関する性質をいくつか挙げ、それぞれ証明を与える。
 
-### 有限順序数の乗法は自然数の通常の積に一致する
+#### 有限順序数の乗法は自然数の通常の積に一致する
 
 **証明**：積の定義を直積の順序数としていることと、有限順序数は自然数と順序同型であることから明らか。
 
-### 結合律 $(\alpha \cdot \beta) \cdot \gamma = \alpha \cdot (\beta \cdot \gamma)$
+#### 結合律 $(\alpha \cdot \beta) \cdot \gamma = \alpha \cdot (\beta \cdot \gamma)$
 
 **直積順序の定義での証明**：$\gamma = \operatorname{ord}(C, \prec_C)$ をみたす整列集合 $(C, \prec_C)$ を一つとる。
 左辺は整列集合 $((A \times B) \times C, \prec_{(A \otimes B) \otimes C})$ の順序数である。
@@ -107,7 +107,7 @@ $$
 
 * コメント：あらかじめ零元に関する性質と左分配律の証明が終わっている必要がある。
 
-#### Case 1 帰納法の基点
+##### Case 1 帰納法の基点
 
 まず $\gamma = 0$ のときに成り立つことを示す。
 
@@ -122,7 +122,7 @@ $$
 
 これで基点ケースが証明された。
 
-#### Case 2 帰納的段階
+##### Case 2 帰納的段階
 
 与えられた等式が $\gamma$ について成り立てば、後続順序数 $\gamma^+$ についても成り立つことを示す：
 
@@ -139,7 +139,7 @@ $$
 * コメント：最初の等号と最後の等号は後続順序数に関する積の性質による。
   これが成り立つのは超限帰納法によって順序数の積を定義したことを前提とする証明だからだ。
 
-#### Case 3 極限順序数の場合
+##### Case 3 極限順序数の場合
 
 $\gamma$ が極限順序数のとき成り立つことを、つまり次の命題を示す：
 
@@ -201,7 +201,7 @@ $$
 $\spadesuit1, \spadesuit2$ より $(\alpha\cdot\beta)\cdot\gamma = \alpha\cdot(\beta\cdot\gamma).$
 以上で極限順序数の場合が証明された。
 
-### 零元の存在 $\alpha \cdot 0 = 0 \cdot \alpha = 0$
+#### 零元の存在 $\alpha \cdot 0 = 0 \cdot \alpha = 0$
 
 **直積順序の定義での証明**：$0 = \operatorname{ord}(\varnothing, \prec_0)$ とする。
 
@@ -213,7 +213,7 @@ $$
 
 つまり、空集合と任意集合との直積が空集合になる性質から導かれる。
 
-### 後続順序数との積 $\alpha \cdot \beta^+ = (\alpha \cdot \beta) + \alpha$
+#### 後続順序数との積 $\alpha \cdot \beta^+ = (\alpha \cdot \beta) + \alpha$
 
 **証明**：
 $$
@@ -230,7 +230,7 @@ $$
 4 つのめ等号で $\cup$ を $+$ にするところは $A \times B \cap A \times \lbrace B\rbrace = \varnothing$ から成り立つ。
 さらに、例えば $\prec_{A \otimes B^+}\mid_{A \times B} = \prec_{A \otimes B}$ などを用いた。
 
-### 極限順序数 $\gamma$ について $\alpha\cdot\gamma = \sup\lbrace \alpha\cdot\beta \mid \beta \lt \gamma\rbrace$
+#### 極限順序数 $\gamma$ について $\alpha\cdot\gamma = \sup\lbrace \alpha\cdot\beta \mid \beta \lt \gamma\rbrace$
 
 **直積順序による証明**：$\gamma = \bigcup_{c \in \gamma} c$ であるから、
 
@@ -238,7 +238,7 @@ $\gamma = \sup\lbrace \beta \,\mid\, \beta < \gamma\rbrace$
 
 **超限帰納法による証明**：乗法の定義を超限帰納法で与える流儀では、この性質は乗法の定義の一部だ。
 
-### 単位元の存在 $\alpha\cdot1 = 1\cdot\alpha = \alpha$
+#### 単位元の存在 $\alpha\cdot1 = 1\cdot\alpha = \alpha$
 
 **直積順序による証明**：$1 = \operatorname{ord}(\lbrace \varnothing \rbrace, \prec_1)$ とおく。
 
@@ -257,7 +257,7 @@ $$
 
 ゆえに $\alpha\cdot1 = 1\cdot\alpha = \alpha.$
 
-### $0 \lt \alpha$ のとき $\beta \lt \gamma \iff \alpha\cdot\beta \lt \alpha\cdot\gamma$
+#### $0 \lt \alpha$ のとき $\beta \lt \gamma \iff \alpha\cdot\beta \lt \alpha\cdot\gamma$
 
 **証明**：仮定から $\alpha$ は空集合の順序数ではない。したがって：
 
@@ -270,7 +270,7 @@ $$
 \end{aligned}
 $$
 
-### $\beta \le \gamma \implies \beta\cdot\alpha \le \gamma\cdot\alpha$
+#### $\beta \le \gamma \implies \beta\cdot\alpha \le \gamma\cdot\alpha$
 
 **証明**：$\beta = \gamma$ のときは右辺は等号が成り立つ。
 
@@ -285,7 +285,7 @@ $$
 \end{aligned}
 $$
 
-### 交換律は一般には成り立たない
+#### 交換律は一般には成り立たない
 
 **証明**：反例を一つ挙げる：
 
@@ -293,11 +293,11 @@ $$
 2 \cdot \omega = \omega \ne \omega \cdot 2.
 $$
 
-### 左分配律 $\alpha\cdot(\beta+\gamma)=\alpha\cdot\beta+\alpha\cdot\gamma$
+#### 左分配律 $\alpha\cdot(\beta+\gamma)=\alpha\cdot\beta+\alpha\cdot\gamma$
 
 **超限帰納法による証明**
 
-#### Case 1 帰納法の基点
+##### Case 1 帰納法の基点
 
 $\gamma = 0$ のとき成り立つことを示す。
 
@@ -310,7 +310,7 @@ $$
 
 ゆえに両辺は等しい。
 
-#### Case 2 帰納的段階
+##### Case 2 帰納的段階
 
 $\alpha\cdot(\beta+\gamma)=\alpha\cdot\beta+\alpha\cdot\gamma$ が成り立つと仮定する。
 このとき $\gamma$ を $\gamma^+$ で置き換えても成り立つことが示されれば、超限帰納法によりすべての $\gamma$ について左分配律が成り立つことになる。
@@ -330,7 +330,7 @@ $$
 三番目の等号は超限帰納法の仮定による。
 最後の等号は再び前述の性質と和の結合律による。
 
-#### Case 3 極限順序数の場合
+##### Case 3 極限順序数の場合
 
 $\alpha = 0$ の場合とそうでない場合とで分けて証明する。
 $\alpha = 0$ ならば：
@@ -399,7 +399,7 @@ $$
 $\clubsuit1, \clubsuit2$ より $\alpha\cdot\beta + \alpha\cdot\gamma = \alpha \cdot (\beta + \gamma).$
 以上により極限順序数の場合が成り立つことが示された。
 
-### 右分配律は一般には成り立たない
+#### 右分配律は一般には成り立たない
 
 **証明**：$(\beta + \gamma) \cdot \alpha \ne \beta\cdot\alpha + \gamma\cdot\alpha$ なる $\alpha, \beta, \gamma$ として
 $\alpha = \omega, \beta = 1, \gamma = 1$ を反例として挙げる。
@@ -416,7 +416,7 @@ $$
 \end{aligned}
 $$
 
-### 任意の順序数 $\alpha$ と順序数 $\delta \ne 0$ に対して $\alpha = \delta\cdot\beta + \gamma$ かつ $\gamma \lt \delta$ をみたす順序数の組 $(\beta, \gamma)$ がただ一組存在する
+#### 任意の順序数 $\alpha$ と順序数 $\delta \ne 0$ に対して $\alpha = \delta\cdot\beta + \gamma$ かつ $\gamma \lt \delta$ をみたす順序数の組 $(\beta, \gamma)$ がただ一組存在する
 
 **証明**：
 順序数の性質から $\alpha \lt \delta$ または $\delta \le \alpha$ のどちらか一方のみが成り立つ。
@@ -495,7 +495,7 @@ $\beta_1 \lt \beta_2^+ \land \beta_2 \lt \beta_1^+.$
 $\beta$ が一意的であるので（順序数の加法の性質の最後の項目に相当する）Ordinal Subtraction when Possible is Unique により
 $\delta$ は一意的である。
 
-# 参考資料
+## 参考資料
 
 参考資料第というかカンニングペーパーだ。
 

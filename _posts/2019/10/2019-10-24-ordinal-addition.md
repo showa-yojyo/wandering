@@ -5,9 +5,9 @@ tags: math
 
 順序論の復習。順序数の加法を定義し、その各種性質を証明する。
 
-# 順序数の加法
+## 順序数の加法
 
-## 整列集合による定義
+### 整列集合による定義
 
 $\alpha, \beta$ を順序数とする。和 $\alpha + \beta$ の定義を述べる。
 
@@ -39,14 +39,14 @@ $\alpha, \beta$ を順序数とする。和 $\alpha + \beta$ の定義を述べ�
    \alpha + \beta \coloneqq \operatorname{ord}(A \cup B, \prec_{A \oplus B}).
    $$
 
-## 超限帰納法による定義
+### 超限帰納法による定義
 
 超限帰納法で順序数の加法を定義する。
 
 $\alpha, \beta$ を順序数とする。このとき和 $\alpha + \beta$ を
 $\beta$ に関する超限帰納法により次の Case 1-3 のように定義する：
 
-### Case 1: 帰納法の基点
+#### Case 1: 帰納法の基点
 
 $y = 0$ とする。和 $x + y$ を次で定義する：
 
@@ -54,7 +54,7 @@ $$
 \alpha + 0 \coloneqq \alpha.
 $$
 
-### Case 2: 帰納的段階
+#### Case 2: 帰納的段階
 
 $\beta$ の後続順序数 $\beta^+$ に対して和 $x + y$ を次で定義する：
 
@@ -62,7 +62,7 @@ $$
 \alpha + \beta^+ \coloneqq (\alpha + \beta)^+.
 $$
 
-### Case 3: 極限順序数の場合
+#### Case 3: 極限順序数の場合
 
 $y$ を極限順序数とする。和 $x + y$ を次で定義する：
 
@@ -70,15 +70,15 @@ $$
 \alpha + \beta \coloneqq \bigcup_{\gamma \in \beta} \gamma.
 $$
 
-## 性質
+### 性質
 
 順序数の加法に関する性質をいくつか挙げ、それぞれ証明を与える。
 
-### 有限順序数の加法は自然数の和と一致する
+#### 有限順序数の加法は自然数の和と一致する
 
 **証明**：$\operatorname{ord}()$ を用いた順序数の定義および $A \cap B = \varnothing$ から明らか。
 
-### 結合律
+#### 結合律
 
 $$
 (\alpha + \beta) + \gamma = \alpha + (\beta + \gamma).
@@ -118,7 +118,7 @@ $$
 
 この同値関係は $\prec_{A \oplus (B \oplus C)}$ 側を同様に調べることでも導かれる。よって結合則は成り立つ。
 
-### 零元の存在
+#### 零元の存在
 
 $$
 \alpha + 0 = 0 + \alpha = \alpha.
@@ -146,11 +146,11 @@ $$
 
 * コメント：後述する性質を前もって証明してある必要がある。
 
-#### Case 1 帰納法の基点
+##### Case 1 帰納法の基点
 
 $\alpha = 0$ に対して成り立つことを示す。$0 + 0 = 0.$ これは $0$ の定義から成り立つことがいえる。
 
-#### Case 2 帰納的段階
+##### Case 2 帰納的段階
 
 $0 + \alpha = \alpha$ が成り立つと仮定すると、$0 + \alpha^+ = \alpha^+$ も成り立つことを示す。
 右辺から左辺を導く：
@@ -161,7 +161,7 @@ $$
 \end{aligned}
 $$
 
-#### Case 3 極限順序数の場合
+##### Case 3 極限順序数の場合
 
 最後に $\alpha$ が極限順序数であるときにも成り立つことを示す。
 $\alpha$ を極限順序数であると仮定する。すなわち
@@ -182,7 +182,7 @@ $$
 
 最後の等号は和の定義による。
 
-### $\alpha + \beta^+ = (\alpha + \beta)^+$
+#### $\alpha + \beta^+ = (\alpha + \beta)^+$
 
 * コメント：順序数の加法を超限帰納法で定義する流儀では、この性質は定義の一部だ。
 
@@ -192,7 +192,7 @@ $$
 
 * コメント：加法の定義が順序数ベースの場合、これは定義の一部である。
 
-### $\beta \lt \gamma \iff \alpha + \beta \lt \alpha + \gamma$
+#### $\beta \lt \gamma \iff \alpha + \beta \lt \alpha + \gamma$
 
 **証明**：順序数の大小関係は小さい方が大きい方の切片になっていることを意味する。
 $A, B, C$ を順序数 $\alpha, \beta, \gamma$ と同型な、互いに素な整列集合とする。
@@ -210,19 +210,19 @@ $$
 \end{aligned}
 $$
 
-### $\beta \preceq \gamma \implies \beta + \alpha \preceq \gamma + \alpha$
+#### $\beta \preceq \gamma \implies \beta + \alpha \preceq \gamma + \alpha$
 
 **証明**：直前の性質と同様。
 
 * コメント：なぜ $\iff$ ではなく $\implies$ なのか。
 
-### 一般には可換でない
+#### 一般には可換でない
 
 **証明**：反例を一つ挙げる：
 
 $$1 + \omega = \omega \ne \omega + 1.$$
 
-### $\alpha \le \beta \implies \exists \gamma(\alpha + \gamma = \beta)$
+#### $\alpha \le \beta \implies \exists \gamma(\alpha + \gamma = \beta)$
 
 **証明**：$\alpha = \operatorname{ord}(A, \prec_A), \beta = \operatorname{ord}(B, \prec_B), A \cap B = \varnothing$ とおく。
 
@@ -232,7 +232,7 @@ $\exists x(x \in B \land A \cong s(x)).$
 
 Case 2: $\alpha = \beta$ ならば $\gamma = 0.$
 
-# 参考文献
+## 参考文献
 
 * [順序数](https://ja.wikipedia.org/wiki/%E9%A0%86%E5%BA%8F%E6%95%B0#%E5%AE%9A%E7%BE%A9) - Wikipedia
 * [Category:Ordinal Arithmetic](https://proofwiki.org/wiki/Category:Ordinal_Arithmetic) - ProofWiki

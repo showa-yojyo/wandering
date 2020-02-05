@@ -8,7 +8,7 @@ tags: math
 * Euler 関数が乗法的であることを証明するのに中国剰余定理を利用していることに注意。
 * 20-32 章（原始根、平方剰余の相互法則、平方数の和、Pell 方程式、Diophantus 近似）を復習しよう。
 
-# 練習問題 20.1. Liouville の lambda 関数
+## 練習問題 20.1. Liouville の lambda 関数
 
 ```python
 def liouville_lambda(n):
@@ -55,7 +55,7 @@ def liouville_lambda(n):
   * $G(n) = 1$ であれば、$\lambda(n)$ の個数は奇数であること、
     言い換えると数 $n$ の約数の個数が奇数である。これは $n$ が平方数であることを意味する。
 
-# 練習問題 20.2 乗法的関数
+## 練習問題 20.2 乗法的関数
 
 * (a) $\lambda(n)$ は乗法的関数である。
 

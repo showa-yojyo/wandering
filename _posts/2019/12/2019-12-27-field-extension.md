@@ -5,9 +5,9 @@ tags: math
 
 Galois 論に入る前に体の基本的な性質を理解してゆくノート。今回は体の拡大を習う。
 
-# 定義
+## 定義
 
-## 体の拡大、拡大体 (field extension)
+### 体の拡大、拡大体 (field extension)
 
 **定義**：$K$ を体とする。体 $F$ 上の**拡大体**とは体 $L$ であって $K \subset L$ をみたすものをいう。
 つまり $K$ は $L$ の部分体である。
@@ -17,19 +17,19 @@ Galois 論に入る前に体の基本的な性質を理解してゆくノート�
 * $L$ は $K$ 上の拡大体である。
 * $L/K$ は体の拡大である。
 
-## 拡大体の次数 (degree)
+### 拡大体の次数 (degree)
 
 **定義**：拡大体 $L/K$ の**次数**とは、$L$ を $F$ 上のベクトル空間として見るときのその次元である。
 これを記号 $[L:K]$ で表す。
 
-## 有限体 (finite field) / 無限体 (infinite field)
+### 有限体 (finite field) / 無限体 (infinite field)
 
 **定義**：
 
 * $L/K$ は**有限拡大体**である $\iff$ 次数 $[L:K]$ が有限の値である
 * $L/K$ は**無限拡大体**である $\iff$ 次数 $[L:K]$ が有限の値でない
 
-## 代数的 (algebraic) / 超越的 (transcedent)
+### 代数的 (algebraic) / 超越的 (transcedent)
 
 **定義**：$K/L$ を拡大体とする。$\alpha \in K/L$ とする。
 
@@ -43,7 +43,7 @@ Galois 論に入る前に体の基本的な性質を理解してゆくノート�
 * $\alpha$ が $L$ 上**超越的である**とは、$\alpha$ が $L$ 上代数的ではないことをいう。
 * $K/L$ が**超越的拡大体**であるとは、$K/L$ が代数的拡大体でないことをいう。
 
-## 生成された拡大体 (generated field extension)
+### 生成された拡大体 (generated field extension)
 
 **定義**：$K/L$ を拡大体とし、$S \subset K$ とする。
 
@@ -52,15 +52,15 @@ $S$ により**生成された拡大体** $L[S]$ は $S$ を含むような $K$ 
 
 $S$ が $L[S]$ の**生成集合**であるとは、$L[S]$ が $S$ を含むような真の部分体を含まないことをいう。
 
-## 単拡大 (simple field extension)
+### 単拡大 (simple field extension)
 
 **定義**：$K/L$ を拡大体とする。$K$ が $L$ の**単拡大**であるとは、
 ある $\alpha \in K$ が存在して $L[\alpha] = K$ が成り立つことをいう。
 つまり、単一要素の集合による生成された拡大体であることをいう。
 
-# 例
+## 例
 
-## 拡大体
+### 拡大体
 
 拡大体の基本的な例を挙げる。
 
@@ -68,16 +68,16 @@ $S$ が $L[S]$ の**生成集合**であるとは、$L[S]$ が $S$ を含むよ�
 * $\mathbb Q (\sqrt{2}) \coloneqq \{a + b\sqrt{2} \,|\, a, b \in \mathbb Q\}$
   は $\mathbb Q$ 上の次数 $2$ の有限拡大体である。
 
-## 代数的数
+### 代数的数
 
 代数的数の基本的な例を挙げる。
 
 * $\sqrt{2} \in \R/\mathbb{Q}$ は $X^2 - 2 \in \mathbb{Q}[X]$ の根であるから代数的数である。
 * 虚数単位 $i \in \Complex/\mathbb{Q}$ は $X^2 + 1 \in \mathbb{Q}[X]$ の根であるから代数的数である。
 
-# 性質
+## 性質
 
-## 拡大体の次数は乗法的
+### 拡大体の次数は乗法的
 
 **定理**：$K, L, M$ を体とし、$K/L, L/M$ を有限拡大体とする。
 
@@ -148,7 +148,7 @@ $$
 これが示そうとしたものである。
 $\blacksquare$
 
-## 有限生成された代数的拡大体は有限
+### 有限生成された代数的拡大体は有限
 
 **定理**：$L/K$ を拡大体とし、$\alpha_1, \dotsc, \alpha_n \in L$ は $K$ 上代数的であるとする。
 
@@ -183,7 +183,7 @@ $$
 以上により、任意の $n$ について $K(\alpha_1, \dotsc, \alpha_n)/K$ は有限である。
 $\blacksquare$
 
-# 参考資料
+## 参考資料
 
 * Proof Wiki
   * [Definition:Field Extension - ProofWiki](https://proofwiki.org/wiki/Definition:Field_Extension)

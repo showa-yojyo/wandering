@@ -5,11 +5,11 @@ tags: math
 
 順序論の復習。順序数のべき乗を定義し、その各種性質を証明する。
 
-# 定義
+## 定義
 
 $\alpha, \beta$ を順序数とする。べき乗 $\alpha^\beta$ を定義する。
 
-## 写像の集合による定義
+### 写像の集合による定義
 
 $\alpha, \beta$ に対応する整列集合 $(A, \prec_A), (B, \prec_B)$ を次のようにとる：
 
@@ -40,7 +40,7 @@ $$
 \alpha^\beta \coloneqq \operatorname{ord}(F, \prec_F).
 $$
 
-## 超限帰納法による定義
+### 超限帰納法による定義
 
 $$
 \alpha^\beta = \begin{cases}
@@ -54,35 +54,35 @@ $$
 
 * コメント：$\alpha = 0$ が特別扱い。
 
-# 性質
+## 性質
 
-## どちらも有限順序数ならば $\alpha^\beta$ は自然数のべきに一致する
+### どちらも有限順序数ならば $\alpha^\beta$ は自然数のべきに一致する
 
 順序数のべき乗を写像集合で定義する流儀だと、順序数に対応する集合の要素数のべき乗に一致するから成り立つ。
 
 超限帰納法で定義する流儀でも明らかに正しい。
 
-## $0^0 = 1$
+### $0^0 = 1$
 
 順序数のべき乗を写像集合で定義する流儀だと、写像 $\varnothing \longrightarrow \varnothing$ が $\varnothing$ 一つしかないので
 $0^0 = 1$ と解釈する必要がある。
 
 順序数のべき乗を超限帰納法で定義する流儀では、この性質は定義の一部だ。
 
-## $0 \lt \beta \implies 0^\beta = 0$
+### $0 \lt \beta \implies 0^\beta = 0$
 
 順序数のべき乗を写像集合で定義する流儀だと、空集合でない整列集合 $(B, \prec_B)$ から空集合への写像は一つもないので、こうなる。
 
 順序数のべき乗を超限帰納法で定義する流儀では、この性質は定義の一部だ。
 
-## $\alpha^0 = 1$
+### $\alpha^0 = 1$
 
 順序数のべき乗を写像集合で定義する流儀の場合。空集合から任意の整列集合 $(A, \prec_A)$ への写像はちょうど一つ存在することになっている
 (vaculous truth) ことから、$\alpha^0 = 1$ とする。
 
 順序数のべき乗を超限帰納法で定義する流儀では、この性質は定義の一部だ。
 
-## $\alpha^{\beta^+} = \alpha^\beta \cdot \alpha$
+### $\alpha^{\beta^+} = \alpha^\beta \cdot \alpha$
 
 **証明**：乗法の性質を利用して超限帰納法で証明される。
 
@@ -134,7 +134,7 @@ $$
 \end{aligned}
 $$
 
-## 指数が極限順序数のべきは $\sup$ で与えられる
+### 指数が極限順序数のべきは $\sup$ で与えられる
 
 $0 \lt \alpha$ で $\gamma$ が極限順序数のとき、
 
@@ -153,7 +153,7 @@ $$
 \end{aligned}
 $$
 
-## $1 \lt \alpha \implies (\beta \lt \gamma \iff \alpha^\beta \lt \alpha^\gamma)$
+### $1 \lt \alpha \implies (\beta \lt \gamma \iff \alpha^\beta \lt \alpha^\gamma)$
 
 **証明（十分条件）**：$\gamma$ に関する超限帰納法で証明する。
 
@@ -205,7 +205,7 @@ $$
 $\in$ が強順序であることから $\beta \notin \gamma \implies \alpha^\beta \notin \alpha^\gamma.$
 これの対偶をとって $\in$ を $\lt$ とすれば必要条件が示されたことになる。
 
-## $\beta \le \gamma \implies \beta^\alpha \le \gamma^\alpha$
+### $\beta \le \gamma \implies \beta^\alpha \le \gamma^\alpha$
 
 **証明**：$\alpha$ に関する超限帰納法で証明する。
 
@@ -246,7 +246,7 @@ $$
 * コメント：この性質の注意点は $\beta \lt \gamma \implies \beta^\alpha \le \gamma^\alpha$ にある。
   例えば $2 \lt 3$ に対して $\omega^2 = \omega^3 = \omega$ が成り立つ。
 
-## $\alpha^{\beta + \gamma} = \alpha^\beta\cdot\alpha^\gamma$
+### $\alpha^{\beta + \gamma} = \alpha^\beta\cdot\alpha^\gamma$
 
 **証明**：$\gamma$ についての超限帰納法による。
 
@@ -343,7 +343,7 @@ $$
 
 以上で極限順序数の場合について成り立つことが示された。
 
-## $(\alpha^\beta)^\gamma = \alpha^{\beta\cdot\gamma}$
+### $(\alpha^\beta)^\gamma = \alpha^{\beta\cdot\gamma}$
 
 **証明**：超限帰納法による。
 
@@ -424,12 +424,12 @@ $$
 
 $\bigstar1$ と $\bigstar2$ より、極限順序数についても成り立つことが示された。
 
-## $(\beta\cdot\gamma)^\alpha = \beta^\alpha\cdot\gamma^\alpha$ は一般には成り立たない
+### $(\beta\cdot\gamma)^\alpha = \beta^\alpha\cdot\gamma^\alpha$ は一般には成り立たない
 
 例えば $\alpha = \gamma = 2, \beta = \gamma$ を考える。
 $(\omega \cdot 2)^2 = \omega \cdot 2 \cdot \omega \cdot 2 = \omega^2\cdot2 \ne \omega^2\cdot2^2.$
 
-# 参考資料
+## 参考資料
 
 * [順序数](https://ja.wikipedia.org/wiki/%E9%A0%86%E5%BA%8F%E6%95%B0#%E5%AE%9A%E7%BE%A9) - Wikipedia
 * [Ordinal arithmetic](https://en.wikipedia.org/wiki/Ordinal_arithmetic#Multiplication) - Wikipedia

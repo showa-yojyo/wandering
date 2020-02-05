@@ -5,7 +5,7 @@ tags: math
 
 鈴木治郎訳『はじめての数論 原著第 3 版』より。
 
-# 練習問題 8.7. 合同式 $ax \equiv c \pmod{m}$ を解くプログラムを書く
+## 練習問題 8.7. 合同式 $ax \equiv c \pmod{m}$ を解くプログラムを書く
 
 途中の関数 `abxyg` については[144 日目]({{ site.baseurl }}{% post_url 2018/10/2018-10-22-diary %})を参照。
 
@@ -26,7 +26,7 @@ def solve_ax_c_m(a, c, m):
     return [x0 + k * m // g for k in range(g)]
 ```
 
-# 練習問題 10.3. Carmichael 数に関する考察
+## 練習問題 10.3. Carmichael 数に関する考察
 
 a) $m = 561 = 3 \cdot 11 \cdot 17$ は Carmichael 数であることを示せ。
 

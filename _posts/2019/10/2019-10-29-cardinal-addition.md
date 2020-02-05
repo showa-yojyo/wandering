@@ -5,7 +5,7 @@ tags: math
 
 基数の和の定義や性質を復習する。本稿では集合 $X$ の基数を $\lvert X \rvert$ で表す。
 
-# 定義
+## 定義
 
 $A, B$ を集合とし、$\mathfrak{a} = \lvert A \rvert$,
 $\mathfrak{b} = \lvert B \rvert$ とする。
@@ -19,11 +19,11 @@ $$
   あるいは交わりが合っても、例えばムリヤリ $A \times \lbrace 0 \rbrace$ と
   $B \times \lbrace 1 \rbrace$ の非交和の基数として扱うことをこの定義は要請している。
 
-# 性質
+## 性質
 
 基数の和のもつ性質をいくつか見ていく。
 
-## 基数の加法に関する恒等元
+### 基数の加法に関する恒等元
 
 $0$ とは空集合の基数を意味する：
 
@@ -57,7 +57,7 @@ $$
 $0 + \mathfrak{a}$ についても同様（先に可換律を証明するのがいいかもしれない）。
 $\blacksquare$
 
-## 結合律
+### 結合律
 
 **命題**：$\mathfrak{a}, \mathfrak{b}, \mathfrak{c}$ を基数とする。このとき：
 
@@ -110,7 +110,7 @@ $(A \cup B) \cup C = A \cup (B \cup C)$
 ことから、両者は等しい。
 $\blacksquare$
 
-## 可換律
+### 可換律
 
 **命題**：$\mathfrak{a}, \mathfrak{b}$ を基数とする。次が成り立つ：
 
@@ -138,7 +138,7 @@ $$
 
 $\blacksquare$
 
-## 非減少性
+### 非減少性
 
 **命題**：$\mathfrak{a}, \mathfrak{b}, \mathfrak{c}$ を基数とする。
 このとき：
@@ -192,6 +192,6 @@ $$
 が成り立つ。ゆえに $h$ は単射である。
 $\blacksquare$
 
-# 参考資料
+## 参考資料
 
 * [Category:Cardinals](https://proofwiki.org/wiki/Category:Cardinals) - ProofWiki
