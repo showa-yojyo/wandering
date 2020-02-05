@@ -5,7 +5,7 @@ tags: math
 
 Eisenstein の既約判定法の証明ノート。書き終わったあとに思ったが、[Gauss の補題][Gauss]も併せてノートにとらないと弱い。
 
-# Eisenstein
+## Eisenstein
 
 **定理**：多項式 $f(X) = a_nX^n + \dotsb + a_0 \in \Z[X]$
 と素数 $p$ が次を満たす：
@@ -16,6 +16,7 @@ Eisenstein の既約判定法の証明ノート。書き終わったあとに思
 このとき、$f$ は $\mathbb{Q}[X]$ 上既約である。
 
 **検討**：
+
 * [Gauss の補題][Gauss]は使えるとすると、$\Z[X]$ 上既約であることを示せば十分だ。
 * 背理法で示す。
 
@@ -70,7 +71,7 @@ $f$ は $\Z[X]$ 上既約である。
 [Gauss の補題][Gauss]により $f$ は $\mathbb{Q}[X]$ 上でも既約である。
 $\blacksquare$
 
-# 参考資料
+## 参考資料
 
 * ProofWiki
   * [Schönemann-Eisenstein Theorem](https://proofwiki.org/wiki/Sch%C3%B6nemann-Eisenstein_Theorem)

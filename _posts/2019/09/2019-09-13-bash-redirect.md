@@ -5,7 +5,7 @@ tags: bash
 
 暇なので `bash` のリダイレクトを復習する。本稿では file descritor を FD と呼ぶ。
 
-# Redirection
+## Redirection
 
 * 入力元や出力先を「向き直す」という意味に捉える。
 * 覚えにくい要素が複数あるのが困る。
@@ -28,7 +28,7 @@ tags: bash
   * `/dev/tcp/`*host/port*: 後述の `<>` の例で扱う。
   * `/dev/udp/`*host/port*
 
-## Redirecting Input
+### Redirecting Input
 
 読み込み FD の開き方とでも言えばいいのか。
 
@@ -47,7 +47,7 @@ bash$ exec 3< some_file
 bash$ some_command <& 3 # 後述
 ```
 
-## Redirecting Output
+### Redirecting Output
 
 書き込み FD の開き方。
 
@@ -74,7 +74,7 @@ bash$ some_command > stdout.txt 2> stderr.txt
   bash$ some_command >| some_destination
   ```
 
-## Appending Redirected Output
+### Appending Redirected Output
 
 ```shell
 bash$ some_command n>> some_destination
@@ -82,7 +82,7 @@ bash$ some_command n>> some_destination
 
 基本。ここはいい。
 
-## Redirecting Standard Output and Standard Error
+### Redirecting Standard Output and Standard Error
 
 ```shell
 bash$ some_command &> some_destination # preferred; equivalent to `some_command > some_destination 2>& 1`.
@@ -91,13 +91,13 @@ bash$ some_command >& some_destination
 
 記号の順序を記憶できなくて困っていたが、実はどちらも同じ意味だったようだ。
 
-## Appending Standard Output and Standard Error
+### Appending Standard Output and Standard Error
 
 ```shell
 bash$ some_command &>> some_destination # equivalent to `some_command >> some_destination 2>& 1`.
 ```
 
-## Here Documents
+### Here Documents
 
 ```shell
 bash$ some_commands <<word
@@ -108,7 +108,7 @@ delimiter
 * この機能はリダイレクト機能の一種だ。`word` には `EOF` がよく採用される。
 * `<<word` だけでなく `<<-word` という指示もある。行頭タブ文字を無視するようになる。
 
-## Here Strings
+### Here Strings
 
 ```shell
 bash$ some_command <<<word
@@ -124,7 +124,7 @@ bash$ some_command <<<word
   ...
   ```
 
-## Duplicating File Descriptors
+### Duplicating File Descriptors
 
 ```shell
 bash$ some_command n<&word # default: n=0 (stdin)
@@ -134,7 +134,7 @@ bash$ some_command n>&word # default: n=1 (stdout)
 何が複製なのかよくわからない。例えば `some_cmd > some_dest 2>&1` とすると、
 `some_cmd` の標準出力の内容と標準エラー出力の内容の両方が標準出力に流出する。
 
-## Moving File Descriptors
+### Moving File Descriptors
 
 ```shell
 bash$ exec n<&digit-
@@ -144,7 +144,7 @@ bash$ exec n>&digit-
 どちらも右辺の FD を左辺のそれに名前を変える。
 何に使うのがいいのかわからない（少し調べたら、descriptor の復元に使えるらしいが）。
 
-## Opening File Descriptors for Reading and Writing
+### Opening File Descriptors for Reading and Writing
 
 ```shell
 bash$ exec n<>word

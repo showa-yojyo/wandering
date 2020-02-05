@@ -5,11 +5,11 @@ tags: math
 
 熊原啓作著『新訂解析学』の学習ノート第八回。
 
-# 無限乗積
+## 無限乗積
 
 微分積分で習ったから複素数にしても大丈夫かと思いきや、応用が難しい。
 
-## 無限乗積
+### 無限乗積
 
 実数の微分積分で学んだ記述は飛ばす。
 
@@ -190,7 +190,7 @@ tags: math
 
   $C = 1$ だと思うが？
 
-## $\varGamma$ 関数
+### $\varGamma$ 関数
 
 実数を変数とするガンマ関数：
 
@@ -266,7 +266,7 @@ $$
 
 TODO: Review once.
 
-## Riemann の $\zeta$ 関数
+### Riemann の $\zeta$ 関数
 
 $$
 \zeta\left(s\right) \coloneqq 1 + \frac{1}{2^s} + \frac{1}{3^s} + \dotsb + \frac{1}{n^s} + \dotsb = \sum_{n = 1}^\infty\frac{1}{n^s}.

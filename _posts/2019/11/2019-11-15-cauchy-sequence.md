@@ -6,12 +6,12 @@ tags: math
 すごく基本的な定理でありながらなぜか私の頭に入らない Cauchy 列の収束性を示す証明についてのノート。
 
 <!--
-# 証明フォーマット
-## ～を証明する
+## 証明フォーマット
+### ～を証明する
 
 $P$ を真と仮定して $Q$ を導く。
 
-## 検討
+### 検討
 
 戦略使用前：
 
@@ -27,7 +27,7 @@ $P$ を真と仮定して $Q$ を導く。
 | - | $Q$ |
 | $P$ | |
 
-## 最終的な証明の形
+### 最終的な証明の形
 
 仮定 $P$
 
@@ -36,13 +36,13 @@ $P$ を真と仮定して $Q$ を導く。
 したがって $P \implies Q$
 -->
 
-# 実数の完備性
+## 実数の完備性
 
-## 主張
+### 主張
 
 実数上の Cauchy 列 $\lbrace a_n \rbrace$ は収束する。
 
-## 検討
+### 検討
 
 | Givens | Goal |
 | ------ | ---- |
@@ -84,12 +84,12 @@ $$
 | $\lbrace a_n \rbrace$ | $\exists \alpha Q(\lbrace a_n \rbrace, \alpha)$ |
 | $P(\lbrace a_n \rbrace)$ | |
 
-## 補題 1
+### 補題 1
 
 数列の第 $m$ 項に対して集合 $A_m \coloneqq \lbrace a_m, a_{m+1}, a_{m+2}, \dots\rbrace$ を対応させる。
 集合 $A_m$ は有界である。
 
-### 検討
+#### 検討
 
 | Givens | Goal |
 | ------ | ---- |
@@ -97,7 +97,7 @@ $$
 | $P(\lbrace a_m \rbrace)$ | |
 | $A_m \coloneqq \lbrace a_m, a_{m + 1}, \dotsc \rbrace$ | |
 
-### 証明
+#### 証明
 
 $P(\lbrace a_m \rbrace)$ であることから $\forall m \ge N \forall n \ge N$ に対して
 
@@ -115,11 +115,11 @@ $$
 したがって集合 $A_m$ は有界である。
 $\blacksquare$
 
-## 補題 2
+### 補題 2
 
 数列 $\lbrace \alpha_m \rbrace$ は上に有界かつ非減少列である。
 
-### 検討
+#### 検討
 
 | Givens | Goal |
 | ------ | ---- |
@@ -127,7 +127,7 @@ $\blacksquare$
 | $\exists L_m \in \R \exists U_m \in \R(\forall x \in A_m(L_m \lt x \lt U_m))$ | $\forall m(\alpha_m \le \alpha_{m + 1})$ |
 | $\lbrace \alpha_m\rbrace \coloneqq \lbrace \inf A_m \rbrace$ | |
 
-### 証明
+#### 証明
 
 数列の有界性は $A_m$ の有界性と数列の定義から次のようにしてわかる：
 
@@ -152,11 +152,11 @@ $$
 以上により、数列 $\lbrace \alpha_m \rbrace$ は有界な非減少列である。
 $\blacksquare$
 
-## 補題 3
+### 補題 3
 
 $\displaystyle \lim_{m \to \infty}\alpha_m = \lim_{m \to\infty}a_m.$
 
-### 検討
+#### 検討
 
 | Givens | Goal |
 | ------ | ---- |
@@ -169,7 +169,7 @@ $\displaystyle \lim_{m \to \infty}\alpha_m = \lim_{m \to\infty}a_m.$
 「有界かつ単調な数列は収束する」を適用してある。
 数列 $\lbrace \alpha_m \rbrace$ が補題 2 の仮定を満たせば収束する。
 
-### 証明
+#### 証明
 
 $\alpha = \displaystyle \lim_{m \to \infty}\alpha_m$ より
 
@@ -209,7 +209,7 @@ $\varepsilon > 0$ は任意だから $\alpha_m, a_m$ はどちらも $\alpha$ �
 つまり $Q(\lbrace a_m \rbrace, \alpha)$ が成り立つ。
 $\blacksquare$
 
-## 総合
+### 総合
 
 補題 1 $\implies$ 補題 2 $\implies$ 補題 3 $\implies (P(\lbrace a_m \rbrace) \implies \exists\alpha Q(\lbrace a_m \rbrace, \alpha)).$
 

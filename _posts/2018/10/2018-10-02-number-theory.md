@@ -37,6 +37,7 @@ tags: math
   In [336]: descent_method(557, 55, 12049)
   Out[336]: (105, 32)
   ```
+
 * 2 平方和定理の中途半端な素因数分解 $m = p_1 p_2 \dotsm p_r M$ がおもしろい。
 * 練習問題 27.7. が降下法の一般バージョンの実装。素因数分解、平方和定理、先の恒等式の多重展開を組み込めばできる。
 * 平方三角数の問題「組 $(m, n)$ が平方三角数ならば組 $(1 + \underline{\quad} m + \underline{\quad} n,\ 1 + \underline{\quad} m + \underline{\quad} n)$ もまた平方三角数である」で数時間悩む。

@@ -5,13 +5,14 @@ tags: math
 
 整列可能定理を仮定して選出公理を結論する証明のノート。
 
-# 選出公理
+## 選出公理
 
 いろいろな表現で主張されるので、好きなものを挙げておく。
 
 まずもっとも正統な言い回しのものを挙げる：
 
 For any set $E$ of nonempty sets, there exists a choice function $f$ defined on $E$.
+
 * A **choice function** is a function $f$, defined on a collection $E$ of nonempty sets,
   such that for every set $A \in E,\; f(A) \in A$.
 
@@ -24,7 +25,7 @@ $$
 
 * コメント：集合族 $E$ が空集合を含まないとは言っていない。
 
-## 証明
+### 証明
 
 空集合を要素として持たない集合族 $E$ に対する選出関数 $f$ を構成するのに
 $E$ の集合全ての和集合をとりそれを $X$ とおく。
@@ -43,7 +44,7 @@ $$
 
 * コメント：この証明のポイントは整列可能定理を $S$ に個別に適用しないことだ。
 
-# 参考資料
+## 参考資料
 
 * [Well-ordering theorem](https://en.wikipedia.org/wiki/Well-ordering_theorem) - Wikipedia: 証明のスケルトンをコンパクトにまとめてある。証明の見通しになる。
 

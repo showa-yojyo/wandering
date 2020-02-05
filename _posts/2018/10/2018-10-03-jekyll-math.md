@@ -5,11 +5,9 @@ tags: jekyll javascript mathjax
 
 次のようにして MathJax インライン数式をマークアップしたい。
 
-{% raw %}
-```
+```text
 \( expression \)
 ```
-{% endraw %}
 
 そのため、私は次のような JavaScript を書いて（詳細は読書ノートを参照して欲しい）
 Jekyll ブログの各ページ共通ヘッダーが `script` タグでこれをインクルードするように小細工している。

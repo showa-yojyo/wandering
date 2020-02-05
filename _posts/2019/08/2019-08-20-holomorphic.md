@@ -5,13 +5,13 @@ tags: math
 
 熊原啓作著『新訂解析学』の学習ノート第四回。居眠りしてあまり消化できなかった。
 
-# 正則関数の性質
+## 正則関数の性質
 
 * 正則関数は $C^\omega$ 級関数である。
 * 一致の定理が成り立つ
 * 等角写像（次回以降）
 
-## Taylor 級数展開
+### Taylor 級数展開
 
 しばらくの間次を仮定する：
 
@@ -50,8 +50,8 @@ tags: math
   この式変形には次の関係（等比級数の和の公式を逆に見る）を利用した：
 
   $$
-  \frac{1}{\zeta - z} = \frac{1}{\zeta - z_0}\sum_{k = 0}^{n - 1}\left(\frac{z - z_0}{\zeta - z_0}\right)^k
-  + \frac{(z - z_0)^n}{(\zeta - z)(\zeta - z_0)^n}.
+  \frac{1}{\zeta - z} = \frac{1}{\zeta - z_0}
+  \sum_{k = 0}^{n - 1}\left(\frac{z - z_0}{\zeta - z_0}\right)^k + \frac{(z - z_0)^n}{(\zeta - z)(\zeta - z_0)^n}.
   $$
 
   あとは $\lvert \rho_n \rvert$ を評価して適当に極限を検討する。

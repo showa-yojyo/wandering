@@ -5,7 +5,7 @@ tags: math
 
 Green の定理、Stokes の定理、Gauss の発散定理のノート。
 
-# Green の定理
+## Green の定理
 
 $D$ を平面の領域、$F, G$ を $D$ 上で定義された $C^1$ 級関数とする：
 
@@ -14,7 +14,7 @@ $$
 = \iint_D\!\left(\frac{\partial G(x, y)}{\partial x} - \frac{\partial F(x, y)}{\partial y}\right)\,\mathrm dx \mathrm dy
 $$
 
-## 検討：矩形領域で確認する
+### 検討：矩形領域で確認する
 
 $D = {[x_0, x_1]} \times {[y_, y_1]}$ とすると、
 例えば右辺第一項を逐次積分に変換できる：
@@ -58,7 +58,7 @@ $$
 $\spadesuit2$ と $\spadesuit1$ の差をとれば主張の等式だ。
 $\blacksquare$
 
-## 検討：関数で挟まれた領域で確認する
+### 検討：関数で挟まれた領域で確認する
 
 領域 $D$ の境界 $\partial D$ が点 $A, B$ で二つの曲線
 $C_1\colon y = h_1(x),\ C_2 \colon y = h_2(x)$ に分割されているとする。
@@ -96,14 +96,15 @@ $$
 $\clubsuit1$ と $\clubsuit2$ の和を取れば主張の等式を得る。
 $\blacksquare$
 
-## 一般の場合
+### 一般の場合
 
 領域の境界が区分的に $C^1$ 級な Jordan 曲線であることが Green の定理の必要条件だ。
 あとは、複数の領域を連結成分とするような定義域に対しても成り立つようだ。
 
-# Stokes の定理
+## Stokes の定理
 
 Green の定理で妙なのは
+
 * 二変数関数が二つ現れること
 * ベクトル解析の教科書が扱う定理にもかかわらず、ベクトルが表に出てこない
 
@@ -113,13 +114,13 @@ Green の定理で妙なのは
 * そのベクトル関数から Green の定理の被積分部分をひねりだす
 * 三次元に持ってくる
 
-## 二次元ベクトル化
+### 二次元ベクトル化
 
 $$
 \bm F \coloneqq F(x, y)\bm e_x + G(x, y)\bm e_y.
 $$
 
-## 被積分関数をベクトル関数で表す
+### 被積分関数をベクトル関数で表す
 
 領域の位置ベクトルを $\bm r \coloneqq x\bm e_x + y\bm e_y$ と置いて微分する：
 
@@ -139,7 +140,7 @@ $$
 
 スカラー積が 1-form になることは覚えておこう。
 
-## 三次元に高める
+### 三次元に高める
 
 ベクトル関数 $\bm F$ に戻り、これをいったん $z = 0$ に埋め込んで（？）演算 $\nabla\times$ を施す。
 
@@ -221,6 +222,7 @@ $$
     F_x & 0 & 0
   \end{vmatrix}
 = \frac{\partial F_x}{\partial z}\bm e_y
+
 - \frac{\partial F_x}{\partial y}\bm e_z.
 $$
 
@@ -230,6 +232,7 @@ $$
 \tag*{$\heartsuit1$}
 (\nabla \times F_x\bm e_x)\cdot \bm n
 = \frac{\partial F_x}{\partial z}\bm e_y \cdot \bm n
+
 - \frac{\partial F_x}{\partial y}\bm e_z \cdot \bm n
 $$
 
@@ -258,6 +261,7 @@ $$
 \begin{aligned}
 (\nabla \times F_x\bm e_x)\cdot \bm n
 &= -\frac{\partial F_x}{\partial z}\frac{\partial f(x, y)}{\partial y}\bm n \cdot \bm e_z
+
 - \frac{\partial F_x}{\partial y}\bm e_z \cdot \bm n\\
 &= -\left(\frac{\partial F_x}{\partial z}\frac{\partial f(x, y)}{\partial y} + \frac{\partial F_x}{\partial y}\right)\bm e_z \cdot \bm n\\
 &= -\left(\frac{\partial F_x}{\partial z}\frac{\partial z}{\partial y} + \frac{\partial F_x}{\partial y}\right)\bm e_z \cdot \bm n.
@@ -326,7 +330,7 @@ $$
 $\heartsuit3, \heartsuit4$ を加えて $\heartsuit0$ の（左辺と右辺が入れ替わった）等式を得る。
 $\blacksquare$
 
-# Gauss の発散定理
+## Gauss の発散定理
 
 **定理**：
 $V$ を区分的に $C^1$ 級の閉曲面で囲まれた有界な連結開集合とし、
@@ -437,9 +441,11 @@ $$
 \begin{aligned}
 \iint_{\partial V}\!F_{x} \bm e_{x} \cdot \bm n\,\mathrm dS
 &= \iint_{\partial V(t)}\!F_{x} \bm e_{x} \cdot \bm n\,\mathrm dS
- + \iint_{\partial V(b)}\!F_{x} \bm e_{x} \cdot \bm n\,\mathrm dS\\
+
++ \iint_{\partial V(b)}\!F_{x} \bm e_{x} \cdot \bm n\,\mathrm dS\\
 &= \iint_B\! F_x(f_2(y, z), y, z)\,\mathrm dA
-  - \iint_B\! F_x(f_1(y, z), y, z)\,\mathrm dA\\
+
+- \iint_B\! F_x(f_1(y, z), y, z)\,\mathrm dA\\
 &= \iiint_V\! \frac{\partial F_x}{\partial x}\,\mathrm dV.
 \end{aligned}
 $$
@@ -449,7 +455,7 @@ $$
 $\clubsuit1 \implies \clubsuit0$ より、定理の主張は成り立つ。
 $\blacksquare$
 
-# 参考資料
+## 参考資料
 
 * 村上雅人著『なるほどベクトル解析』
 * [16.9 The Divergence Theorem](https://www.whitman.edu/mathematics/calculus_online/section16.09.html)

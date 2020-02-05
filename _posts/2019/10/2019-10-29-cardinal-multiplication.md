@@ -5,7 +5,7 @@ tags: math
 
 基数の積の定義や性質を復習する。本稿では集合 $X$ の基数を $\lvert X \rvert$ で表す。
 
-# 定義
+## 定義
 
 $A, B$ を集合とし、$\mathfrak{a} = \lvert A \rvert$,
 $\mathfrak{b} = \lvert B \rvert$ とする。
@@ -20,11 +20,11 @@ $$
 * コメント：和の定義では直和を用いた。一方、積のそれでは直積を用いる。
   いずれにせよ、派生集合の基数で定義される。
 
-# 性質
+## 性質
 
 基数の積のもつ性質をいくつか見ていく。
 
-## 基数の乗法に関する恒等元
+### 基数の乗法に関する恒等元
 
 $1$ を集合 $\lbrace \varnothing \rbrace$ の基数とする： $1 \coloneqq \lvert \lbrace \varnothing \rbrace \rvert.$
 
@@ -65,7 +65,7 @@ $\forall a \exists b(a \in A \implies b = (\varnothing, a) \in \lbrace \varnothi
 $\mathfrak{a}1 = \mathfrak{a}$ の証明も同様である。
 $\blacksquare$
 
-## 結合律
+### 結合律
 
 **命題**：$\mathfrak{a, b, c}$ を基数とする。このとき：
 
@@ -101,7 +101,7 @@ $$
 結論は真である。
 $\blacksquare$
 
-## 可換律
+### 可換律
 
 **命題**：$\mathfrak{a, b}$ を基数とする。このとき：
 
@@ -121,7 +121,7 @@ $$
 \quad\blacksquare
 $$
 
-## 非減少性
+### 非減少性
 
 **命題**：$\mathfrak{a, b, c}$ を基数とする。このとき：
 
@@ -161,7 +161,7 @@ $$
 ゆえに写像 $g$ は単射である。
 $\blacksquare$
 
-## 分配律
+### 分配律
 
 **命題**：$\mathfrak{a, b, c}$ を基数とする。このとき：
 
@@ -205,6 +205,6 @@ $$
 \end{aligned}
 $$
 
-# 参考資料
+## 参考資料
 
 * [Category:Cardinals](https://proofwiki.org/wiki/Category:Cardinals) - ProofWiki
