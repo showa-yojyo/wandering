@@ -22,5 +22,5 @@ Python の非同期プログラミングの続き。きのう書いたような�
   bash$ getclip | xargs -I {} bash -c "download_mp4 {}"
   ```
 
-[11003418]: https://stackoverflow.com/questions/11003418/calling-shell-functions-with-xargs
-[41063331]: https://stackoverflow.com/questions/41063331/how-to-use-asyncio-with-existing-blocking-library
+[11003418]: <https://stackoverflow.com/questions/11003418/calling-shell-functions-with-xargs>
+[41063331]: <https://stackoverflow.com/questions/41063331/how-to-use-asyncio-with-existing-blocking-library>
