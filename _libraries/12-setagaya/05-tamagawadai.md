@@ -10,4 +10,4 @@ title: 世田谷区玉川台図書館
 
 {% include_cached libraries/setagaya-office-hours.html
     library_name="玉川台図書館"
-    library_url="<http://www.city.setagaya.lg.jp/shisetsu/1214/1266/d00067048.html"> %}
+    library_url="http://www.city.setagaya.lg.jp/shisetsu/1214/1266/d00067048.html" %}

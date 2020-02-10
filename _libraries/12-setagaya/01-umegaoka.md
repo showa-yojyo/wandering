@@ -16,4 +16,4 @@ title: 世田谷区梅丘図書館
 
 {% include_cached libraries/setagaya-office-hours.html
     library_name="梅丘図書館"
-    library_url="<http://www.city.setagaya.lg.jp/shisetsu/1214/1266/d00135291.html"> %}
+    library_url="http://www.city.setagaya.lg.jp/shisetsu/1214/1266/d00135291.html" %}

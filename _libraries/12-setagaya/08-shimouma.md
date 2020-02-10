@@ -12,4 +12,4 @@ title: 世田谷区下馬図書館
 
 {% include_cached libraries/setagaya-office-hours.html
     library_name="下馬図書館"
-    library_url="<http://www.city.setagaya.lg.jp/shisetsu/1214/1266/d00145332.html"> %}
+    library_url="http://www.city.setagaya.lg.jp/shisetsu/1214/1266/d00145332.html" %}
