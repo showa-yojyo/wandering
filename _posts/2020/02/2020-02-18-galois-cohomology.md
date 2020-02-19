@@ -39,6 +39,8 @@ $$
 * シグマ各項の $f$ の引数の $\sigma_{i-1}\sigma_{i+1}$ に注意。
 * 右辺の末項の $f$ の引数には $\sigma_{n+1}$ がない。
 
+----
+
 **例（低次数）**：$x \in N,$ $\rho, \sigma, \tau \in G$ とする。
 
 $$
@@ -50,6 +52,13 @@ $$
 &= \rho f(\sigma, \tau) + -f(\rho\sigma, \tau) + f(\rho, \sigma\tau) - f(\rho, \sigma)
 \end{aligned}
 $$
+
+**検討**：推論上の都合により $x$ の代わりに $-x$ を使うこともある。
+
+ここでは群 $N$ を加法的に扱っているのでこう記してあるが、乗法的に扱う場合は当然
+$+, -$ を $\cdot, {}^{-1}$ に置き換えて記すこと。
+
+----
 
 **補題（境界の境界はゼロ）**： $n \in \N$ に対して次が成り立つ：
 
@@ -117,6 +126,7 @@ $$
 **補題（$f \in Z^1$ の条件）**：
 
 $$
+\tag*{$\spadesuit$}
 f \in Z^1(G, N) \iff f(\sigma\tau) = f(\sigma) + \sigma f(\tau).
 $$
 
@@ -251,7 +261,7 @@ $$
 を満たす $\beta \in L^\times$ が存在することが示された。
 $\blacksquare$
 
-**系**： $L/K$ を巡回拡大とし、その Galois 群の生成元を $\sigma$ とする。
+**系（巡回拡大）**： $L/K$ を巡回拡大とし、その Galois 群の生成元を $\sigma$ とする。
 
 このとき $\alpha \in L$ が $\operatorname{N}_{L/K}\alpha = 1$ を満たすならば、ある
 $\beta \in L$ が存在して $\alpha = \beta/\sigma(\beta)$ を満たす。
@@ -331,7 +341,7 @@ $$
 とする。
 
 $$
-0 \longrightarrow (1 - \sigma)\left(\mathbb F_{q^n}^\times\right)
+0 \longrightarrow (1 - \sigma)\mathbb F_{q^n}^\times
 \longrightarrow \mathbb F_{q^n}^\times
 \longrightarrow \operatorname{N}\left(\mathbb F_{q^n}^\times\right)
 \longrightarrow 0
@@ -381,6 +391,209 @@ $\blacksquare$
 
 ----
 
+$L^\times$ ではなく $L$ を（加法群として扱う）を考える。
+
+**命題（$H^0$ は基礎体に等しい）**$H^0(G, L) = K.$
+
+**証明**：$H^0 = Z^0$ の補題と Galois の基本定理から：
+
+$$
+H^0(G, L) = Z^0(G, L) = L^G = K.\quad\blacksquare
+$$
+
+**定理**：$H^1(G, L) = 0.$
+
+**検討**：トレースが全射であることを利用してゼロによる除算を回避する。
+
+**証明**：$\alpha \in L$ を $\operatorname{Tr}_{L/K}\alpha \ne 0$ となるようにとる。
+
+$f \in Z^1(G, L)$ をとる。$r \coloneqq \sum_\tau f(\tau)\tau(\alpha)$ とおく。
+$\sigma \in G$ に対して $\sigma(r)$ を計算すると：
+
+$$
+\def\Tr{ \operatorname{Tr}_{L/K} }
+\begin{aligned}
+\sigma(r) &= \sum_\tau \sigma f(\tau)\sigma\tau(\alpha)\\
+&= \sum_\tau (f(\sigma\tau) - f(\sigma))\sigma\tau(\alpha) & \because \spadesuit\\
+&= \sum_\tau f(\sigma\tau)\sigma\tau(\alpha) - f(\sigma)\sum_\tau \sigma\tau(\alpha)\\
+&= \sum_\tau f(\tau)\tau(\alpha) - f(\sigma) \Tr\alpha\\
+&= r - f(\sigma) \Tr\alpha.
+\end{aligned}
+$$
+
+$\beta \coloneqq -r/\operatorname{Tr}_{L/K}\alpha$ とおく。
+$\operatorname{Tr}_{L/K}\alpha \in K$ だから
+
+$$
+\def\Tr{ \operatorname{Tr}_{L/K} }
+\begin{aligned}
+f(\sigma) &= \frac{r - \sigma(r)}{\Tr\alpha}\\
+&= \sigma(\beta) - \beta\\
+&= (\delta^0\beta)(\sigma).
+\end{aligned}
+$$
+
+したがって $f \in B^1(G, L)$ が示された。
+
+$$
+H^1(G, L) = Z^1(G, L)/B^1(G, L) = 0.
+\quad\blacksquare
+$$
+
+**系**：$\chi \in \operatorname{Hom}(G, L)$ ならばある $\beta \in L$
+が存在して $\chi(\sigma) = \beta - \sigma(\beta)$ を満たす。
+
+**証明**：$\operatorname{Hom}(G, L) \subset Z^1(G, L)$ および前定理
+$H^1(G, L) = 0$ から
+
+$$
+\chi \in \operatorname{Hom}(G, L) \implies \chi \in B^1(G, L).
+$$
+
+すなわちある $\beta \in L$ が存在して
+$(\delta^0\beta)(\chi) = \beta - \sigma(\beta)$
+を満たすことが示された。
+$\blacksquare$
+
+**系（巡回拡大）**：$L/K$ を巡回拡大、$\langle \sigma \rangle \coloneqq \operatorname{Gal}(L/K)$
+とする。
+
+$\alpha \in L$ が $\operatorname{Tr}_{L/K}\alpha = 0$ ならばある
+$\beta \in L$ が存在して $\alpha = \beta - \sigma(\beta)$ を満たす。
+
+**検討**：乗法群のときの系の加法版。
+したがって証明は $\operatorname{N}$ を $\operatorname{Tr}$ に置き換える。
+
+事実、以下の答案はコピー＆ペーストに各種演算子を置換しただけで仕上げた。
+
+**証明**：乗法群のときの系の証明のように $f$ を次のように定義する：
+
+$$
+f(\sigma) = \alpha + \sigma(\alpha) + \dotsb + \sigma^{i-1}(\alpha).
+$$
+
+これが $f \in Z^1(G, L^\times)$ を満たすことをまず示す。
+
+$$
+\def\expand#1{ \alpha + \sigma(\alpha) + \dotsb + \sigma^{#1 - 1}(\alpha)}
+\begin{aligned}
+f(\sigma^i) + \sigma^i(f(\sigma^j))
+&= \expand{i} + \sigma^i(\expand{j})\\
+&= \expand{i} + \sigma^i(\alpha)\sigma^{i+1}(\alpha)\dotsm\sigma^{i + j - 1}(\alpha)\\
+&= \expand{i + j}.
+\end{aligned}
+$$
+
+$i + j \le n - 1$ のときは $f(\sigma^{i + j})$ に等しい。
+
+$i + j \ge n$ のときは $k \coloneqq i + j - n$ として
+
+$$
+\def\expand#1{ \alpha + \sigma(\alpha) + \dotsb + \sigma^{#1 - 1}(\alpha)}
+\expand{n} = \operatorname{Tr}\alpha = 0
+$$
+
+を利用して
+
+$$
+\def\expand#1{ \alpha + \sigma(\alpha) + \dotsb + \sigma^{#1 - 1}(\alpha)}
+\begin{aligned}
+f(\sigma^i) + \sigma^i(f(\sigma^j))
+&= \expand{n}+ \expand{k}\\
+&= f(\sigma^k).
+\end{aligned}
+$$
+
+したがって、いずれの場合においても $f(\sigma^i) + \sigma^if(\sigma^j) = f(\sigma^i) + f(\sigma^j).$
+$f \in Z^1$ の条件から $f \in Z^1(G, L^\times).$
+
+Hilbert の定理 90 から $f \in Z^1(G, L)$ に対して
+$\beta \in L$ が存在して次を満たす：
+
+$$
+f(\sigma^i) = \beta - \sigma^i(\beta).
+$$
+
+とくに $i = 1$ とすれば $\alpha = \beta - \sigma(\beta).$
+$\blacksquare$
+
+----
+
+Galois cohomology の応用として、有限体上の方程式の根の数を求めることができる。
+それを見ていく。
+
+**例**：$y^2 + y = x^7 +x^3$ を $\mathbb F_{2^3}$ 上の方程式とみなす。
+この有限体上の根の数を求める。
+
+$\mathbb F_{2^3}$ は方程式 $X^8 - X = 0$ の根全体と等しい。
+これを $\mathbb F_2$ 上で既約因子分解すると（これは演習で見た記憶がある）：
+
+$$
+X^8 - X = X(X - 1)(X^3 + X^2 + 1)(X^3 + X + 1).
+$$
+
+知りたいのは $x \ne 0, 1$ のときだ。
+
+$\langle \sigma \rangle \coloneqq \operatorname{Gal}(\mathbb F_{2^3}/\mathbb F_2)$ とおく。
+ここで $\sigma$ は $\alpha \longmapsto \alpha^2$ なる自己同型写像とする。
+
+まず $\mathbb F_{2^3}$ 上の根 $(x, y)$ が存在すると仮定する。与式の左辺のトレースは
+
+$$
+\def\Tr{\operatorname{Tr} }
+\begin{aligned}
+\Tr(y^2 + y) &= \Tr(\sigma(y) + y) & \because \sigma = \alpha \mapsto \alpha^2\\
+&= \sigma(\Tr y) + \Tr y & \because \text{$\Tr$ is linear}\\
+&= 2\Tr y & \because \sigma \text{ is automorphism over $\mathbb F_2$}\\
+&= 0.
+\end{aligned}
+$$
+
+根があるならば右辺のトレースが $0$ である必要がある。
+
+$\text{(i)}$ $x^3 + x + 1 = 0$ のとき、そのような $x$ は $3$ 個存在する。このとき
+
+$$
+\def\Tr{\operatorname{Tr} }
+\begin{aligned}
+\Tr(x^7 + x^3)
+&= 1 + \Tr x^3 & \because x^8 = x\\
+&= 1 + x^3 + x^6 + x^{12} & \text{expansion}\\
+&= 1 + x^3 + x^6 + x^5 & \because x^8 = x\\
+&= (x^3 + x + 1)(x^3 + x^2 + x + 1) & \text{factors}\\
+&= 0. & \because x^3 + x + 1 = 0
+\end{aligned}
+$$
+
+ここで巡回拡大の系を応用すると、ある $\beta \in \mathbb F_{2^3}$
+が存在して（存在することが重要）次を満たす：
+
+$$
+x^7 + x^3 = \beta - \sigma(\beta) = \beta + \sigma(\beta).
+$$
+
+したがってこのような $x$ に対して $y^2 + y = \beta + \beta^2,$
+つまり $y = \beta, \beta + 1$ が根になる。
+
+$\text{(ii)}$ $x^3 + x^2 + 1 = 0$ のときは
+
+$$
+\def\Tr{\operatorname{Tr} }
+\begin{aligned}
+\Tr(x^7 + x^3)
+&= \dots = 1 + x^3 + x^6 + x^5\\
+&= 1 + x^3(x^3 + x^2 + 1)\\
+&= 1 \ne 0.
+\end{aligned}
+$$
+
+したがって根は存在しない。
+
+以上から求める根の数は $(0, 0), (0, 1), (1, 0), (1, 1)$ の $4$ 個と
+$\text{(i)}$ の場合の $3 \times 2$ 個の合計 $10$ 個である。
+$\blacksquare$
+
+----
 
 ## 参考
 
