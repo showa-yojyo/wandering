@@ -40,7 +40,7 @@
 		"body": [
 			"## 読み物",
 			"",
-			"* ${0}TODO: 朝刊（朝日、産経、東京）",
+			"* TODO: 朝刊（${0}朝日、産経、東京）",
 			"* TODO: 夕刊（朝日、東京）",
 			"* TODO: 雑誌",
 			"* TODO: 書籍",
@@ -204,119 +204,100 @@
 		"body": "[$1]: {{ site.baseurl }}{% post_url $2 %}$0",
 		"description": "post_url directive"
 	},
-	"LibraryChiyoda00": {
+	"千代田区千代田図書館": {
 		"scope": "html,markdown",
 		"prefix": "chiyoda-00",
-		"body": "${1|[千代田区千代田図書館][chiyoda-00],[chiyoda-00]: {{ site.baseurl }}{% link _libraries/01-chiyoda/00-chiyoda.md %}|}",
-		"description": "千代田区千代田図書館"
+		"body": "${1|[千代田区千代田図書館][chiyoda-00],[chiyoda-00]: {{ site.baseurl }}{% link _libraries/01-chiyoda/00-chiyoda.md %}|}"
 	},
-	"LibraryChiyoda03": {
+	"千代田区昌平まちかど図書館": {
 		"scope": "html,markdown",
 		"prefix": "chiyoda-03",
-		"body": "${1|[千代田区昌平まちかど図書館][chiyoda-03],[chiyoda-03]: {{ site.baseurl }}{% link _libraries/01-chiyoda/03-shohei.md %}|}",
-		"description": "千代田区昌平まちかど図書館"
+		"body": "${1|[千代田区昌平まちかど図書館][chiyoda-03],[chiyoda-03]: {{ site.baseurl }}{% link _libraries/01-chiyoda/03-shohei.md %}|}"
 	},
-	"LibraryChiyoda06": {
+	"千代田区男女共同参画センター MIW": {
 		"scope": "html,markdown",
 		"prefix": "chiyoda-06",
-		"body": "${1|[千代田区男女共同参画センター MIW][chiyoda-06],[chiyoda-06]: {{ site.baseurl }}{% link _libraries/01-chiyoda/06-miw.md %}|}",
-		"description": "千代田区男女共同参画センター MIW"
+		"body": "${1|[千代田区男女共同参画センター MIW][chiyoda-06],[chiyoda-06]: {{ site.baseurl }}{% link _libraries/01-chiyoda/06-miw.md %}|}"
 	},
-	"LibraryKoto00": {
+	"江東区江東図書館": {
 		"scope": "html,markdown",
 		"prefix": "koto-00",
-		"body": "${1|[江東区江東図書館][koto-00],[koto-00]: {{ site.baseurl }}{% link _libraries/08-koto/00-koto.md %}|}",
-		"description": "江東区江東図書館"
+		"body": "${1|[江東区江東図書館][koto-00],[koto-00]: {{ site.baseurl }}{% link _libraries/08-koto/00-koto.md %}|}"
 	},
-	"LibraryKoto07": {
+	"江東区亀戸図書館": {
 		"scope": "html,markdown",
 		"prefix": "koto-07",
-		"body": "${1|[江東区亀戸図書館][koto-07],[koto-07]: {{ site.baseurl }}{% link _libraries/08-koto/07-kameido.md %}|}",
-		"description": "江東区亀戸図書館"
+		"body": "${1|[江東区亀戸図書館][koto-07],[koto-07]: {{ site.baseurl }}{% link _libraries/08-koto/07-kameido.md %}|}"
 	},
-	"LibraryKoto09": {
+	"江東区東大島図書館": {
 		"scope": "html,markdown",
 		"prefix": "koto-09",
-		"body": "${1|[江東区東大島図書館][koto-09],[koto-09]: {{ site.baseurl }}{% link _libraries/08-koto/09-higashiojima.md %}|}",
-		"description": "江東区東大島図書館"
+		"body": "${1|[江東区東大島図書館][koto-09],[koto-09]: {{ site.baseurl }}{% link _libraries/08-koto/09-higashiojima.md %}|}"
 	},
-	"LibraryShinagawa02": {
+	"品川区荏原図書館": {
 		"scope": "html,markdown",
 		"prefix": "shinagawa-02",
-		"body": "${1|[品川区荏原図書館][shinagawa-02],[shinagawa-02]: {{ site.baseurl }}{% link _libraries/09-shinagawa/02-ebara.md %}|}",
-		"description": "品川区荏原図書館"
+		"body": "${1|[品川区荏原図書館][shinagawa-02],[shinagawa-02]: {{ site.baseurl }}{% link _libraries/09-shinagawa/02-ebara.md %}|}"
 	},
-	"LibraryShinagawa03": {
+	"品川区南大井図書館": {
 		"scope": "html,markdown",
 		"prefix": "shinagawa-03",
-		"body": "${1|[品川区南大井図書館][shinagawa-03],[shinagawa-03]: {{ site.baseurl }}{% link _libraries/09-shinagawa/03-minamioi.md %}|}",
-		"description": "品川区南大井図書館"
+		"body": "${1|[品川区南大井図書館][shinagawa-03],[shinagawa-03]: {{ site.baseurl }}{% link _libraries/09-shinagawa/03-minamioi.md %}|}"
 	},
-	"LibraryShinagawa07": {
+	"品川区五反田図書館": {
 		"scope": "html,markdown",
 		"prefix": "shinagawa-07",
-		"body": "${1|[品川区五反田図書館][shinagawa-07],[shinagawa-07]: {{ site.baseurl }}{% link _libraries/09-shinagawa/07-gotanda.md %}|}",
-		"description": "品川区五反田図書館"
+		"body": "${1|[品川区五反田図書館][shinagawa-07],[shinagawa-07]: {{ site.baseurl }}{% link _libraries/09-shinagawa/07-gotanda.md %}|}"
 	},
-	"LibraryOta02": {
+	"大田区大森東図書館": {
 		"scope": "html,markdown",
 		"prefix": "ota-02",
-		"body": "${1|[大田区大森東図書館][ota-02],[ota-02]: {{ site.baseurl }}{% link _libraries/11-ota/02-omorihigashi.md %}|}",
-		"description": "大田区大森東図書館"
+		"body": "${1|[大田区大森東図書館][ota-02],[ota-02]: {{ site.baseurl }}{% link _libraries/11-ota/02-omorihigashi.md %}|}"
 	},
-	"LibraryOta03": {
+	"大田区大森西図書館": {
 		"scope": "html,markdown",
 		"prefix": "ota-03",
-		"body": "${1|[大田区大森西図書館][ota-03],[ota-03]: {{ site.baseurl }}{% link _libraries/11-ota/03-omorinishi.md %}|}",
-		"description": "大田区大森西図書館"
+		"body": "${1|[大田区大森西図書館][ota-03],[ota-03]: {{ site.baseurl }}{% link _libraries/11-ota/03-omorinishi.md %}|}"
 	},
-	"LibraryOta04": {
+	"大田区入新井図書館": {
 		"scope": "html,markdown",
 		"prefix": "ota-04",
-		"body": "${1|[大田区入新井図書館][ota-04],[ota-04]: {{ site.baseurl }}{% link _libraries/11-ota/04-iriarai.md %}|}",
-		"description": "大田区入新井図書館"
+		"body": "${1|[大田区入新井図書館][ota-04],[ota-04]: {{ site.baseurl }}{% link _libraries/11-ota/04-iriarai.md %}|}"
 	},
-	"LibraryOta05": {
+	"大田区馬込図書館": {
 		"scope": "html,markdown",
 		"prefix": "ota-05",
-		"body": "${1|[大田区馬込図書館][ota-05],[ota-05]: {{ site.baseurl }}{% link _libraries/11-ota/05-magome.md %}|}",
-		"description": "大田区馬込図書館"
+		"body": "${1|[大田区馬込図書館][ota-05],[ota-05]: {{ site.baseurl }}{% link _libraries/11-ota/05-magome.md %}|}"
 	},
-	"LibraryOta06": {
+	"大田区池上図書館": {
 		"scope": "html,markdown",
 		"prefix": "ota-06",
-		"body": "${1|[大田区池上図書館][ota-06],[ota-06]: {{ site.baseurl }}{% link _libraries/11-ota/06-ikegami.md %}|}",
-		"description": "大田区池上図書館"
+		"body": "${1|[大田区池上図書館][ota-06],[ota-06]: {{ site.baseurl }}{% link _libraries/11-ota/06-ikegami.md %}|}"
 	},
-	"LibraryOta07": {
+	"大田区久が原図書館": {
 		"scope": "html,markdown",
 		"prefix": "ota-07",
-		"body": "${1|[大田区久が原図書館][ota-07],[ota-07]: {{ site.baseurl }}{% link _libraries/11-ota/07-kugahara.md %}|}",
-		"description": "大田区久が原図書館"
+		"body": "${1|[大田区久が原図書館][ota-07],[ota-07]: {{ site.baseurl }}{% link _libraries/11-ota/07-kugahara.md %}|}"
 	},
-	"LibraryOta09": {
+	"大田区浜竹図書館": {
 		"scope": "html,markdown",
 		"prefix": "ota-09",
-		"body": "${1|[大田区浜竹図書館][ota-09],[ota-09]: {{ site.baseurl }}{% link _libraries/11-ota/09-hamatake.md %}|}",
-		"description": "大田区浜竹図書館"
+		"body": "${1|[大田区浜竹図書館][ota-09],[ota-09]: {{ site.baseurl }}{% link _libraries/11-ota/09-hamatake.md %}|}"
 	},
-	"LibraryOta11": {
+	"大田区六郷図書館": {
 		"scope": "html,markdown",
 		"prefix": "ota-11",
-		"body": "${1|[大田区六郷図書館][ota-11],[ota-11]: {{ site.baseurl }}{% link _libraries/11-ota/11-rokugo.md %}|}",
-		"description": "大田区六郷図書館"
+		"body": "${1|[大田区六郷図書館][ota-11],[ota-11]: {{ site.baseurl }}{% link _libraries/11-ota/11-rokugo.md %}|}"
 	},
-	"LibraryOta13": {
+	"大田区多摩川図書館": {
 		"scope": "html,markdown",
 		"prefix": "ota-13",
-		"body": "${1|[大田区多摩川図書館][ota-11],[ota-13]: {{ site.baseurl }}{% link _libraries/11-ota/13-tamagawa.md %}|}",
-		"description": "大田区多摩川図書館"
+		"body": "${1|[大田区多摩川図書館][ota-11],[ota-13]: {{ site.baseurl }}{% link _libraries/11-ota/13-tamagawa.md %}|}"
 	},
-	"LibraryOta15": {
+	"大田区蒲田駅前図書館": {
 		"scope": "html,markdown",
 		"prefix": "ota-15",
-		"body": "${1|[大田区蒲田駅前図書館][ota-15],[ota-15]: {{ site.baseurl }}{% link _libraries/11-ota/15-kamataekimae.md %}|}",
-		"description": "大田区蒲田駅前図書館"
+		"body": "${1|[大田区蒲田駅前図書館][ota-15],[ota-15]: {{ site.baseurl }}{% link _libraries/11-ota/15-kamataekimae.md %}|}"
 	},
 	"LibraryNakano00a": {
 		"scope": "html,markdown",
@@ -366,59 +347,40 @@
 		"body": "[kita-03]: {{ site.baseurl }}{% link _libraries/17-kita/03-akabane.md %}",
 		"description": "北区赤羽図書館（脚注用）"
 	},
-	"LibraryArakawa01": {
+	"荒川区ゆいの森あらかわ": {
 		"scope": "html,markdown",
 		"prefix": "arakawa-00",
-		"body": "${1|[荒川区ゆいの森あらかわ][arakawa-00],[arakawa-00]: {{ site.baseurl }}{% link _libraries/18-arakawa/00-central.md %}|}",
-		"description": "荒川区ゆいの森あらかわ"
+		"body": "${1|[荒川区ゆいの森あらかわ][arakawa-00],[arakawa-00]: {{ site.baseurl }}{% link _libraries/18-arakawa/00-central.md %}|}"
 	},
-	"LibrarySumida00": {
+	"墨田区ひきふね図書館": {
 		"scope": "html,markdown",
 		"prefix": "sumida-00",
-		"body": "${1|[墨田区ひきふね図書館][sumida-00],[sumida-00]: {{ site.baseurl }}{% link _libraries/07-sumida/00-hikifune.md %}|}",
-		"description": "墨田区ひきふね図書館"
+		"body": "${1|[墨田区ひきふね図書館][sumida-00],[sumida-00]: {{ site.baseurl }}{% link _libraries/07-sumida/00-hikifune.md %}|}"
 	},
-	"LibrarySumida01": {
+	"墨田区緑図書館": {
 		"scope": "html,markdown",
 		"prefix": "sumida-01",
-		"body": "${1|[墨田区緑図書館][sumida-01],[sumida-01]: {{ site.baseurl }}{% link _libraries/07-sumida/01-midori.md %}|}",
-		"description": "墨田区緑図書館"
+		"body": "${1|[墨田区緑図書館][sumida-01],[sumida-01]: {{ site.baseurl }}{% link _libraries/07-sumida/01-midori.md %}|}"
 	},
-	"LibrarySumida02a": {
+	"墨田区立花図書館": {
 		"scope": "html,markdown",
 		"prefix": "sumida-02",
-		"body": "[墨田区立花図書館][sumida-02]",
-		"description": "墨田区立花図書館（本文用）"
+		"body": "${1|[墨田区立花図書館][sumida-02],[sumida-02]: {{ site.baseurl }}{% link _libraries/07-sumida/02-tachibana.md %}|}"
 	},
-	"LibrarySumida02b": {
-		"scope": "html,markdown",
-		"prefix": "sumida-02",
-		"body": "[sumida-02]: {{ site.baseurl }}{% link _libraries/07-sumida/02-tachibana.md %}",
-		"description": "墨田区立花図書館（脚注用）"
-	},
-	"LibrarySumida03a": {
+	"墨田区八広図書館": {
 		"scope": "html,markdown",
 		"prefix": "sumida-03",
-		"body": "[墨田区八広図書館][sumida-03]",
-		"description": "墨田区八広図書館（本文用）"
+		"body": "${1|[墨田区八広図書館][sumida-03],[sumida-03]: {{ site.baseurl }}{% link _libraries/07-sumida/03-yahiro.md %}|}"
 	},
-	"LibrarySumida03b": {
-		"scope": "html,markdown",
-		"prefix": "sumida-03",
-		"body": "[sumida-03]: {{ site.baseurl }}{% link _libraries/07-sumida/03-yahiro.md %}",
-		"description": "墨田区八広図書館（脚注用）"
-	},
-	"LibraryKatsushika01": {
+	"葛飾区立石図書館": {
 		"scope": "html,markdown",
 		"prefix": "katsushika-01",
-		"body": "${1|[葛飾区立石図書館][katsushika-01],[katsushika-01]: {{ site.baseurl }}{% link _libraries/22-katsushika/01-tateishi.md %}|}",
-		"description": "葛飾区立石図書館"
+		"body": "${1|[葛飾区立石図書館][katsushika-01],[katsushika-01]: {{ site.baseurl }}{% link _libraries/22-katsushika/01-tateishi.md %}|}"
 	},
-	"Seiyu": {
+	"西友": {
 		"scope": "html,markdown",
 		"prefix": "seiyu",
-		"body": "西友${1|青井店,赤羽店,阿佐ヶ谷店,浅草 ROX 食品館,江戸川中央店,大森店,荻窪店,北綾瀬店,錦糸町店,三軒茶屋店,サンシャイン西友,新小岩店,巣鴨店,関町店,高田馬場店,東陽町店,豊玉南店,中野店,成増店,矢切ノ渡店|}",
-		"description": "西友各店"
+		"body": "西友${1|青井店,赤羽店,阿佐ヶ谷店,浅草 ROX 食品館,江戸川中央店,大森店,荻窪店,北綾瀬店,錦糸町店,三軒茶屋店,サンシャイン西友,新小岩店,巣鴨店,関町店,高田馬場店,東陽町店,豊玉南店,中野店,成増店,矢切ノ渡店|}"
 	},
 	"銭湯リスト": {
 		"scope": "html,markdown",
@@ -466,13 +428,11 @@
 	"タイトー F ステーション": {
 		"scope": "html,markdown",
 		"prefix": "taito",
-		"body": "タイトー F ステーションオリナス${1|西葛西店,錦糸町店|}",
-		"description": "タイトー F ステーション"
+		"body": "タイトー F ステーションオリナス${1|西葛西店,錦糸町店|}"
 	},
 	"ハイテクランドセガ": {
 		"scope": "html,markdown",
 		"prefix": "hls",
-		"body": "ハイテクランドセガ${1|池上店,渋谷店,立石店|}",
-		"description": "ハイテクランドセガ"
+		"body": "ハイテクランドセガ${1|池上店,渋谷店,立石店|}"
 	}
 }
