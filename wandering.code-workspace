@@ -3,5 +3,10 @@
 		{
 			"path": "."
 		}
-	]
+	],
+	"settings": {
+		"markdownlint.customRules": [
+			"markdownlint.json"
+		]
+	}
 }
