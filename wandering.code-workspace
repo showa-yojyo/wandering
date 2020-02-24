@@ -5,8 +5,8 @@
 		}
 	],
 	"settings": {
-		"markdownlint.customRules": [
-			"markdownlint.json"
-		]
+		"markdownlint.config": {
+			"MD013": false
+		}
 	}
 }
