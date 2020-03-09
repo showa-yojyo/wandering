@@ -249,6 +249,11 @@
 		"prefix": ["shinagawa-07", "gotanda"],
 		"body": "${1|[品川区五反田図書館][shinagawa-07],[shinagawa-07]: {{ site.baseurl }}{% link _libraries/09-shinagawa/07-gotanda.md %}|}"
 	},
+	"目黒区八雲中央図書館": {
+		"scope": "html,markdown",
+		"prefix": ["meguro-00", "yakumo"],
+		"body": "${1|[目黒区八雲中央図書館][meguro-00],[meguro-00]: {{ site.baseurl }}{% link _libraries/10-meguro/00-yakumochuo.md %}|}"
+	},
 	"大田区大森東図書館": {
 		"scope": "html,markdown",
 		"prefix": "ota-02",
@@ -298,6 +303,16 @@
 		"scope": "html,markdown",
 		"prefix": ["ota-15", "kamataekimae"],
 		"body": "${1|[大田区蒲田駅前図書館][ota-15],[ota-15]: {{ site.baseurl }}{% link _libraries/11-ota/15-kamataekimae.md %}|}"
+	},
+	"世田谷区中央図書館":{
+		"scope": "html,markdown",
+		"prefix": "setagaya-00",
+		"body": "${1|[世田谷区中央図書館][setagaya-00],[setagaya-00]: {{ site.baseurl }}{% link _libraries/12-setagaya/00-central.md %}|}"
+	},
+	"世田谷区下馬図書館":{
+		"scope": "html,markdown",
+		"prefix": ["setagaya-08", "shimouma"],
+		"body": "${1|[世田谷区下馬図書館][setagaya-08],[setagaya-08]: {{ site.baseurl }}{% link _libraries/12-setagaya/08-shimouma.md %}|}",
 	},
 	"LibraryNakano00a": {
 		"scope": "html,markdown",
