@@ -9,8 +9,8 @@ title: 東京 23 区内図書館一覧
 
 ## 区立図書館一覧
 
-{%- assign libraries = site.data.libraries -%}
-{%- assign num_visited = libraries | where: "visited", 1 | size -%}
+{% assign libraries = site.data.libraries %}
+{% assign num_visited = libraries | where: "visited", 1 | size %}
 
 当ブログ責任者は現在 {{ num_visited }} 館を訪問済みだ。
 

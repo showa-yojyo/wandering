@@ -8,8 +8,9 @@ title: 世田谷区中央図書館
 
 * 一階と地下一階の広大なスペースが図書館になっている。
 * 雑誌の陳列がひじょうに多く、雑誌棚が館内 4 箇所に分散して配置されている。
-* 持ち込み PC 席がある。いちおう電源コンセントは存在しないことになっているが、あるテーブル上には……。
+* 地下一階に持ち込み PC 席がある。階段そばの島 4 席に電源コンセントあり。
+  また、その一帯で Free Wi-Fi 利用可能。
 
 {% include_cached libraries/setagaya-office-hours.html
     library_name="中央図書館"
-    library_url="http://www.city.setagaya.lg.jp/shisetsu/1214/1266/d00120590.html" %}
+    library_url="https://libweb.city.setagaya.tokyo.jp/main/list_00101info.shtml" %}

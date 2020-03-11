@@ -7,4 +7,4 @@ title: 世田谷区池尻図書室
 
 {% include_cached libraries/setagaya-office-hours.html
     library_name="池尻図書室"
-    library_url="http://www.city.setagaya.lg.jp/shisetsu/1214/1267/d00122482.html" %}
+    library_url="https://libweb.city.setagaya.tokyo.jp/main/list_00303info.shtml" %}
