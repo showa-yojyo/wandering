@@ -60,7 +60,7 @@ title: 東京 23 区内図書館一覧
 * [豊島区](https://www.library.toshima.tokyo.jp/)
 * [北区](https://www.library.city.kita.tokyo.jp/)
 * [荒川区](https://www.library.city.arakawa.tokyo.jp/)
-* [板橋区](https://www.lib.city.itabashi.tokyo.jp/)
+* [板橋区](https://www.city.itabashi.tokyo.jp/library/)
 * [練馬区](https://www.lib.nerima.tokyo.jp/)
 * [足立区](https://www.city.adachi.tokyo.jp/chiikibunka/toshokan/)
 * [葛飾区](https://www.lib.city.katsushika.lg.jp/)
