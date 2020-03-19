@@ -74,14 +74,14 @@ $$
 \end{aligned}
 $$
 
-不動点を $(x_*, y_*)$ とすると、線形化は：
+不動点を $(x_\ast, y_\ast)$ とすると、線形化は：
 
 $$
 \begin{aligned}
-f(x, y) &\approx f_x(x_*, y_*)(x - x_*) + f_y(x_*, y_*)(y - y_*)\\
-&= -\frac{a_1}{K_1}x_*(x - x_*) -\frac{a_1 L}{K_1}x_*(y - y_*),\\
-g(x, y) &\approx g_x(x_*, y_*)(x - x_*) + g_y(x_*, y_*)(y - y_*)\\
-&= -\frac{a_2 M}{K_2}y_*(x - x_*) + -\frac{a_2}{K_2}y_*(y - y_*).
+f(x, y) &\approx f_x(x_\ast, y_\ast)(x - x_\ast) + f_y(x_\ast, y_\ast)(y - y_\ast)\\
+&= -\frac{a_1}{K_1}x_\ast(x - x_\ast) -\frac{a_1 L}{K_1}x_\ast(y - y_\ast),\\
+g(x, y) &\approx g_x(x_\ast, y_\ast)(x - x_\ast) + g_y(x_\ast, y_\ast)(y - y_\ast)\\
+&= -\frac{a_2 M}{K_2}y_\ast(x - x_\ast) + -\frac{a_2}{K_2}y_\ast(y - y_\ast).
 \end{aligned}
 $$
 
