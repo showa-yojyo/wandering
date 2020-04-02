@@ -4,19 +4,16 @@
 		"prefix": "front-matter",
 		"body": [
 			"---",
-			"title: ${1:xxx} 日目（${2|晴れ,曇り,雨|}）（執筆中）",
+			"title: ${1:xxx} 日目（${2|晴れ,曇り,雨|}）（残金：${3:xxx} 円）（執筆中）",
 			"---",
 			"",
 			"* ${0}TODO: 就寝・起床",
 			"* TODO: 朝飯",
 			"* TODO: 昼飯",
-			"* TODO: 晩飯",
 			"* TODO: 風呂（ある場合）",
+			"* TODO: 晩飯",
 			"* TODO: ゲーセン",
-			"",
-			"```text",
-			"TODO: MJ",
-			"```"
+			""
 		],
 		"description": "日記の front matter"
 	},
