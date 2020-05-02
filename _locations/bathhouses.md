@@ -16,6 +16,8 @@ title: 東京 23 区内銭湯一覧
 {%- assign num_visited = bathhouses | where: "visited", 1 | size -%}
 現在、{{ num_visited }} 軒の銭湯を訪問済みだ（コインランドリーのみの利用は勘定に入れない）。
 
+さらに、データはブログ執筆期間当時のものであり、現在の状態は正しく表されていないことを断っておく。
+
 <table>
   <thead>
     <tr>
