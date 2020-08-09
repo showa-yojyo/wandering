@@ -7,7 +7,7 @@ tags: math
 
 ## 練習問題 8.7. 合同式 $ax \equiv c \pmod{m}$ を解くプログラムを書く
 
-途中の関数 `abxyg` については[144 日目]({{ site.baseurl }}{% post_url 2018/10/2018-10-22-diary %})を参照。
+途中の関数 `abxyg` については[144 日目]({% post_url 2018/10/2018-10-22-diary %})を参照。
 
 ```python
 def solve_ax_c_m(a, c, m):

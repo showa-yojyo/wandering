@@ -264,4 +264,4 @@ $$
   * [Quaternion group](https://en.wikipedia.org/wiki/Quaternion_group)
 * [Groups of Order 2p](https://proofwiki.org/wiki/Groups_of_Order_2p) - ProofWiki: Sylow の定理を採用している。
 
-[Cauchy]: {{ site.baseurl }}{% post_url 2019/12/2019-12-01-cauchy %}
+[Cauchy]: {% post_url 2019/12/2019-12-01-cauchy %}

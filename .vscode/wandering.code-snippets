@@ -43,7 +43,7 @@
 	"Link": {
 		"scope": "html,markdown",
 		"prefix": "link",
-		"body": "[$1]({{ site.baseurl }}{% link _libraries/.md} %})",
+		"body": "[$1]({% link _libraries/.md} %})",
 		"description": "link directive"
 	},
 	"画像挿し込み": {
@@ -55,256 +55,256 @@
 	"LinkFooterLibs01Chiyoda": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_01_chiyoda",
-		"body": "[chiyoda-$1]: {{ site.baseurl }}{% link _libraries/01-chiyoda/$1-.md %}",
+		"body": "[chiyoda-$1]: {% link _libraries/01-chiyoda/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs02Chuo": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_02_chuo",
-		"body": "[chuo-$1]: {{ site.baseurl }}{% link _libraries/02-chuo/$1-.md %}",
+		"body": "[chuo-$1]: {% link _libraries/02-chuo/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs03Minato": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_03_minato",
-		"body": "[minato-$1]: {{ site.baseurl }}{% link _libraries/03-minato/$1-.md %}",
+		"body": "[minato-$1]: {% link _libraries/03-minato/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs04Shinjuku": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_04_shinjuku",
-		"body": "[shinjuku-$1]: {{ site.baseurl }}{% link _libraries/04-shinjuku/$1-.md %}",
+		"body": "[shinjuku-$1]: {% link _libraries/04-shinjuku/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs05Bunkyo": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_05_bunkyo",
-		"body": "[bunkyo-$1]: {{ site.baseurl }}{% link _libraries/05-bunkyo/$1-.md %}",
+		"body": "[bunkyo-$1]: {% link _libraries/05-bunkyo/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs06Taito": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_06_taito",
-		"body": "[taito-$1]: {{ site.baseurl }}{% link _libraries/06-taito/$1-.md %}",
+		"body": "[taito-$1]: {% link _libraries/06-taito/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs07Sumida": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_07_sumida",
-		"body": "[sumida-$1]: {{ site.baseurl }}{% link _libraries/07-sumida/$1-.md %}",
+		"body": "[sumida-$1]: {% link _libraries/07-sumida/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs08Koto": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_08_koto",
-		"body": "[koto-$1]: {{ site.baseurl }}{% link _libraries/08-koto/$1-.md %}",
+		"body": "[koto-$1]: {% link _libraries/08-koto/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs09Shinagawa": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_09_shinagawa",
-		"body": "[shinagawa-$1]: {{ site.baseurl }}{% link _libraries/09-shinagawa/$1-.md %}",
+		"body": "[shinagawa-$1]: {% link _libraries/09-shinagawa/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs10Meguro": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_10_meguro",
-		"body": "[meguro-$1]: {{ site.baseurl }}{% link _libraries/10-meguro/$1-.md %}",
+		"body": "[meguro-$1]: {% link _libraries/10-meguro/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs11Ota": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_11_ota",
-		"body": "[ota-$1]: {{ site.baseurl }}{% link _libraries/11-ota/$1-.md %}",
+		"body": "[ota-$1]: {% link _libraries/11-ota/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs12Setagaya": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_12_setagaya",
-		"body": "[setagaya-$1]: {{ site.baseurl }}{% link _libraries/12-setagaya/$1-.md %}",
+		"body": "[setagaya-$1]: {% link _libraries/12-setagaya/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs13Shibuya": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_13_shibuya",
-		"body": "[shibuya-$1]: {{ site.baseurl }}{% link _libraries/13-shibuya/$1-.md %}",
+		"body": "[shibuya-$1]: {% link _libraries/13-shibuya/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs14Nakano": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_14_nakano",
-		"body": "[nakano-$1]: {{ site.baseurl }}{% link _libraries/14-nakano/$1-.md %}",
+		"body": "[nakano-$1]: {% link _libraries/14-nakano/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs15Suginami": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_15_suginami",
-		"body": "[suginami-$1]: {{ site.baseurl }}{% link _libraries/15-suginami/$1-.md %}",
+		"body": "[suginami-$1]: {% link _libraries/15-suginami/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs16Toshima": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_16_toshima",
-		"body": "[toshima-$1]: {{ site.baseurl }}{% link _libraries/16-toshima/$1-.md %}",
+		"body": "[toshima-$1]: {% link _libraries/16-toshima/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs17Kita": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_17_kita",
-		"body": "[kita-$1]: {{ site.baseurl }}{% link _libraries/17-kita/$1-.md %}",
+		"body": "[kita-$1]: {% link _libraries/17-kita/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs18Arakawa": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_18_arakawa",
-		"body": "[arakawa-$1]: {{ site.baseurl }}{% link _libraries/18-arakawa/$1-.md %}",
+		"body": "[arakawa-$1]: {% link _libraries/18-arakawa/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs19Itabashi": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_19_itabashi",
-		"body": "[itabashi-$1]: {{ site.baseurl }}{% link _libraries/19-itabashi/$1-.md %}",
+		"body": "[itabashi-$1]: {% link _libraries/19-itabashi/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs20Nerima": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_20_nerima",
-		"body": "[nerima-$1]: {{ site.baseurl }}{% link _libraries/20-nerima/$1-.md %}",
+		"body": "[nerima-$1]: {% link _libraries/20-nerima/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs21Adachi": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_21_adachi",
-		"body": "[adachi-$1]: {{ site.baseurl }}{% link _libraries/21-adachi/$1-.md %}",
+		"body": "[adachi-$1]: {% link _libraries/21-adachi/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs22Katsushika": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_22_katsushika",
-		"body": "[katsushika-$1]: {{ site.baseurl }}{% link _libraries/22-katsushika/$1-.md %}",
+		"body": "[katsushika-$1]: {% link _libraries/22-katsushika/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"LinkFooterLibs23Edogawa": {
 		"scope": "html,markdown",
 		"prefix": "link_footer_lib_23_edogawa",
-		"body": "[edogawa-$1]: {{ site.baseurl }}{% link _libraries/23-edogawa/$1-.md %}",
+		"body": "[edogawa-$1]: {% link _libraries/23-edogawa/$1-.md %}",
 		"description": "link directive for footer"
 	},
 	"PostUrl": {
 		"scope": "html,markdown",
 		"prefix": "post_url",
-		"body": "[$1]: {{ site.baseurl }}{% post_url $2 %}$0",
+		"body": "[$1]: {% post_url $2 %}$0",
 		"description": "post_url directive"
 	},
 	"千代田区千代田図書館": {
 		"scope": "html,markdown",
 		"prefix": ["chiyoda-00", "chiyoda"],
-		"body": "${1|[千代田区千代田図書館][chiyoda-00],[chiyoda-00]: {{ site.baseurl }}{% link _libraries/01-chiyoda/00-chiyoda.md %}|}"
+		"body": "${1|[千代田区千代田図書館][chiyoda-00],[chiyoda-00]: {% link _libraries/01-chiyoda/00-chiyoda.md %}|}"
 	},
 	"千代田区昌平まちかど図書館": {
 		"scope": "html,markdown",
 		"prefix": ["chiyoda-03", "shohei"],
-		"body": "${1|[千代田区昌平まちかど図書館][chiyoda-03],[chiyoda-03]: {{ site.baseurl }}{% link _libraries/01-chiyoda/03-shohei.md %}|}"
+		"body": "${1|[千代田区昌平まちかど図書館][chiyoda-03],[chiyoda-03]: {% link _libraries/01-chiyoda/03-shohei.md %}|}"
 	},
 	"千代田区男女共同参画センター MIW": {
 		"scope": "html,markdown",
 		"prefix": ["chiyoda-06", "miw"],
-		"body": "${1|[千代田区男女共同参画センター MIW][chiyoda-06],[chiyoda-06]: {{ site.baseurl }}{% link _libraries/01-chiyoda/06-miw.md %}|}"
+		"body": "${1|[千代田区男女共同参画センター MIW][chiyoda-06],[chiyoda-06]: {% link _libraries/01-chiyoda/06-miw.md %}|}"
 	},
 	"江東区江東図書館": {
 		"scope": "html,markdown",
 		"prefix": ["koto-00", "koto"],
-		"body": "${1|[江東区江東図書館][koto-00],[koto-00]: {{ site.baseurl }}{% link _libraries/08-koto/00-koto.md %}|}"
+		"body": "${1|[江東区江東図書館][koto-00],[koto-00]: {% link _libraries/08-koto/00-koto.md %}|}"
 	},
 	"江東区亀戸図書館": {
 		"scope": "html,markdown",
 		"prefix": ["koto-07", "kameido"],
-		"body": "${1|[江東区亀戸図書館][koto-07],[koto-07]: {{ site.baseurl }}{% link _libraries/08-koto/07-kameido.md %}|}"
+		"body": "${1|[江東区亀戸図書館][koto-07],[koto-07]: {% link _libraries/08-koto/07-kameido.md %}|}"
 	},
 	"江東区東大島図書館": {
 		"scope": "html,markdown",
 		"prefix": ["koto-09", "higashiojima"],
-		"body": "${1|[江東区東大島図書館][koto-09],[koto-09]: {{ site.baseurl }}{% link _libraries/08-koto/09-higashiojima.md %}|}"
+		"body": "${1|[江東区東大島図書館][koto-09],[koto-09]: {% link _libraries/08-koto/09-higashiojima.md %}|}"
 	},
 	"品川区荏原図書館": {
 		"scope": "html,markdown",
 		"prefix": ["shinagawa-02", "ebara"],
-		"body": "${1|[品川区荏原図書館][shinagawa-02],[shinagawa-02]: {{ site.baseurl }}{% link _libraries/09-shinagawa/02-ebara.md %}|}"
+		"body": "${1|[品川区荏原図書館][shinagawa-02],[shinagawa-02]: {% link _libraries/09-shinagawa/02-ebara.md %}|}"
 	},
 	"品川区南大井図書館": {
 		"scope": "html,markdown",
 		"prefix": ["shinagawa-03", "minamioi"],
-		"body": "${1|[品川区南大井図書館][shinagawa-03],[shinagawa-03]: {{ site.baseurl }}{% link _libraries/09-shinagawa/03-minamioi.md %}|}"
+		"body": "${1|[品川区南大井図書館][shinagawa-03],[shinagawa-03]: {% link _libraries/09-shinagawa/03-minamioi.md %}|}"
 	},
 	"品川区五反田図書館": {
 		"scope": "html,markdown",
 		"prefix": ["shinagawa-07", "gotanda"],
-		"body": "${1|[品川区五反田図書館][shinagawa-07],[shinagawa-07]: {{ site.baseurl }}{% link _libraries/09-shinagawa/07-gotanda.md %}|}"
+		"body": "${1|[品川区五反田図書館][shinagawa-07],[shinagawa-07]: {% link _libraries/09-shinagawa/07-gotanda.md %}|}"
 	},
 	"目黒区八雲中央図書館": {
 		"scope": "html,markdown",
 		"prefix": ["meguro-00", "yakumo"],
-		"body": "${1|[目黒区八雲中央図書館][meguro-00],[meguro-00]: {{ site.baseurl }}{% link _libraries/10-meguro/00-yakumochuo.md %}|}"
+		"body": "${1|[目黒区八雲中央図書館][meguro-00],[meguro-00]: {% link _libraries/10-meguro/00-yakumochuo.md %}|}"
 	},
 	"大田区大森東図書館": {
 		"scope": "html,markdown",
 		"prefix": "ota-02",
-		"body": "${1|[大田区大森東図書館][ota-02],[ota-02]: {{ site.baseurl }}{% link _libraries/11-ota/02-omorihigashi.md %}|}"
+		"body": "${1|[大田区大森東図書館][ota-02],[ota-02]: {% link _libraries/11-ota/02-omorihigashi.md %}|}"
 	},
 	"大田区大森西図書館": {
 		"scope": "html,markdown",
 		"prefix": "ota-03",
-		"body": "${1|[大田区大森西図書館][ota-03],[ota-03]: {{ site.baseurl }}{% link _libraries/11-ota/03-omorinishi.md %}|}"
+		"body": "${1|[大田区大森西図書館][ota-03],[ota-03]: {% link _libraries/11-ota/03-omorinishi.md %}|}"
 	},
 	"大田区入新井図書館": {
 		"scope": "html,markdown",
 		"prefix": "ota-04",
-		"body": "${1|[大田区入新井図書館][ota-04],[ota-04]: {{ site.baseurl }}{% link _libraries/11-ota/04-iriarai.md %}|}"
+		"body": "${1|[大田区入新井図書館][ota-04],[ota-04]: {% link _libraries/11-ota/04-iriarai.md %}|}"
 	},
 	"大田区馬込図書館": {
 		"scope": "html,markdown",
 		"prefix": ["ota-05", "magome"],
-		"body": "${1|[大田区馬込図書館][ota-05],[ota-05]: {{ site.baseurl }}{% link _libraries/11-ota/05-magome.md %}|}"
+		"body": "${1|[大田区馬込図書館][ota-05],[ota-05]: {% link _libraries/11-ota/05-magome.md %}|}"
 	},
 	"大田区池上図書館": {
 		"scope": "html,markdown",
 		"prefix": ["ota-06", "ikegami"],
-		"body": "${1|[大田区池上図書館][ota-06],[ota-06]: {{ site.baseurl }}{% link _libraries/11-ota/06-ikegami.md %}|}"
+		"body": "${1|[大田区池上図書館][ota-06],[ota-06]: {% link _libraries/11-ota/06-ikegami.md %}|}"
 	},
 	"大田区久が原図書館": {
 		"scope": "html,markdown",
 		"prefix": "ota-07",
-		"body": "${1|[大田区久が原図書館][ota-07],[ota-07]: {{ site.baseurl }}{% link _libraries/11-ota/07-kugahara.md %}|}"
+		"body": "${1|[大田区久が原図書館][ota-07],[ota-07]: {% link _libraries/11-ota/07-kugahara.md %}|}"
 	},
 	"大田区浜竹図書館": {
 		"scope": "html,markdown",
 		"prefix": ["ota-09", "hamatake"],
-		"body": "${1|[大田区浜竹図書館][ota-09],[ota-09]: {{ site.baseurl }}{% link _libraries/11-ota/09-hamatake.md %}|}"
+		"body": "${1|[大田区浜竹図書館][ota-09],[ota-09]: {% link _libraries/11-ota/09-hamatake.md %}|}"
 	},
 	"大田区六郷図書館": {
 		"scope": "html,markdown",
 		"prefix": ["ota-11", "rokugo"],
-		"body": "${1|[大田区六郷図書館][ota-11],[ota-11]: {{ site.baseurl }}{% link _libraries/11-ota/11-rokugo.md %}|}"
+		"body": "${1|[大田区六郷図書館][ota-11],[ota-11]: {% link _libraries/11-ota/11-rokugo.md %}|}"
 	},
 	"大田区多摩川図書館": {
 		"scope": "html,markdown",
 		"prefix": ["ota-13", "tamagawa"],
-		"body": "${1|[大田区多摩川図書館][ota-11],[ota-13]: {{ site.baseurl }}{% link _libraries/11-ota/13-tamagawa.md %}|}"
+		"body": "${1|[大田区多摩川図書館][ota-11],[ota-13]: {% link _libraries/11-ota/13-tamagawa.md %}|}"
 	},
 	"大田区蒲田駅前図書館": {
 		"scope": "html,markdown",
 		"prefix": ["ota-15", "kamataekimae"],
-		"body": "${1|[大田区蒲田駅前図書館][ota-15],[ota-15]: {{ site.baseurl }}{% link _libraries/11-ota/15-kamataekimae.md %}|}"
+		"body": "${1|[大田区蒲田駅前図書館][ota-15],[ota-15]: {% link _libraries/11-ota/15-kamataekimae.md %}|}"
 	},
 	"世田谷区中央図書館":{
 		"scope": "html,markdown",
 		"prefix": "setagaya-00",
-		"body": "${1|[世田谷区中央図書館][setagaya-00],[setagaya-00]: {{ site.baseurl }}{% link _libraries/12-setagaya/00-central.md %}|}"
+		"body": "${1|[世田谷区中央図書館][setagaya-00],[setagaya-00]: {% link _libraries/12-setagaya/00-central.md %}|}"
 	},
 	"世田谷区下馬図書館":{
 		"scope": "html,markdown",
 		"prefix": ["setagaya-08", "shimouma"],
-		"body": "${1|[世田谷区下馬図書館][setagaya-08],[setagaya-08]: {{ site.baseurl }}{% link _libraries/12-setagaya/08-shimouma.md %}|}",
+		"body": "${1|[世田谷区下馬図書館][setagaya-08],[setagaya-08]: {% link _libraries/12-setagaya/08-shimouma.md %}|}",
 	},
 	"LibraryNakano00a": {
 		"scope": "html,markdown",
@@ -315,7 +315,7 @@
 	"LibraryNakano00b": {
 		"scope": "html,markdown",
 		"prefix": "nakano-00",
-		"body": "[nakano-00]: {{ site.baseurl }}{% link _libraries/14-nakano/00-central.md %}",
+		"body": "[nakano-00]: {% link _libraries/14-nakano/00-central.md %}",
 		"description": "中野区中央図書館（脚注用）"
 	},
 	"LibraryKita00a": {
@@ -327,7 +327,7 @@
 	"LibraryKita00b": {
 		"scope": "html,markdown",
 		"prefix": "kita-00",
-		"body": "[kita-00]: {{ site.baseurl }}{% link _libraries/17-kita/00-central.md %}",
+		"body": "[kita-00]: {% link _libraries/17-kita/00-central.md %}",
 		"description": "北区中央図書館（脚注用）"
 	},
 	"LibraryKita02a": {
@@ -339,7 +339,7 @@
 	"LibraryKita02b": {
 		"scope": "html,markdown",
 		"prefix": "kita-02",
-		"body": "[kita-02]: {{ site.baseurl }}{% link _libraries/17-kita/02-takinogawa.md %}",
+		"body": "[kita-02]: {% link _libraries/17-kita/02-takinogawa.md %}",
 		"description": "北区滝野川図書館（脚注用）"
 	},
 	"LibraryKita03a": {
@@ -351,38 +351,38 @@
 	"LibraryKita03b": {
 		"scope": "html,markdown",
 		"prefix": "kita-03",
-		"body": "[kita-03]: {{ site.baseurl }}{% link _libraries/17-kita/03-akabane.md %}",
+		"body": "[kita-03]: {% link _libraries/17-kita/03-akabane.md %}",
 		"description": "北区赤羽図書館（脚注用）"
 	},
 	"荒川区ゆいの森あらかわ": {
 		"scope": "html,markdown",
 		"prefix": ["arakawa-00", "yuinomori"],
-		"body": "${1|[荒川区ゆいの森あらかわ][arakawa-00],[arakawa-00]: {{ site.baseurl }}{% link _libraries/18-arakawa/00-central.md %}|}"
+		"body": "${1|[荒川区ゆいの森あらかわ][arakawa-00],[arakawa-00]: {% link _libraries/18-arakawa/00-central.md %}|}"
 	},
 	"墨田区ひきふね図書館": {
 		"scope": "html,markdown",
 		"prefix": ["sumida-00", "hikifune", "hikihune"],
-		"body": "${1|[墨田区ひきふね図書館][sumida-00],[sumida-00]: {{ site.baseurl }}{% link _libraries/07-sumida/00-hikifune.md %}|}"
+		"body": "${1|[墨田区ひきふね図書館][sumida-00],[sumida-00]: {% link _libraries/07-sumida/00-hikifune.md %}|}"
 	},
 	"墨田区緑図書館": {
 		"scope": "html,markdown",
 		"prefix": ["sumida-01", "midori"],
-		"body": "${1|[墨田区緑図書館][sumida-01],[sumida-01]: {{ site.baseurl }}{% link _libraries/07-sumida/01-midori.md %}|}"
+		"body": "${1|[墨田区緑図書館][sumida-01],[sumida-01]: {% link _libraries/07-sumida/01-midori.md %}|}"
 	},
 	"墨田区立花図書館": {
 		"scope": "html,markdown",
 		"prefix": ["sumida-02", "tachibana"],
-		"body": "${1|[墨田区立花図書館][sumida-02],[sumida-02]: {{ site.baseurl }}{% link _libraries/07-sumida/02-tachibana.md %}|}"
+		"body": "${1|[墨田区立花図書館][sumida-02],[sumida-02]: {% link _libraries/07-sumida/02-tachibana.md %}|}"
 	},
 	"墨田区八広図書館": {
 		"scope": "html,markdown",
 		"prefix": ["sumida-03", "yahiro"],
-		"body": "${1|[墨田区八広図書館][sumida-03],[sumida-03]: {{ site.baseurl }}{% link _libraries/07-sumida/03-yahiro.md %}|}"
+		"body": "${1|[墨田区八広図書館][sumida-03],[sumida-03]: {% link _libraries/07-sumida/03-yahiro.md %}|}"
 	},
 	"葛飾区立石図書館": {
 		"scope": "html,markdown",
 		"prefix": ["katsushika-01", "tateishi"],
-		"body": "${1|[葛飾区立石図書館][katsushika-01],[katsushika-01]: {{ site.baseurl }}{% link _libraries/22-katsushika/01-tateishi.md %}|}"
+		"body": "${1|[葛飾区立石図書館][katsushika-01],[katsushika-01]: {% link _libraries/22-katsushika/01-tateishi.md %}|}"
 	},
 	"西友": {
 		"scope": "html,markdown",
@@ -412,7 +412,7 @@
 	"銭湯リンク": {
 		"scope": "html,markdown",
 		"prefix": "sento-footer",
-		"body": "[bath/${1}/${2}]: {{ site.baseurl }}{% link _bathhouses/${1}/${2}.md %}$0",
+		"body": "[bath/${1}/${2}]: {% link _bathhouses/${1}/${2}.md %}$0",
 		"description": "フッター用"
 	},
 	"Proof":{

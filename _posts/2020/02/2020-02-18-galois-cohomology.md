@@ -600,4 +600,4 @@ $\blacksquare$
 * 桂利行著『代数学 III 体とガロア理論』
 * 雪江明彦著『環と体とガロア理論』
 
-[Dedekind]: {{ site.baseurl }}{% post_url 2020/01/2020-01-25-trace-norm %}
+[Dedekind]: {% post_url 2020/01/2020-01-25-trace-norm %}

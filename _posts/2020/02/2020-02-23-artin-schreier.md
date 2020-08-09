@@ -406,5 +406,5 @@ $\blacksquare$
 * 桂利行著『代数学 III 体とガロア理論』
 * 雪江明彦著『環と体とガロア理論』
 
-[Hilbert]: {{ site.baseurl }}{% post_url 2020/02/2020-02-18-galois-cohomology %}
-[Kummer]: {{ site.baseurl }}{% post_url 2020/02/2020-02-19-kummer %}
+[Hilbert]: {% post_url 2020/02/2020-02-18-galois-cohomology %}
+[Kummer]: {% post_url 2020/02/2020-02-19-kummer %}

@@ -206,4 +206,4 @@ $\blacksquare$
 * [Noetherian ring](https://en.wikipedia.org/wiki/Noetherian_ring) - Wikipedia
 * [abstract algebra - Why noetherian ring satisfies the maximal condition?](https://math.stackexchange.com/questions/2631016/why-noetherian-ring-satisfies-the-maximal-condition) - Mathematics Stack Exchange
 
-[pid]: {{ site.baseurl }}{% post_url 2019/12/2019-12-19-pid %}
+[pid]: {% post_url 2019/12/2019-12-19-pid %}

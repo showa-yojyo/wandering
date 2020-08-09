@@ -298,4 +298,4 @@ $\blacksquare$
   * EF2 条件についての注意は必読。
 * [Category:Euclidean Domains](https://proofwiki.org/wiki/Category:Euclidean_Domains) - ProofWiki
 
-[pid]: {{ site.baseurl }}{% post_url 2019/12/2019-12-19-pid %}
+[pid]: {% post_url 2019/12/2019-12-19-pid %}

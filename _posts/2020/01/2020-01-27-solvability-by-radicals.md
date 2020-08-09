@@ -313,5 +313,5 @@ $\blacksquare$
 * 桂利行著『代数学 III 体とガロア理論』
 * 堀田良之著『岩波講座 現代数学の基礎 環と体 2』
 
-[galois]: {{ site.baseurl }}{% post_url 2020/01/2020-01-20-galois %}
-[kummer]: {{ site.baseurl }}{% post_url 2020/01/2020-01-26-kummer %}
+[galois]: {% post_url 2020/01/2020-01-20-galois %}
+[kummer]: {% post_url 2020/01/2020-01-26-kummer %}

@@ -76,4 +76,4 @@ $\blacksquare$
 * ProofWiki
   * [Schönemann-Eisenstein Theorem](https://proofwiki.org/wiki/Sch%C3%B6nemann-Eisenstein_Theorem)
 
-[Gauss]: {{ site.baseurl }}{% post_url 2019/12/2019-12-10-gauss %}
+[Gauss]: {% post_url 2019/12/2019-12-10-gauss %}

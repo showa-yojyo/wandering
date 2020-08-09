@@ -18,4 +18,4 @@ title: 墨田区緑図書館
   * 3 階の水飲機は[荒川区日暮里図書館][arakawa-04]で見たタイプの水筒対応機だ。
 
 {% include_cached libraries/sumida-office-hours.html %}
-[arakawa-04]: {{ site.baseurl }}{% link _libraries/18-arakawa/04-nippori.md %}
+[arakawa-04]: {% link _libraries/18-arakawa/04-nippori.md %}

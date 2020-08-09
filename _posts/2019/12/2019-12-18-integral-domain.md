@@ -214,5 +214,5 @@ $\blacksquare$
   * [Category:Definitions/Integral Domains](https://proofwiki.org/wiki/Category:Definitions/Integral_Domains)
   * [Category:Integral Domains](https://proofwiki.org/wiki/Category:Integral_Domains)
 
-[UFD]: {{ site.baseurl }}{% post_url 2019/12/2019-12-17-ufd %}
-[primeideal]: {{ site.baseurl }}{% post_url 2019/12/2019-12-11-prime-ideal %}
+[UFD]: {% post_url 2019/12/2019-12-17-ufd %}
+[primeideal]: {% post_url 2019/12/2019-12-11-prime-ideal %}

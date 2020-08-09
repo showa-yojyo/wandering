@@ -48,4 +48,4 @@ $$
 
 * [Well-ordering theorem](https://en.wikipedia.org/wiki/Well-ordering_theorem) - Wikipedia: 証明のスケルトンをコンパクトにまとめてある。証明の見通しになる。
 
-[zermelo]: {{ site.baseurl }}{% post_url 2019/10/2019-10-19-zermelo %}
+[zermelo]: {% post_url 2019/10/2019-10-19-zermelo %}

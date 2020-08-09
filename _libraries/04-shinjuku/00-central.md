@@ -24,4 +24,4 @@ title: 新宿区中央図書館
     holiday_sunday='0'
     hours_type='A' %}
 
-[shinjuku-01]: {{ site.baseurl }}{% link _libraries/04-shinjuku/01-kids.md %}
+[shinjuku-01]: {% link _libraries/04-shinjuku/01-kids.md %}

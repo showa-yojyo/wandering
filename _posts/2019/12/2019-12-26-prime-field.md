@@ -123,4 +123,4 @@ $\blacksquare$
 * [Category:Prime Fields](https://proofwiki.org/wiki/Category:Prime_Fields) - ProofWiki
 * [Prime subfield is either isomorphic to $\mathbb{Q}$ or $\mathbb F_p$](https://math.stackexchange.com/questions/1942821/prime-subfield-is-either-isomorphic-to-mathbbq-or-f-p) - Mathematics Stack Exchange
 
-[subfield]: {{ site.baseurl }}{% post_url 2019/12/2019-12-25-subfield %}
+[subfield]: {% post_url 2019/12/2019-12-25-subfield %}

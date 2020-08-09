@@ -414,6 +414,6 @@ $F_0 = 3, F_1 = 5, F_2 = 17, F_3 = 257, F_4 = 65537$ は素数である。
 
 * 桂利行著『代数学 III 体とガロア理論』
 
-[chinese]: {{ site.baseurl }}{% post_url 2019/12/2019-12-03-chinese-remainder %}
-[solvability]: {{ site.baseurl }}{% post_url 2020/01/2020-01-27-solvability-by-radicals %}
-[bath/18-arakawa/28]: {{ site.baseurl }}{% link _bathhouses/18-arakawa/28.md %}
+[chinese]: {% post_url 2019/12/2019-12-03-chinese-remainder %}
+[solvability]: {% post_url 2020/01/2020-01-27-solvability-by-radicals %}
+[bath/18-arakawa/28]: {% link _bathhouses/18-arakawa/28.md %}

@@ -36,4 +36,4 @@ title: 千代田区男女共同参画センター MIW
 
 * [千代田区ホームページ - 男女共同参画センター MIW（ミュウ）](http://www.city.chiyoda.lg.jp/koho/kurashi/danjo/miw/index.html)
 
-[chiyoda-00]: {{ site.baseurl }}{% link _libraries/01-chiyoda/00-chiyoda.md %}
+[chiyoda-00]: {% link _libraries/01-chiyoda/00-chiyoda.md %}
