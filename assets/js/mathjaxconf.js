@@ -1,15 +1,9 @@
-// Usage: see <http://docs.mathjax.org/en/latest/configuration.html>.
-
+// Usage: see Configuring and Loading MathJax — MathJax 3.0 documentation
+// https://docs.mathjax.org/en/latest/web/configuration.html
 window.MathJax = {
-    tex2jax: {
-        inlineMath: [["$", "$"]],
-        displayMath: [["$$", "$$"]],
-        processEscapes: true
-    },
-    TeX:
-    {
-        extensions: ["cancel.js"],
-        Macros: {
+    tex: {
+        inlineMath: [['$', '$']],
+        macros: {
             N: "{\\mathbb N}",
             NN: "{\\mathbb N}",
             Z: "{\\mathbb Z}",
@@ -25,7 +19,7 @@ window.MathJax = {
             Re: "{\\operatorname{Re}}",
             Im: "{\\operatorname{Im}}",
 
-            bm: ["\\boldsymbol #1",1],
+            bm: ["\\boldsymbol #1", 1],
             dd: ["\\mathrm d^{#1}", 1, ""],
             diff: ["\\frac{\\dd {#1}}{\\dd {#2}}", 2],
             diag: "\\operatorname{diag}",
@@ -79,5 +73,15 @@ window.MathJax = {
             supp: "{\\operatorname{supp}}",
             trace: "{\\operatorname{trace}}"
         }
+    },
+    svg: {
+        fontCache: 'global'
     }
 };
+
+(function () {
+    var script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
+    script.async = true;
+    document.head.appendChild(script);
+})();
