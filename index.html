@@ -20,11 +20,12 @@ title: トップページ
           {{ post.date | date: date_format }}
         </time>
         {%- if post.author -%}
-          • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ post.author }}</span></span>
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card"
+            itemprop="name">{{ post.author }}</span></span>
         {%- endif -%}
       </p>
       {%- if site.show_excerpts -%}
-        {{ post.excerpt | truncate: 160 }}
+      <article>{{ post.excerpt }}</article>
       {%- endif -%}
     </li>
     {%- endfor -%}
