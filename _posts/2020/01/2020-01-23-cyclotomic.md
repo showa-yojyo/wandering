@@ -1,5 +1,6 @@
 ---
 title: 円周等分多項式・円分体学習ノート
+mathjax: true
 tags: math
 ---
 

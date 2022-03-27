@@ -1,5 +1,6 @@
 ---
 title: Galois cohomology 学習ノート
+mathjax: true
 tags: math
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Eisenstein の既約判定法証明 学習ノート
+mathjax: true
 tags: math
 ---
 

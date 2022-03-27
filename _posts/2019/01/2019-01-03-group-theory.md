@@ -1,5 +1,6 @@
 ---
 title: 『代数入門 群と加群』学習ノート Part 2
+mathjax: true
 tags: math
 ---
 

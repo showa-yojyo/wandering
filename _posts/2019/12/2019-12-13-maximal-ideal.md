@@ -1,5 +1,6 @@
 ---
 title: 極大イデアル学習ノート
+mathjax: true
 tags: math
 ---
 

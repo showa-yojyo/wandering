@@ -1,5 +1,6 @@
 ---
 title: 小さい有限群を分類する学習ノート
+mathjax: true
 tags: math
 ---
 

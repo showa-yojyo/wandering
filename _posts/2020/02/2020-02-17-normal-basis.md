@@ -1,5 +1,6 @@
 ---
 title: Galois 拡大の正規底 学習ノート
+mathjax: true
 tags: math
 ---
 

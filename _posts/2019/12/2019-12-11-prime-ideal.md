@@ -1,5 +1,6 @@
 ---
 title: 素イデアル学習ノート
+mathjax: true
 tags: math
 ---
 

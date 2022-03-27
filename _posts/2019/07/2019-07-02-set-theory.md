@@ -1,5 +1,6 @@
 ---
 title: 『岩波基礎講座 基礎数学 集合と位相』学習ノート Part 13
+mathjax: true
 tags: math
 ---
 

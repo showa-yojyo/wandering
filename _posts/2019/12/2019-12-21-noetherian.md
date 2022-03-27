@@ -1,5 +1,6 @@
 ---
 title: Noether 環学習ノート
+mathjax: true
 tags: math
 ---
 

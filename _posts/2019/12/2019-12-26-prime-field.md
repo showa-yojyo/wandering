@@ -1,5 +1,6 @@
 ---
 title: 体論学習ノート 4 素体編
+mathjax: true
 tags: math
 ---
 

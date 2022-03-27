@@ -1,5 +1,6 @@
 ---
 title: 整列可能定理を仮定して選出公理を結論する証明のノート
+mathjax: true
 tags: math
 ---
 

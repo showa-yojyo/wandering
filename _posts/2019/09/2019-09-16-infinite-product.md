@@ -1,5 +1,6 @@
 ---
 title: 『新訂解析学』学習ノート Part 16
+mathjax: true
 tags: math
 ---
 

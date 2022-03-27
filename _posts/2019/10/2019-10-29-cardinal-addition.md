@@ -1,5 +1,6 @@
 ---
 title: 基数の和 復習ノート
+mathjax: true
 tags: math
 ---
 

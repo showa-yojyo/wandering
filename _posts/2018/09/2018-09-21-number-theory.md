@@ -1,5 +1,6 @@
 ---
 title: 平方剰余の相互法則
+mathjax: true
 tags: math
 ---
 

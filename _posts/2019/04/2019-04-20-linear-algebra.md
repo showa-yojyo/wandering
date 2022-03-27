@@ -1,5 +1,6 @@
 ---
 title: 『初歩から学べる線形代数』学習ノート Part 8
+mathjax: true
 tags: math
 ---
 

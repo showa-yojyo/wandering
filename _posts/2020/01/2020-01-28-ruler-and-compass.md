@@ -1,5 +1,6 @@
 ---
 title: 主に定規とコンパスによる作図問題 学習ノート
+mathjax: true
 tags: math
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: 『常微分方程式』学習ノート Part 4
+mathjax: true
 tags: math
 ---
 

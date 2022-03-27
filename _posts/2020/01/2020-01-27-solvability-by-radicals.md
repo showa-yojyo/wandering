@@ -1,5 +1,6 @@
 ---
 title: 代数方程式のべき根による可解性 学習ノート
+mathjax: true
 tags: math
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: 群の同型定理復習ノート
+mathjax: true
 tags: math
 ---
 

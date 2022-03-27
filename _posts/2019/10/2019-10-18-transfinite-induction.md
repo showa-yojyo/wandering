@@ -1,5 +1,6 @@
 ---
 title: 超限帰納法証明ノート
+mathjax: true
 tags: math
 ---
 

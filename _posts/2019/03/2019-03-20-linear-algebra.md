@@ -1,5 +1,6 @@
 ---
 title: 『ベクトル空間』ノート
+mathjax: true
 tags: math
 ---
 

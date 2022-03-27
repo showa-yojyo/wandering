@@ -1,5 +1,6 @@
 ---
 title: 中国剰余定理学習ノート
+mathjax: true
 tags: math
 ---
 

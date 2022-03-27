@@ -1,5 +1,6 @@
 ---
 title: ベクトルの積分公式ノート
+mathjax: true
 tags: math
 ---
 
