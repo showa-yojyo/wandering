@@ -1,5 +1,6 @@
 ---
 title: Jekyll ページにおける MathJax コードのマークアップ方法
+mathjax: true
 tags: jekyll javascript mathjax
 ---
 

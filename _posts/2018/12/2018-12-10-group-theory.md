@@ -1,5 +1,6 @@
 ---
 title: 『群論序説』学習ノート Part 1
+mathjax: true
 tags: math
 ---
 

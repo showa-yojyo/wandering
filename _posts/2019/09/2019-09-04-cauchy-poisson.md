@@ -1,5 +1,6 @@
 ---
 title: Caucy と Poisson の各積分公式に関するノート
+mathjax: true
 tags: math
 ---
 

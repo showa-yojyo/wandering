@@ -1,5 +1,6 @@
 ---
 title: 『はじめての数論 原著第 3 版』学習ノート Part 2
+mathjax: true
 tags: math
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: 基数の積 復習ノート
+mathjax: true
 tags: math
 ---
 

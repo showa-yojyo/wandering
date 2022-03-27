@@ -1,5 +1,6 @@
 ---
 title: 順序数のべき乗復習ノート
+mathjax: true
 tags: math
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: 体論学習ノート 6 代数的閉体＆閉包編
+mathjax: true
 tags: math
 ---
 

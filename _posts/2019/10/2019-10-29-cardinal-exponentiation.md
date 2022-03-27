@@ -1,5 +1,6 @@
 ---
 title: 基数のべき乗 復習ノート
+mathjax: true
 tags: math
 ---
 

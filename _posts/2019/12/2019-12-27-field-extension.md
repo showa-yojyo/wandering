@@ -1,5 +1,6 @@
 ---
 title: 体論学習ノート 5 体の拡大編
+mathjax: true
 tags: math
 ---
 

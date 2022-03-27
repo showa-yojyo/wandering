@@ -1,5 +1,6 @@
 ---
 title: 線形代数の答え合わせ
+mathjax: true
 tags: math python sympy
 ---
 

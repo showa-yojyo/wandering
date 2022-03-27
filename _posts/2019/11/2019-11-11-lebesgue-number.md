@@ -1,5 +1,6 @@
 ---
 title: Lebesgue の被覆定理学習ノート
+mathjax: true
 tags: math
 ---
 

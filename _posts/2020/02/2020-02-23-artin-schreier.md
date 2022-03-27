@@ -1,5 +1,6 @@
 ---
 title: Artin-Schreier 拡大学習ノート
+mathjax: true
 tags: math
 ---
 

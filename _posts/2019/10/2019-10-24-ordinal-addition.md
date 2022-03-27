@@ -1,5 +1,6 @@
 ---
 title: 順序数の加法復習ノート
+mathjax: true
 tags: math
 ---
 

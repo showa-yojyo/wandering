@@ -1,5 +1,6 @@
 ---
 title: 正則関数の最大値の原理に関係する演習問題
+mathjax: true
 tags: math
 ---
 

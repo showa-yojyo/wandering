@@ -1,5 +1,6 @@
 ---
 title: 実 Cauchy 列が収束することのくどい証明ノート
+mathjax: true
 tags: math
 ---
 

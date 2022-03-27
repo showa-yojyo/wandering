@@ -1,5 +1,6 @@
 ---
 title: 拡大体の元に対するトレースとノルム 学習ノート
+mathjax: true
 tags: math
 ---
 

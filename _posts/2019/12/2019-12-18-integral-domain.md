@@ -1,5 +1,6 @@
 ---
 title: 整域学習ノート
+mathjax: true
 tags: math
 ---
 

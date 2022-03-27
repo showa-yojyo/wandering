@@ -1,5 +1,6 @@
 ---
 title: Orbit-Stabilizer theorem 証明ノート
+mathjax: true
 tags: math
 ---
 
