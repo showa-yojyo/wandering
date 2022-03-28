@@ -261,7 +261,7 @@ $$
 \bar f(X) \bar g(X) \mid (X^m - 1)
 $$
 
-であり、$(p, m) = 1$ であることから $X^m - 1 = 0$ は $\overline\mathbb F_p$
+であり、$(p, m) = 1$ であることから $X^m - 1 = 0$ は $\overline{\mathbb F_p}$
 において重根を持たない。すると
 $\bar f(X) = 0$ と $\bar g(X) = 0$ に共通根がなく、上記に矛盾する。
 

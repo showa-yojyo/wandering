@@ -30,8 +30,8 @@ $$
 ----
 
 **補題**：
-$\operatorname{Tr}_{L/K}\alpha \in K,$
-$\operatorname{N}_{L/K}\alpha \in K.$
+$\operatorname{Tr} _ {L/K}\alpha \in K,$
+$\operatorname{N} _ {L/K}\alpha \in K.$
 
 **証明**：
 任意の $\tau \in \operatorname{Gal}(L^{\prime}/K)$ と $\sigma_i$ に対し、ある $M_i \subset L^{\prime}$ が存在して
@@ -57,8 +57,8 @@ $$
 $\tau$ により像が不変であることから $f_\alpha(X) \in K[X]$ であることが示された。
 
 $X^{n - 1}$ の係数および定数項がそれぞれトレースとノルム（の高々符号違い）であるので、
-$\operatorname{Tr}_{L/K}\alpha \in K$ および
-$\operatorname{N}_{L/K}\alpha$ であることが示された。
+$$\operatorname{Tr}_{L/K}\alpha \in K$$ および
+$$\operatorname{N}_{L/K}\alpha$$ であることが示された。
 $\blacksquare$
 
 ----
@@ -88,11 +88,11 @@ $\Box$
 $(3)$ は等式に整合性があることから示す。
 $L/K$ が分離拡大なので、中間体 $M$ に対して $L/M$ は分離拡大である。
 Galois 拡大 $L^{\prime}/L$ のとり方 $L^{\prime} \supset L \supset M$ から
-$\operatorname{Gal}(L^{\prime}/M), \operatorname{Tr}_{L/M}, \operatorname{N}_{L/M}$ は有効。
+$$\operatorname{Gal}(L^{\prime}/M), \operatorname{Tr}_{L/M}, \operatorname{N}_{L/M}$$ は有効。
 
 以前言い忘れたがこの拡大で $M/K$ も分離拡大である。これは分離拡大の定義からそうなる。
 $L^{\prime} \supset L \supset M \supset K$ ゆえ
-$\operatorname{Tr}_{M/K}, \operatorname{N}_{M/K}$ は有効。
+$$\operatorname{Tr}_{M/K}, \operatorname{N}_{M/K}$$ は有効。
 
 $\lbrace \tau_j \rbrace$ を $L \longrightarrow L^{\prime}$ の中への $M$ 同型写像とすると
 $\alpha \in L$ に対して
@@ -113,7 +113,7 @@ $$
 
 Galois の基本定理から $L \longrightarrow L^{\prime}$ の中への $K$ 同型写像の集合は
 $\lbrace \sigma_i\tau_j \rbrace$ に等しいので、この等式の右辺は
-$\operatorname{Tr}_{L/K}\alpha$ に等しいことが示された。
+$$\operatorname{Tr}_{L/K}\alpha$$ に等しいことが示された。
 
 $\operatorname{N}$ についても同様に示される。
 $\blacksquare$
@@ -241,9 +241,9 @@ $\blacksquare$
 とくに $\operatorname{Tr}_{L/K}\colon L \longrightarrow K$ は $K$ 全射準同型写像である。
 
 **証明**：前半：非退化対称双線形形式に関する命題により
-$\operatorname{Tr}_{L/K}\alpha = T(\alpha, 1)$ には
+$$\operatorname{Tr}_{L/K}\alpha = T(\alpha, 1)$$ には
 非退化であるから、ある $\alpha \in L$ が存在して $T(\alpha, 1) = \operatorname{Tr}_{L/K}\alpha\ne 0.$
 
-後半：$\operatorname{Tr}_{L/K}$ が零写像ではないことと $\dim_LL = 1$
-より（線形代数の次元公式だったか？）$\operatorname{im}{\operatorname{Tr}_{L/K}} = K.$
+後半：`$\operatorname{Tr}_{L/K}$` が零写像ではないことと $\dim_LL = 1$
+より（線形代数の次元公式だったか？）$$\operatorname{im}{\operatorname{Tr}_{L/K}} = K.$$
 $\blacksquare$

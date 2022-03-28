@@ -70,7 +70,7 @@ $a \in K$ が存在して $L$ が $K$ 上の既約多項式 $X^p - X - a$ の最
 
 **証明**：$\implies:$
 $\operatorname{Gal}(L/K) \cong Z_p$ を $\langle \sigma \rangle$ とおく。
-$\operatorname{Tr}_{L/K}1 = 0$ を利用して [$H^1 = 0$][Hilbert] 定理の系から
+$\operatorname{Tr} _ {L/K}1 = 0$ を利用して [$H^1 = 0$][Hilbert] 定理の系から
 ある $\alpha \in L$ が存在して次を満たす：
 
 $$
@@ -102,7 +102,7 @@ $$
 $$
 
 $L = K(\alpha)$ であり、$[L : K] = p.$
-$\sigma \in \operatorname{Aut}_K(L)$ について
+$\sigma \in \operatorname{Aut} _ K(L)$ について
 
 $$
 \begin{array}{c}
@@ -208,7 +208,7 @@ $\Box$
 
 写像 $\varphi$ の核は $\wp(K) = \operatorname{im}{\wp} = \lbrace x^p - x \,\mid\, x \in K \rbrace$ であることを示す。
 $a \in K$ に対してある $\alpha$ があって $\alpha^p - \alpha = a.$
-$\varphi(a) = \chi_a = \operatorname{id}_{}$ ならば任意の
+$\varphi(a) = \chi_a = \operatorname{id}$ ならば任意の
 $\sigma \in G$ に対し $\sigma(\alpha^p - \alpha) = \alpha^p - \alpha.$
 ゆえに $a = \alpha^p - \alpha \in \wp(K).$
 したがって $\ker\varphi = \wp(K)$ であることが示された。

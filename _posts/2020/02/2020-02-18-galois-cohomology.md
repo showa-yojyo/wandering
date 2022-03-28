@@ -264,7 +264,7 @@ $\blacksquare$
 
 **系（巡回拡大）**： $L/K$ を巡回拡大とし、その Galois 群の生成元を $\sigma$ とする。
 
-このとき $\alpha \in L$ が $\operatorname{N}_{L/K}\alpha = 1$ を満たすならば、ある
+このとき $\alpha \in L$ が $\operatorname{N} _ {L/K}\alpha = 1$ を満たすならば、ある
 $\beta \in L$ が存在して $\alpha = \beta/\sigma(\beta)$ を満たす。
 
 **検討**：$Z^1$ の元を一つ構成する。$n \coloneqq \lvert G\rvert$ とすると
@@ -406,7 +406,7 @@ $$
 
 **検討**：トレースが全射であることを利用してゼロによる除算を回避する。
 
-**証明**：$\alpha \in L$ を $\operatorname{Tr}_{L/K}\alpha \ne 0$ となるようにとる。
+**証明**：$\alpha \in L$ を $\operatorname{Tr} _ {L/K}\alpha \ne 0$ となるようにとる。
 
 $f \in Z^1(G, L)$ をとる。$r \coloneqq \sum_\tau f(\tau)\tau(\alpha)$ とおく。
 $\sigma \in G$ に対して $\sigma(r)$ を計算すると：
@@ -422,8 +422,8 @@ $$
 \end{aligned}
 $$
 
-$\beta \coloneqq -r/\operatorname{Tr}_{L/K}\alpha$ とおく。
-$\operatorname{Tr}_{L/K}\alpha \in K$ だから
+$\beta \coloneqq -r/\operatorname{Tr} _ {L/K}\alpha$ とおく。
+$\operatorname{Tr} _ {L/K}\alpha \in K$ だから
 
 $$
 \def\Tr{ \operatorname{Tr}_{L/K} }
@@ -459,7 +459,7 @@ $\blacksquare$
 **系（巡回拡大）**：$L/K$ を巡回拡大、$\langle \sigma \rangle \coloneqq \operatorname{Gal}(L/K)$
 とする。
 
-$\alpha \in L$ が $\operatorname{Tr}_{L/K}\alpha = 0$ ならばある
+$\alpha \in L$ が $\operatorname{Tr} _ {L/K}\alpha = 0$ ならばある
 $\beta \in L$ が存在して $\alpha = \beta - \sigma(\beta)$ を満たす。
 
 **検討**：乗法群のときの系の加法版。
