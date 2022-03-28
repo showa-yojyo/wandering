@@ -217,7 +217,7 @@ $$
 
 非退化であることは Dedekind の補題から示される。
 $[L : K] = n$ とし、$\beta \in L^\times$ をとる。
-$\sigma_1, \dotsc, \sigma_n$ を $L \longrightarrow \overline L$ なる中への $K$ 同型写像とする。
+$\sigma_1, \dotsc, \sigma_n$ を $L \longrightarrow \overline{L}$ なる中への $K$ 同型写像とする。
 
 $\alpha \in L$ と $\beta_i \coloneqq \sigma_i(\beta)$ に対して
 

@@ -37,8 +37,8 @@ $$
 \end{array}
 $$
 
-この準同型写像を $\overline K \longrightarrow \overline K$ に延長する。
-このとき $\wp(\alpha) = a$ となる $\alpha \in \overline K$ の一つを
+この準同型写像を $\overline{K} \longrightarrow \overline{K}$ に延長する。
+このとき $\wp(\alpha) = a$ となる $\alpha \in \overline{K}$ の一つを
 $\dfrac{1}{\wp}a$ と書けば、残りの逆像は次で与えられる：
 
 $$
@@ -46,7 +46,7 @@ $$
 \a, \a + 1, \a + 2, \dotsc, \a + p - 1.
 $$
 
-**証明**：$\alpha \in \overline K$ を与えられた多項式の根の一つとする。
+**証明**：$\alpha \in \overline{K}$ を与えられた多項式の根の一つとする。
 検討から
 
 $$
@@ -147,7 +147,7 @@ $$
 G \cong Z_p^r \cong X(Z_p^r) \cong X(G).
 $$
 
-$a \in K$ を一つとる。方程式 $X^p - X - a = 0$ の根の一つを $\alpha \in \overline K$
+$a \in K$ を一つとる。方程式 $X^p - X - a = 0$ の根の一つを $\alpha \in \overline{K}$
 とおくと、根のすべては次である：
 
 $$
@@ -360,7 +360,7 @@ $a_i \in \mathcal L \subset K$ から $\dfrac{1}{\wp}a \in L^{\prime}.$
 したがって $L = L^{\prime}$ が示された。
 
 逆に $\mathcal L$ から考えて対応する体 $L$ を考える。
-$\mathcal L/\wp(K)$ の生成系 $\overline a_1, \overline a_2, \dotsc, \overline a_r$ をとり
+$\mathcal L/\wp(K)$ の生成系 $\overline{a_1}, \overline{a_2}, \dotsc, \overline{a_r}$ をとり
 $\mathcal L$ における代表元を $a_1, a_2, \dotsc, a_r$ とすれば
 
 $$

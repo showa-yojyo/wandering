@@ -129,7 +129,7 @@ tags: math
 * **E7.2** 上半平面を原点を中心とする単位円内部に写す一次分数変換
 
   $$
-  w = \mathrm{e}^{i\theta}\frac{z - \lambda}{z - \overline\lambda}.
+  w = \mathrm{e}^{i\theta}\frac{z - \lambda}{z - \overline{\lambda}}.
   $$
 
 * **E7.3** 一点を除いて等角写像である例

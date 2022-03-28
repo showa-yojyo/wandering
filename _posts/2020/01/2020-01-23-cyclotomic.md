@@ -58,7 +58,7 @@ $\blacksquare$
 拡大体 $K(\zeta_m)/K$ についての基本的な性質か？
 
 **定理（$K(\zeta_m)/K$ は Abel 拡大）**：
-$K$ を体とする。$\zeta_m \in \overline K$ とすると
+$K$ を体とする。$\zeta_m \in \overline{K}$ とすると
 
 * $K(\zeta_m)/K$ は Abel 拡大であり、
 * $\operatorname{Gal}(K(\zeta_m)/K) \subset Z_m^\times.$

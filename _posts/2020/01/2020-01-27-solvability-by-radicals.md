@@ -62,7 +62,7 @@ $f(X) = 0$ が**べき根によって解ける**とは、$L_f$ が $K$ のべき
 $K$ を（標数が $0$ でなくてもいい）体、
 $L/K$ を Galois 拡大、
 $K^{\prime}/K$ を体の拡大、
-$L$ と $K^{\prime}$ の $\overline K$ における合成体を $L^{\prime}$ とする。
+$L$ と $K^{\prime}$ の $\overline{K}$ における合成体を $L^{\prime}$ とする。
 
 $$
 L^{\prime} \coloneqq LK^{\prime} = K^{\prime}L \coloneqq L(K^{\prime}) = K^{\prime}(L).
@@ -82,7 +82,7 @@ $$
   * 先述の記法を使いたいが、基礎体が明記されていないので誤解を招くから不採用。
 * $f(X) \in K^{\prime}[X]$ としても同様のことがいえるから結局
   $L^{\prime}/K^{\prime}$ も Galois 拡大であるといえる。
-* その関係から $\operatorname{Hom}_K(L, \overline K) = \operatorname{Hom}_K(L, \overline L) \subset \operatorname{Aut}_K(L).$
+* その関係から $\operatorname{Hom}_K(L, \overline{K}) = \operatorname{Hom}_K(L, \overline{L}) \subset \operatorname{Aut}_K(L).$
 * 以降は Galois の基本定理を用いて不変体の比較をして拡大次数を吟味する。
 * 教科書には拡大体の関係グラフが図示されている。
   そこでは $L \cap K^{\prime}$ のノードが $L/K$ と $K^{\prime}/K$ の交点あたりに記されている。
@@ -95,7 +95,7 @@ $L^{\prime}$ は $K^{\prime}$ 上の $f(X)$ の最小分解体である。
 $\Box$
 
 $L/K$ が Galois 拡大であることから、
-$L$ から $\overline K$ の中への $K$ 準同型写像は $L$ の $K$ 自己同型写像である。
+$L$ から $\overline{K}$ の中への $K$ 準同型写像は $L$ の $K$ 自己同型写像である。
 
 ----
 
