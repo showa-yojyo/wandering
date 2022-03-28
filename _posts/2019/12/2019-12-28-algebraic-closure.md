@@ -24,7 +24,7 @@ Galois 論準備ノート。今回は代数的閉体と閉包を習う。
 
 ### 代数的閉包 (algebraical closure)
 
-**定義**：体 $K$ の**代数的閉包** $\overline K$ とは、$K$ の代数的拡大体の一つであって代数的閉体であるものをいう。
+**定義**：体 $K$ の**代数的閉包** $\overline{K}$ とは、$K$ の代数的拡大体の一つであって代数的閉体であるものをいう。
 
 ## 性質
 
@@ -114,13 +114,13 @@ $\blacksquare$
 
 **定理**：$L/K$ が代数的拡大体ならば $L$ の代数的閉包は $K$ のそれに等しい。
 
-**検討**：$L \supset K$ であることから $\overline L \supset \overline K$ が成り立つ（いちおう示す）。
+**検討**：$L \supset K$ であることから $\overline{L} \supset \overline{K}$ が成り立つ（いちおう示す）。
 
-$\overline L \supsetneq \overline K$ は成り立たない：
-$\overline L \supsetneq \overline K$ が成り立つと仮定すると、
-$\overline K$ が代数的に閉じている、つまり $K$ の代数的拡大のうち最大であるという性質に矛盾する。
+$\overline{L} \supsetneq \overline{K}$ は成り立たない：
+$\overline{L} \supsetneq \overline{K}$ が成り立つと仮定すると、
+$\overline{K}$ が代数的に閉じている、つまり $K$ の代数的拡大のうち最大であるという性質に矛盾する。
 
-ゆえに $\overline L = \overline K.$
+ゆえに $\overline{L} = \overline{K}.$
 
 **証明**：TBW
 
