@@ -1,6 +1,10 @@
 ---
 layout: page
 title: 札
+image:
+  path: /assets/images/ogp-default.png
+  width: 400
+  height: 400
 ---
 
 {%- assign date_format = site.minima.date_format -%}

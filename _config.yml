@@ -87,6 +87,10 @@ defaults:
       author: showa-yojyo
       categories: diary
       layout: diary
+      image:
+        path: /assets/images/ogp-default.png
+        width: 400
+        height: 400
   -
     scope:
        path: _bathhouses
