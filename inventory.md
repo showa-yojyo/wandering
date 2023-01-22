@@ -2,6 +2,10 @@
 layout: page
 title: 所持品
 permalink: /inventory/
+image:
+  path: /assets/images/ogp-default.png
+  width: 400
+  height: 400
 ---
 
 このページでは私の所持品を可能な限り説明する。
