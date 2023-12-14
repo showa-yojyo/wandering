@@ -6,7 +6,7 @@
         {
             "label": "Serve: Run Jekyll server",
             "type": "shell",
-            "command": "touch index.html archive.html && bundle exec jekyll serve --incremental --watch",
+            "command": "touch index.html archive/*.html && bundle exec jekyll serve --incremental --livereload --baseurl='' ",
             "group": {
                 "kind": "build",
                 "isDefault": true
