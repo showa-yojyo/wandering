@@ -2,10 +2,6 @@
 layout: page
 title: ブログについて
 permalink: /about/
-image:
-  path: /assets/images/ogp-default.png
-  width: 400
-  height: 400
 ---
 
 当ブログ、{{ site.title }}について紹介する。

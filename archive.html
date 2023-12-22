@@ -4,14 +4,14 @@ title: 全記録
 permalink: /archive/
 ---
 
-<form action="javascript:navigateToDiaryPage()">
+<form action="javascript:navigateToDiaryPage('{{ site.baseurl }}')">
   <label>
     日付を指定して日記を見る：
     <input type="date" id="start" min="2000-04-27" required/>
   </label>
   <input type="submit" value="Go"/>
 </form>
-<script src="{{ site.baseurl }}/assets/js/calendar.js" defer></script>
+<script src="{{ '/assets/js/calendar.js' | relative_url }}" defer></script>
 
 {%- assign date_format = site.minima.date_format -%}
 {% for post in site.posts %}
@@ -22,7 +22,7 @@ permalink: /archive/
     <ul class="posts">
       <li>
         <span class="post-date">{{ post.date | date: date_format }}</span>
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </li>
   {% else %}
     {% capture nmonth %}{{ post.next.date | date: '%m' }}{% endcapture %}
@@ -40,7 +40,7 @@ permalink: /archive/
     {% endif %}
     <li>
       <span class="post-date">{{ post.date | date: date_format }}</span>
-      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </li>
   {% endunless %}
 {% endfor %}

@@ -8,8 +8,8 @@
   {% if page.mathjax %}
   <script src="{{ "/assets/js/mathjaxconf.js" | relative_url }}" async></script>
   {% endif %}
-  {% if page.previous.url %}<link rel="prev" href="{{ page.previous.url | prepend: site.baseurl }}">{% endif %}
-  {% if page.next.url %}<link rel="next" href="{{ page.next.url | prepend: site.baseurl }}">{% endif %}
+  {% if page.previous.url %}<link rel="prev" href="{{ page.previous.url | relative_url }}">{% endif %}
+  {% if page.next.url %}<link rel="next" href="{{ page.next.url | relative_url }}">{% endif %}
   <link rel="icon" href="{{ "/assets/images/favicon/favicon.ico" | relative_url }}" />
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}" />
   {% feed_meta %}

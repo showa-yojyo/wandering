@@ -1,115 +1,14 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-##github: [metadata]
-##  encoding: UTF-8
-## kramdown:
-##   input: GFM
-##   hard_wrap: false
-## future: true
-## jailed: false
-## theme: jekyll-theme-primer
-## gfm_quirks: paragraph_end
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-lang: ja
-title: 徘徊の書
-author: プレハブ小屋
-email: yojyo@hotmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  理想郷を求めて都内 23 区を駆け廻る住所不定無収入者の記録
-baseurl: /wandering # the subpath of your site, e.g. /blog
-url: https://showa-yojyo.github.io
-repository: https://github.com/showa-yojyo/wandering
-
-show_excerpts: true
-
-header_pages:
-  - about.md
-  - archive.html
-  - tags.md
-  - inventory.md
-  - locations.md
-
-twitter_username: showa_yojyo
-github_username:  showa-yojyo
-rss: RSS
-
-# Build settings
-markdown: kramdown
-kramdown:
-    math_engine: mathjax
-theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-include-cache
-  - jekyll-sitemap
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-exclude:
-  - .gitignore
-  - .mailmap
-  - Gemfile
-  - Gemfile.lock
-  - tools/
-
-# Minima settings
-minima:
-  date_format: "%Y-%m-%d (%a)"
-
-defaults:
-  -
-    scope:
-      path: _posts
-      type: posts
-    values:
-      author: showa-yojyo
-      categories: diary
-      layout: diary
-      image:
-        path: /assets/images/ogp-default.png
-        width: 400
-        height: 400
-  -
-    scope:
-       path: _bathhouses
-       type: bathhouses
-    values:
-      layout: page
-  -
-    scope:
-       path: _libraries
-       type: libraries
-    values:
-      layout: library
-  -
-    scope:
-      path: _locations
-      type: locations
-    values:
-      layput: page
-
+# Where things are
+#source: "."
+destination: ./_site
+#collections_dir: "."
+plugins_dir: _plugins
+layouts_dir: _layouts
+data_dir: _data
+includes_dir: _includes
+#sass:
+#  sass_dir: _sass
+#  style: compressed
 collections:
   bathhouses:
     output: true
@@ -117,3 +16,194 @@ collections:
     output: true
   locations:
     output: true
+  posts:
+    output: true
+
+# Handling Reading
+safe: false
+include:
+  - ".htaccess"
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .github/
+  - .gitignore
+  - .mailmap
+keep_files:
+  - .git
+encoding: "utf-8"
+markdown_ext: md
+strict_front_matter: false
+
+# Filtering Content
+show_drafts: false
+limit_posts: 0
+future: false
+unpublished: false
+
+# Plugins
+whitelist: []
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Feed
+feed:
+  categories:
+    - diary
+  disable_in_development: false
+  excerpt_only: true
+  posts_limit: 20
+
+# SEO
+tagline: あるホームレスの日記
+twitter:
+  username: showa_yojyo
+  card: summary
+logo: /assets/images/ogp-default.png
+social:
+  name: プレハブ小屋
+  links:
+    - https://twitter.com/showa_yojyo
+    - https://github.com/showa-yojyo
+locale: ja_JP
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Serving
+detach: false
+port: 4000
+host: localhost
+# baseurl is only necessary when hosting your site in a sub-directory. Project
+# sites hosted on GitHub Pages are the common use-case of this variable.
+baseurl: /wandering
+show_dir_listing: false
+
+# Outputting
+permalink: date
+paginate_path: /page:num
+timezone: Asia/Tokyo
+
+quiet: false
+verbose: false
+defaults:
+  - scope:
+      path: ""
+    values:
+      description: null
+      image:
+        path: /assets/images/ogp-default.png
+        width: 400
+        height: 400
+  - scope:
+      path: _posts
+      type: posts
+    values:
+      author: showa-yojyo
+      categories:
+        - diary
+      layout: diary
+  - scope:
+       path: _bathhouses
+       type: bathhouses
+    values:
+      description: 銭湯メモ
+      layout: page
+  - scope:
+       path: _libraries
+       type: libraries
+    values:
+      description: 図書館メモ
+      layout: library
+  - scope:
+      path: _locations
+      type: locations
+    values:
+      description: 重要地点メモ
+      layout: page
+
+liquid:
+  error_mode: warn
+  strict_filters: false
+  strict_variables: false
+
+# Markdown Processors
+# See <https://kramdown.gettalong.org/options.html>
+kramdown:
+  auto_id_prefix: ''
+  auto_ids: false
+  entity_output: as_char
+  footnote_backlink: '&8617;'
+  #footnote_backlink_inline: false
+  footnote_nr: 1
+  footnote_prefix: ''
+  forbidden_inline_options:
+    - template
+  header_offset: 0
+  html_to_native: false
+  latex_headers: section,subsection,subsubsection,paragraph,subparagraph,subparagraph
+  line_width: 80
+  link_defs: {}
+  list_indent: 2
+  math_engine: mathjax
+  math_engine_opts: {}
+  parse_block_html: false
+  parse_span_html: true
+  remove_block_html_tags: true
+  remove_line_breaks_for_cjk: true
+  remove_span_html_tags: false
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  syntax_highlighter: rouge
+  syntax_highlighter_opts: {}
+  template: ''
+  toc_levels: 1..6
+  transliterated_header_ids: false
+  typographic_symbols: {}
+
+# Site (and Minima) settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+theme: minima
+minima:
+  date_format: "%Y-%m-%d (%a)"
+
+# Minima settings
+author: プレハブ小屋
+description: 理想郷を求めて都内 23 区を駆け廻る住所不定無収入者の記録
+email: yojyo@hotmail.com
+github_username:  showa-yojyo
+header_pages:
+  - about.md
+  - archive.html
+  - tags.md
+  - inventory.md
+  - locations.md
+lang: ja
+repository: https://github.com/showa-yojyo/wandering
+rss: RSS
+show_excerpts: true
+title: 徘徊の書
+twitter_username: showa_yojyo
+# Leave off trailing forward slashes when setting url-yojyo.github.io
+url: https://showa

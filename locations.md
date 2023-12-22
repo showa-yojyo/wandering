@@ -2,10 +2,6 @@
 layout: page
 title: 重要地点一覧集
 permalink: /locations/
-image:
-  path: /assets/images/ogp-default.png
-  width: 400
-  height: 400
 ---
 
 このページは東京 23 区をうろつくときに私が知っているべきスポット一覧を集積するものだ。

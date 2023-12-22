@@ -1,10 +1,6 @@
 ---
 layout: page
 title: 札
-image:
-  path: /assets/images/ogp-default.png
-  width: 400
-  height: 400
 ---
 
 {%- assign date_format = site.minima.date_format -%}
@@ -17,7 +13,7 @@ image:
     {% for post in posts %}
     <li>
       <span class="post-date">{{ post.date | date: date_format }}</span>
-      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
   </ul>

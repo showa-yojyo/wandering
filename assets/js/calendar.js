@@ -7,11 +7,10 @@ function initCalendar(event){
     dateControl.value = dateControl.max;
 }
 
-function navigateToDiaryPage(){
-    const base = '/wandering/diary'
+function navigateToDiaryPage(basePath){
     const dateControl = document.querySelector('input[id="start"]');
     const date = dateControl.value.replaceAll('-', '/'); // "YYYY/mm/dd"
-    const url = `${base}/${date}/diary.html`
+    const url = `${basePath}/diary/${date}/diary.html`
     console.debug(url);
     window.location.href = url;
 }
