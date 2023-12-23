@@ -1,8 +1,17 @@
 ---
 layout: page
 title: 全記録
-permalink: /archive/
+permalink: /archives/
 ---
+
+{%- assign date_min = site.posts[-1].date -%}
+{%- assign year_first = date_min | date: '%Y' -%}
+{%- assign year_last = site.posts[0].date | date: '%Y' -%}
+<ul>
+  {% for i in (year_first..year_last) %}
+  <li><a href="./{{ i }}/">{{ i }} 年</a></li>
+  {%- endfor %}
+</ul>
 
 <form action="javascript:navigateToDiaryPage('{{ site.baseurl }}')">
   <label>
@@ -12,36 +21,3 @@ permalink: /archive/
   <input type="submit" value="Go"/>
 </form>
 <script src="{{ '/assets/js/calendar.js' | relative_url }}" defer></script>
-
-{%- assign date_format = site.minima.date_format -%}
-{% for post in site.posts %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% capture month %}{{ post.date | date: '%m' }}{% endcapture %}
-  {% unless post.next %}
-    <h2 id="{{year}}{{nmonth}}">{{ year }}-{{ month }}</h2>
-    <ul class="posts">
-      <li>
-        <span class="post-date">{{ post.date | date: date_format }}</span>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </li>
-  {% else %}
-    {% capture nmonth %}{{ post.next.date | date: '%m' }}{% endcapture %}
-    {% if month != nmonth %}
-      </ul>
-      <h2 id="{{year}}{{nmonth}}">{{ year }}-{{ month }}</h2>
-      <ul class="posts">
-    {% else %}
-      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-      {% if year != nyear %}
-        </ul>
-        <h2 id="{{year}}{{nmonth}}">{{ year }}-{{ month }}</h2>
-        <ul class="posts">
-      {% endif %}
-    {% endif %}
-    <li>
-      <span class="post-date">{{ post.date | date: date_format }}</span>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </li>
-  {% endunless %}
-{% endfor %}
-</ul>

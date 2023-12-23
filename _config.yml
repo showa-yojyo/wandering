@@ -56,6 +56,7 @@ unpublished: false
 # Plugins
 whitelist: []
 plugins:
+  - jekyll-archives
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-seo-tag
@@ -187,6 +188,18 @@ kramdown:
 theme: minima
 minima:
   date_format: "%Y-%m-%d (%a)"
+
+# Archive settings
+jekyll-archives:
+  enabled:
+    - year
+    - tags
+  layouts:
+    year: archive-year
+    tag: archive-tag
+  permalinks:
+    year: '/archives/:year/'
+    tag: '/archives/tag/:name/'
 
 # Minima settings
 author: プレハブ小屋
