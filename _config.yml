@@ -205,5 +205,5 @@ rss: RSS
 show_excerpts: true
 title: 徘徊の書
 twitter_username: showa_yojyo
-# Leave off trailing forward slashes when setting url-yojyo.github.io
-url: https://showa
+# Leave off trailing forward slashes when setting url
+url: https://showa-yojyo.github.io
