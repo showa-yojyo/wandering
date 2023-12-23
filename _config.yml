@@ -56,6 +56,7 @@ unpublished: false
 # Plugins
 whitelist: []
 plugins:
+  - jekyll-archives
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-seo-tag
@@ -188,6 +189,18 @@ theme: minima
 minima:
   date_format: "%Y-%m-%d (%a)"
 
+# Archive settings
+jekyll-archives:
+  enabled:
+    - year
+    - tags
+  layouts:
+    year: archive-year
+    tag: archive-tag
+  permalinks:
+    year: '/archives/:year/'
+    tag: '/archives/tag/:name/'
+
 # Minima settings
 author: プレハブ小屋
 description: 理想郷を求めて都内 23 区を駆け廻る住所不定無収入者の記録
@@ -205,5 +218,5 @@ rss: RSS
 show_excerpts: true
 title: 徘徊の書
 twitter_username: showa_yojyo
-# Leave off trailing forward slashes when setting url-yojyo.github.io
-url: https://showa
+# Leave off trailing forward slashes when setting url
+url: https://showa-yojyo.github.io
