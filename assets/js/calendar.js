@@ -12,5 +12,5 @@ function navigateToDiaryPage(basePath){
     const date = dateControl.value.replaceAll('-', '/'); // "YYYY/mm/dd"
     const url = `${basePath}/diary/${date}/diary.html`
     console.debug(url);
-    window.location.href = url;
+    window.location.href = encodeURI(url);
 }
